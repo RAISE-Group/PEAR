@@ -1,0 +1,10 @@
+@pytest.mark.parametrize('month', MONTHS)
+@pytest.mark.parametrize('target', ['D', 'B', 'M'])
+@pytest.mark.parametrize('convention', ['start', 'end'])
+def test_quarterly_upsample(self, month, target, convention, simple_period_range_series):
+    freq = 'Q-{month}'.format(month=month)
+    ts = simple_period_range_series('1/1/1990', '12/31/1995', freq=freq)
+    result = ts.resample(target, convention=convention).ffill()
+    expected = result.to_timestamp(target, how=convention)
+    expected = expected.asfreq(target, 'ffill').to_period()
+    tm.assert_series_equal(result, expected)

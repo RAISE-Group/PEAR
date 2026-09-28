@@ -1,0 +1,406 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.8",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.test.utils.TestTemplateLoader",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.core.checks.messages.Critical",
+      "api_type": "class",
+      "similarity": 0.5555555555555556,
+      "evolution_path": [
+        "django.core.checks.messages.Critical"
+      ],
+      "local_scores": [
+        0.5555555555555556
+      ]
+    },
+    {
+      "fqn": "django.core.checks.messages.Debug",
+      "api_type": "class",
+      "similarity": 0.5555555555555556,
+      "evolution_path": [
+        "django.core.checks.messages.Debug"
+      ],
+      "local_scores": [
+        0.5555555555555556
+      ]
+    },
+    {
+      "fqn": "django.core.checks.messages.Error",
+      "api_type": "class",
+      "similarity": 0.5555555555555556,
+      "evolution_path": [
+        "django.core.checks.messages.Error"
+      ],
+      "local_scores": [
+        0.5555555555555556
+      ]
+    },
+    {
+      "fqn": "django.core.checks.messages.Info",
+      "api_type": "class",
+      "similarity": 0.5555555555555556,
+      "evolution_path": [
+        "django.core.checks.messages.Info"
+      ],
+      "local_scores": [
+        0.5555555555555556
+      ]
+    },
+    {
+      "fqn": "django.core.checks.messages.Warning",
+      "api_type": "class",
+      "similarity": 0.5555555555555556,
+      "evolution_path": [
+        "django.core.checks.messages.Warning"
+      ],
+      "local_scores": [
+        0.5555555555555556
+      ]
+    },
+    {
+      "fqn": "django.db.models.functions.Lower",
+      "api_type": "class",
+      "similarity": 0.5306122448979592,
+      "evolution_path": [
+        "django.db.models.functions.Lower"
+      ],
+      "local_scores": [
+        0.5306122448979592
+      ]
+    },
+    {
+      "fqn": "django.db.models.functions.Upper",
+      "api_type": "class",
+      "similarity": 0.5306122448979592,
+      "evolution_path": [
+        "django.db.models.functions.Upper"
+      ],
+      "local_scores": [
+        0.5306122448979592
+      ]
+    },
+    {
+      "fqn": "django.contrib.postgres.search.TrigramBase",
+      "api_type": "class",
+      "similarity": 0.41085840058694056,
+      "evolution_path": [
+        "django.template.loader.BaseLoader",
+        "django.contrib.postgres.search.TrigramBase"
+      ],
+      "local_scores": [
+        0.7446808510638298,
+        0.5517241379310345
+      ]
+    },
+    {
+      "fqn": "django.forms.fields.SlugField",
+      "api_type": "class",
+      "similarity": 0.39716312056737585,
+      "evolution_path": [
+        "django.template.loader.BaseLoader",
+        "django.forms.fields.SlugField"
+      ],
+      "local_scores": [
+        0.7446808510638298,
+        0.5333333333333333
+      ]
+    },
+    {
+      "fqn": "django.db.models.functions.datetime.Trunc",
+      "api_type": "class",
+      "similarity": 0.38666121112929625,
+      "evolution_path": [
+        "django.template.loader.BaseLoader",
+        "django.db.models.functions.datetime.Trunc"
+      ],
+      "local_scores": [
+        0.7446808510638298,
+        0.5192307692307693
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.test.utils.TestTemplateLoader",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "1.8.19",
+      "vpost": "1.9",
+      "resolved_fqn": "django.test.utils.TestTemplateLoader",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.template.loader.BaseLoader",
+          "similarity": 0.744681
+        },
+        {
+          "fqn": "django.contrib.gis.db.models.manager.GeoManager",
+          "similarity": 0.607843
+        },
+        {
+          "fqn": "django.core.checks.messages.Critical",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.core.checks.messages.Debug",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.core.checks.messages.Error",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.core.checks.messages.Info",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.core.checks.messages.Warning",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.db.models.functions.Lower",
+          "similarity": 0.530612
+        },
+        {
+          "fqn": "django.db.models.functions.Upper",
+          "similarity": 0.530612
+        },
+        {
+          "fqn": "django.forms.widgets.RadioChoiceInput",
+          "similarity": 0.5
+        }
+      ],
+      "entered_final": [
+        "django.core.checks.messages.Critical",
+        "django.core.checks.messages.Debug",
+        "django.core.checks.messages.Error",
+        "django.core.checks.messages.Info",
+        "django.core.checks.messages.Warning",
+        "django.db.models.functions.Lower",
+        "django.db.models.functions.Upper"
+      ],
+      "entered_iter": [
+        "django.template.loader.BaseLoader",
+        "django.contrib.gis.db.models.manager.GeoManager",
+        "django.forms.widgets.RadioChoiceInput"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "django.template.loader.BaseLoader",
+      "path_score": 0.744681,
+      "boundary": "DEPRECATED",
+      "vpre": "1.9.13",
+      "vpost": "1.10",
+      "resolved_fqn": "django.template.loader.BaseLoader",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.contrib.gis.db.models.manager.GeoManager",
+          "similarity": 0.666667
+        },
+        {
+          "fqn": "django.core.checks.messages.Critical",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.core.checks.messages.Debug",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.core.checks.messages.Error",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.core.checks.messages.Info",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.core.checks.messages.Warning",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.contrib.postgres.search.TrigramBase",
+          "similarity": 0.551724
+        },
+        {
+          "fqn": "django.forms.fields.SlugField",
+          "similarity": 0.533333
+        },
+        {
+          "fqn": "django.forms.widgets.RadioChoiceInput",
+          "similarity": 0.527273
+        },
+        {
+          "fqn": "django.db.models.functions.datetime.Trunc",
+          "similarity": 0.519231
+        }
+      ],
+      "entered_final": [
+        "django.core.checks.messages.Critical",
+        "django.core.checks.messages.Debug",
+        "django.core.checks.messages.Error",
+        "django.core.checks.messages.Info",
+        "django.core.checks.messages.Warning",
+        "django.contrib.postgres.search.TrigramBase",
+        "django.forms.fields.SlugField",
+        "django.db.models.functions.datetime.Trunc"
+      ],
+      "entered_iter": [
+        "django.contrib.gis.db.models.manager.GeoManager"
+      ],
+      "pruned": [
+        "django.forms.widgets.RadioChoiceInput"
+      ],
+      "prune_bound": 0.413712,
+      "dead_reason": null
+    },
+    {
+      "fqn": "django.contrib.gis.db.models.manager.GeoManager",
+      "path_score": 0.607843,
+      "boundary": "DEPRECATED",
+      "vpre": "1.11.29",
+      "vpost": "2.0",
+      "resolved_fqn": "django.contrib.gis.db.models.manager.GeoManager",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.forms.fields.EmailField",
+          "similarity": 0.54
+        },
+        {
+          "fqn": "django.forms.widgets.Textarea",
+          "similarity": 0.537037
+        },
+        {
+          "fqn": "django.db.models.fields.proxy.OrderWrt",
+          "similarity": 0.528302
+        },
+        {
+          "fqn": "django.core.checks.messages.Critical",
+          "similarity": 0.511111
+        },
+        {
+          "fqn": "django.core.checks.messages.Debug",
+          "similarity": 0.511111
+        },
+        {
+          "fqn": "django.core.checks.messages.Error",
+          "similarity": 0.511111
+        },
+        {
+          "fqn": "django.core.checks.messages.Info",
+          "similarity": 0.511111
+        },
+        {
+          "fqn": "django.core.checks.messages.Warning",
+          "similarity": 0.511111
+        },
+        {
+          "fqn": "django.db.backends.oracle.functions.SecondsToInterval",
+          "similarity": 0.508772
+        },
+        {
+          "fqn": "django.contrib.postgres.fields.jsonb.KeyTransformTextLookupMixin",
+          "similarity": 0.491803
+        }
+      ],
+      "entered_final": [
+        "django.forms.fields.EmailField",
+        "django.forms.widgets.Textarea",
+        "django.db.models.fields.proxy.OrderWrt",
+        "django.core.checks.messages.Critical",
+        "django.core.checks.messages.Debug",
+        "django.core.checks.messages.Error",
+        "django.core.checks.messages.Info",
+        "django.core.checks.messages.Warning",
+        "django.db.backends.oracle.functions.SecondsToInterval"
+      ],
+      "entered_iter": [],
+      "pruned": [
+        "django.contrib.postgres.fields.jsonb.KeyTransformTextLookupMixin"
+      ],
+      "prune_bound": 0.413712,
+      "dead_reason": null
+    },
+    {
+      "fqn": "django.forms.widgets.RadioChoiceInput",
+      "path_score": 0.5,
+      "boundary": "DEPRECATED",
+      "vpre": "1.10.8",
+      "vpost": "1.11",
+      "resolved_fqn": "django.forms.widgets.RadioChoiceInput",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.template.loaders.eggs.EggOrigin",
+          "similarity": 0.576923
+        },
+        {
+          "fqn": "django.core.checks.messages.Critical",
+          "similarity": 0.531915
+        },
+        {
+          "fqn": "django.core.checks.messages.Debug",
+          "similarity": 0.531915
+        },
+        {
+          "fqn": "django.core.checks.messages.Error",
+          "similarity": 0.531915
+        },
+        {
+          "fqn": "django.core.checks.messages.Info",
+          "similarity": 0.531915
+        },
+        {
+          "fqn": "django.core.checks.messages.Warning",
+          "similarity": 0.531915
+        },
+        {
+          "fqn": "django.contrib.gis.db.models.manager.GeoManager",
+          "similarity": 0.526316
+        },
+        {
+          "fqn": "django.forms.fields.SlugField",
+          "similarity": 0.516129
+        },
+        {
+          "fqn": "django.forms.fields.EmailField",
+          "similarity": 0.509091
+        },
+        {
+          "fqn": "django.contrib.postgres.functions.TransactionNow",
+          "similarity": 0.5
+        }
+      ],
+      "entered_final": [
+        "django.core.checks.messages.Critical",
+        "django.core.checks.messages.Debug",
+        "django.core.checks.messages.Error",
+        "django.core.checks.messages.Info",
+        "django.core.checks.messages.Warning",
+        "django.forms.fields.SlugField",
+        "django.forms.fields.EmailField",
+        "django.contrib.postgres.functions.TransactionNow"
+      ],
+      "entered_iter": [],
+      "pruned": [
+        "django.template.loaders.eggs.EggOrigin",
+        "django.contrib.gis.db.models.manager.GeoManager"
+      ],
+      "prune_bound": 0.413712,
+      "dead_reason": null
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+@pytest.mark.parametrize('data, expected', [(DataFrame([[1, 2], [4, 5]], columns=['a', 'b']), {'columns': ['a', 'b'], 'data': [[1, 2], [4, 5]]}), (DataFrame([[1, 2], [4, 5]], columns=['a', 'b']).rename_axis('foo'), {'columns': ['a', 'b'], 'data': [[1, 2], [4, 5]]}), (DataFrame([[1, 2], [4, 5]], columns=['a', 'b'], index=[['a', 'b'], ['c', 'd']]), {'columns': ['a', 'b'], 'data': [[1, 2], [4, 5]]}), (Series([1, 2, 3], name='A'), {'name': 'A', 'data': [1, 2, 3]}), (Series([1, 2, 3], name='A').rename_axis('foo'), {'name': 'A', 'data': [1, 2, 3]}), (Series([1, 2], name='A', index=[['a', 'b'], ['c', 'd']]), {'name': 'A', 'data': [1, 2]})])
+def test_index_false_to_json_split(self, data, expected):
+    result = data.to_json(orient='split', index=False)
+    result = json.loads(result)
+    assert result == expected

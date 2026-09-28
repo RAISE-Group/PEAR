@@ -1,0 +1,5 @@
+def test_expanding_apply_min_periods_0(self, raw):
+    s = Series([None, None, None])
+    result = s.expanding(min_periods=0).apply(lambda x: len(x), raw=raw)
+    expected = Series([1.0, 2.0, 3.0])
+    tm.assert_series_equal(result, expected)

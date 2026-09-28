@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.1.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.colors.DivergingNorm",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.colors.TwoSlopeNorm",
+      "api_type": "class",
+      "similarity": 0.5749128919860628
+    },
+    {
+      "fqn": "matplotlib.backend_bases.LocationEvent",
+      "api_type": "class",
+      "similarity": 0.5047169811320755
+    },
+    {
+      "fqn": "matplotlib.gridspec.GridSpecFromSubplotSpec",
+      "api_type": "class",
+      "similarity": 0.5045454545454545
+    },
+    {
+      "fqn": "matplotlib.ticker.FixedLocator",
+      "api_type": "class",
+      "similarity": 0.497737556561086
+    },
+    {
+      "fqn": "matplotlib.backend_bases.MouseEvent",
+      "api_type": "class",
+      "similarity": 0.488
+    },
+    {
+      "fqn": "matplotlib.transforms.BlendedAffine2D",
+      "api_type": "class",
+      "similarity": 0.48095238095238096
+    },
+    {
+      "fqn": "matplotlib.scale.SymmetricalLogTransform",
+      "api_type": "class",
+      "similarity": 0.4789915966386555
+    },
+    {
+      "fqn": "matplotlib.ticker._Edge_integer",
+      "api_type": "class",
+      "similarity": 0.4748858447488584
+    },
+    {
+      "fqn": "matplotlib.lines.VertexSelector",
+      "api_type": "class",
+      "similarity": 0.470873786407767
+    },
+    {
+      "fqn": "matplotlib.animation.TimedAnimation",
+      "api_type": "class",
+      "similarity": 0.47058823529411764
+    }
+  ]
+}

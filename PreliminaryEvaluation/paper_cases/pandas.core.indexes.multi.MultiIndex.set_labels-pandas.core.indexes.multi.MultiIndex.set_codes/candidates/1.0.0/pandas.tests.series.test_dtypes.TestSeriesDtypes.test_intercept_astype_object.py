@@ -1,0 +1,11 @@
+def test_intercept_astype_object(self):
+    series = Series(date_range('1/1/2000', periods=10))
+    expected = series.astype('object')
+    df = DataFrame({'a': series, 'b': np.random.randn(len(series))})
+    exp_dtypes = Series([np.dtype('datetime64[ns]'), np.dtype('float64')], index=['a', 'b'])
+    tm.assert_series_equal(df.dtypes, exp_dtypes)
+    result = df.values.squeeze()
+    assert (result[:, 0] == expected.values).all()
+    df = DataFrame({'a': series, 'b': ['foo'] * len(series)})
+    result = df.values.squeeze()
+    assert (result[:, 0] == expected.values).all()

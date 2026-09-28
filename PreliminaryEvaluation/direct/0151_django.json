@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "4.0.10",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.mysql.introspection.DatabaseIntrospection.get_key_columns",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_primary_key_columns",
+      "api_type": "method",
+      "similarity": 0.6046511627906976
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_primary_key_columns",
+      "api_type": "method",
+      "similarity": 0.6046511627906976
+    },
+    {
+      "fqn": "django.db.backends.mysql.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.6
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.5681818181818182
+    },
+    {
+      "fqn": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.5217391304347826
+    },
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.5192307692307693
+    },
+    {
+      "fqn": "django.apps.registry.Apps.get_models",
+      "api_type": "method",
+      "similarity": 0.5102040816326531
+    },
+    {
+      "fqn": "django.db.backends.mysql.introspection.DatabaseIntrospection.get_storage_engine",
+      "api_type": "method",
+      "similarity": 0.5102040816326531
+    },
+    {
+      "fqn": "django.template.base.NodeList.get_nodes_by_type",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.db.backends.oracle.operations.DatabaseOperations._get_sequence_name",
+      "api_type": "method",
+      "similarity": 0.49019607843137253
+    }
+  ]
+}

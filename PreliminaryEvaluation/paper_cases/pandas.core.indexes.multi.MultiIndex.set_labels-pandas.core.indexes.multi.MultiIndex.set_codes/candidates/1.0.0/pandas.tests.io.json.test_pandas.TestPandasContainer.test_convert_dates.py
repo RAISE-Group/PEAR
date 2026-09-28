@@ -1,0 +1,17 @@
+def test_convert_dates(self):
+    df = self.tsframe.copy()
+    df['date'] = Timestamp('20130101')
+    json = df.to_json()
+    result = read_json(json)
+    tm.assert_frame_equal(result, df)
+    df['foo'] = 1.0
+    json = df.to_json(date_unit='ns')
+    result = read_json(json, convert_dates=False)
+    expected = df.copy()
+    expected['date'] = expected['date'].values.view('i8')
+    expected['foo'] = expected['foo'].astype('int64')
+    tm.assert_frame_equal(result, expected)
+    ts = Series(Timestamp('20130101'), index=self.ts.index)
+    json = ts.to_json()
+    result = read_json(json, typ='series')
+    tm.assert_series_equal(result, ts)

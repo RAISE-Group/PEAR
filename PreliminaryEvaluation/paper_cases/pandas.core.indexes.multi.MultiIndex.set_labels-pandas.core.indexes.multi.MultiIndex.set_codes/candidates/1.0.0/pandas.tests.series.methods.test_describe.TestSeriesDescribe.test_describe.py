@@ -1,0 +1,13 @@
+def test_describe(self):
+    s = Series([0, 1, 2, 3, 4], name='int_data')
+    result = s.describe()
+    expected = Series([5, 2, s.std(), 0, 1, 2, 3, 4], name='int_data', index=['count', 'mean', 'std', 'min', '25%', '50%', '75%', 'max'])
+    tm.assert_series_equal(result, expected)
+    s = Series([True, True, False, False, False], name='bool_data')
+    result = s.describe()
+    expected = Series([5, 2, False, 3], name='bool_data', index=['count', 'unique', 'top', 'freq'])
+    tm.assert_series_equal(result, expected)
+    s = Series(['a', 'a', 'b', 'c', 'd'], name='str_data')
+    result = s.describe()
+    expected = Series([5, 4, 'a', 2], name='str_data', index=['count', 'unique', 'top', 'freq'])
+    tm.assert_series_equal(result, expected)

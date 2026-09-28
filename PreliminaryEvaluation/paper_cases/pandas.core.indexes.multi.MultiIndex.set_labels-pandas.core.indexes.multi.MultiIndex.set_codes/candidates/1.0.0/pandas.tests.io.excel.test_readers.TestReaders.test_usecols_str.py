@@ -1,0 +1,18 @@
+def test_usecols_str(self, read_ext, df_ref):
+    if pd.read_excel.keywords['engine'] == 'pyxlsb':
+        pytest.xfail('Sheets containing datetimes not supported by pyxlsb')
+    df1 = df_ref.reindex(columns=['A', 'B', 'C'])
+    df2 = pd.read_excel('test1' + read_ext, 'Sheet1', index_col=0, usecols='A:D')
+    df3 = pd.read_excel('test1' + read_ext, 'Sheet2', skiprows=[1], index_col=0, usecols='A:D')
+    tm.assert_frame_equal(df2, df1, check_names=False)
+    tm.assert_frame_equal(df3, df1, check_names=False)
+    df1 = df_ref.reindex(columns=['B', 'C'])
+    df2 = pd.read_excel('test1' + read_ext, 'Sheet1', index_col=0, usecols='A,C,D')
+    df3 = pd.read_excel('test1' + read_ext, 'Sheet2', skiprows=[1], index_col=0, usecols='A,C,D')
+    tm.assert_frame_equal(df2, df1, check_names=False)
+    tm.assert_frame_equal(df3, df1, check_names=False)
+    df1 = df_ref.reindex(columns=['B', 'C'])
+    df2 = pd.read_excel('test1' + read_ext, 'Sheet1', index_col=0, usecols='A,C:D')
+    df3 = pd.read_excel('test1' + read_ext, 'Sheet2', skiprows=[1], index_col=0, usecols='A,C:D')
+    tm.assert_frame_equal(df2, df1, check_names=False)
+    tm.assert_frame_equal(df3, df1, check_names=False)

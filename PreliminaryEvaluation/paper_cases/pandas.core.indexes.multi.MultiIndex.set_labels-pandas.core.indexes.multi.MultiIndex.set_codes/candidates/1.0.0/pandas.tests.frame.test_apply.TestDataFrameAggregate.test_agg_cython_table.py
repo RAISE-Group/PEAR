@@ -1,0 +1,4 @@
+@pytest.mark.parametrize('df, func, expected', chain(_get_cython_table_params(DataFrame(), [('sum', Series(dtype='float64')), ('max', Series(dtype='float64')), ('min', Series(dtype='float64')), ('all', Series(dtype=bool)), ('any', Series(dtype=bool)), ('mean', Series(dtype='float64')), ('prod', Series(dtype='float64')), ('std', Series(dtype='float64')), ('var', Series(dtype='float64')), ('median', Series(dtype='float64'))]), _get_cython_table_params(DataFrame([[np.nan, 1], [1, 2]]), [('sum', Series([1.0, 3])), ('max', Series([1.0, 2])), ('min', Series([1.0, 1])), ('all', Series([True, True])), ('any', Series([True, True])), ('mean', Series([1, 1.5])), ('prod', Series([1.0, 2])), ('std', Series([np.nan, 0.707107])), ('var', Series([np.nan, 0.5])), ('median', Series([1, 1.5]))])))
+def test_agg_cython_table(self, df, func, expected, axis):
+    result = df.agg(func, axis=axis)
+    tm.assert_series_equal(result, expected)

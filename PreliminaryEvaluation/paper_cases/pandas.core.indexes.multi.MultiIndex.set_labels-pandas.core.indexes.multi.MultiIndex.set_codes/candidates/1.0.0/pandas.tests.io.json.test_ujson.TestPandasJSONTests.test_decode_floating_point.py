@@ -1,0 +1,5 @@
+@pytest.mark.parametrize('float_number', [1.1234567893, 1.234567893, 1.34567893, 1.4567893, 1.567893, 1.67893, 1.7893, 1.893, 1.3])
+@pytest.mark.parametrize('sign', [-1, 1])
+def test_decode_floating_point(self, sign, float_number):
+    float_number *= sign
+    tm.assert_almost_equal(float_number, ujson.loads(str(float_number)), check_less_precise=15)

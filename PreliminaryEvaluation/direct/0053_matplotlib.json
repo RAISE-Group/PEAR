@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "2.2.5",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.legend.Legend.draggable",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.text._AnnotationBase.draggable",
+      "api_type": "method",
+      "similarity": 0.9074074074074074
+    },
+    {
+      "fqn": "matplotlib.legend.Legend.set_draggable",
+      "api_type": "method",
+      "similarity": 0.6964285714285714
+    },
+    {
+      "fqn": "matplotlib.colors.Colormap._set_extremes",
+      "api_type": "method",
+      "similarity": 0.5522388059701493
+    },
+    {
+      "fqn": "matplotlib.patches.StepPatch.set_data",
+      "api_type": "method",
+      "similarity": 0.5308641975308642
+    },
+    {
+      "fqn": "matplotlib.colorizer.Colorizer.norm",
+      "api_type": "method",
+      "similarity": 0.5285714285714286
+    },
+    {
+      "fqn": "matplotlib.ticker.LogLocator.set_params",
+      "api_type": "method",
+      "similarity": 0.5161290322580645
+    },
+    {
+      "fqn": "matplotlib.ticker.AsinhLocator.set_params",
+      "api_type": "method",
+      "similarity": 0.5142857142857142
+    },
+    {
+      "fqn": "matplotlib.axis.Axis.update_units",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "matplotlib.figure.FigureBase.get_figure",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "matplotlib.animation.AbstractMovieWriter.setup",
+      "api_type": "method",
+      "similarity": 0.4918032786885246
+    }
+  ]
+}

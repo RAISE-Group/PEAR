@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.5.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.ticker.LogFormatter.base",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.ticker.LogFormatter.set_base",
+      "api_type": "method",
+      "similarity": 0.6470588235294118
+    },
+    {
+      "fqn": "matplotlib.transforms.Bbox.ignore",
+      "api_type": "method",
+      "similarity": 0.5714285714285714
+    },
+    {
+      "fqn": "matplotlib.gridspec.SubplotSpec.num2",
+      "api_type": "method",
+      "similarity": 0.5333333333333333
+    },
+    {
+      "fqn": "matplotlib.scale.FuncScaleLog.base",
+      "api_type": "method",
+      "similarity": 0.5333333333333333
+    },
+    {
+      "fqn": "matplotlib.ticker.LinearLocator.numticks",
+      "api_type": "method",
+      "similarity": 0.5333333333333333
+    },
+    {
+      "fqn": "matplotlib.ticker.PercentFormatter.symbol",
+      "api_type": "method",
+      "similarity": 0.5333333333333333
+    },
+    {
+      "fqn": "matplotlib.colorizer.Colorizer.clip",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "matplotlib.colorizer._ColorizerInterface.cmap",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "matplotlib.colorizer._ColorizerInterface.colorbar",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "matplotlib.colorizer._ColorizerInterface.norm",
+      "api_type": "method",
+      "similarity": 0.5
+    }
+  ]
+}

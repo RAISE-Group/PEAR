@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "4.1.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.test.testcases.SimpleTestCase.assertFormsetError",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.test.testcases.SimpleTestCase.assertFormSetError",
+      "api_type": "method",
+      "similarity": 0.8120805369127517
+    },
+    {
+      "fqn": "django.contrib.auth.forms.PasswordResetForm.save",
+      "api_type": "method",
+      "similarity": 0.572289156626506
+    },
+    {
+      "fqn": "django.test.testcases.SimpleTestCase.assertInHTML",
+      "api_type": "method",
+      "similarity": 0.5652173913043478
+    },
+    {
+      "fqn": "django.test.testcases.SimpleTestCase._assert_form_error",
+      "api_type": "method",
+      "similarity": 0.5636363636363636
+    },
+    {
+      "fqn": "django.test.testcases.SimpleTestCase._assert_contains",
+      "api_type": "method",
+      "similarity": 0.5433526011560693
+    },
+    {
+      "fqn": "django.forms.boundfield.BoundField.label_tag",
+      "api_type": "method",
+      "similarity": 0.5372340425531915
+    },
+    {
+      "fqn": "django.core.mail.message.EmailMessage.attach",
+      "api_type": "method",
+      "similarity": 0.5337078651685393
+    },
+    {
+      "fqn": "django.core.management.commands.inspectdb.Command.get_meta",
+      "api_type": "method",
+      "similarity": 0.532967032967033
+    },
+    {
+      "fqn": "django.db.models.sql.query.Query.build_lookup",
+      "api_type": "method",
+      "similarity": 0.5317919075144508
+    },
+    {
+      "fqn": "django.contrib.admin.filters.AllValuesFieldListFilter.choices",
+      "api_type": "method",
+      "similarity": 0.5277777777777778
+    }
+  ]
+}

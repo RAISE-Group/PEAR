@@ -1,0 +1,264 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "4.0.10",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.mysql.operations.DatabaseOperations._convert_field_to_tz",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.db.backends.mysql.operations.DatabaseOperations._convert_sql_to_tz",
+      "api_type": "method",
+      "similarity": 0.7021276595744681,
+      "evolution_path": [
+        "django.db.backends.mysql.operations.DatabaseOperations._convert_sql_to_tz"
+      ],
+      "local_scores": [
+        0.7021276595744681
+      ]
+    },
+    {
+      "fqn": "django.db.backends.postgresql.operations.DatabaseOperations._convert_sql_to_tz",
+      "api_type": "method",
+      "similarity": 0.6170212765957447,
+      "evolution_path": [
+        "django.db.backends.postgresql.operations.DatabaseOperations._convert_sql_to_tz"
+      ],
+      "local_scores": [
+        0.6170212765957447
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.serializers.geojson.Serializer.handle_field",
+      "api_type": "method",
+      "similarity": 0.48936170212765956,
+      "evolution_path": [
+        "django.contrib.gis.serializers.geojson.Serializer.handle_field"
+      ],
+      "local_scores": [
+        0.48936170212765956
+      ]
+    },
+    {
+      "fqn": "django.db.backends.oracle.operations.DatabaseOperations._convert_sql_to_tz",
+      "api_type": "method",
+      "similarity": 0.4861111111111111,
+      "evolution_path": [
+        "django.db.backends.oracle.operations.DatabaseOperations._convert_sql_to_tz"
+      ],
+      "local_scores": [
+        0.4861111111111111
+      ]
+    },
+    {
+      "fqn": "django.db.backends.oracle.validation.DatabaseValidation.check_field_type",
+      "api_type": "method",
+      "similarity": 0.48214285714285715,
+      "evolution_path": [
+        "django.db.backends.oracle.validation.DatabaseValidation.check_field_type"
+      ],
+      "local_scores": [
+        0.48214285714285715
+      ]
+    },
+    {
+      "fqn": "django.db.models.sql.query.Query.as_sql",
+      "api_type": "method",
+      "similarity": 0.48214285714285715,
+      "evolution_path": [
+        "django.db.models.sql.query.Query.as_sql"
+      ],
+      "local_scores": [
+        0.48214285714285715
+      ]
+    },
+    {
+      "fqn": "django.db.models.deletion.Collector.add_field_update",
+      "api_type": "method",
+      "similarity": 0.47058823529411764,
+      "evolution_path": [
+        "django.db.models.deletion.Collector.add_field_update"
+      ],
+      "local_scores": [
+        0.47058823529411764
+      ]
+    },
+    {
+      "fqn": "django.forms.fields.GenericIPAddressField.to_python",
+      "api_type": "method",
+      "similarity": 0.47058823529411764,
+      "evolution_path": [
+        "django.forms.fields.GenericIPAddressField.to_python"
+      ],
+      "local_scores": [
+        0.47058823529411764
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.forms.widgets.OpenLayersWidget.deserialize",
+      "api_type": "method",
+      "similarity": 0.46938775510204084,
+      "evolution_path": [
+        "django.contrib.gis.forms.widgets.OpenLayersWidget.deserialize"
+      ],
+      "local_scores": [
+        0.46938775510204084
+      ]
+    },
+    {
+      "fqn": "django.contrib.auth.hashers.MD5PasswordHasher.encode",
+      "api_type": "method",
+      "similarity": 0.454054054054054,
+      "evolution_path": [
+        "django.contrib.auth.hashers.SHA1PasswordHasher.encode",
+        "django.contrib.auth.hashers.MD5PasswordHasher.encode"
+      ],
+      "local_scores": [
+        0.48,
+        0.9459459459459459
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.db.backends.mysql.operations.DatabaseOperations._convert_field_to_tz",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "4.0.10",
+      "vpost": "4.1",
+      "resolved_fqn": "django.db.backends.mysql.operations.DatabaseOperations._convert_field_to_tz",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.db.backends.mysql.operations.DatabaseOperations._convert_sql_to_tz",
+          "similarity": 0.702128
+        },
+        {
+          "fqn": "django.db.backends.postgresql.operations.DatabaseOperations._convert_sql_to_tz",
+          "similarity": 0.617021
+        },
+        {
+          "fqn": "django.contrib.gis.serializers.geojson.Serializer.handle_field",
+          "similarity": 0.489362
+        },
+        {
+          "fqn": "django.db.backends.oracle.operations.DatabaseOperations._convert_sql_to_tz",
+          "similarity": 0.486111
+        },
+        {
+          "fqn": "django.db.backends.oracle.validation.DatabaseValidation.check_field_type",
+          "similarity": 0.482143
+        },
+        {
+          "fqn": "django.db.models.sql.query.Query.as_sql",
+          "similarity": 0.482143
+        },
+        {
+          "fqn": "django.contrib.auth.hashers.SHA1PasswordHasher.encode",
+          "similarity": 0.48
+        },
+        {
+          "fqn": "django.db.models.deletion.Collector.add_field_update",
+          "similarity": 0.470588
+        },
+        {
+          "fqn": "django.forms.fields.GenericIPAddressField.to_python",
+          "similarity": 0.470588
+        },
+        {
+          "fqn": "django.contrib.gis.forms.widgets.OpenLayersWidget.deserialize",
+          "similarity": 0.469388
+        }
+      ],
+      "entered_final": [
+        "django.db.backends.mysql.operations.DatabaseOperations._convert_sql_to_tz",
+        "django.db.backends.postgresql.operations.DatabaseOperations._convert_sql_to_tz",
+        "django.contrib.gis.serializers.geojson.Serializer.handle_field",
+        "django.db.backends.oracle.operations.DatabaseOperations._convert_sql_to_tz",
+        "django.db.backends.oracle.validation.DatabaseValidation.check_field_type",
+        "django.db.models.sql.query.Query.as_sql",
+        "django.db.models.deletion.Collector.add_field_update",
+        "django.forms.fields.GenericIPAddressField.to_python",
+        "django.contrib.gis.forms.widgets.OpenLayersWidget.deserialize"
+      ],
+      "entered_iter": [
+        "django.contrib.auth.hashers.SHA1PasswordHasher.encode"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "django.contrib.auth.hashers.SHA1PasswordHasher.encode",
+      "path_score": 0.48,
+      "boundary": "DEPRECATED",
+      "vpre": "5.0.14",
+      "vpost": "5.1",
+      "resolved_fqn": "django.contrib.auth.hashers.SHA1PasswordHasher.encode",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.contrib.auth.hashers.MD5PasswordHasher.encode",
+          "similarity": 0.945946
+        },
+        {
+          "fqn": "django.contrib.auth.hashers.PBKDF2PasswordHasher.encode",
+          "similarity": 0.571429
+        },
+        {
+          "fqn": "django.contrib.sessions.base_session.BaseSessionManager.save",
+          "similarity": 0.568182
+        },
+        {
+          "fqn": "django.contrib.auth.hashers.BCryptSHA256PasswordHasher.verify",
+          "similarity": 0.5625
+        },
+        {
+          "fqn": "django.utils.datastructures.MultiValueDict.__setstate__",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.test.client.RequestFactory._encode_json",
+          "similarity": 0.553191
+        },
+        {
+          "fqn": "django.contrib.auth.hashers.Argon2PasswordHasher.encode",
+          "similarity": 0.54386
+        },
+        {
+          "fqn": "django.contrib.auth.hashers.BCryptSHA256PasswordHasher.encode",
+          "similarity": 0.542373
+        },
+        {
+          "fqn": "django.db.models.functions.datetime.TruncDate.as_sql",
+          "similarity": 0.541667
+        },
+        {
+          "fqn": "django.db.models.functions.datetime.TruncTime.as_sql",
+          "similarity": 0.541667
+        }
+      ],
+      "entered_final": [
+        "django.contrib.auth.hashers.MD5PasswordHasher.encode",
+        "django.contrib.auth.hashers.PBKDF2PasswordHasher.encode",
+        "django.contrib.sessions.base_session.BaseSessionManager.save",
+        "django.contrib.auth.hashers.BCryptSHA256PasswordHasher.verify",
+        "django.utils.datastructures.MultiValueDict.__setstate__",
+        "django.test.client.RequestFactory._encode_json",
+        "django.contrib.auth.hashers.Argon2PasswordHasher.encode",
+        "django.contrib.auth.hashers.BCryptSHA256PasswordHasher.encode",
+        "django.db.models.functions.datetime.TruncDate.as_sql",
+        "django.db.models.functions.datetime.TruncTime.as_sql"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.454054,
+      "dead_reason": null
+    }
+  ]
+}

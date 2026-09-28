@@ -1,0 +1,3 @@
+@pytest.mark.parametrize('index,val', [(Index([0, 1, 2]), '2'), (Index([0, 1, '2']), 2), (Index([0, 1, 2, np.inf]), 4), (Index([0, 1, 2, np.nan]), 4), (Index([0, 1, 2, np.inf]), np.nan), (Index([0, 1, 2, np.nan]), np.inf), (pd.Int64Index([0, 1, 2]), np.inf), (pd.Int64Index([0, 1, 2]), np.nan), (pd.UInt64Index([0, 1, 2]), np.inf), (pd.UInt64Index([0, 1, 2]), np.nan)])
+def test_index_not_contains(self, index, val):
+    assert val not in index

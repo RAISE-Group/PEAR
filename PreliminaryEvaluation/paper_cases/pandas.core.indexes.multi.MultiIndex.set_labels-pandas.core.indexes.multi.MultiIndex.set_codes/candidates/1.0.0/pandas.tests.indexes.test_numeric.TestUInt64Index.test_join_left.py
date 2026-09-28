@@ -1,0 +1,25 @@
+def test_join_left(self, index_large):
+    other = UInt64Index(2 ** 63 + np.array([7, 12, 25, 1, 2, 10], dtype='uint64'))
+    other_mono = UInt64Index(2 ** 63 + np.array([1, 2, 7, 10, 12, 25], dtype='uint64'))
+    res, lidx, ridx = index_large.join(other, how='left', return_indexers=True)
+    eres = index_large
+    eridx = np.array([-1, 5, -1, -1, 2], dtype=np.intp)
+    assert isinstance(res, UInt64Index)
+    tm.assert_index_equal(res, eres)
+    assert lidx is None
+    tm.assert_numpy_array_equal(ridx, eridx)
+    res, lidx, ridx = index_large.join(other_mono, how='left', return_indexers=True)
+    eridx = np.array([-1, 3, -1, -1, 5], dtype=np.intp)
+    assert isinstance(res, UInt64Index)
+    tm.assert_index_equal(res, eres)
+    assert lidx is None
+    tm.assert_numpy_array_equal(ridx, eridx)
+    idx = UInt64Index(2 ** 63 + np.array([1, 1, 2, 5], dtype='uint64'))
+    idx2 = UInt64Index(2 ** 63 + np.array([1, 2, 5, 7, 9], dtype='uint64'))
+    res, lidx, ridx = idx2.join(idx, how='left', return_indexers=True)
+    eres = UInt64Index(2 ** 63 + np.array([1, 1, 2, 5, 7, 9], dtype='uint64'))
+    eridx = np.array([0, 1, 2, 3, -1, -1], dtype=np.intp)
+    elidx = np.array([0, 0, 1, 2, 3, 4], dtype=np.intp)
+    tm.assert_index_equal(res, eres)
+    tm.assert_numpy_array_equal(lidx, elidx)
+    tm.assert_numpy_array_equal(ridx, eridx)

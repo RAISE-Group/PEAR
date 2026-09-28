@@ -1,0 +1,12 @@
+def test_rolling_kurt_edge_cases(self):
+    all_nan = Series([np.NaN] * 5)
+    d = Series([1] * 5)
+    x = d.rolling(window=5).kurt()
+    tm.assert_series_equal(all_nan, x)
+    d = Series(np.random.randn(5))
+    x = d.rolling(window=3).kurt()
+    tm.assert_series_equal(all_nan, x)
+    d = Series([-1.50837035, -0.1297039, 0.19501095, 1.73508164, 0.41941401])
+    expected = Series([np.NaN, np.NaN, np.NaN, 1.224307, 2.671499])
+    x = d.rolling(window=4).kurt()
+    tm.assert_series_equal(expected, x)

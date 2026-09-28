@@ -1,0 +1,12 @@
+def test_get_indexer_non_unique(self):
+    p1 = pd.Period('2017-09-02')
+    p2 = pd.Period('2017-09-03')
+    p3 = pd.Period('2017-09-04')
+    p4 = pd.Period('2017-09-05')
+    idx1 = pd.PeriodIndex([p1, p2, p1])
+    idx2 = pd.PeriodIndex([p2, p1, p3, p4])
+    result = idx1.get_indexer_non_unique(idx2)
+    expected_indexer = np.array([1, 0, 2, -1, -1], dtype=np.intp)
+    expected_missing = np.array([2, 3], dtype=np.int64)
+    tm.assert_numpy_array_equal(result[0], expected_indexer)
+    tm.assert_numpy_array_equal(result[1], expected_missing)

@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.9.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.models.expressions.Date",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.models.expressions.ColPairs",
+      "api_type": "class",
+      "similarity": 0.5884146341463414
+    },
+    {
+      "fqn": "django.db.models.expressions.Subquery",
+      "api_type": "class",
+      "similarity": 0.5824175824175825
+    },
+    {
+      "fqn": "django.db.models.expressions.CombinedExpression",
+      "api_type": "class",
+      "similarity": 0.5577889447236181
+    },
+    {
+      "fqn": "django.db.models.expressions.NegatedExpression",
+      "api_type": "class",
+      "similarity": 0.5567010309278351
+    },
+    {
+      "fqn": "django.db.models.expressions.When",
+      "api_type": "class",
+      "similarity": 0.5482233502538071
+    },
+    {
+      "fqn": "django.db.migrations.operations.fields.AlterField",
+      "api_type": "class",
+      "similarity": 0.5406976744186046
+    },
+    {
+      "fqn": "django.db.models.query_utils.FilteredRelation",
+      "api_type": "class",
+      "similarity": 0.5376712328767124
+    },
+    {
+      "fqn": "django.db.models.expressions.Value",
+      "api_type": "class",
+      "similarity": 0.531578947368421
+    },
+    {
+      "fqn": "django.db.models.expressions.Col",
+      "api_type": "class",
+      "similarity": 0.53
+    },
+    {
+      "fqn": "django.db.models.expressions.RawSQL",
+      "api_type": "class",
+      "similarity": 0.5296296296296297
+    }
+  ]
+}

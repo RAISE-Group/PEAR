@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.3.4",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.cbook.deprecation.MatplotlibDeprecationWarning",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib._api.deprecation.MatplotlibDeprecationWarning",
+      "api_type": "class",
+      "similarity": 0.8823529411764706
+    },
+    {
+      "fqn": "matplotlib.patheffects.Normal",
+      "api_type": "class",
+      "similarity": 0.3
+    },
+    {
+      "fqn": "matplotlib.rcsetup._ignorecase",
+      "api_type": "class",
+      "similarity": 0.3
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.XMLWriter",
+      "api_type": "class",
+      "similarity": 0.2857142857142857
+    },
+    {
+      "fqn": "matplotlib._api.__init__.UnsupportedError",
+      "api_type": "class",
+      "similarity": 0.2608695652173913
+    },
+    {
+      "fqn": "matplotlib.backend_bases.CloseEvent",
+      "api_type": "class",
+      "similarity": 0.2608695652173913
+    },
+    {
+      "fqn": "matplotlib.backends.backend_macosx.TimerMac",
+      "api_type": "class",
+      "similarity": 0.25
+    },
+    {
+      "fqn": "matplotlib.colors.FuncNorm",
+      "api_type": "class",
+      "similarity": 0.25
+    },
+    {
+      "fqn": "matplotlib._type1font._WhitespaceToken",
+      "api_type": "class",
+      "similarity": 0.24
+    },
+    {
+      "fqn": "matplotlib.hatch.HatchPatternBase",
+      "api_type": "class",
+      "similarity": 0.24
+    }
+  ]
+}

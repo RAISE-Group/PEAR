@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.8.19",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.models.fields.related.SingleRelatedObjectDescriptor",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor",
+      "api_type": "class",
+      "similarity": 0.7744227353463587
+    },
+    {
+      "fqn": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor",
+      "api_type": "class",
+      "similarity": 0.7604501607717041
+    },
+    {
+      "fqn": "django.db.migrations.migration.Migration",
+      "api_type": "class",
+      "similarity": 0.5542521994134897
+    },
+    {
+      "fqn": "django.core.serializers.python.Deserializer",
+      "api_type": "class",
+      "similarity": 0.5533980582524272
+    },
+    {
+      "fqn": "django.forms.models.BaseModelForm",
+      "api_type": "class",
+      "similarity": 0.5514809590973202
+    },
+    {
+      "fqn": "django.forms.models.BaseInlineFormSet",
+      "api_type": "class",
+      "similarity": 0.5478395061728395
+    },
+    {
+      "fqn": "django.db.models.functions.datetime.TruncBase",
+      "api_type": "class",
+      "similarity": 0.5402298850574713
+    },
+    {
+      "fqn": "django.db.models.aggregates.Aggregate",
+      "api_type": "class",
+      "similarity": 0.5324503311258278
+    },
+    {
+      "fqn": "django.contrib.admin.helpers.AdminReadonlyField",
+      "api_type": "class",
+      "similarity": 0.5315161839863713
+    },
+    {
+      "fqn": "django.contrib.gis.geoip2.GeoIP2",
+      "api_type": "class",
+      "similarity": 0.5242165242165242
+    }
+  ]
+}

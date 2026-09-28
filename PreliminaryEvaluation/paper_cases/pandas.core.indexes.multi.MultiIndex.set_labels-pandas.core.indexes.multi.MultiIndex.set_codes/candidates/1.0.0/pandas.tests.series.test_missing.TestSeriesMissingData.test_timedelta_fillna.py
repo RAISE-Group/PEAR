@@ -1,0 +1,30 @@
+def test_timedelta_fillna(self):
+    s = Series([Timestamp('20130101'), Timestamp('20130101'), Timestamp('20130102'), Timestamp('20130103 9:01:01')])
+    td = s.diff()
+    result = td.fillna(Timedelta(seconds=0))
+    expected = Series([timedelta(0), timedelta(0), timedelta(1), timedelta(days=1, seconds=9 * 3600 + 60 + 1)])
+    tm.assert_series_equal(result, expected)
+    with pytest.raises(TypeError, match='Passing integers to fillna'):
+        td.fillna(1)
+    result = td.fillna(Timedelta(seconds=1))
+    expected = Series([timedelta(seconds=1), timedelta(0), timedelta(1), timedelta(days=1, seconds=9 * 3600 + 60 + 1)])
+    tm.assert_series_equal(result, expected)
+    result = td.fillna(timedelta(days=1, seconds=1))
+    expected = Series([timedelta(days=1, seconds=1), timedelta(0), timedelta(1), timedelta(days=1, seconds=9 * 3600 + 60 + 1)])
+    tm.assert_series_equal(result, expected)
+    result = td.fillna(np.timedelta64(int(1000000000.0)))
+    expected = Series([timedelta(seconds=1), timedelta(0), timedelta(1), timedelta(days=1, seconds=9 * 3600 + 60 + 1)])
+    tm.assert_series_equal(result, expected)
+    result = td.fillna(NaT)
+    expected = Series([NaT, timedelta(0), timedelta(1), timedelta(days=1, seconds=9 * 3600 + 60 + 1)], dtype='m8[ns]')
+    tm.assert_series_equal(result, expected)
+    td[2] = np.nan
+    result = td.ffill()
+    expected = td.fillna(Timedelta(seconds=0))
+    expected[0] = np.nan
+    tm.assert_series_equal(result, expected)
+    td[2] = np.nan
+    result = td.bfill()
+    expected = td.fillna(Timedelta(seconds=0))
+    expected[2] = timedelta(days=1, seconds=9 * 3600 + 60 + 1)
+    tm.assert_series_equal(result, expected)

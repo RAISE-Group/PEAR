@@ -1,0 +1,264 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.3.4",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.cbook.deprecation.deprecated",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib._api.deprecation.deprecated",
+      "api_type": "function",
+      "similarity": 0.9087719298245615,
+      "evolution_path": [
+        "matplotlib._api.deprecation.deprecated"
+      ],
+      "local_scores": [
+        0.9087719298245615
+      ]
+    },
+    {
+      "fqn": "matplotlib.pyplot.figure",
+      "api_type": "function",
+      "similarity": 0.5766666666666667,
+      "evolution_path": [
+        "matplotlib.pyplot.figure"
+      ],
+      "local_scores": [
+        0.5766666666666667
+      ]
+    },
+    {
+      "fqn": "matplotlib.__init__._preprocess_data",
+      "api_type": "function",
+      "similarity": 0.5608465608465608,
+      "evolution_path": [
+        "matplotlib.__init__._preprocess_data"
+      ],
+      "local_scores": [
+        0.5608465608465608
+      ]
+    },
+    {
+      "fqn": "matplotlib.stackplot.stackplot",
+      "api_type": "function",
+      "similarity": 0.5528455284552846,
+      "evolution_path": [
+        "matplotlib.stackplot.stackplot"
+      ],
+      "local_scores": [
+        0.5528455284552846
+      ]
+    },
+    {
+      "fqn": "matplotlib.image.imsave",
+      "api_type": "function",
+      "similarity": 0.5524296675191815,
+      "evolution_path": [
+        "matplotlib.image.imsave"
+      ],
+      "local_scores": [
+        0.5524296675191815
+      ]
+    },
+    {
+      "fqn": "matplotlib.testing.decorators._pytest_image_comparison",
+      "api_type": "function",
+      "similarity": 0.5481927710843374,
+      "evolution_path": [
+        "matplotlib.testing.decorators._pytest_image_comparison"
+      ],
+      "local_scores": [
+        0.5481927710843374
+      ]
+    },
+    {
+      "fqn": "matplotlib._api.deprecation.delete_parameter",
+      "api_type": "function",
+      "similarity": 0.5443037974683544,
+      "evolution_path": [
+        "matplotlib._api.deprecation.delete_parameter"
+      ],
+      "local_scores": [
+        0.5443037974683544
+      ]
+    },
+    {
+      "fqn": "matplotlib.bezier.split_path_inout",
+      "api_type": "function",
+      "similarity": 0.5300546448087432,
+      "evolution_path": [
+        "matplotlib.bezier.split_path_inout"
+      ],
+      "local_scores": [
+        0.5300546448087432
+      ]
+    },
+    {
+      "fqn": "matplotlib.testing.compare.compare_images",
+      "api_type": "function",
+      "similarity": 0.5225225225225225,
+      "evolution_path": [
+        "matplotlib.testing.compare.compare_images"
+      ],
+      "local_scores": [
+        0.5225225225225225
+      ]
+    },
+    {
+      "fqn": "matplotlib.streamplot._get_integrator",
+      "api_type": "function",
+      "similarity": 0.46870391127367117,
+      "evolution_path": [
+        "matplotlib.streamplot.get_integrator",
+        "matplotlib.streamplot._get_integrator"
+      ],
+      "local_scores": [
+        0.5223880597014925,
+        0.8972332015810277
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.cbook.deprecation.deprecated",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.3.4",
+      "vpost": "3.4.0",
+      "resolved_fqn": "matplotlib.cbook.deprecation.deprecated",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib._api.deprecation.deprecated",
+          "similarity": 0.908772
+        },
+        {
+          "fqn": "matplotlib.pyplot.figure",
+          "similarity": 0.576667
+        },
+        {
+          "fqn": "matplotlib.__init__._preprocess_data",
+          "similarity": 0.560847
+        },
+        {
+          "fqn": "matplotlib.stackplot.stackplot",
+          "similarity": 0.552846
+        },
+        {
+          "fqn": "matplotlib.image.imsave",
+          "similarity": 0.55243
+        },
+        {
+          "fqn": "matplotlib.testing.decorators._pytest_image_comparison",
+          "similarity": 0.548193
+        },
+        {
+          "fqn": "matplotlib._api.deprecation.delete_parameter",
+          "similarity": 0.544304
+        },
+        {
+          "fqn": "matplotlib.bezier.split_path_inout",
+          "similarity": 0.530055
+        },
+        {
+          "fqn": "matplotlib.testing.compare.compare_images",
+          "similarity": 0.522523
+        },
+        {
+          "fqn": "matplotlib.streamplot.get_integrator",
+          "similarity": 0.522388
+        }
+      ],
+      "entered_final": [
+        "matplotlib._api.deprecation.deprecated",
+        "matplotlib.pyplot.figure",
+        "matplotlib.__init__._preprocess_data",
+        "matplotlib.stackplot.stackplot",
+        "matplotlib.image.imsave",
+        "matplotlib.testing.decorators._pytest_image_comparison",
+        "matplotlib._api.deprecation.delete_parameter",
+        "matplotlib.bezier.split_path_inout",
+        "matplotlib.testing.compare.compare_images"
+      ],
+      "entered_iter": [
+        "matplotlib.streamplot.get_integrator"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.streamplot.get_integrator",
+      "path_score": 0.522388,
+      "boundary": "DEPRECATED",
+      "vpre": "3.6.3",
+      "vpost": "3.7.0",
+      "resolved_fqn": "matplotlib.streamplot.get_integrator",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.streamplot._get_integrator",
+          "similarity": 0.897233
+        },
+        {
+          "fqn": "matplotlib.streamplot._integrate_rk12",
+          "similarity": 0.607509
+        },
+        {
+          "fqn": "matplotlib._tight_layout.get_tight_layout_figure",
+          "similarity": 0.595808
+        },
+        {
+          "fqn": "matplotlib.stackplot.stackplot",
+          "similarity": 0.563025
+        },
+        {
+          "fqn": "matplotlib.axes._base._process_plot_format",
+          "similarity": 0.562874
+        },
+        {
+          "fqn": "matplotlib.bezier.get_parallels",
+          "similarity": 0.558923
+        },
+        {
+          "fqn": "matplotlib.tests.test_offsetbox.test_packers",
+          "similarity": 0.555215
+        },
+        {
+          "fqn": "matplotlib.__init__._rc_params_in_file",
+          "similarity": 0.5375
+        },
+        {
+          "fqn": "matplotlib.bezier.split_path_inout",
+          "similarity": 0.535411
+        },
+        {
+          "fqn": "matplotlib.tri._triinterpolate._cg",
+          "similarity": 0.531469
+        }
+      ],
+      "entered_final": [
+        "matplotlib.streamplot._get_integrator",
+        "matplotlib.streamplot._integrate_rk12",
+        "matplotlib._tight_layout.get_tight_layout_figure",
+        "matplotlib.stackplot.stackplot",
+        "matplotlib.axes._base._process_plot_format",
+        "matplotlib.bezier.get_parallels",
+        "matplotlib.tests.test_offsetbox.test_packers",
+        "matplotlib.__init__._rc_params_in_file",
+        "matplotlib.bezier.split_path_inout",
+        "matplotlib.tri._triinterpolate._cg"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.468704,
+      "dead_reason": null
+    }
+  ]
+}

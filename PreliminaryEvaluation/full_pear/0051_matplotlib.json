@@ -1,0 +1,403 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "2.0.2",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backend_bases.GraphicsContextBase.get_linestyle",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.collections.Collection.get_linestyle",
+      "api_type": "method",
+      "similarity": 0.9230769230769231,
+      "evolution_path": [
+        "matplotlib.collections.Collection.get_linestyle"
+      ],
+      "local_scores": [
+        0.9230769230769231
+      ]
+    },
+    {
+      "fqn": "matplotlib.lines.Line2D.get_linestyle",
+      "api_type": "method",
+      "similarity": 0.9230769230769231,
+      "evolution_path": [
+        "matplotlib.lines.Line2D.get_linestyle"
+      ],
+      "local_scores": [
+        0.9230769230769231
+      ]
+    },
+    {
+      "fqn": "matplotlib.patches.Patch.get_linestyle",
+      "api_type": "method",
+      "similarity": 0.9230769230769231,
+      "evolution_path": [
+        "matplotlib.patches.Patch.get_linestyle"
+      ],
+      "local_scores": [
+        0.9230769230769231
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.qt_editor._formlayout.FormDialog.get",
+      "api_type": "method",
+      "similarity": 0.6923076923076923,
+      "evolution_path": [
+        "matplotlib.backends.qt_editor.formlayout.FormDialog.get",
+        "matplotlib.backends.qt_editor._formlayout.FormDialog.get"
+      ],
+      "local_scores": [
+        0.6923076923076923,
+        1.0
+      ]
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.get_alpha",
+      "api_type": "method",
+      "similarity": 0.5625,
+      "evolution_path": [
+        "matplotlib.artist.Artist.get_alpha"
+      ],
+      "local_scores": [
+        0.5625
+      ]
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.get_animated",
+      "api_type": "method",
+      "similarity": 0.5625,
+      "evolution_path": [
+        "matplotlib.artist.Artist.get_animated"
+      ],
+      "local_scores": [
+        0.5625
+      ]
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.get_figure",
+      "api_type": "method",
+      "similarity": 0.5625,
+      "evolution_path": [
+        "matplotlib.artist.Artist.get_figure"
+      ],
+      "local_scores": [
+        0.5625
+      ]
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.get_gid",
+      "api_type": "method",
+      "similarity": 0.5625,
+      "evolution_path": [
+        "matplotlib.artist.Artist.get_gid"
+      ],
+      "local_scores": [
+        0.5625
+      ]
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.get_label",
+      "api_type": "method",
+      "similarity": 0.5192307692307692,
+      "evolution_path": [
+        "matplotlib.backends.qt_editor.formlayout.FormDialog.get",
+        "matplotlib.artist.Artist.get_label"
+      ],
+      "local_scores": [
+        0.6923076923076923,
+        0.75
+      ]
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.get_picker",
+      "api_type": "method",
+      "similarity": 0.5192307692307692,
+      "evolution_path": [
+        "matplotlib.backends.qt_editor.formlayout.FormDialog.get",
+        "matplotlib.artist.Artist.get_picker"
+      ],
+      "local_scores": [
+        0.6923076923076923,
+        0.75
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.backend_bases.GraphicsContextBase.get_linestyle",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "2.2.5",
+      "vpost": "3.0.0",
+      "resolved_fqn": "matplotlib.backend_bases.GraphicsContextBase.get_linestyle",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.collections.Collection.get_linestyle",
+          "similarity": 0.923077
+        },
+        {
+          "fqn": "matplotlib.lines.Line2D.get_linestyle",
+          "similarity": 0.923077
+        },
+        {
+          "fqn": "matplotlib.patches.Patch.get_linestyle",
+          "similarity": 0.923077
+        },
+        {
+          "fqn": "matplotlib.backends.qt_editor.formlayout.FormDialog.get",
+          "similarity": 0.692308
+        },
+        {
+          "fqn": "matplotlib.colorbar.ColorbarBase.get_ticks",
+          "similarity": 0.588235
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_alpha",
+          "similarity": 0.5625
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_animated",
+          "similarity": 0.5625
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_contains",
+          "similarity": 0.5625
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_figure",
+          "similarity": 0.5625
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_gid",
+          "similarity": 0.5625
+        }
+      ],
+      "entered_final": [
+        "matplotlib.collections.Collection.get_linestyle",
+        "matplotlib.lines.Line2D.get_linestyle",
+        "matplotlib.patches.Patch.get_linestyle",
+        "matplotlib.artist.Artist.get_alpha",
+        "matplotlib.artist.Artist.get_animated",
+        "matplotlib.artist.Artist.get_figure",
+        "matplotlib.artist.Artist.get_gid"
+      ],
+      "entered_iter": [
+        "matplotlib.backends.qt_editor.formlayout.FormDialog.get",
+        "matplotlib.colorbar.ColorbarBase.get_ticks",
+        "matplotlib.artist.Artist.get_contains"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.backends.qt_editor.formlayout.FormDialog.get",
+      "path_score": 0.692308,
+      "boundary": "DEPRECATED",
+      "vpre": "3.0.3",
+      "vpost": "3.1.0",
+      "resolved_fqn": "matplotlib.backends.qt_editor.formlayout.FormDialog.get",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.backends.qt_editor._formlayout.FormDialog.get",
+          "similarity": 1.0
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_alpha",
+          "similarity": 0.75
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_animated",
+          "similarity": 0.75
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_contains",
+          "similarity": 0.75
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_figure",
+          "similarity": 0.75
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_gid",
+          "similarity": 0.75
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_label",
+          "similarity": 0.75
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_picker",
+          "similarity": 0.75
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_rasterized",
+          "similarity": 0.75
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_url",
+          "similarity": 0.75
+        }
+      ],
+      "entered_final": [
+        "matplotlib.backends.qt_editor._formlayout.FormDialog.get",
+        "matplotlib.artist.Artist.get_alpha",
+        "matplotlib.artist.Artist.get_animated",
+        "matplotlib.artist.Artist.get_figure",
+        "matplotlib.artist.Artist.get_gid",
+        "matplotlib.artist.Artist.get_label",
+        "matplotlib.artist.Artist.get_picker",
+        "matplotlib.artist.Artist.get_rasterized",
+        "matplotlib.artist.Artist.get_url"
+      ],
+      "entered_iter": [
+        "matplotlib.artist.Artist.get_contains"
+      ],
+      "pruned": [],
+      "prune_bound": 0.519231,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.colorbar.ColorbarBase.get_ticks",
+      "path_score": 0.588235,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.colorbar.ColorbarBase.get_ticks",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.backends.qt_editor._formlayout.FormDialog.get",
+          "similarity": 0.642857
+        },
+        {
+          "fqn": "matplotlib._api.__init__.classproperty.__get__",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_alpha",
+          "similarity": 0.529412
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_animated",
+          "similarity": 0.529412
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_figure",
+          "similarity": 0.529412
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_gid",
+          "similarity": 0.529412
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_label",
+          "similarity": 0.529412
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_picker",
+          "similarity": 0.529412
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_rasterized",
+          "similarity": 0.529412
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_url",
+          "similarity": 0.529412
+        }
+      ],
+      "entered_final": [
+        "matplotlib.backends.qt_editor._formlayout.FormDialog.get",
+        "matplotlib._api.__init__.classproperty.__get__",
+        "matplotlib.artist.Artist.get_alpha",
+        "matplotlib.artist.Artist.get_animated",
+        "matplotlib.artist.Artist.get_figure",
+        "matplotlib.artist.Artist.get_gid",
+        "matplotlib.artist.Artist.get_label",
+        "matplotlib.artist.Artist.get_picker",
+        "matplotlib.artist.Artist.get_rasterized",
+        "matplotlib.artist.Artist.get_url"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.519231,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.get_contains",
+      "path_score": 0.5625,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.artist.Artist.get_contains",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.backends.qt_editor._formlayout.FormDialog.get",
+          "similarity": 0.75
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_alpha",
+          "similarity": 0.6
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_animated",
+          "similarity": 0.6
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_figure",
+          "similarity": 0.6
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_gid",
+          "similarity": 0.6
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_label",
+          "similarity": 0.6
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_picker",
+          "similarity": 0.6
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_rasterized",
+          "similarity": 0.6
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_url",
+          "similarity": 0.6
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_visible",
+          "similarity": 0.6
+        }
+      ],
+      "entered_final": [
+        "matplotlib.backends.qt_editor._formlayout.FormDialog.get",
+        "matplotlib.artist.Artist.get_alpha",
+        "matplotlib.artist.Artist.get_animated",
+        "matplotlib.artist.Artist.get_figure",
+        "matplotlib.artist.Artist.get_gid",
+        "matplotlib.artist.Artist.get_label",
+        "matplotlib.artist.Artist.get_picker",
+        "matplotlib.artist.Artist.get_rasterized",
+        "matplotlib.artist.Artist.get_url",
+        "matplotlib.artist.Artist.get_visible"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.519231,
+      "dead_reason": null
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.25.3",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.dtypes.common.is_extension_type",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.config_init.is_terminal",
+      "api_type": "function",
+      "similarity": 0.425531914893617
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_datetime64tz_dtype",
+      "api_type": "function",
+      "similarity": 0.4107142857142857
+    },
+    {
+      "fqn": "pandas.core.dtypes.common._is_dtype",
+      "api_type": "function",
+      "similarity": 0.40384615384615385
+    },
+    {
+      "fqn": "pandas.core._numba.extensions.type_iloc_constructor",
+      "api_type": "function",
+      "similarity": 0.4
+    },
+    {
+      "fqn": "pandas.tests.extension.test_common.test_is_extension_array_dtype",
+      "api_type": "function",
+      "similarity": 0.3953488372093023
+    },
+    {
+      "fqn": "pandas.plotting._matplotlib.style._is_single_color",
+      "api_type": "function",
+      "similarity": 0.39344262295081966
+    },
+    {
+      "fqn": "pandas.core.common.is_local_in_caller_frame",
+      "api_type": "function",
+      "similarity": 0.39215686274509803
+    },
+    {
+      "fqn": "pandas.core.computation.expr._is_type",
+      "api_type": "function",
+      "similarity": 0.38461538461538464
+    },
+    {
+      "fqn": "pandas.core.indexing.is_nested_tuple",
+      "api_type": "function",
+      "similarity": 0.38333333333333336
+    },
+    {
+      "fqn": "pandas.io.common.is_url",
+      "api_type": "function",
+      "similarity": 0.38
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "2.2.28",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.utils.http.is_safe_url",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.utils.http.url_has_allowed_host_and_scheme",
+      "api_type": "function",
+      "similarity": 0.7922077922077922
+    },
+    {
+      "fqn": "django.template.context.make_context",
+      "api_type": "function",
+      "similarity": 0.5529411764705883
+    },
+    {
+      "fqn": "django.utils.translation.trans_real.do_ntranslate",
+      "api_type": "function",
+      "similarity": 0.5432098765432098
+    },
+    {
+      "fqn": "django.contrib.auth.hashers.make_password",
+      "api_type": "function",
+      "similarity": 0.5340909090909091
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.prototypes.errcheck.check_string",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.template.defaultfilters.stringfilter",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.utils.formats.number_format",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.contrib.auth.decorators.permission_required",
+      "api_type": "function",
+      "similarity": 0.4946236559139785
+    },
+    {
+      "fqn": "django.utils.encoding.force_str",
+      "api_type": "function",
+      "similarity": 0.4945054945054945
+    },
+    {
+      "fqn": "django.core.servers.basehttp.run",
+      "api_type": "function",
+      "similarity": 0.4895833333333333
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+def test_lower_upper(self):
+    values = Series(['om', np.nan, 'nom', 'nom'])
+    result = values.str.upper()
+    exp = Series(['OM', np.nan, 'NOM', 'NOM'])
+    tm.assert_series_equal(result, exp)
+    result = result.str.lower()
+    tm.assert_series_equal(result, values)
+    mixed = Series(['a', np.nan, 'b', True, datetime.today(), 'foo', None, 1, 2.0])
+    mixed = mixed.str.upper()
+    rs = Series(mixed).str.lower()
+    xp = Series(['a', np.nan, 'b', np.nan, np.nan, 'foo', np.nan, np.nan, np.nan])
+    assert isinstance(rs, Series)
+    tm.assert_series_equal(rs, xp)

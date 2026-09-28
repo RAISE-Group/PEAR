@@ -1,0 +1,15 @@
+@pytest.mark.parametrize('tz', [None, 'US/Eastern'])
+@pytest.mark.parametrize('freq, periods', [('D', 364), ('2D', 182), ('22D18H', 16), ('M', 11)])
+def test_constructor_timestamp(self, closed, name, freq, periods, tz):
+    start, end = (Timestamp('20180101', tz=tz), Timestamp('20181231', tz=tz))
+    breaks = date_range(start=start, end=end, freq=freq)
+    expected = IntervalIndex.from_breaks(breaks, name=name, closed=closed)
+    result = interval_range(start=start, end=end, freq=freq, name=name, closed=closed)
+    tm.assert_index_equal(result, expected)
+    result = interval_range(start=start, periods=periods, freq=freq, name=name, closed=closed)
+    tm.assert_index_equal(result, expected)
+    result = interval_range(end=end, periods=periods, freq=freq, name=name, closed=closed)
+    tm.assert_index_equal(result, expected)
+    if not breaks.freq.is_anchored() and tz is None:
+        result = interval_range(start=start, end=end, periods=periods, name=name, closed=closed)
+        tm.assert_index_equal(result, expected)

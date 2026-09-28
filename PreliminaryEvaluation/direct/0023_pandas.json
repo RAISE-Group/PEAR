@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.23.4",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.dtypes.common.is_period",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.computation.expr._is_type",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.core.computation.ops.is_term",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.tests.extension.test_common.test_is_extension_array_dtype",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.core.groupby.grouper._is_label_like",
+      "api_type": "function",
+      "similarity": 0.4722222222222222
+    },
+    {
+      "fqn": "pandas.tests.strings.__init__.is_object_or_nan_string_dtype",
+      "api_type": "function",
+      "similarity": 0.45714285714285713
+    },
+    {
+      "fqn": "pandas.core.indexing.is_label_like",
+      "api_type": "function",
+      "similarity": 0.4444444444444444
+    },
+    {
+      "fqn": "pandas.tests.tslibs.test_timezones.test_is_utc",
+      "api_type": "function",
+      "similarity": 0.4375
+    },
+    {
+      "fqn": "pandas.core.reshape.tile._is_dt_or_td",
+      "api_type": "function",
+      "similarity": 0.425
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_complex_dtype",
+      "api_type": "function",
+      "similarity": 0.42424242424242425
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_object_dtype",
+      "api_type": "function",
+      "similarity": 0.42424242424242425
+    }
+  ]
+}

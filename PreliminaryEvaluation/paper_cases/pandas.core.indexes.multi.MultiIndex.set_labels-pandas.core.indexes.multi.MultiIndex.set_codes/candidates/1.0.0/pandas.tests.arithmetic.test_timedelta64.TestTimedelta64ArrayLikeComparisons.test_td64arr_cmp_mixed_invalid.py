@@ -1,0 +1,17 @@
+def test_td64arr_cmp_mixed_invalid(self):
+    rng = timedelta_range('1 days', periods=5)._data
+    other = np.array([0, 1, 2, rng[3], pd.Timestamp.now()])
+    result = rng == other
+    expected = np.array([False, False, False, True, False])
+    tm.assert_numpy_array_equal(result, expected)
+    result = rng != other
+    tm.assert_numpy_array_equal(result, ~expected)
+    msg = 'Invalid comparison between|Cannot compare type|not supported between'
+    with pytest.raises(TypeError, match=msg):
+        rng < other
+    with pytest.raises(TypeError, match=msg):
+        rng > other
+    with pytest.raises(TypeError, match=msg):
+        rng <= other
+    with pytest.raises(TypeError, match=msg):
+        rng >= other

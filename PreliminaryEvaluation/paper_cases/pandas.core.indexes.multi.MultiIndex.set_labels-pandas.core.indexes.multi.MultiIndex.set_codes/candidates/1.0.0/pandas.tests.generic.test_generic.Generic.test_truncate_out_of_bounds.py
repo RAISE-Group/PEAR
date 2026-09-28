@@ -1,0 +1,11 @@
+def test_truncate_out_of_bounds(self):
+    shape = [int(2000.0)] + [1] * (self._ndim - 1)
+    small = self._construct(shape, dtype='int8', value=1)
+    self._compare(small.truncate(), small)
+    self._compare(small.truncate(before=0, after=3000.0), small)
+    self._compare(small.truncate(before=-1, after=2000.0), small)
+    shape = [int(2000000.0)] + [1] * (self._ndim - 1)
+    big = self._construct(shape, dtype='int8', value=1)
+    self._compare(big.truncate(), big)
+    self._compare(big.truncate(before=0, after=3000000.0), big)
+    self._compare(big.truncate(before=-1, after=2000000.0), big)

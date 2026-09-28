@@ -1,0 +1,30 @@
+def test_convert_objects(self, float_string_frame):
+    oops = float_string_frame.T.T
+    converted = oops._convert(datetime=True)
+    tm.assert_frame_equal(converted, float_string_frame)
+    assert converted['A'].dtype == np.float64
+    float_string_frame['H'] = '1.'
+    float_string_frame['I'] = '1'
+    length = len(float_string_frame)
+    float_string_frame['J'] = '1.'
+    float_string_frame['K'] = '1'
+    float_string_frame.loc[0:5, ['J', 'K']] = 'garbled'
+    converted = float_string_frame._convert(datetime=True, numeric=True)
+    assert converted['H'].dtype == 'float64'
+    assert converted['I'].dtype == 'int64'
+    assert converted['J'].dtype == 'float64'
+    assert converted['K'].dtype == 'float64'
+    assert len(converted['J'].dropna()) == length - 5
+    assert len(converted['K'].dropna()) == length - 5
+    converted = float_string_frame.copy()
+    converted['H'] = converted['H'].astype('float64')
+    converted['I'] = converted['I'].astype('int64')
+    assert converted['H'].dtype == 'float64'
+    assert converted['I'].dtype == 'int64'
+    converted = float_string_frame.copy()
+    with pytest.raises(ValueError, match='invalid literal'):
+        converted['H'].astype('int32')
+    df = DataFrame(dict(s=Series([1, 'na', 3, 4])))
+    result = df._convert(datetime=True, numeric=True)
+    expected = DataFrame(dict(s=Series([1, np.nan, 3, 4])))
+    tm.assert_frame_equal(result, expected)

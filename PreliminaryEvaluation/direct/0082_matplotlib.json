@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.3.4",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.cbook.deprecation.deprecated",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib._api.deprecation.deprecated",
+      "api_type": "function",
+      "similarity": 0.8381877022653722
+    },
+    {
+      "fqn": "matplotlib._api.deprecation.delete_parameter",
+      "api_type": "function",
+      "similarity": 0.6186186186186187
+    },
+    {
+      "fqn": "matplotlib._tight_layout.get_tight_layout_figure",
+      "api_type": "function",
+      "similarity": 0.5924855491329479
+    },
+    {
+      "fqn": "matplotlib.__init__._preprocess_data",
+      "api_type": "function",
+      "similarity": 0.5584415584415584
+    },
+    {
+      "fqn": "matplotlib.testing.decorators._pytest_image_comparison",
+      "api_type": "function",
+      "similarity": 0.5446685878962536
+    },
+    {
+      "fqn": "matplotlib.bezier.split_path_inout",
+      "api_type": "function",
+      "similarity": 0.5300546448087432
+    },
+    {
+      "fqn": "matplotlib.stackplot.stackplot",
+      "api_type": "function",
+      "similarity": 0.5283505154639175
+    },
+    {
+      "fqn": "matplotlib._tight_bbox.adjust_bbox",
+      "api_type": "function",
+      "similarity": 0.5247813411078717
+    },
+    {
+      "fqn": "matplotlib.tri._tripcolor.tripcolor",
+      "api_type": "function",
+      "similarity": 0.5203836930455635
+    },
+    {
+      "fqn": "matplotlib.axes._base._process_plot_format",
+      "api_type": "function",
+      "similarity": 0.5201149425287356
+    }
+  ]
+}

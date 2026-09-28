@@ -1,0 +1,264 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.9.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.utils.functional.allow_lazy",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.utils.functional.keep_lazy",
+      "api_type": "function",
+      "similarity": 0.9552238805970149,
+      "evolution_path": [
+        "django.utils.functional.keep_lazy"
+      ],
+      "local_scores": [
+        0.9552238805970149
+      ]
+    },
+    {
+      "fqn": "django.template.defaultfilters.stringfilter",
+      "api_type": "function",
+      "similarity": 0.550561797752809,
+      "evolution_path": [
+        "django.template.defaultfilters.stringfilter"
+      ],
+      "local_scores": [
+        0.550561797752809
+      ]
+    },
+    {
+      "fqn": "django.utils.encoding.force_str",
+      "api_type": "function",
+      "similarity": 0.5056179775280899,
+      "evolution_path": [
+        "django.utils.encoding.force_text",
+        "django.utils.encoding.force_str"
+      ],
+      "local_scores": [
+        0.5056179775280899,
+        1.0
+      ]
+    },
+    {
+      "fqn": "django.contrib.humanize.templatetags.humanize.intcomma",
+      "api_type": "function",
+      "similarity": 0.48936170212765956,
+      "evolution_path": [
+        "django.contrib.humanize.templatetags.humanize.intcomma"
+      ],
+      "local_scores": [
+        0.48936170212765956
+      ]
+    },
+    {
+      "fqn": "django.contrib.admin.utils.quote",
+      "api_type": "function",
+      "similarity": 0.4878048780487805,
+      "evolution_path": [
+        "django.contrib.admin.utils.quote"
+      ],
+      "local_scores": [
+        0.4878048780487805
+      ]
+    },
+    {
+      "fqn": "django.shortcuts.resolve_url",
+      "api_type": "function",
+      "similarity": 0.4845360824742268,
+      "evolution_path": [
+        "django.shortcuts.resolve_url"
+      ],
+      "local_scores": [
+        0.4845360824742268
+      ]
+    },
+    {
+      "fqn": "django.urls.conf._path",
+      "api_type": "function",
+      "similarity": 0.4782608695652174,
+      "evolution_path": [
+        "django.urls.conf._path"
+      ],
+      "local_scores": [
+        0.4782608695652174
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.geos.factory.fromfile",
+      "api_type": "function",
+      "similarity": 0.4742268041237113,
+      "evolution_path": [
+        "django.contrib.gis.geos.factory.fromfile"
+      ],
+      "local_scores": [
+        0.4742268041237113
+      ]
+    },
+    {
+      "fqn": "django.contrib.flatpages.views.flatpage",
+      "api_type": "function",
+      "similarity": 0.47368421052631576,
+      "evolution_path": [
+        "django.contrib.flatpages.views.flatpage"
+      ],
+      "local_scores": [
+        0.47368421052631576
+      ]
+    },
+    {
+      "fqn": "django.template.loader.select_template",
+      "api_type": "function",
+      "similarity": 0.4731182795698925,
+      "evolution_path": [
+        "django.template.loader.select_template"
+      ],
+      "local_scores": [
+        0.4731182795698925
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.utils.functional.allow_lazy",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "1.11.29",
+      "vpost": "2.0",
+      "resolved_fqn": "django.utils.functional.keep_lazy",
+      "resolved_kind": "forward",
+      "candidates": [
+        {
+          "fqn": "django.utils.functional.keep_lazy",
+          "similarity": 0.955224
+        },
+        {
+          "fqn": "django.template.defaultfilters.stringfilter",
+          "similarity": 0.550562
+        },
+        {
+          "fqn": "django.utils.encoding.force_text",
+          "similarity": 0.505618
+        },
+        {
+          "fqn": "django.contrib.humanize.templatetags.humanize.intcomma",
+          "similarity": 0.489362
+        },
+        {
+          "fqn": "django.contrib.admin.utils.quote",
+          "similarity": 0.487805
+        },
+        {
+          "fqn": "django.shortcuts.resolve_url",
+          "similarity": 0.484536
+        },
+        {
+          "fqn": "django.urls.conf._path",
+          "similarity": 0.478261
+        },
+        {
+          "fqn": "django.contrib.gis.geos.factory.fromfile",
+          "similarity": 0.474227
+        },
+        {
+          "fqn": "django.contrib.flatpages.views.flatpage",
+          "similarity": 0.473684
+        },
+        {
+          "fqn": "django.template.loader.select_template",
+          "similarity": 0.473118
+        }
+      ],
+      "entered_final": [
+        "django.utils.functional.keep_lazy",
+        "django.template.defaultfilters.stringfilter",
+        "django.contrib.humanize.templatetags.humanize.intcomma",
+        "django.contrib.admin.utils.quote",
+        "django.shortcuts.resolve_url",
+        "django.urls.conf._path",
+        "django.contrib.gis.geos.factory.fromfile",
+        "django.contrib.flatpages.views.flatpage",
+        "django.template.loader.select_template"
+      ],
+      "entered_iter": [
+        "django.utils.encoding.force_text"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "django.utils.encoding.force_text",
+      "path_score": 0.505618,
+      "boundary": "DEPRECATED",
+      "vpre": "3.2.25",
+      "vpost": "4.0",
+      "resolved_fqn": "django.utils.encoding.force_str",
+      "resolved_kind": "forward",
+      "candidates": [
+        {
+          "fqn": "django.utils.encoding.force_str",
+          "similarity": 1.0
+        },
+        {
+          "fqn": "django.utils.encoding.force_bytes",
+          "similarity": 0.623529
+        },
+        {
+          "fqn": "django.contrib.humanize.templatetags.humanize.intcomma",
+          "similarity": 0.609195
+        },
+        {
+          "fqn": "django.template.defaultfilters.stringfilter",
+          "similarity": 0.550562
+        },
+        {
+          "fqn": "django.contrib.flatpages.views.flatpage",
+          "similarity": 0.543478
+        },
+        {
+          "fqn": "django.shortcuts.resolve_url",
+          "similarity": 0.536842
+        },
+        {
+          "fqn": "django.utils.crypto.salted_hmac",
+          "similarity": 0.526882
+        },
+        {
+          "fqn": "django.utils.ipv6.clean_ipv6_address",
+          "similarity": 0.516484
+        },
+        {
+          "fqn": "django.template.base.render_value_in_context",
+          "similarity": 0.511905
+        },
+        {
+          "fqn": "django.template.loader.select_template",
+          "similarity": 0.51087
+        }
+      ],
+      "entered_final": [
+        "django.utils.encoding.force_str",
+        "django.utils.encoding.force_bytes",
+        "django.contrib.humanize.templatetags.humanize.intcomma",
+        "django.template.defaultfilters.stringfilter",
+        "django.contrib.flatpages.views.flatpage",
+        "django.shortcuts.resolve_url",
+        "django.utils.crypto.salted_hmac",
+        "django.utils.ipv6.clean_ipv6_address",
+        "django.template.base.render_value_in_context",
+        "django.template.loader.select_template"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.473118,
+      "dead_reason": null
+    }
+  ]
+}

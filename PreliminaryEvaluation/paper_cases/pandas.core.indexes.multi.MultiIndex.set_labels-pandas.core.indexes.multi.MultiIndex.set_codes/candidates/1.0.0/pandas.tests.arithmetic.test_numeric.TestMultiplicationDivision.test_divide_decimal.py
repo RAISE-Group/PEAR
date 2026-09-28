@@ -1,0 +1,10 @@
+@pytest.mark.parametrize('box', [pytest.param(pd.Index, marks=pytest.mark.xfail(reason='Index.__div__ always raises', raises=TypeError)), pd.Series, pd.DataFrame], ids=lambda x: x.__name__)
+def test_divide_decimal(self, box):
+    ser = Series([Decimal(10)])
+    expected = Series([Decimal(5)])
+    ser = tm.box_expected(ser, box)
+    expected = tm.box_expected(expected, box)
+    result = ser / Decimal(2)
+    tm.assert_equal(result, expected)
+    result = ser // Decimal(2)
+    tm.assert_equal(result, expected)

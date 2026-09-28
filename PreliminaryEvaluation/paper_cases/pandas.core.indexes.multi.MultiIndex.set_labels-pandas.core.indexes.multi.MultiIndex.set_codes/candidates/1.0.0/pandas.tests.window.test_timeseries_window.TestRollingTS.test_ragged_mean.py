@@ -1,0 +1,10 @@
+def test_ragged_mean(self):
+    df = self.ragged
+    result = df.rolling(window='1s', min_periods=1).mean()
+    expected = df.copy()
+    expected['B'] = [0.0, 1, 2, 3, 4]
+    tm.assert_frame_equal(result, expected)
+    result = df.rolling(window='2s', min_periods=1).mean()
+    expected = df.copy()
+    expected['B'] = [0.0, 1, 1.5, 3.0, 3.5]
+    tm.assert_frame_equal(result, expected)

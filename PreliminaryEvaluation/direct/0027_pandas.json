@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.25.3",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.tseries.converter.register",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.plotting._misc.register",
+      "api_type": "function",
+      "similarity": 0.6363636363636364
+    },
+    {
+      "fqn": "pandas.tests.util.test_assert_produces_warning.f",
+      "api_type": "function",
+      "similarity": 0.48
+    },
+    {
+      "fqn": "pandas.tests.extension.test_datetime.data",
+      "api_type": "function",
+      "similarity": 0.4666666666666667
+    },
+    {
+      "fqn": "pandas.tests.extension.test_extension.data",
+      "api_type": "function",
+      "similarity": 0.46153846153846156
+    },
+    {
+      "fqn": "pandas.tests.arrays.test_datetimelike.datetime_index",
+      "api_type": "function",
+      "similarity": 0.45161290322580644
+    },
+    {
+      "fqn": "pandas.tests.extension.test_sparse.data",
+      "api_type": "function",
+      "similarity": 0.4482758620689655
+    },
+    {
+      "fqn": "pandas.plotting._misc.deregister",
+      "api_type": "function",
+      "similarity": 0.44
+    },
+    {
+      "fqn": "pandas.tests.indexes.multi.test_missing.test_nulls",
+      "api_type": "function",
+      "similarity": 0.43333333333333335
+    },
+    {
+      "fqn": "pandas.tests.indexes.multi.test_copy.test_copy",
+      "api_type": "function",
+      "similarity": 0.42857142857142855
+    },
+    {
+      "fqn": "pandas.tests.indexes.multi.test_copy.test_view",
+      "api_type": "function",
+      "similarity": 0.42857142857142855
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+def test_swaplevel(self):
+    swapped = self.frame['A'].swaplevel()
+    swapped2 = self.frame['A'].swaplevel(0)
+    swapped3 = self.frame['A'].swaplevel(0, 1)
+    swapped4 = self.frame['A'].swaplevel('first', 'second')
+    assert not swapped.index.equals(self.frame.index)
+    tm.assert_series_equal(swapped, swapped2)
+    tm.assert_series_equal(swapped, swapped3)
+    tm.assert_series_equal(swapped, swapped4)
+    back = swapped.swaplevel()
+    back2 = swapped.swaplevel(0)
+    back3 = swapped.swaplevel(0, 1)
+    back4 = swapped.swaplevel('second', 'first')
+    assert back.index.equals(self.frame.index)
+    tm.assert_series_equal(back, back2)
+    tm.assert_series_equal(back, back3)
+    tm.assert_series_equal(back, back4)
+    ft = self.frame.T
+    swapped = ft.swaplevel('first', 'second', axis=1)
+    exp = self.frame.swaplevel('first', 'second').T
+    tm.assert_frame_equal(swapped, exp)

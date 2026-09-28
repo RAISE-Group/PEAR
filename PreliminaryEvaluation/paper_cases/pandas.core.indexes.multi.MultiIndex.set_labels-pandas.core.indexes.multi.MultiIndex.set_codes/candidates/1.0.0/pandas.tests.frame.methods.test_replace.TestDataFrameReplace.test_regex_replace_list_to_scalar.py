@@ -1,0 +1,11 @@
+def test_regex_replace_list_to_scalar(self, mix_abc):
+    df = DataFrame(mix_abc)
+    expec = DataFrame({'a': mix_abc['a'], 'b': np.array([np.nan] * 4), 'c': [np.nan, np.nan, np.nan, 'd']})
+    res = df.replace(['\\s*\\.\\s*', 'a|b'], np.nan, regex=True)
+    res2 = df.copy()
+    res3 = df.copy()
+    res2.replace(['\\s*\\.\\s*', 'a|b'], np.nan, regex=True, inplace=True)
+    res3.replace(regex=['\\s*\\.\\s*', 'a|b'], value=np.nan, inplace=True)
+    tm.assert_frame_equal(res, expec)
+    tm.assert_frame_equal(res2, expec)
+    tm.assert_frame_equal(res3, expec)

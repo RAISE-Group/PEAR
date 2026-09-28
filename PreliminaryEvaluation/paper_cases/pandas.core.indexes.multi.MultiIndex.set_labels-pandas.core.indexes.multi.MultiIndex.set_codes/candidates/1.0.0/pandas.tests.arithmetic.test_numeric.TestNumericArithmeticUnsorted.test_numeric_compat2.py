@@ -1,0 +1,30 @@
+def test_numeric_compat2(self):
+    idx = pd.RangeIndex(0, 10, 2)
+    result = idx * 2
+    expected = pd.RangeIndex(0, 20, 4)
+    tm.assert_index_equal(result, expected, exact=True)
+    result = idx + 2
+    expected = pd.RangeIndex(2, 12, 2)
+    tm.assert_index_equal(result, expected, exact=True)
+    result = idx - 2
+    expected = pd.RangeIndex(-2, 8, 2)
+    tm.assert_index_equal(result, expected, exact=True)
+    result = idx / 2
+    expected = pd.RangeIndex(0, 5, 1).astype('float64')
+    tm.assert_index_equal(result, expected, exact=True)
+    result = idx / 4
+    expected = pd.RangeIndex(0, 10, 2) / 4
+    tm.assert_index_equal(result, expected, exact=True)
+    result = idx // 1
+    expected = idx
+    tm.assert_index_equal(result, expected, exact=True)
+    result = idx * idx
+    expected = Index(idx.values * idx.values)
+    tm.assert_index_equal(result, expected, exact=True)
+    idx = pd.RangeIndex(0, 1000, 2)
+    result = idx ** 2
+    expected = idx._int64index ** 2
+    tm.assert_index_equal(Index(result.values), expected, exact=True)
+    cases_exact = [(pd.RangeIndex(0, 1000, 2), 2, pd.RangeIndex(0, 500, 1)), (pd.RangeIndex(-99, -201, -3), -3, pd.RangeIndex(33, 67, 1)), (pd.RangeIndex(0, 1000, 1), 2, pd.RangeIndex(0, 1000, 1)._int64index // 2), (pd.RangeIndex(0, 100, 1), 2.0, pd.RangeIndex(0, 100, 1)._int64index // 2.0), (pd.RangeIndex(0), 50, pd.RangeIndex(0)), (pd.RangeIndex(2, 4, 2), 3, pd.RangeIndex(0, 1, 1)), (pd.RangeIndex(-5, -10, -6), 4, pd.RangeIndex(-2, -1, 1)), (pd.RangeIndex(-100, -200, 3), 2, pd.RangeIndex(0))]
+    for idx, div, expected in cases_exact:
+        tm.assert_index_equal(idx // div, expected, exact=True)

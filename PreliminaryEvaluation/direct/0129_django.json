@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.11.29",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.shortcuts.render_to_response",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.shortcuts.render",
+      "api_type": "function",
+      "similarity": 0.7948717948717948
+    },
+    {
+      "fqn": "django.utils.log.log_response",
+      "api_type": "function",
+      "similarity": 0.5576923076923077
+    },
+    {
+      "fqn": "django.template.loader.render_to_string",
+      "api_type": "function",
+      "similarity": 0.5454545454545454
+    },
+    {
+      "fqn": "django.core.signing.loads",
+      "api_type": "function",
+      "similarity": 0.5227272727272727
+    },
+    {
+      "fqn": "django.core.signing.dumps",
+      "api_type": "function",
+      "similarity": 0.45454545454545453
+    },
+    {
+      "fqn": "django.contrib.auth.decorators.login_required",
+      "api_type": "function",
+      "similarity": 0.4489795918367347
+    },
+    {
+      "fqn": "django.contrib.gis.shortcuts.render_to_kmz",
+      "api_type": "function",
+      "similarity": 0.4444444444444444
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.prototypes.errcheck.check_const_string",
+      "api_type": "function",
+      "similarity": 0.4423076923076923
+    },
+    {
+      "fqn": "django.tasks.base.task",
+      "api_type": "function",
+      "similarity": 0.4423076923076923
+    },
+    {
+      "fqn": "django.contrib.gis.shortcuts.render_to_kml",
+      "api_type": "function",
+      "similarity": 0.4418604651162791
+    }
+  ]
+}

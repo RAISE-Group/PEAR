@@ -1,0 +1,36 @@
+def test_replace_mixed(self, float_string_frame):
+    mf = float_string_frame
+    mf.iloc[5:20, mf.columns.get_loc('foo')] = np.nan
+    mf.iloc[-10:, mf.columns.get_loc('A')] = np.nan
+    result = float_string_frame.replace(np.nan, -18)
+    expected = float_string_frame.fillna(value=-18)
+    tm.assert_frame_equal(result, expected)
+    tm.assert_frame_equal(result.replace(-18, np.nan), float_string_frame)
+    result = float_string_frame.replace(np.nan, -100000000.0)
+    expected = float_string_frame.fillna(value=-100000000.0)
+    tm.assert_frame_equal(result, expected)
+    tm.assert_frame_equal(result.replace(-100000000.0, np.nan), float_string_frame)
+    df = DataFrame({'A': Series([1.0, 2.0], dtype='float64'), 'B': Series([0, 1], dtype='int64')})
+    expected = DataFrame({'A': Series([1.0, 2.0], dtype='float64'), 'B': Series([0.5, 1], dtype='float64')})
+    result = df.replace(0, 0.5)
+    tm.assert_frame_equal(result, expected)
+    df.replace(0, 0.5, inplace=True)
+    tm.assert_frame_equal(df, expected)
+    df = DataFrame({'A': Series([1.0, 2.0], dtype='float64'), 'B': Series([0, 1], dtype='int64'), 'C': Series([1, 2], dtype='int64')})
+    expected = DataFrame({'A': Series([1.0, 2.0], dtype='float64'), 'B': Series([0.5, 1], dtype='float64'), 'C': Series([1, 2], dtype='int64')})
+    result = df.replace(0, 0.5)
+    tm.assert_frame_equal(result, expected)
+    df = DataFrame({'A': Series([1.0, 2.0], dtype='float64'), 'B': Series([0, 1], dtype='int64')})
+    expected = DataFrame({'A': Series([1, 'foo'], dtype='object'), 'B': Series([0, 1], dtype='int64')})
+    result = df.replace(2, 'foo')
+    tm.assert_frame_equal(result, expected)
+    expected = DataFrame({'A': Series(['foo', 'bar'], dtype='object'), 'B': Series([0, 'foo'], dtype='object')})
+    result = df.replace([1, 2], ['foo', 'bar'])
+    tm.assert_frame_equal(result, expected)
+    df = DataFrame({'A': Series([3, 0], dtype='int64'), 'B': Series([0, 3], dtype='int64')})
+    result = df.replace(3, df.mean().to_dict())
+    expected = df.copy().astype('float64')
+    m = df.mean()
+    expected.iloc[0, 0] = m[0]
+    expected.iloc[1, 1] = m[1]
+    tm.assert_frame_equal(result, expected)

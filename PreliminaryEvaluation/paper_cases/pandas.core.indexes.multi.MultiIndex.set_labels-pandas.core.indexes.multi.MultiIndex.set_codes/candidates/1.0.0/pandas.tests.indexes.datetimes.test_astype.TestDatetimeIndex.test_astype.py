@@ -1,0 +1,12 @@
+def test_astype(self):
+    idx = DatetimeIndex(['2016-05-16', 'NaT', NaT, np.NaN])
+    result = idx.astype(object)
+    expected = Index([Timestamp('2016-05-16')] + [NaT] * 3, dtype=object)
+    tm.assert_index_equal(result, expected)
+    result = idx.astype(int)
+    expected = Int64Index([1463356800000000000] + [-9223372036854775808] * 3, dtype=np.int64)
+    tm.assert_index_equal(result, expected)
+    rng = date_range('1/1/2000', periods=10)
+    result = rng.astype('i8')
+    tm.assert_index_equal(result, Index(rng.asi8))
+    tm.assert_numpy_array_equal(result.values, rng.asi8)

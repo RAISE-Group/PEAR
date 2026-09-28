@@ -1,0 +1,4 @@
+def test_basic(self):
+    df = pd.DataFrame({'string': list('abc'), 'int': list(range(1, 4)), 'uint': np.arange(3, 6).astype('u1'), 'float': np.arange(4.0, 7.0, dtype='float64'), 'float_with_null': [1.0, np.nan, 3], 'bool': [True, False, True], 'bool_with_null': [True, np.nan, False], 'cat': pd.Categorical(list('abc')), 'dt': pd.date_range('20130101', periods=3), 'dttz': pd.date_range('20130101', periods=3, tz='US/Eastern'), 'dt_with_null': [pd.Timestamp('20130101'), pd.NaT, pd.Timestamp('20130103')], 'dtns': pd.date_range('20130101', periods=3, freq='ns')})
+    assert df.dttz.dtype.tz.zone == 'US/Eastern'
+    self.check_round_trip(df)

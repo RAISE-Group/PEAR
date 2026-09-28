@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "1.1.5",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.io.date_converters.generic_parser",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.io.html._expand_elements",
+      "api_type": "function",
+      "similarity": 0.5142857142857142
+    },
+    {
+      "fqn": "pandas.tests.plotting.test_misc.test_bar_2_subplot_2_double_stacked",
+      "api_type": "function",
+      "similarity": 0.5074626865671642
+    },
+    {
+      "fqn": "pandas.tests.plotting.test_misc.test_bar_2_subplots_1_triple_stacked",
+      "api_type": "function",
+      "similarity": 0.5074626865671642
+    },
+    {
+      "fqn": "pandas.core.internals.managers._stack_arrays",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.tests.series.indexing.test_getitem.test_getitem_generator",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.tests.plotting.test_misc.test_bar_subplots_stacking_bool",
+      "api_type": "function",
+      "similarity": 0.49295774647887325
+    },
+    {
+      "fqn": "pandas.tests.generic.test_label_or_level_utils.assert_label_values",
+      "api_type": "function",
+      "similarity": 0.4927536231884058
+    },
+    {
+      "fqn": "pandas.tests.dtypes.cast.test_promote.test_maybe_promote_any_with_bool",
+      "api_type": "function",
+      "similarity": 0.4925373134328358
+    },
+    {
+      "fqn": "pandas.tests.plotting.test_misc.test_bar_1_subplot_1_double_stacked",
+      "api_type": "function",
+      "similarity": 0.4864864864864865
+    },
+    {
+      "fqn": "pandas.tests.tslibs.test_timezones.test_infer_tz_utc_localize",
+      "api_type": "function",
+      "similarity": 0.47692307692307695
+    }
+  ]
+}

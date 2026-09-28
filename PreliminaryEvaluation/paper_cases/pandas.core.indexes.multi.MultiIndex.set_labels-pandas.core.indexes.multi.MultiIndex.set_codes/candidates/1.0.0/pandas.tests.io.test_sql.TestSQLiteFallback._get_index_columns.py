@@ -1,0 +1,7 @@
+def _get_index_columns(self, tbl_name):
+    ixs = sql.read_sql_query("SELECT * FROM sqlite_master WHERE type = 'index' " + f"AND tbl_name = '{tbl_name}'", self.conn)
+    ix_cols = []
+    for ix_name in ixs.name:
+        ix_info = sql.read_sql_query(f'PRAGMA index_info({ix_name})', self.conn)
+        ix_cols.append(ix_info.name.tolist())
+    return ix_cols

@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.22.0",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.frame.DataFrame.from_items",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.generic.NDFrame._shift_with_freq",
+      "api_type": "method",
+      "similarity": 0.5767195767195767
+    },
+    {
+      "fqn": "pandas.core.arrays.string_.StringArray._from_sequence",
+      "api_type": "method",
+      "similarity": 0.5561497326203209
+    },
+    {
+      "fqn": "pandas.core.arrays.categorical.Categorical._from_inferred_categories",
+      "api_type": "method",
+      "similarity": 0.5358851674641149
+    },
+    {
+      "fqn": "pandas.io.pytables.GenericFixed._get_index_factory",
+      "api_type": "method",
+      "similarity": 0.5340314136125655
+    },
+    {
+      "fqn": "pandas.plotting._matplotlib.core.AreaPlot._plot",
+      "api_type": "method",
+      "similarity": 0.5336538461538461
+    },
+    {
+      "fqn": "pandas.core.arrays.base.ExtensionScalarOpsMixin._create_method",
+      "api_type": "method",
+      "similarity": 0.5329949238578681
+    },
+    {
+      "fqn": "pandas.core.series.Series._flex_method",
+      "api_type": "method",
+      "similarity": 0.5309278350515464
+    },
+    {
+      "fqn": "pandas.core.indexes.multi.MultiIndex._set_codes",
+      "api_type": "method",
+      "similarity": 0.5247524752475248
+    },
+    {
+      "fqn": "pandas.core.groupby.generic.SeriesGroupBy.aggregate",
+      "api_type": "method",
+      "similarity": 0.5245098039215687
+    },
+    {
+      "fqn": "pandas.core.indexes.range.RangeIndex.__getitem__",
+      "api_type": "method",
+      "similarity": 0.5243243243243243
+    }
+  ]
+}

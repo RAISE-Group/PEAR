@@ -1,0 +1,10 @@
+def test__bn_ok_dtype(self):
+    assert nanops._bn_ok_dtype(self.arr_float.dtype, 'test')
+    assert nanops._bn_ok_dtype(self.arr_complex.dtype, 'test')
+    assert nanops._bn_ok_dtype(self.arr_int.dtype, 'test')
+    assert nanops._bn_ok_dtype(self.arr_bool.dtype, 'test')
+    assert nanops._bn_ok_dtype(self.arr_str.dtype, 'test')
+    assert nanops._bn_ok_dtype(self.arr_utf.dtype, 'test')
+    assert not nanops._bn_ok_dtype(self.arr_date.dtype, 'test')
+    assert not nanops._bn_ok_dtype(self.arr_tdelta.dtype, 'test')
+    assert not nanops._bn_ok_dtype(self.arr_obj.dtype, 'test')

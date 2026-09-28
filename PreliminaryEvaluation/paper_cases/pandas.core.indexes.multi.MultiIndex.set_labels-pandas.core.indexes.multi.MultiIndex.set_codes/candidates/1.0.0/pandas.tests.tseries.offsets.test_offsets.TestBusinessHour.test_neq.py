@@ -1,0 +1,3 @@
+@pytest.mark.parametrize('offset1,offset2', [(BusinessHour(), BusinessHour(-1)), (BusinessHour(start='09:00'), BusinessHour(start='09:01')), (BusinessHour(start='09:00', end='17:00'), BusinessHour(start='17:00', end='09:01')), (BusinessHour(start=['13:00', '23:00'], end=['18:00', '07:00']), BusinessHour(start=['13:00', '23:00'], end=['17:00', '12:00']))])
+def test_neq(self, offset1, offset2):
+    assert offset1 != offset2

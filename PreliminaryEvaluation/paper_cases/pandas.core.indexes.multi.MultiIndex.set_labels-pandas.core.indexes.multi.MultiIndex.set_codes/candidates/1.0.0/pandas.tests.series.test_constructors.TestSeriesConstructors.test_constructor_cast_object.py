@@ -1,0 +1,11 @@
+@pytest.mark.parametrize('index', [date_range('1/1/2000', periods=10), timedelta_range('1 day', periods=10), period_range('2000-Q1', periods=10, freq='Q')], ids=lambda x: type(x).__name__)
+def test_constructor_cast_object(self, index):
+    s = Series(index, dtype=object)
+    exp = Series(index).astype(object)
+    tm.assert_series_equal(s, exp)
+    s = Series(pd.Index(index, dtype=object), dtype=object)
+    exp = Series(index).astype(object)
+    tm.assert_series_equal(s, exp)
+    s = Series(index.astype(object), dtype=object)
+    exp = Series(index).astype(object)
+    tm.assert_series_equal(s, exp)

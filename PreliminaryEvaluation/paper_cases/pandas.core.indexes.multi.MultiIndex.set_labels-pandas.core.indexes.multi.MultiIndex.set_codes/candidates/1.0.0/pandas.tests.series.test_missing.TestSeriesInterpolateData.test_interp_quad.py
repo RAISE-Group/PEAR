@@ -1,0 +1,6 @@
+@td.skip_if_no_scipy
+def test_interp_quad(self):
+    sq = Series([1, 4, np.nan, 16], index=[1, 2, 3, 4])
+    result = sq.interpolate(method='quadratic')
+    expected = Series([1.0, 4.0, 9.0, 16.0], index=[1, 2, 3, 4])
+    tm.assert_series_equal(result, expected)

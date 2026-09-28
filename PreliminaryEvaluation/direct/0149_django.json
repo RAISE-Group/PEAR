@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "4.0.10",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.mysql.operations.DatabaseOperations._convert_field_to_tz",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.backends.mysql.operations.DatabaseOperations._convert_sql_to_tz",
+      "api_type": "method",
+      "similarity": 0.7021276595744681
+    },
+    {
+      "fqn": "django.db.backends.postgresql.operations.DatabaseOperations._convert_sql_to_tz",
+      "api_type": "method",
+      "similarity": 0.6170212765957447
+    },
+    {
+      "fqn": "django.forms.fields.GenericIPAddressField.to_python",
+      "api_type": "method",
+      "similarity": 0.49019607843137253
+    },
+    {
+      "fqn": "django.contrib.gis.serializers.geojson.Serializer.handle_field",
+      "api_type": "method",
+      "similarity": 0.48936170212765956
+    },
+    {
+      "fqn": "django.db.backends.oracle.operations.DatabaseOperations._convert_sql_to_tz",
+      "api_type": "method",
+      "similarity": 0.4861111111111111
+    },
+    {
+      "fqn": "django.db.backends.oracle.validation.DatabaseValidation.check_field_type",
+      "api_type": "method",
+      "similarity": 0.48214285714285715
+    },
+    {
+      "fqn": "django.contrib.auth.forms.UsernameField.to_python",
+      "api_type": "method",
+      "similarity": 0.4716981132075472
+    },
+    {
+      "fqn": "django.db.models.fields.generated.GeneratedField.get_col",
+      "api_type": "method",
+      "similarity": 0.47058823529411764
+    },
+    {
+      "fqn": "django.contrib.gis.forms.widgets.OpenLayersWidget.deserialize",
+      "api_type": "method",
+      "similarity": 0.46938775510204084
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.operations.DatabaseOperations._convert_tznames_to_sql",
+      "api_type": "method",
+      "similarity": 0.4666666666666667
+    }
+  ]
+}

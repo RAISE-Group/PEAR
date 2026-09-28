@@ -1,0 +1,6 @@
+def test_base_constructor_with_period_dtype(self):
+    dtype = PeriodDtype('D')
+    values = ['2011-01-01', '2012-03-04', '2014-05-01']
+    result = pd.Index(values, dtype=dtype)
+    expected = pd.PeriodIndex(values, dtype=dtype)
+    tm.assert_index_equal(result, expected)

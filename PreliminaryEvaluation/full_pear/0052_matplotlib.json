@@ -1,0 +1,402 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "2.0.2",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backend_bases.GraphicsContextBase.set_linestyle",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.artist.Artist.set_gid",
+      "api_type": "method",
+      "similarity": 0.6470588235294118,
+      "evolution_path": [
+        "matplotlib.artist.Artist.set_gid"
+      ],
+      "local_scores": [
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.set_picker",
+      "api_type": "method",
+      "similarity": 0.6470588235294118,
+      "evolution_path": [
+        "matplotlib.artist.Artist.set_picker"
+      ],
+      "local_scores": [
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.set_url",
+      "api_type": "method",
+      "similarity": 0.6470588235294118,
+      "evolution_path": [
+        "matplotlib.artist.Artist.set_url"
+      ],
+      "local_scores": [
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "matplotlib.axes._base._AxesBase.set_navigate",
+      "api_type": "method",
+      "similarity": 0.6470588235294118,
+      "evolution_path": [
+        "matplotlib.axes._base._AxesBase.set_navigate"
+      ],
+      "local_scores": [
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "matplotlib.axis.Axis.set_pickradius",
+      "api_type": "method",
+      "similarity": 0.6470588235294118,
+      "evolution_path": [
+        "matplotlib.axis.Axis.set_pickradius"
+      ],
+      "local_scores": [
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_gid",
+      "api_type": "method",
+      "similarity": 0.6470588235294118,
+      "evolution_path": [
+        "matplotlib.backend_bases.GraphicsContextBase.set_gid"
+      ],
+      "local_scores": [
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_hatch",
+      "api_type": "method",
+      "similarity": 0.6470588235294118,
+      "evolution_path": [
+        "matplotlib.backend_bases.GraphicsContextBase.set_hatch"
+      ],
+      "local_scores": [
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_snap",
+      "api_type": "method",
+      "similarity": 0.6470588235294118,
+      "evolution_path": [
+        "matplotlib.backend_bases.GraphicsContextBase.set_snap"
+      ],
+      "local_scores": [
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_url",
+      "api_type": "method",
+      "similarity": 0.41868512110726647,
+      "evolution_path": [
+        "matplotlib.artist.Artist.set_contains",
+        "matplotlib.backend_bases.GraphicsContextBase.set_url"
+      ],
+      "local_scores": [
+        0.6470588235294118,
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "matplotlib.dates.AutoDateFormatter._set_locator",
+      "api_type": "method",
+      "similarity": 0.41868512110726647,
+      "evolution_path": [
+        "matplotlib.axes._subplots.SubplotBase.set_subplotspec",
+        "matplotlib.dates.AutoDateFormatter._set_locator"
+      ],
+      "local_scores": [
+        0.6470588235294118,
+        0.6470588235294118
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_linestyle",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "2.2.5",
+      "vpost": "3.0.0",
+      "resolved_fqn": "matplotlib.backend_bases.GraphicsContextBase.set_linestyle",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.artist.Artist.set_contains",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_gid",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_picker",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_url",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.axes._base._AxesBase.set_navigate",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.axes._subplots.SubplotBase.set_subplotspec",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.axis.Axis.set_pickradius",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_gid",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_hatch",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_snap",
+          "similarity": 0.647059
+        }
+      ],
+      "entered_final": [
+        "matplotlib.artist.Artist.set_gid",
+        "matplotlib.artist.Artist.set_picker",
+        "matplotlib.artist.Artist.set_url",
+        "matplotlib.axes._base._AxesBase.set_navigate",
+        "matplotlib.axis.Axis.set_pickradius",
+        "matplotlib.backend_bases.GraphicsContextBase.set_gid",
+        "matplotlib.backend_bases.GraphicsContextBase.set_hatch",
+        "matplotlib.backend_bases.GraphicsContextBase.set_snap"
+      ],
+      "entered_iter": [
+        "matplotlib.artist.Artist.set_contains",
+        "matplotlib.axes._subplots.SubplotBase.set_subplotspec"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.set_contains",
+      "path_score": 0.647059,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.artist.Artist.set_contains",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.artist.Artist.set_gid",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_picker",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_url",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.axes._base._AxesBase.set_navigate",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.axis.Axis.set_pickradius",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_gid",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_hatch",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_snap",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_url",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.cm.ScalarMappable.set_norm",
+          "similarity": 0.647059
+        }
+      ],
+      "entered_final": [
+        "matplotlib.artist.Artist.set_gid",
+        "matplotlib.artist.Artist.set_picker",
+        "matplotlib.artist.Artist.set_url",
+        "matplotlib.axes._base._AxesBase.set_navigate",
+        "matplotlib.axis.Axis.set_pickradius",
+        "matplotlib.backend_bases.GraphicsContextBase.set_gid",
+        "matplotlib.backend_bases.GraphicsContextBase.set_hatch",
+        "matplotlib.backend_bases.GraphicsContextBase.set_snap",
+        "matplotlib.backend_bases.GraphicsContextBase.set_url"
+      ],
+      "entered_iter": [
+        "matplotlib.cm.ScalarMappable.set_norm"
+      ],
+      "pruned": [],
+      "prune_bound": 0.418685,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.axes._subplots.SubplotBase.set_subplotspec",
+      "path_score": 0.647059,
+      "boundary": "DEPRECATED",
+      "vpre": "3.6.3",
+      "vpost": "3.7.0",
+      "resolved_fqn": "matplotlib.axes._subplots.SubplotBase.set_subplotspec",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.artist.Artist.set_gid",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_picker",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_url",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.axes._base._AxesBase.set_navigate",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_gid",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_hatch",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_snap",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_url",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.cm.ScalarMappable.set_norm",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.dates.AutoDateFormatter._set_locator",
+          "similarity": 0.647059
+        }
+      ],
+      "entered_final": [
+        "matplotlib.artist.Artist.set_gid",
+        "matplotlib.artist.Artist.set_picker",
+        "matplotlib.artist.Artist.set_url",
+        "matplotlib.axes._base._AxesBase.set_navigate",
+        "matplotlib.backend_bases.GraphicsContextBase.set_gid",
+        "matplotlib.backend_bases.GraphicsContextBase.set_hatch",
+        "matplotlib.backend_bases.GraphicsContextBase.set_snap",
+        "matplotlib.backend_bases.GraphicsContextBase.set_url",
+        "matplotlib.dates.AutoDateFormatter._set_locator"
+      ],
+      "entered_iter": [
+        "matplotlib.cm.ScalarMappable.set_norm"
+      ],
+      "pruned": [],
+      "prune_bound": 0.418685,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.cm.ScalarMappable.set_norm",
+      "path_score": 0.418685,
+      "boundary": "DEPRECATED",
+      "vpre": "3.9.4",
+      "vpost": "3.10.0",
+      "resolved_fqn": "matplotlib.cm.ScalarMappable.set_norm",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.colorizer._ColorizerInterface.set_norm",
+          "similarity": 1.0
+        },
+        {
+          "fqn": "matplotlib.colorizer._ColorizerInterface.norm",
+          "similarity": 0.6875
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_gid",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_picker",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_url",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.axes._base._AxesBase.set_navigate",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_gid",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_hatch",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_snap",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_url",
+          "similarity": 0.647059
+        }
+      ],
+      "entered_final": [
+        "matplotlib.colorizer._ColorizerInterface.set_norm",
+        "matplotlib.colorizer._ColorizerInterface.norm",
+        "matplotlib.artist.Artist.set_gid",
+        "matplotlib.artist.Artist.set_picker",
+        "matplotlib.artist.Artist.set_url",
+        "matplotlib.axes._base._AxesBase.set_navigate",
+        "matplotlib.backend_bases.GraphicsContextBase.set_gid",
+        "matplotlib.backend_bases.GraphicsContextBase.set_hatch",
+        "matplotlib.backend_bases.GraphicsContextBase.set_snap",
+        "matplotlib.backend_bases.GraphicsContextBase.set_url"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.418685,
+      "dead_reason": null
+    }
+  ]
+}

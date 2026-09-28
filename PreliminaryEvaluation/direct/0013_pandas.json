@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.20.0",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.series.Series.sortlevel",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.window.rolling.RollingAndExpandingMixin.nunique",
+      "api_type": "method",
+      "similarity": 0.4594594594594595
+    },
+    {
+      "fqn": "pandas.core.strings.accessor.StringMethods.slice",
+      "api_type": "method",
+      "similarity": 0.4473684210526316
+    },
+    {
+      "fqn": "pandas.tests.test_nanops.TestnanopsDataFrame.test_nanstd",
+      "api_type": "method",
+      "similarity": 0.4444444444444444
+    },
+    {
+      "fqn": "pandas.tests.test_nanops.TestnanopsDataFrame.test_nanvar",
+      "api_type": "method",
+      "similarity": 0.4444444444444444
+    },
+    {
+      "fqn": "pandas.core.indexes.multi.MultiIndex.__array__",
+      "api_type": "method",
+      "similarity": 0.4418604651162791
+    },
+    {
+      "fqn": "pandas.core.indexes.range.RangeIndex.argmax",
+      "api_type": "method",
+      "similarity": 0.43902439024390244
+    },
+    {
+      "fqn": "pandas.core.indexes.range.RangeIndex.argmin",
+      "api_type": "method",
+      "similarity": 0.43902439024390244
+    },
+    {
+      "fqn": "pandas.core.strings.object_array.ObjectStringArrayMixin._str_findall",
+      "api_type": "method",
+      "similarity": 0.43902439024390244
+    },
+    {
+      "fqn": "pandas.core.indexes.datetimes.DatetimeIndex.strftime",
+      "api_type": "method",
+      "similarity": 0.43243243243243246
+    },
+    {
+      "fqn": "pandas.core.window.rolling.Window.mean",
+      "api_type": "method",
+      "similarity": 0.43243243243243246
+    }
+  ]
+}

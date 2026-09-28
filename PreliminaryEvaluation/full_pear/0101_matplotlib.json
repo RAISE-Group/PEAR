@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.6.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.backends.backend_svg.RendererSVG._draw_gouraud_triangle",
+      "api_type": "method",
+      "similarity": 0.8173076923076923,
+      "evolution_path": [
+        "matplotlib.backends.backend_svg.RendererSVG._draw_gouraud_triangle"
+      ],
+      "local_scores": [
+        0.8173076923076923
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.RendererSVG.draw_image",
+      "api_type": "method",
+      "similarity": 0.5232323232323233,
+      "evolution_path": [
+        "matplotlib.backends.backend_svg.RendererSVG.draw_image"
+      ],
+      "local_scores": [
+        0.5232323232323233
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.RendererSVG._draw_text_as_path",
+      "api_type": "method",
+      "similarity": 0.5211864406779662,
+      "evolution_path": [
+        "matplotlib.backends.backend_svg.RendererSVG._draw_text_as_path"
+      ],
+      "local_scores": [
+        0.5211864406779662
+      ]
+    },
+    {
+      "fqn": "matplotlib.axes._axes.Axes.violin",
+      "api_type": "method",
+      "similarity": 0.49393414211438474,
+      "evolution_path": [
+        "matplotlib.axes._axes.Axes.violin"
+      ],
+      "local_scores": [
+        0.49393414211438474
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.RendererSVG._write_metadata",
+      "api_type": "method",
+      "similarity": 0.4925124792013311,
+      "evolution_path": [
+        "matplotlib.backends.backend_svg.RendererSVG._write_metadata"
+      ],
+      "local_scores": [
+        0.4925124792013311
+      ]
+    },
+    {
+      "fqn": "matplotlib._type1font.Type1Font._parse",
+      "api_type": "method",
+      "similarity": 0.4879518072289157,
+      "evolution_path": [
+        "matplotlib._type1font.Type1Font._parse"
+      ],
+      "local_scores": [
+        0.4879518072289157
+      ]
+    },
+    {
+      "fqn": "matplotlib.quiver.Barbs._make_barbs",
+      "api_type": "method",
+      "similarity": 0.48697394789579157,
+      "evolution_path": [
+        "matplotlib.quiver.Barbs._make_barbs"
+      ],
+      "local_scores": [
+        0.48697394789579157
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.RendererSVG.draw_path_collection",
+      "api_type": "method",
+      "similarity": 0.4816414686825054,
+      "evolution_path": [
+        "matplotlib.backends.backend_svg.RendererSVG.draw_path_collection"
+      ],
+      "local_scores": [
+        0.4816414686825054
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.FigureCanvasBase.print_figure",
+      "api_type": "method",
+      "similarity": 0.4787430683918669,
+      "evolution_path": [
+        "matplotlib.backend_bases.FigureCanvasBase.print_figure"
+      ],
+      "local_scores": [
+        0.4787430683918669
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_ps.FigureCanvasPS._print_figure_tex",
+      "api_type": "method",
+      "similarity": 0.4750542299349241,
+      "evolution_path": [
+        "matplotlib.backends.backend_ps.FigureCanvasPS._print_figure_tex"
+      ],
+      "local_scores": [
+        0.4750542299349241
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.8.4",
+      "vpost": "3.9.0",
+      "resolved_fqn": "matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.backends.backend_svg.RendererSVG._draw_gouraud_triangle",
+          "similarity": 0.817308
+        },
+        {
+          "fqn": "matplotlib.backends.backend_svg.RendererSVG.draw_image",
+          "similarity": 0.523232
+        },
+        {
+          "fqn": "matplotlib.backends.backend_svg.RendererSVG._draw_text_as_path",
+          "similarity": 0.521186
+        },
+        {
+          "fqn": "matplotlib.axes._axes.Axes.violin",
+          "similarity": 0.493934
+        },
+        {
+          "fqn": "matplotlib.backends.backend_svg.RendererSVG._write_metadata",
+          "similarity": 0.492512
+        },
+        {
+          "fqn": "matplotlib._type1font.Type1Font._parse",
+          "similarity": 0.487952
+        },
+        {
+          "fqn": "matplotlib.quiver.Barbs._make_barbs",
+          "similarity": 0.486974
+        },
+        {
+          "fqn": "matplotlib.backends.backend_svg.RendererSVG.draw_path_collection",
+          "similarity": 0.481641
+        },
+        {
+          "fqn": "matplotlib.backend_bases.FigureCanvasBase.print_figure",
+          "similarity": 0.478743
+        },
+        {
+          "fqn": "matplotlib.backends.backend_ps.FigureCanvasPS._print_figure_tex",
+          "similarity": 0.475054
+        }
+      ],
+      "entered_final": [
+        "matplotlib.backends.backend_svg.RendererSVG._draw_gouraud_triangle",
+        "matplotlib.backends.backend_svg.RendererSVG.draw_image",
+        "matplotlib.backends.backend_svg.RendererSVG._draw_text_as_path",
+        "matplotlib.axes._axes.Axes.violin",
+        "matplotlib.backends.backend_svg.RendererSVG._write_metadata",
+        "matplotlib._type1font.Type1Font._parse",
+        "matplotlib.quiver.Barbs._make_barbs",
+        "matplotlib.backends.backend_svg.RendererSVG.draw_path_collection",
+        "matplotlib.backend_bases.FigureCanvasBase.print_figure",
+        "matplotlib.backends.backend_ps.FigureCanvasPS._print_figure_tex"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.475054,
+      "dead_reason": null
+    }
+  ]
+}

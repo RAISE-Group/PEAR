@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "4.0.10",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_key_columns",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.contrib.auth.forms.ReadOnlyPasswordHashWidget.get_context",
+      "api_type": "method",
+      "similarity": 0.5648854961832062,
+      "evolution_path": [
+        "django.contrib.auth.forms.ReadOnlyPasswordHashWidget.get_context"
+      ],
+      "local_scores": [
+        0.5648854961832062
+      ]
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_column_collations",
+      "api_type": "method",
+      "similarity": 0.5602836879432624,
+      "evolution_path": [
+        "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_column_collations"
+      ],
+      "local_scores": [
+        0.5602836879432624
+      ]
+    },
+    {
+      "fqn": "django.contrib.admindocs.views.TemplateDetailView.get_context_data",
+      "api_type": "method",
+      "similarity": 0.5303030303030303,
+      "evolution_path": [
+        "django.contrib.admindocs.views.TemplateDetailView.get_context_data"
+      ],
+      "local_scores": [
+        0.5303030303030303
+      ]
+    },
+    {
+      "fqn": "django.db.backends.oracle.operations.DatabaseOperations.bulk_insert_sql",
+      "api_type": "method",
+      "similarity": 0.5298507462686567,
+      "evolution_path": [
+        "django.db.backends.oracle.operations.DatabaseOperations.bulk_insert_sql"
+      ],
+      "local_scores": [
+        0.5298507462686567
+      ]
+    },
+    {
+      "fqn": "django.core.cache.backends.db.DatabaseCache.has_key",
+      "api_type": "method",
+      "similarity": 0.5267175572519084,
+      "evolution_path": [
+        "django.core.cache.backends.db.DatabaseCache.has_key"
+      ],
+      "local_scores": [
+        0.5267175572519084
+      ]
+    },
+    {
+      "fqn": "django.core.management.__init__.ManagementUtility.fetch_command",
+      "api_type": "method",
+      "similarity": 0.5217391304347826,
+      "evolution_path": [
+        "django.core.management.__init__.ManagementUtility.fetch_command"
+      ],
+      "local_scores": [
+        0.5217391304347826
+      ]
+    },
+    {
+      "fqn": "django.forms.forms.BaseForm.get_context",
+      "api_type": "method",
+      "similarity": 0.5172413793103449,
+      "evolution_path": [
+        "django.forms.forms.BaseForm.get_context"
+      ],
+      "local_scores": [
+        0.5172413793103449
+      ]
+    },
+    {
+      "fqn": "django.core.cache.backends.db.DatabaseCache._cull",
+      "api_type": "method",
+      "similarity": 0.5138888888888888,
+      "evolution_path": [
+        "django.core.cache.backends.db.DatabaseCache._cull"
+      ],
+      "local_scores": [
+        0.5138888888888888
+      ]
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_table_description",
+      "api_type": "method",
+      "similarity": 0.5131578947368421,
+      "evolution_path": [
+        "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_table_description"
+      ],
+      "local_scores": [
+        0.5131578947368421
+      ]
+    },
+    {
+      "fqn": "django.utils.autoreload.WatchmanReloader._watch_glob",
+      "api_type": "method",
+      "similarity": 0.512,
+      "evolution_path": [
+        "django.utils.autoreload.WatchmanReloader._watch_glob"
+      ],
+      "local_scores": [
+        0.512
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_key_columns",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "4.0.10",
+      "vpost": "4.1",
+      "resolved_fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_key_columns",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.contrib.auth.forms.ReadOnlyPasswordHashWidget.get_context",
+          "similarity": 0.564885
+        },
+        {
+          "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_column_collations",
+          "similarity": 0.560284
+        },
+        {
+          "fqn": "django.contrib.admindocs.views.TemplateDetailView.get_context_data",
+          "similarity": 0.530303
+        },
+        {
+          "fqn": "django.db.backends.oracle.operations.DatabaseOperations.bulk_insert_sql",
+          "similarity": 0.529851
+        },
+        {
+          "fqn": "django.core.cache.backends.db.DatabaseCache.has_key",
+          "similarity": 0.526718
+        },
+        {
+          "fqn": "django.core.management.__init__.ManagementUtility.fetch_command",
+          "similarity": 0.521739
+        },
+        {
+          "fqn": "django.forms.forms.BaseForm.get_context",
+          "similarity": 0.517241
+        },
+        {
+          "fqn": "django.core.cache.backends.db.DatabaseCache._cull",
+          "similarity": 0.513889
+        },
+        {
+          "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_table_description",
+          "similarity": 0.513158
+        },
+        {
+          "fqn": "django.utils.autoreload.WatchmanReloader._watch_glob",
+          "similarity": 0.512
+        }
+      ],
+      "entered_final": [
+        "django.contrib.auth.forms.ReadOnlyPasswordHashWidget.get_context",
+        "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_column_collations",
+        "django.contrib.admindocs.views.TemplateDetailView.get_context_data",
+        "django.db.backends.oracle.operations.DatabaseOperations.bulk_insert_sql",
+        "django.core.cache.backends.db.DatabaseCache.has_key",
+        "django.core.management.__init__.ManagementUtility.fetch_command",
+        "django.forms.forms.BaseForm.get_context",
+        "django.core.cache.backends.db.DatabaseCache._cull",
+        "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_table_description",
+        "django.utils.autoreload.WatchmanReloader._watch_glob"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.512,
+      "dead_reason": null
+    }
+  ]
+}

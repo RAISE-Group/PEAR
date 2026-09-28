@@ -1,0 +1,13 @@
+def test_constructor_categorical(self):
+    cat = pd.Categorical([0, 1, 2, 0, 1, 2], ['a', 'b', 'c'], fastpath=True)
+    res = Series(cat)
+    tm.assert_categorical_equal(res.values, cat)
+    result = Series(pd.Categorical([1, 2, 3]), dtype='int64')
+    expected = pd.Series([1, 2, 3], dtype='int64')
+    tm.assert_series_equal(result, expected)
+    cat = Series(pd.Categorical([1, 2, 3]), dtype='category')
+    assert is_categorical_dtype(cat)
+    assert is_categorical_dtype(cat.dtype)
+    s = Series([1, 2, 3], dtype='category')
+    assert is_categorical_dtype(s)
+    assert is_categorical_dtype(s.dtype)

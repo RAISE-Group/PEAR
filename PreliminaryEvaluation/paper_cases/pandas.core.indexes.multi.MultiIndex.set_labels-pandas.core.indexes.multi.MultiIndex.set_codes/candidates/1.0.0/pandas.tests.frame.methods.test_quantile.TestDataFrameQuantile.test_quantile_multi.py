@@ -1,0 +1,10 @@
+def test_quantile_multi(self):
+    df = DataFrame([[1, 1, 1], [2, 2, 2], [3, 3, 3]], columns=['a', 'b', 'c'])
+    result = df.quantile([0.25, 0.5])
+    expected = DataFrame([[1.5, 1.5, 1.5], [2.0, 2.0, 2.0]], index=[0.25, 0.5], columns=['a', 'b', 'c'])
+    tm.assert_frame_equal(result, expected)
+    result = df.quantile([0.25, 0.5], axis=1)
+    expected = DataFrame([[1.5, 1.5, 1.5], [2.0, 2.0, 2.0]], index=[0.25, 0.5], columns=[0, 1, 2])
+    result = DataFrame({'x': [], 'y': []}).quantile([0.1, 0.9], axis=0)
+    expected = DataFrame({'x': [np.nan, np.nan], 'y': [np.nan, np.nan]}, index=[0.1, 0.9])
+    tm.assert_frame_equal(result, expected)

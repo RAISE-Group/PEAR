@@ -1,0 +1,5 @@
+@pytest.mark.parametrize('method, tolerance, indexer, expected', [('pad', None, [0, 5, 9], [0, 5, 9]), ('backfill', None, [0, 5, 9], [0, 5, 9]), ('nearest', None, [0, 5, 9], [0, 5, 9]), ('pad', 0, [0, 5, 9], [0, 5, 9]), ('backfill', 0, [0, 5, 9], [0, 5, 9]), ('nearest', 0, [0, 5, 9], [0, 5, 9]), ('pad', None, [0.2, 1.8, 8.5], [0, 1, 8]), ('backfill', None, [0.2, 1.8, 8.5], [1, 2, 9]), ('nearest', None, [0.2, 1.8, 8.5], [0, 2, 9]), ('pad', 1, [0.2, 1.8, 8.5], [0, 1, 8]), ('backfill', 1, [0.2, 1.8, 8.5], [1, 2, 9]), ('nearest', 1, [0.2, 1.8, 8.5], [0, 2, 9]), ('pad', 0.2, [0.2, 1.8, 8.5], [0, -1, -1]), ('backfill', 0.2, [0.2, 1.8, 8.5], [-1, 2, -1]), ('nearest', 0.2, [0.2, 1.8, 8.5], [0, 2, -1])])
+def test_get_indexer_nearest(self, method, tolerance, indexer, expected):
+    index = Index(np.arange(10))
+    actual = index.get_indexer(indexer, method=method, tolerance=tolerance)
+    tm.assert_numpy_array_equal(actual, np.array(expected, dtype=np.intp))

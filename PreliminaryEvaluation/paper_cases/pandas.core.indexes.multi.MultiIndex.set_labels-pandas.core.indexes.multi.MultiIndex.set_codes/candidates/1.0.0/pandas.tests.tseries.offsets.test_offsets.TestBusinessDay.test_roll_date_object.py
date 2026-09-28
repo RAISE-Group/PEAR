@@ -1,0 +1,12 @@
+def test_roll_date_object(self):
+    offset = BDay()
+    dt = date(2012, 9, 15)
+    result = offset.rollback(dt)
+    assert result == datetime(2012, 9, 14)
+    result = offset.rollforward(dt)
+    assert result == datetime(2012, 9, 17)
+    offset = offsets.Day()
+    result = offset.rollback(dt)
+    assert result == datetime(2012, 9, 15)
+    result = offset.rollforward(dt)
+    assert result == datetime(2012, 9, 15)

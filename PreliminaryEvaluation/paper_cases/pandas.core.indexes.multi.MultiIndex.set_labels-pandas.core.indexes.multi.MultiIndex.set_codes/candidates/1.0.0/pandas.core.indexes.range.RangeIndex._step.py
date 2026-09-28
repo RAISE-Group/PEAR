@@ -1,0 +1,10 @@
+@property
+def _step(self):
+    """
+        The value of the `step` parameter (``1`` if this was not supplied).
+
+         .. deprecated:: 0.25.0
+            Use ``step`` instead.
+        """
+    warnings.warn(self._deprecation_message.format('_step', 'step'), FutureWarning, stacklevel=2)
+    return self.step

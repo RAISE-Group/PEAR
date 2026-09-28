@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.12.0",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.panel.Panel.keys",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.generic.NDFrame.keys",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.core.series.Series.keys",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.core.indexes.frozen.FrozenList.__reduce__",
+      "api_type": "method",
+      "similarity": 0.4782608695652174
+    },
+    {
+      "fqn": "pandas.tests.extension.json.array.JSONArray.copy",
+      "api_type": "method",
+      "similarity": 0.47619047619047616
+    },
+    {
+      "fqn": "pandas.tests.extension.list.array.ListArray.copy",
+      "api_type": "method",
+      "similarity": 0.47619047619047616
+    },
+    {
+      "fqn": "pandas.core.arrays.arrow.extension_types.ArrowPeriodType.__hash__",
+      "api_type": "method",
+      "similarity": 0.4583333333333333
+    },
+    {
+      "fqn": "pandas.core.dtypes.base.ExtensionDtype.__hash__",
+      "api_type": "method",
+      "similarity": 0.4444444444444444
+    },
+    {
+      "fqn": "pandas.tests.frame.test_arithmetic.DummyElement.view",
+      "api_type": "method",
+      "similarity": 0.44
+    },
+    {
+      "fqn": "pandas.core.dtypes.dtypes.ArrowDtype.__hash__",
+      "api_type": "method",
+      "similarity": 0.43478260869565216
+    },
+    {
+      "fqn": "pandas.core.dtypes.dtypes.DatetimeTZDtype.__hash__",
+      "api_type": "method",
+      "similarity": 0.43478260869565216
+    }
+  ]
+}

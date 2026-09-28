@@ -1,0 +1,10 @@
+def test_repr_to_string(self):
+    repr(self.frame)
+    repr(self.ymd)
+    repr(self.frame.T)
+    repr(self.ymd.T)
+    buf = StringIO()
+    self.frame.to_string(buf=buf)
+    self.ymd.to_string(buf=buf)
+    self.frame.T.to_string(buf=buf)
+    self.ymd.T.to_string(buf=buf)

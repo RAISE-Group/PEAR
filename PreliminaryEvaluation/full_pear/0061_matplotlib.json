@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.0.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.scale.LogTransformBase",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.scale.LogitTransform",
+      "api_type": "class",
+      "similarity": 0.7272727272727273,
+      "evolution_path": [
+        "matplotlib.scale.LogitTransform"
+      ],
+      "local_scores": [
+        0.7272727272727273
+      ]
+    },
+    {
+      "fqn": "matplotlib.scale.LogTransform",
+      "api_type": "class",
+      "similarity": 0.6470588235294118,
+      "evolution_path": [
+        "matplotlib.scale.LogTransform"
+      ],
+      "local_scores": [
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "matplotlib.projections.geo._GeoTransform",
+      "api_type": "class",
+      "similarity": 0.584,
+      "evolution_path": [
+        "matplotlib.projections.geo._GeoTransform"
+      ],
+      "local_scores": [
+        0.584
+      ]
+    },
+    {
+      "fqn": "matplotlib.scale.InvertedLogTransform",
+      "api_type": "class",
+      "similarity": 0.5658914728682171,
+      "evolution_path": [
+        "matplotlib.scale.InvertedLogTransform"
+      ],
+      "local_scores": [
+        0.5658914728682171
+      ]
+    },
+    {
+      "fqn": "matplotlib.scale.SymmetricalLogTransform",
+      "api_type": "class",
+      "similarity": 0.518918918918919,
+      "evolution_path": [
+        "matplotlib.scale.SymmetricalLogTransform"
+      ],
+      "local_scores": [
+        0.518918918918919
+      ]
+    },
+    {
+      "fqn": "matplotlib.scale.LogisticTransform",
+      "api_type": "class",
+      "similarity": 0.518796992481203,
+      "evolution_path": [
+        "matplotlib.scale.LogisticTransform"
+      ],
+      "local_scores": [
+        0.518796992481203
+      ]
+    },
+    {
+      "fqn": "matplotlib.scale.FuncTransform",
+      "api_type": "class",
+      "similarity": 0.5112781954887218,
+      "evolution_path": [
+        "matplotlib.scale.FuncTransform"
+      ],
+      "local_scores": [
+        0.5112781954887218
+      ]
+    },
+    {
+      "fqn": "matplotlib.scale.InvertedSymmetricalLogTransform",
+      "api_type": "class",
+      "similarity": 0.5,
+      "evolution_path": [
+        "matplotlib.scale.InvertedSymmetricalLogTransform"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "matplotlib.tests.test_transforms.NonAffineForTest",
+      "api_type": "class",
+      "similarity": 0.4744525547445255,
+      "evolution_path": [
+        "matplotlib.tests.test_transforms.NonAffineForTest"
+      ],
+      "local_scores": [
+        0.4744525547445255
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.MouseEvent",
+      "api_type": "class",
+      "similarity": 0.4513888888888889,
+      "evolution_path": [
+        "matplotlib.backend_bases.MouseEvent"
+      ],
+      "local_scores": [
+        0.4513888888888889
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.scale.LogTransformBase",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.2.2",
+      "vpost": "3.3.0",
+      "resolved_fqn": "matplotlib.scale.LogTransformBase",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.scale.LogitTransform",
+          "similarity": 0.727273
+        },
+        {
+          "fqn": "matplotlib.scale.LogTransform",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.projections.geo._GeoTransform",
+          "similarity": 0.584
+        },
+        {
+          "fqn": "matplotlib.scale.InvertedLogTransform",
+          "similarity": 0.565891
+        },
+        {
+          "fqn": "matplotlib.scale.SymmetricalLogTransform",
+          "similarity": 0.518919
+        },
+        {
+          "fqn": "matplotlib.scale.LogisticTransform",
+          "similarity": 0.518797
+        },
+        {
+          "fqn": "matplotlib.scale.FuncTransform",
+          "similarity": 0.511278
+        },
+        {
+          "fqn": "matplotlib.scale.InvertedSymmetricalLogTransform",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.tests.test_transforms.NonAffineForTest",
+          "similarity": 0.474453
+        },
+        {
+          "fqn": "matplotlib.backend_bases.MouseEvent",
+          "similarity": 0.451389
+        }
+      ],
+      "entered_final": [
+        "matplotlib.scale.LogitTransform",
+        "matplotlib.scale.LogTransform",
+        "matplotlib.projections.geo._GeoTransform",
+        "matplotlib.scale.InvertedLogTransform",
+        "matplotlib.scale.SymmetricalLogTransform",
+        "matplotlib.scale.LogisticTransform",
+        "matplotlib.scale.FuncTransform",
+        "matplotlib.scale.InvertedSymmetricalLogTransform",
+        "matplotlib.tests.test_transforms.NonAffineForTest",
+        "matplotlib.backend_bases.MouseEvent"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.451389,
+      "dead_reason": null
+    }
+  ]
+}

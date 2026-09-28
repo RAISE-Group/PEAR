@@ -1,0 +1,334 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.10.8",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_indexes",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.6724137931034483,
+      "evolution_path": [
+        "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_relations"
+      ],
+      "local_scores": [
+        0.6724137931034483
+      ]
+    },
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.6470588235294118,
+      "evolution_path": [
+        "django.db.backends.oracle.introspection.DatabaseIntrospection.get_relations"
+      ],
+      "local_scores": [
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_sequences",
+      "api_type": "method",
+      "similarity": 0.6031746031746031,
+      "evolution_path": [
+        "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_sequences"
+      ],
+      "local_scores": [
+        0.6031746031746031
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_constraints",
+      "api_type": "method",
+      "similarity": 0.5753424657534246,
+      "evolution_path": [
+        "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_constraints"
+      ],
+      "local_scores": [
+        0.5753424657534246
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.db.models.functions.AsGML.as_oracle",
+      "api_type": "method",
+      "similarity": 0.5555555555555556,
+      "evolution_path": [
+        "django.contrib.gis.db.models.functions.AsGML.as_oracle"
+      ],
+      "local_scores": [
+        0.5555555555555556
+      ]
+    },
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_sequences",
+      "api_type": "method",
+      "similarity": 0.5443037974683544,
+      "evolution_path": [
+        "django.db.backends.oracle.introspection.DatabaseIntrospection.get_sequences"
+      ],
+      "local_scores": [
+        0.5443037974683544
+      ]
+    },
+    {
+      "fqn": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_table_description",
+      "api_type": "method",
+      "similarity": 0.5365853658536586,
+      "evolution_path": [
+        "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_table_description"
+      ],
+      "local_scores": [
+        0.5365853658536586
+      ]
+    },
+    {
+      "fqn": "django.contrib.admin.widgets.AdminURLFieldWidget.get_context",
+      "api_type": "method",
+      "similarity": 0.5342465753424658,
+      "evolution_path": [
+        "django.contrib.admin.widgets.AdminURLFieldWidget.get_context"
+      ],
+      "local_scores": [
+        0.5342465753424658
+      ]
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.base.DatabaseWrapper.get_connection_params",
+      "api_type": "method",
+      "similarity": 0.28947368421052627,
+      "evolution_path": [
+        "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_postgis_types",
+        "django.db.backends.sqlite3.base.DatabaseWrapper.get_connection_params"
+      ],
+      "local_scores": [
+        0.5921052631578947,
+        0.4888888888888889
+      ]
+    },
+    {
+      "fqn": "django.core.management.commands.testserver.Command.handle",
+      "api_type": "method",
+      "similarity": 0.28779069767441867,
+      "evolution_path": [
+        "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_foreign_key_constraints",
+        "django.core.management.commands.testserver.Command.handle"
+      ],
+      "local_scores": [
+        0.55,
+        0.5232558139534884
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_indexes",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "2.0.13",
+      "vpost": "2.1",
+      "resolved_fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_indexes",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_relations",
+          "similarity": 0.672414
+        },
+        {
+          "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_relations",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_sequences",
+          "similarity": 0.603175
+        },
+        {
+          "fqn": "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_postgis_types",
+          "similarity": 0.592105
+        },
+        {
+          "fqn": "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_constraints",
+          "similarity": 0.575342
+        },
+        {
+          "fqn": "django.contrib.gis.db.models.functions.AsGML.as_oracle",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_foreign_key_constraints",
+          "similarity": 0.55
+        },
+        {
+          "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_sequences",
+          "similarity": 0.544304
+        },
+        {
+          "fqn": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_table_description",
+          "similarity": 0.536585
+        },
+        {
+          "fqn": "django.contrib.admin.widgets.AdminURLFieldWidget.get_context",
+          "similarity": 0.534247
+        }
+      ],
+      "entered_final": [
+        "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_relations",
+        "django.db.backends.oracle.introspection.DatabaseIntrospection.get_relations",
+        "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_sequences",
+        "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_constraints",
+        "django.contrib.gis.db.models.functions.AsGML.as_oracle",
+        "django.db.backends.oracle.introspection.DatabaseIntrospection.get_sequences",
+        "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_table_description",
+        "django.contrib.admin.widgets.AdminURLFieldWidget.get_context"
+      ],
+      "entered_iter": [
+        "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_postgis_types",
+        "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_foreign_key_constraints"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_postgis_types",
+      "path_score": 0.592105,
+      "boundary": "DEPRECATED",
+      "vpre": "2.2.28",
+      "vpost": "3.0",
+      "resolved_fqn": "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_postgis_types",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_foreign_key_constraints",
+          "similarity": 0.574713
+        },
+        {
+          "fqn": "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_constraints",
+          "similarity": 0.560976
+        },
+        {
+          "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_sequences",
+          "similarity": 0.516484
+        },
+        {
+          "fqn": "django.db.backends.sqlite3.base.DatabaseWrapper.get_connection_params",
+          "similarity": 0.488889
+        },
+        {
+          "fqn": "django.db.backends.sqlite3.creation.DatabaseCreation.get_test_db_clone_settings",
+          "similarity": 0.481481
+        },
+        {
+          "fqn": "django.db.models.fields.__init__.SlugField.deconstruct",
+          "similarity": 0.47619
+        },
+        {
+          "fqn": "django.db.models.sql.compiler.SQLCompiler.get_converters",
+          "similarity": 0.47561
+        },
+        {
+          "fqn": "django.core.management.commands.testserver.Command.handle",
+          "similarity": 0.471264
+        },
+        {
+          "fqn": "django.db.backends.oracle.creation.DatabaseCreation._maindb_connection",
+          "similarity": 0.471264
+        },
+        {
+          "fqn": "django.db.backends.sqlite3.operations.DatabaseOperations.__references_graph",
+          "similarity": 0.466667
+        }
+      ],
+      "entered_final": [
+        "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_constraints",
+        "django.db.backends.oracle.introspection.DatabaseIntrospection.get_sequences",
+        "django.db.backends.sqlite3.base.DatabaseWrapper.get_connection_params",
+        "django.db.backends.sqlite3.creation.DatabaseCreation.get_test_db_clone_settings",
+        "django.db.models.fields.__init__.SlugField.deconstruct",
+        "django.db.models.sql.compiler.SQLCompiler.get_converters",
+        "django.core.management.commands.testserver.Command.handle",
+        "django.db.backends.oracle.creation.DatabaseCreation._maindb_connection",
+        "django.db.backends.sqlite3.operations.DatabaseOperations.__references_graph"
+      ],
+      "entered_iter": [
+        "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_foreign_key_constraints"
+      ],
+      "pruned": [],
+      "prune_bound": 0.305813,
+      "dead_reason": null
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_foreign_key_constraints",
+      "path_score": 0.55,
+      "boundary": "DEPRECATED",
+      "vpre": "4.0.10",
+      "vpost": "4.1",
+      "resolved_fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_foreign_key_constraints",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_constraints",
+          "similarity": 0.6375
+        },
+        {
+          "fqn": "django.core.management.commands.testserver.Command.handle",
+          "similarity": 0.523256
+        },
+        {
+          "fqn": "django.contrib.gis.db.backends.mysql.introspection.MySQLIntrospection.get_geometry_type",
+          "similarity": 0.522727
+        },
+        {
+          "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_sequences",
+          "similarity": 0.516129
+        },
+        {
+          "fqn": "django.db.migrations.state.ProjectState._get_concrete_models_mapping_and_proxy_models",
+          "similarity": 0.511905
+        },
+        {
+          "fqn": "django.db.backends.postgresql.operations.DatabaseOperations.sequence_reset_by_name_sql",
+          "similarity": 0.511628
+        },
+        {
+          "fqn": "django.db.backends.sqlite3.base.DatabaseWrapper.get_connection_params",
+          "similarity": 0.505495
+        },
+        {
+          "fqn": "django.db.models.sql.compiler.SQLCompiler.get_converters",
+          "similarity": 0.493976
+        },
+        {
+          "fqn": "django.contrib.auth.hashers.ScryptPasswordHasher.decode",
+          "similarity": 0.493671
+        },
+        {
+          "fqn": "django.db.backends.sqlite3.creation.DatabaseCreation.get_test_db_clone_settings",
+          "similarity": 0.49
+        }
+      ],
+      "entered_final": [
+        "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_constraints",
+        "django.core.management.commands.testserver.Command.handle",
+        "django.contrib.gis.db.backends.mysql.introspection.MySQLIntrospection.get_geometry_type",
+        "django.db.backends.oracle.introspection.DatabaseIntrospection.get_sequences",
+        "django.db.migrations.state.ProjectState._get_concrete_models_mapping_and_proxy_models",
+        "django.db.backends.postgresql.operations.DatabaseOperations.sequence_reset_by_name_sql",
+        "django.db.backends.sqlite3.base.DatabaseWrapper.get_connection_params",
+        "django.db.models.sql.compiler.SQLCompiler.get_converters",
+        "django.contrib.auth.hashers.ScryptPasswordHasher.decode",
+        "django.db.backends.sqlite3.creation.DatabaseCreation.get_test_db_clone_settings"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.332157,
+      "dead_reason": null
+    }
+  ]
+}

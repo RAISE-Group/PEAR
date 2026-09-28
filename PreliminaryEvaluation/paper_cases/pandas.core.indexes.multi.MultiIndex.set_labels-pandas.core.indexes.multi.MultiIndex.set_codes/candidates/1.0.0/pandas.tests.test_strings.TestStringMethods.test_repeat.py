@@ -1,0 +1,13 @@
+def test_repeat(self):
+    values = Series(['a', 'b', np.nan, 'c', np.nan, 'd'])
+    result = values.str.repeat(3)
+    exp = Series(['aaa', 'bbb', np.nan, 'ccc', np.nan, 'ddd'])
+    tm.assert_series_equal(result, exp)
+    result = values.str.repeat([1, 2, 3, 4, 5, 6])
+    exp = Series(['a', 'bb', np.nan, 'cccc', np.nan, 'dddddd'])
+    tm.assert_series_equal(result, exp)
+    mixed = Series(['a', np.nan, 'b', True, datetime.today(), 'foo', None, 1, 2.0])
+    rs = Series(mixed).str.repeat(3)
+    xp = Series(['aaa', np.nan, 'bbb', np.nan, np.nan, 'foofoofoo', np.nan, np.nan, np.nan])
+    assert isinstance(rs, Series)
+    tm.assert_series_equal(rs, xp)

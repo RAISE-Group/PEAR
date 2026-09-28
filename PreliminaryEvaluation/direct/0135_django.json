@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.0.14",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.utils.decorators.classproperty",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.utils.functional.classproperty",
+      "api_type": "class",
+      "similarity": 0.9795918367346939
+    },
+    {
+      "fqn": "django.template.defaulttags.TemplateLiteral",
+      "api_type": "class",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.templatetags.i18n.GetCurrentLanguageBidiNode",
+      "api_type": "class",
+      "similarity": 0.4603174603174603
+    },
+    {
+      "fqn": "django.templatetags.i18n.GetCurrentLanguageNode",
+      "api_type": "class",
+      "similarity": 0.4603174603174603
+    },
+    {
+      "fqn": "django.db.migrations.exceptions.NodeNotFoundError",
+      "api_type": "class",
+      "similarity": 0.4583333333333333
+    },
+    {
+      "fqn": "django.db.models.query_utils.class_or_instance_method",
+      "api_type": "class",
+      "similarity": 0.4583333333333333
+    },
+    {
+      "fqn": "django.templatetags.tz.GetCurrentTimezoneNode",
+      "api_type": "class",
+      "similarity": 0.453125
+    },
+    {
+      "fqn": "django.test.utils.Approximate",
+      "api_type": "class",
+      "similarity": 0.4342105263157895
+    },
+    {
+      "fqn": "django.test.testcases._DatabaseFailure",
+      "api_type": "class",
+      "similarity": 0.43333333333333335
+    },
+    {
+      "fqn": "django.http.multipartparser.InterBoundaryIter",
+      "api_type": "class",
+      "similarity": 0.42857142857142855
+    }
+  ]
+}

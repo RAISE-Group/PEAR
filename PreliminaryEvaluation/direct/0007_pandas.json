@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.12.0",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.panel.Panel.fillna",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.arrays.interval.IntervalArray.overlaps",
+      "api_type": "method",
+      "similarity": 0.5533980582524272
+    },
+    {
+      "fqn": "pandas.core.arrays.datetimes.DatetimeArray.to_period",
+      "api_type": "method",
+      "similarity": 0.5423728813559322
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame.isetitem",
+      "api_type": "method",
+      "similarity": 0.5371900826446281
+    },
+    {
+      "fqn": "pandas.io.pytables.HDFStore.remove",
+      "api_type": "method",
+      "similarity": 0.5354330708661418
+    },
+    {
+      "fqn": "pandas.core.internals.blocks.ExtensionBlock.fillna",
+      "api_type": "method",
+      "similarity": 0.5352112676056338
+    },
+    {
+      "fqn": "pandas.core.arrays.period.PeriodArray.__arrow_array__",
+      "api_type": "method",
+      "similarity": 0.5344827586206896
+    },
+    {
+      "fqn": "pandas.core.groupby.groupby.GroupBy.pct_change",
+      "api_type": "method",
+      "similarity": 0.5327868852459017
+    },
+    {
+      "fqn": "pandas.io.sql.SQLTable._index_name",
+      "api_type": "method",
+      "similarity": 0.5327868852459017
+    },
+    {
+      "fqn": "pandas.core.window.ewm.ExponentialMovingWindow.mean",
+      "api_type": "method",
+      "similarity": 0.5317460317460317
+    },
+    {
+      "fqn": "pandas.core.base.SelectionMixin.__getitem__",
+      "api_type": "method",
+      "similarity": 0.5230769230769231
+    }
+  ]
+}

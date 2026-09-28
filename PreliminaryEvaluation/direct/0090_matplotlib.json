@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.4.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backend_bases.NavigationToolbar2.set_cursor",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.backend_bases.FigureCanvasBase.set_cursor",
+      "api_type": "method",
+      "similarity": 1.0
+    },
+    {
+      "fqn": "matplotlib.backends.backend_gtk4.FigureCanvasGTK4.set_cursor",
+      "api_type": "method",
+      "similarity": 0.5789473684210527
+    },
+    {
+      "fqn": "matplotlib.backend_bases.NavigationToolbar2.set_message",
+      "api_type": "method",
+      "similarity": 0.5714285714285714
+    },
+    {
+      "fqn": "matplotlib.image.NonUniformImage.set_filternorm",
+      "api_type": "method",
+      "similarity": 0.5714285714285714
+    },
+    {
+      "fqn": "matplotlib.image.NonUniformImage.set_filterrad",
+      "api_type": "method",
+      "similarity": 0.5714285714285714
+    },
+    {
+      "fqn": "matplotlib.offsetbox.AuxTransformBox.set_transform",
+      "api_type": "method",
+      "similarity": 0.5714285714285714
+    },
+    {
+      "fqn": "matplotlib.offsetbox.DrawingArea.set_transform",
+      "api_type": "method",
+      "similarity": 0.5714285714285714
+    },
+    {
+      "fqn": "matplotlib.offsetbox.TextArea.set_transform",
+      "api_type": "method",
+      "similarity": 0.5714285714285714
+    },
+    {
+      "fqn": "matplotlib.ticker.Formatter._set_locator",
+      "api_type": "method",
+      "similarity": 0.5714285714285714
+    },
+    {
+      "fqn": "matplotlib.backends.backend_qt.FigureCanvasQT.set_cursor",
+      "api_type": "method",
+      "similarity": 0.55
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+def test_get_dummies(self):
+    s = Series(['a|b', 'a|c', np.nan])
+    result = s.str.get_dummies('|')
+    expected = DataFrame([[1, 1, 0], [1, 0, 1], [0, 0, 0]], columns=list('abc'))
+    tm.assert_frame_equal(result, expected)
+    s = Series(['a;b', 'a', 7])
+    result = s.str.get_dummies(';')
+    expected = DataFrame([[0, 1, 1], [0, 1, 0], [1, 0, 0]], columns=list('7ab'))
+    tm.assert_frame_equal(result, expected)
+    idx = Index(['a|b', 'a|c', 'b|c'])
+    result = idx.str.get_dummies('|')
+    expected = MultiIndex.from_tuples([(1, 1, 0), (1, 0, 1), (0, 1, 1)], names=('a', 'b', 'c'))
+    tm.assert_index_equal(result, expected)

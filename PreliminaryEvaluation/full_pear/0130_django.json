@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "2.0.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.utils.http.cookie_date",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.utils.version.get_docs_version",
+      "api_type": "function",
+      "similarity": 0.40425531914893614,
+      "evolution_path": [
+        "django.utils.version.get_docs_version"
+      ],
+      "local_scores": [
+        0.40425531914893614
+      ]
+    },
+    {
+      "fqn": "django.db.backends.utils.typecast_date",
+      "api_type": "function",
+      "similarity": 0.38095238095238093,
+      "evolution_path": [
+        "django.db.backends.utils.typecast_date"
+      ],
+      "local_scores": [
+        0.38095238095238093
+      ]
+    },
+    {
+      "fqn": "django.utils.translation.trans_real.translation",
+      "api_type": "function",
+      "similarity": 0.375,
+      "evolution_path": [
+        "django.utils.translation.trans_real.translation"
+      ],
+      "local_scores": [
+        0.375
+      ]
+    },
+    {
+      "fqn": "django.views.decorators.vary.vary_on_cookie",
+      "api_type": "function",
+      "similarity": 0.375,
+      "evolution_path": [
+        "django.views.decorators.vary.vary_on_cookie"
+      ],
+      "local_scores": [
+        0.375
+      ]
+    },
+    {
+      "fqn": "django.utils.formats.date_format",
+      "api_type": "function",
+      "similarity": 0.37209302325581395,
+      "evolution_path": [
+        "django.utils.formats.date_format"
+      ],
+      "local_scores": [
+        0.37209302325581395
+      ]
+    },
+    {
+      "fqn": "django.utils.version.get_main_version",
+      "api_type": "function",
+      "similarity": 0.37037037037037035,
+      "evolution_path": [
+        "django.utils.version.get_main_version"
+      ],
+      "local_scores": [
+        0.37037037037037035
+      ]
+    },
+    {
+      "fqn": "django.contrib.auth.hashers.mask_hash",
+      "api_type": "function",
+      "similarity": 0.3695652173913043,
+      "evolution_path": [
+        "django.contrib.auth.hashers.mask_hash"
+      ],
+      "local_scores": [
+        0.3695652173913043
+      ]
+    },
+    {
+      "fqn": "django.utils.http.http_date",
+      "api_type": "function",
+      "similarity": 0.3611111111111111,
+      "evolution_path": [
+        "django.utils.http.http_date"
+      ],
+      "local_scores": [
+        0.3611111111111111
+      ]
+    },
+    {
+      "fqn": "django.template.defaultfilters.urlencode",
+      "api_type": "function",
+      "similarity": 0.35555555555555557,
+      "evolution_path": [
+        "django.template.defaultfilters.urlencode"
+      ],
+      "local_scores": [
+        0.35555555555555557
+      ]
+    },
+    {
+      "fqn": "django.contrib.admin.templatetags.admin_list._boolean_icon",
+      "api_type": "function",
+      "similarity": 0.3541666666666667,
+      "evolution_path": [
+        "django.contrib.admin.templatetags.admin_list._boolean_icon"
+      ],
+      "local_scores": [
+        0.3541666666666667
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.utils.http.cookie_date",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "2.2.28",
+      "vpost": "3.0",
+      "resolved_fqn": "django.utils.http.cookie_date",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.utils.version.get_docs_version",
+          "similarity": 0.404255
+        },
+        {
+          "fqn": "django.db.backends.utils.typecast_date",
+          "similarity": 0.380952
+        },
+        {
+          "fqn": "django.utils.translation.trans_real.translation",
+          "similarity": 0.375
+        },
+        {
+          "fqn": "django.views.decorators.vary.vary_on_cookie",
+          "similarity": 0.375
+        },
+        {
+          "fqn": "django.utils.formats.date_format",
+          "similarity": 0.372093
+        },
+        {
+          "fqn": "django.utils.version.get_main_version",
+          "similarity": 0.37037
+        },
+        {
+          "fqn": "django.contrib.auth.hashers.mask_hash",
+          "similarity": 0.369565
+        },
+        {
+          "fqn": "django.utils.http.http_date",
+          "similarity": 0.361111
+        },
+        {
+          "fqn": "django.template.defaultfilters.urlencode",
+          "similarity": 0.355556
+        },
+        {
+          "fqn": "django.contrib.admin.templatetags.admin_list._boolean_icon",
+          "similarity": 0.354167
+        }
+      ],
+      "entered_final": [
+        "django.utils.version.get_docs_version",
+        "django.db.backends.utils.typecast_date",
+        "django.utils.translation.trans_real.translation",
+        "django.views.decorators.vary.vary_on_cookie",
+        "django.utils.formats.date_format",
+        "django.utils.version.get_main_version",
+        "django.contrib.auth.hashers.mask_hash",
+        "django.utils.http.http_date",
+        "django.template.defaultfilters.urlencode",
+        "django.contrib.admin.templatetags.admin_list._boolean_icon"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.354167,
+      "dead_reason": null
+    }
+  ]
+}

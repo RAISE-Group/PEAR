@@ -1,0 +1,4 @@
+@cache_readonly
+def _engine(self):
+    period = weakref.ref(self)
+    return self._engine_type(period, len(self))

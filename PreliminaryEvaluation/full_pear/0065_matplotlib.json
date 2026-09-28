@@ -1,0 +1,335 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.1.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.patches.YAArrow",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.patches.BoxStyle.Sawtooth",
+      "api_type": "class",
+      "similarity": 0.6224066390041494,
+      "evolution_path": [
+        "matplotlib.patches.BoxStyle.Sawtooth"
+      ],
+      "local_scores": [
+        0.6224066390041494
+      ]
+    },
+    {
+      "fqn": "matplotlib.patches.ConnectionStyle.Arc",
+      "api_type": "class",
+      "similarity": 0.6096033402922756,
+      "evolution_path": [
+        "matplotlib.patches.ConnectionStyle.Arc"
+      ],
+      "local_scores": [
+        0.6096033402922756
+      ]
+    },
+    {
+      "fqn": "matplotlib.patches.ConnectionStyle.Bar",
+      "api_type": "class",
+      "similarity": 0.5862884160756501,
+      "evolution_path": [
+        "matplotlib.patches.ConnectionStyle.Bar"
+      ],
+      "local_scores": [
+        0.5862884160756501
+      ]
+    },
+    {
+      "fqn": "matplotlib.patches.ArrowStyle.Fancy",
+      "api_type": "class",
+      "similarity": 0.5396145610278372,
+      "evolution_path": [
+        "matplotlib.patches.ArrowStyle.Fancy"
+      ],
+      "local_scores": [
+        0.5396145610278372
+      ]
+    },
+    {
+      "fqn": "matplotlib.projections.geo.MollweideAxes",
+      "api_type": "class",
+      "similarity": 0.5242914979757085,
+      "evolution_path": [
+        "matplotlib.projections.geo.MollweideAxes"
+      ],
+      "local_scores": [
+        0.5242914979757085
+      ]
+    },
+    {
+      "fqn": "matplotlib.projections.geo.LambertAxes",
+      "api_type": "class",
+      "similarity": 0.5224171539961013,
+      "evolution_path": [
+        "matplotlib.projections.geo.LambertAxes"
+      ],
+      "local_scores": [
+        0.5224171539961013
+      ]
+    },
+    {
+      "fqn": "matplotlib._mathtext.TruetypeFonts",
+      "api_type": "class",
+      "similarity": 0.5044982698961938,
+      "evolution_path": [
+        "matplotlib.mathtext.TruetypeFonts",
+        "matplotlib._mathtext.TruetypeFonts"
+      ],
+      "local_scores": [
+        0.5242214532871973,
+        0.9623762376237623
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.LogitLocator",
+      "api_type": "class",
+      "similarity": 0.5008025682182986,
+      "evolution_path": [
+        "matplotlib.ticker.LogitLocator"
+      ],
+      "local_scores": [
+        0.5008025682182986
+      ]
+    },
+    {
+      "fqn": "matplotlib.legend_handler.HandlerErrorbar",
+      "api_type": "class",
+      "similarity": 0.49029982363315694,
+      "evolution_path": [
+        "matplotlib.legend_handler.HandlerErrorbar"
+      ],
+      "local_scores": [
+        0.49029982363315694
+      ]
+    },
+    {
+      "fqn": "matplotlib.patches.ArrowStyle.Simple",
+      "api_type": "class",
+      "similarity": 0.3345227475468332,
+      "evolution_path": [
+        "matplotlib.patches.ArrowStyle._Bracket",
+        "matplotlib.patches.ArrowStyle.Simple"
+      ],
+      "local_scores": [
+        0.5338983050847458,
+        0.6265664160401002
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.patches.YAArrow",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.1.3",
+      "vpost": "3.2.0",
+      "resolved_fqn": "matplotlib.patches.YAArrow",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.patches.BoxStyle.Sawtooth",
+          "similarity": 0.622407
+        },
+        {
+          "fqn": "matplotlib.patches.ConnectionStyle.Arc",
+          "similarity": 0.609603
+        },
+        {
+          "fqn": "matplotlib.patches.ConnectionStyle.Bar",
+          "similarity": 0.586288
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle.Fancy",
+          "similarity": 0.539615
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle._Bracket",
+          "similarity": 0.533898
+        },
+        {
+          "fqn": "matplotlib.projections.geo.MollweideAxes",
+          "similarity": 0.524291
+        },
+        {
+          "fqn": "matplotlib.mathtext.TruetypeFonts",
+          "similarity": 0.524221
+        },
+        {
+          "fqn": "matplotlib.projections.geo.LambertAxes",
+          "similarity": 0.522417
+        },
+        {
+          "fqn": "matplotlib.ticker.LogitLocator",
+          "similarity": 0.500803
+        },
+        {
+          "fqn": "matplotlib.legend_handler.HandlerErrorbar",
+          "similarity": 0.4903
+        }
+      ],
+      "entered_final": [
+        "matplotlib.patches.BoxStyle.Sawtooth",
+        "matplotlib.patches.ConnectionStyle.Arc",
+        "matplotlib.patches.ConnectionStyle.Bar",
+        "matplotlib.patches.ArrowStyle.Fancy",
+        "matplotlib.projections.geo.MollweideAxes",
+        "matplotlib.projections.geo.LambertAxes",
+        "matplotlib.ticker.LogitLocator",
+        "matplotlib.legend_handler.HandlerErrorbar"
+      ],
+      "entered_iter": [
+        "matplotlib.patches.ArrowStyle._Bracket",
+        "matplotlib.mathtext.TruetypeFonts"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.patches.ArrowStyle._Bracket",
+      "path_score": 0.533898,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.patches.ArrowStyle._Bracket",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.patches.ConnectionStyle.Arc",
+          "similarity": 0.637813
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle.Fancy",
+          "similarity": 0.634804
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle.Simple",
+          "similarity": 0.626566
+        },
+        {
+          "fqn": "matplotlib.patches.ConnectionStyle.Bar",
+          "similarity": 0.624672
+        },
+        {
+          "fqn": "matplotlib.lines._AxLine",
+          "similarity": 0.578947
+        },
+        {
+          "fqn": "matplotlib.patches.ConnectionStyle.Angle",
+          "similarity": 0.567204
+        },
+        {
+          "fqn": "matplotlib.legend_handler.HandlerErrorbar",
+          "similarity": 0.544747
+        },
+        {
+          "fqn": "matplotlib._mathtext.Hlist",
+          "similarity": 0.5363
+        },
+        {
+          "fqn": "matplotlib.legend_handler.HandlerStem",
+          "similarity": 0.534146
+        },
+        {
+          "fqn": "matplotlib.tri.triinterpolate.TriInterpolator",
+          "similarity": 0.529412
+        }
+      ],
+      "entered_final": [
+        "matplotlib.patches.ConnectionStyle.Arc",
+        "matplotlib.patches.ArrowStyle.Fancy",
+        "matplotlib.patches.ArrowStyle.Simple",
+        "matplotlib.patches.ConnectionStyle.Bar",
+        "matplotlib.patches.ConnectionStyle.Angle",
+        "matplotlib.legend_handler.HandlerErrorbar",
+        "matplotlib._mathtext.Hlist",
+        "matplotlib.legend_handler.HandlerStem"
+      ],
+      "entered_iter": [],
+      "pruned": [
+        "matplotlib.lines._AxLine",
+        "matplotlib.tri.triinterpolate.TriInterpolator"
+      ],
+      "prune_bound": 0.338921,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.mathtext.TruetypeFonts",
+      "path_score": 0.524221,
+      "boundary": "DEPRECATED",
+      "vpre": "3.3.4",
+      "vpost": "3.4.0",
+      "resolved_fqn": "matplotlib.mathtext.TruetypeFonts",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib._mathtext.TruetypeFonts",
+          "similarity": 0.962376
+        },
+        {
+          "fqn": "matplotlib._mathtext.StandardPsFonts",
+          "similarity": 0.614035
+        },
+        {
+          "fqn": "matplotlib.legend_handler.HandlerErrorbar",
+          "similarity": 0.533871
+        },
+        {
+          "fqn": "matplotlib._mathtext.UnicodeFonts",
+          "similarity": 0.520995
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle._Bracket",
+          "similarity": 0.51865
+        },
+        {
+          "fqn": "matplotlib.offsetbox.AnchoredOffsetbox",
+          "similarity": 0.50375
+        },
+        {
+          "fqn": "matplotlib.mathtext.MathTextParser",
+          "similarity": 0.503333
+        },
+        {
+          "fqn": "matplotlib.image.AxesImage",
+          "similarity": 0.502222
+        },
+        {
+          "fqn": "matplotlib.ticker.LogFormatter",
+          "similarity": 0.499332
+        },
+        {
+          "fqn": "matplotlib.patches.ConnectionStyle.Arc",
+          "similarity": 0.497436
+        }
+      ],
+      "entered_final": [
+        "matplotlib._mathtext.TruetypeFonts",
+        "matplotlib.legend_handler.HandlerErrorbar",
+        "matplotlib._mathtext.UnicodeFonts",
+        "matplotlib.offsetbox.AnchoredOffsetbox",
+        "matplotlib.mathtext.MathTextParser",
+        "matplotlib.image.AxesImage",
+        "matplotlib.ticker.LogFormatter",
+        "matplotlib.patches.ConnectionStyle.Arc"
+      ],
+      "entered_iter": [],
+      "pruned": [
+        "matplotlib._mathtext.StandardPsFonts",
+        "matplotlib.patches.ArrowStyle._Bracket"
+      ],
+      "prune_bound": 0.340527,
+      "dead_reason": null
+    }
+  ]
+}

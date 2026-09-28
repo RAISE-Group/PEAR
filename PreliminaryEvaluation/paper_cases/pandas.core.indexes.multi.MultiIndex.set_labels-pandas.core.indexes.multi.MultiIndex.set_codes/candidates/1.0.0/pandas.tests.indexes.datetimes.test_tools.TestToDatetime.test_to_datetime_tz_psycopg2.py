@@ -1,0 +1,17 @@
+@pytest.mark.parametrize('cache', [True, False])
+@td.skip_if_no('psycopg2')
+def test_to_datetime_tz_psycopg2(self, cache):
+    import psycopg2
+    tz1 = psycopg2.tz.FixedOffsetTimezone(offset=-300, name=None)
+    tz2 = psycopg2.tz.FixedOffsetTimezone(offset=-240, name=None)
+    arr = np.array([datetime(2000, 1, 1, 3, 0, tzinfo=tz1), datetime(2000, 6, 1, 3, 0, tzinfo=tz2)], dtype=object)
+    result = pd.to_datetime(arr, errors='coerce', utc=True, cache=cache)
+    expected = DatetimeIndex(['2000-01-01 08:00:00+00:00', '2000-06-01 07:00:00+00:00'], dtype='datetime64[ns, UTC]', freq=None)
+    tm.assert_index_equal(result, expected)
+    i = pd.DatetimeIndex(['2000-01-01 08:00:00'], tz=psycopg2.tz.FixedOffsetTimezone(offset=-300, name=None))
+    assert is_datetime64_ns_dtype(i)
+    result = pd.to_datetime(i, errors='coerce', cache=cache)
+    tm.assert_index_equal(result, i)
+    result = pd.to_datetime(i, errors='coerce', utc=True, cache=cache)
+    expected = pd.DatetimeIndex(['2000-01-01 13:00:00'], dtype='datetime64[ns, UTC]')
+    tm.assert_index_equal(result, expected)

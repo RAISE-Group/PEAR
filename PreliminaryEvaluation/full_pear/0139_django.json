@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.0.14",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.postgres.forms.jsonb.JSONField",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.forms.fields.JSONField",
+      "api_type": "class",
+      "similarity": 0.8475336322869955,
+      "evolution_path": [
+        "django.forms.fields.JSONField"
+      ],
+      "local_scores": [
+        0.8475336322869955
+      ]
+    },
+    {
+      "fqn": "django.contrib.postgres.forms.hstore.HStoreField",
+      "api_type": "class",
+      "similarity": 0.6542056074766355,
+      "evolution_path": [
+        "django.contrib.postgres.forms.hstore.HStoreField"
+      ],
+      "local_scores": [
+        0.6542056074766355
+      ]
+    },
+    {
+      "fqn": "django.forms.fields.DateTimeField",
+      "api_type": "class",
+      "similarity": 0.6238532110091743,
+      "evolution_path": [
+        "django.forms.fields.DateTimeField"
+      ],
+      "local_scores": [
+        0.6238532110091743
+      ]
+    },
+    {
+      "fqn": "django.forms.fields.FileField",
+      "api_type": "class",
+      "similarity": 0.532871972318339,
+      "evolution_path": [
+        "django.forms.fields.FileField"
+      ],
+      "local_scores": [
+        0.532871972318339
+      ]
+    },
+    {
+      "fqn": "django.db.models.fields.__init__.UUIDField",
+      "api_type": "class",
+      "similarity": 0.5263157894736842,
+      "evolution_path": [
+        "django.db.models.fields.__init__.UUIDField"
+      ],
+      "local_scores": [
+        0.5263157894736842
+      ]
+    },
+    {
+      "fqn": "django.forms.fields.DecimalField",
+      "api_type": "class",
+      "similarity": 0.5171102661596958,
+      "evolution_path": [
+        "django.forms.fields.DecimalField"
+      ],
+      "local_scores": [
+        0.5171102661596958
+      ]
+    },
+    {
+      "fqn": "django.forms.fields.FloatField",
+      "api_type": "class",
+      "similarity": 0.5132743362831859,
+      "evolution_path": [
+        "django.forms.fields.FloatField"
+      ],
+      "local_scores": [
+        0.5132743362831859
+      ]
+    },
+    {
+      "fqn": "django.forms.fields.MultipleChoiceField",
+      "api_type": "class",
+      "similarity": 0.5102880658436214,
+      "evolution_path": [
+        "django.forms.fields.MultipleChoiceField"
+      ],
+      "local_scores": [
+        0.5102880658436214
+      ]
+    },
+    {
+      "fqn": "django.db.models.fields.__init__.DurationField",
+      "api_type": "class",
+      "similarity": 0.5073529411764706,
+      "evolution_path": [
+        "django.db.models.fields.__init__.DurationField"
+      ],
+      "local_scores": [
+        0.5073529411764706
+      ]
+    },
+    {
+      "fqn": "django.forms.fields.ChoiceField",
+      "api_type": "class",
+      "similarity": 0.5,
+      "evolution_path": [
+        "django.forms.fields.ChoiceField"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.contrib.postgres.forms.jsonb.JSONField",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.2.25",
+      "vpost": "4.0",
+      "resolved_fqn": "django.contrib.postgres.forms.jsonb.JSONField",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.forms.fields.JSONField",
+          "similarity": 0.847534
+        },
+        {
+          "fqn": "django.contrib.postgres.forms.hstore.HStoreField",
+          "similarity": 0.654206
+        },
+        {
+          "fqn": "django.forms.fields.DateTimeField",
+          "similarity": 0.623853
+        },
+        {
+          "fqn": "django.forms.fields.FileField",
+          "similarity": 0.532872
+        },
+        {
+          "fqn": "django.db.models.fields.__init__.UUIDField",
+          "similarity": 0.526316
+        },
+        {
+          "fqn": "django.forms.fields.DecimalField",
+          "similarity": 0.51711
+        },
+        {
+          "fqn": "django.forms.fields.FloatField",
+          "similarity": 0.513274
+        },
+        {
+          "fqn": "django.forms.fields.MultipleChoiceField",
+          "similarity": 0.510288
+        },
+        {
+          "fqn": "django.db.models.fields.__init__.DurationField",
+          "similarity": 0.507353
+        },
+        {
+          "fqn": "django.forms.fields.ChoiceField",
+          "similarity": 0.5
+        }
+      ],
+      "entered_final": [
+        "django.forms.fields.JSONField",
+        "django.contrib.postgres.forms.hstore.HStoreField",
+        "django.forms.fields.DateTimeField",
+        "django.forms.fields.FileField",
+        "django.db.models.fields.__init__.UUIDField",
+        "django.forms.fields.DecimalField",
+        "django.forms.fields.FloatField",
+        "django.forms.fields.MultipleChoiceField",
+        "django.db.models.fields.__init__.DurationField",
+        "django.forms.fields.ChoiceField"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.5,
+      "dead_reason": null
+    }
+  ]
+}

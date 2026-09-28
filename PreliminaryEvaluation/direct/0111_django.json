@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.8.19",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.base.operations.BaseDatabaseOperations.check_aggregate_support",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.backends.base.operations.BaseDatabaseOperations.check_expression_support",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.contrib.admin.options.BaseModelAdmin.check",
+      "api_type": "method",
+      "similarity": 0.44
+    },
+    {
+      "fqn": "django.db.models.constraints.BaseConstraint.check",
+      "api_type": "method",
+      "similarity": 0.42857142857142855
+    },
+    {
+      "fqn": "django.contrib.auth.models.AnonymousUser.check_password",
+      "api_type": "method",
+      "similarity": 0.4
+    },
+    {
+      "fqn": "django.db.models.sql.where.WhereNode.contains_aggregate",
+      "api_type": "method",
+      "similarity": 0.4
+    },
+    {
+      "fqn": "django.template.backends.django.DjangoTemplates.check",
+      "api_type": "method",
+      "similarity": 0.4
+    },
+    {
+      "fqn": "django.urls.resolvers.LocalePrefixPattern.check",
+      "api_type": "method",
+      "similarity": 0.4
+    },
+    {
+      "fqn": "django.contrib.contenttypes.fields.GenericRelation.check",
+      "api_type": "method",
+      "similarity": 0.39285714285714285
+    },
+    {
+      "fqn": "django.core.management.commands.runserver.Command.get_check_kwargs",
+      "api_type": "method",
+      "similarity": 0.39285714285714285
+    },
+    {
+      "fqn": "django.db.models.fields.__init__.AutoFieldMixin.check",
+      "api_type": "method",
+      "similarity": 0.39285714285714285
+    }
+  ]
+}

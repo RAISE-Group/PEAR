@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.9.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.gis.geos.point.Point.get_coords",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.contrib.gis.geos.prototypes.threadsafe.GEOSFunc._get_argtypes",
+      "api_type": "method",
+      "similarity": 0.625
+    },
+    {
+      "fqn": "django.contrib.gis.geos.prototypes.threadsafe.GEOSFunc._get_errcheck",
+      "api_type": "method",
+      "similarity": 0.625
+    },
+    {
+      "fqn": "django.contrib.gis.geos.prototypes.threadsafe.GEOSFunc._get_restype",
+      "api_type": "method",
+      "similarity": 0.625
+    },
+    {
+      "fqn": "django.contrib.auth.forms.AuthenticationForm.get_user",
+      "api_type": "method",
+      "similarity": 0.5625
+    },
+    {
+      "fqn": "django.contrib.auth.models.AnonymousUser.get_username",
+      "api_type": "method",
+      "similarity": 0.5625
+    },
+    {
+      "fqn": "django.core.files.uploadedfile.UploadedFile._get_name",
+      "api_type": "method",
+      "similarity": 0.5625
+    },
+    {
+      "fqn": "django.db.models.fields.__init__.Field.get_attname",
+      "api_type": "method",
+      "similarity": 0.5625
+    },
+    {
+      "fqn": "django.forms.fields.RegexField._get_regex",
+      "api_type": "method",
+      "similarity": 0.5625
+    },
+    {
+      "fqn": "django.forms.models.ModelChoiceField._get_queryset",
+      "api_type": "method",
+      "similarity": 0.5625
+    },
+    {
+      "fqn": "django.views.generic.edit.FormMixin.get_prefix",
+      "api_type": "method",
+      "similarity": 0.5625
+    }
+  ]
+}

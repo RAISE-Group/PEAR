@@ -1,0 +1,4 @@
+def test_colspan_rowspan_copy_values(self):
+    result = self.read_html('\n            <table>\n                <tr>\n                    <td colspan="2">X</td>\n                    <td>Y</td>\n                    <td rowspan="2">Z</td>\n                    <td>W</td>\n                </tr>\n                <tr>\n                    <td>A</td>\n                    <td colspan="2">B</td>\n                    <td>C</td>\n                </tr>\n            </table>\n        ', header=0)[0]
+    expected = DataFrame(data=[['A', 'B', 'B', 'Z', 'C']], columns=['X', 'X.1', 'Y', 'Z', 'W'])
+    tm.assert_frame_equal(result, expected)

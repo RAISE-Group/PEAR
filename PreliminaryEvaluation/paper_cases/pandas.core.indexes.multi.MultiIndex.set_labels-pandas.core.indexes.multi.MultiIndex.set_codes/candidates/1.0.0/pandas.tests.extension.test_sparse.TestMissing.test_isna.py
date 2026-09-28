@@ -1,0 +1,11 @@
+def test_isna(self, data_missing):
+    expected_dtype = SparseDtype(bool, pd.isna(data_missing.dtype.fill_value))
+    expected = SparseArray([True, False], dtype=expected_dtype)
+    result = pd.isna(data_missing)
+    self.assert_equal(result, expected)
+    result = pd.Series(data_missing).isna()
+    expected = pd.Series(expected)
+    self.assert_series_equal(result, expected)
+    result = pd.Series(data_missing).drop([0, 1]).isna()
+    expected = pd.Series([], dtype=expected_dtype)
+    self.assert_series_equal(result, expected)

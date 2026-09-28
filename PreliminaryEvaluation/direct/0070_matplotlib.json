@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.2.2",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.ticker.IndexFormatter",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.projections.geo.GeoAxes.ThetaFormatter",
+      "api_type": "class",
+      "similarity": 0.5972222222222222
+    },
+    {
+      "fqn": "matplotlib.ticker.StrMethodFormatter",
+      "api_type": "class",
+      "similarity": 0.5352112676056338
+    },
+    {
+      "fqn": "matplotlib.ticker.FixedFormatter",
+      "api_type": "class",
+      "similarity": 0.5263157894736842
+    },
+    {
+      "fqn": "matplotlib._docstring.Substitution",
+      "api_type": "class",
+      "similarity": 0.4936708860759494
+    },
+    {
+      "fqn": "matplotlib.ticker.FormatStrFormatter",
+      "api_type": "class",
+      "similarity": 0.4927536231884058
+    },
+    {
+      "fqn": "matplotlib.backends.backend_pgf.LatexError",
+      "api_type": "class",
+      "similarity": 0.4805194805194805
+    },
+    {
+      "fqn": "matplotlib.dates.DateFormatter",
+      "api_type": "class",
+      "similarity": 0.4752475247524752
+    },
+    {
+      "fqn": "matplotlib.ticker.FuncFormatter",
+      "api_type": "class",
+      "similarity": 0.4725274725274725
+    },
+    {
+      "fqn": "matplotlib._api.__init__.classproperty",
+      "api_type": "class",
+      "similarity": 0.45652173913043476
+    },
+    {
+      "fqn": "matplotlib.cbook.silent_list",
+      "api_type": "class",
+      "similarity": 0.45263157894736844
+    }
+  ]
+}

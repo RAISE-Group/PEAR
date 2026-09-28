@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.9.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.models.expressions.DateTime",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.models.expressions.Subquery",
+      "api_type": "class",
+      "similarity": 0.606951871657754
+    },
+    {
+      "fqn": "django.db.models.expressions.CombinedExpression",
+      "api_type": "class",
+      "similarity": 0.6004962779156328
+    },
+    {
+      "fqn": "django.db.models.expressions.When",
+      "api_type": "class",
+      "similarity": 0.5835411471321695
+    },
+    {
+      "fqn": "django.db.models.expressions.ColPairs",
+      "api_type": "class",
+      "similarity": 0.5734870317002881
+    },
+    {
+      "fqn": "django.db.migrations.operations.fields.AlterField",
+      "api_type": "class",
+      "similarity": 0.5459610027855153
+    },
+    {
+      "fqn": "django.db.models.expressions.Case",
+      "api_type": "class",
+      "similarity": 0.5361305361305362
+    },
+    {
+      "fqn": "django.db.models.expressions.Value",
+      "api_type": "class",
+      "similarity": 0.5289672544080605
+    },
+    {
+      "fqn": "django.db.migrations.operations.special.RunSQL",
+      "api_type": "class",
+      "similarity": 0.5271739130434783
+    },
+    {
+      "fqn": "django.db.models.expressions.Func",
+      "api_type": "class",
+      "similarity": 0.5248868778280543
+    },
+    {
+      "fqn": "django.urls.resolvers.URLPattern",
+      "api_type": "class",
+      "similarity": 0.523943661971831
+    }
+  ]
+}

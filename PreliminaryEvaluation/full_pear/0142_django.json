@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.0.14",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.postgres.fields.jsonb.KeyTransform",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.db.models.sql.compiler.SQLAggregateCompiler",
+      "api_type": "class",
+      "similarity": 0.6052631578947368,
+      "evolution_path": [
+        "django.db.models.sql.compiler.SQLAggregateCompiler"
+      ],
+      "local_scores": [
+        0.6052631578947368
+      ]
+    },
+    {
+      "fqn": "django.contrib.postgres.search.SearchVectorExact",
+      "api_type": "class",
+      "similarity": 0.564935064935065,
+      "evolution_path": [
+        "django.contrib.postgres.search.SearchVectorExact"
+      ],
+      "local_scores": [
+        0.564935064935065
+      ]
+    },
+    {
+      "fqn": "django.db.models.fields.json.KeyTransformIsNull",
+      "api_type": "class",
+      "similarity": 0.5483870967741935,
+      "evolution_path": [
+        "django.db.models.fields.json.KeyTransformIsNull"
+      ],
+      "local_scores": [
+        0.5483870967741935
+      ]
+    },
+    {
+      "fqn": "django.contrib.postgres.fields.hstore.KeyTransform",
+      "api_type": "class",
+      "similarity": 0.5426356589147286,
+      "evolution_path": [
+        "django.contrib.postgres.fields.hstore.KeyTransform"
+      ],
+      "local_scores": [
+        0.5426356589147286
+      ]
+    },
+    {
+      "fqn": "django.template.base.Token",
+      "api_type": "class",
+      "similarity": 0.5411764705882353,
+      "evolution_path": [
+        "django.template.base.Token"
+      ],
+      "local_scores": [
+        0.5411764705882353
+      ]
+    },
+    {
+      "fqn": "django.contrib.postgres.fields.array.ArrayRHSMixin",
+      "api_type": "class",
+      "similarity": 0.5408805031446541,
+      "evolution_path": [
+        "django.contrib.postgres.fields.array.ArrayRHSMixin"
+      ],
+      "local_scores": [
+        0.5408805031446541
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.db.models.functions.AsGML",
+      "api_type": "class",
+      "similarity": 0.5341614906832298,
+      "evolution_path": [
+        "django.contrib.gis.db.models.functions.AsGML"
+      ],
+      "local_scores": [
+        0.5341614906832298
+      ]
+    },
+    {
+      "fqn": "django.db.models.expressions.Exists",
+      "api_type": "class",
+      "similarity": 0.5314285714285715,
+      "evolution_path": [
+        "django.db.models.expressions.Exists"
+      ],
+      "local_scores": [
+        0.5314285714285715
+      ]
+    },
+    {
+      "fqn": "django.template.backends.jinja2.Template",
+      "api_type": "class",
+      "similarity": 0.5157232704402516,
+      "evolution_path": [
+        "django.template.backends.jinja2.Template"
+      ],
+      "local_scores": [
+        0.5157232704402516
+      ]
+    },
+    {
+      "fqn": "django.core.handlers.wsgi.WSGIHandler",
+      "api_type": "class",
+      "similarity": 0.5113636363636364,
+      "evolution_path": [
+        "django.core.handlers.wsgi.WSGIHandler"
+      ],
+      "local_scores": [
+        0.5113636363636364
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.contrib.postgres.fields.jsonb.KeyTransform",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.2.25",
+      "vpost": "4.0",
+      "resolved_fqn": "django.contrib.postgres.fields.jsonb.KeyTransform",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.db.models.sql.compiler.SQLAggregateCompiler",
+          "similarity": 0.605263
+        },
+        {
+          "fqn": "django.contrib.postgres.search.SearchVectorExact",
+          "similarity": 0.564935
+        },
+        {
+          "fqn": "django.db.models.fields.json.KeyTransformIsNull",
+          "similarity": 0.548387
+        },
+        {
+          "fqn": "django.contrib.postgres.fields.hstore.KeyTransform",
+          "similarity": 0.542636
+        },
+        {
+          "fqn": "django.template.base.Token",
+          "similarity": 0.541176
+        },
+        {
+          "fqn": "django.contrib.postgres.fields.array.ArrayRHSMixin",
+          "similarity": 0.540881
+        },
+        {
+          "fqn": "django.contrib.gis.db.models.functions.AsGML",
+          "similarity": 0.534161
+        },
+        {
+          "fqn": "django.db.models.expressions.Exists",
+          "similarity": 0.531429
+        },
+        {
+          "fqn": "django.template.backends.jinja2.Template",
+          "similarity": 0.515723
+        },
+        {
+          "fqn": "django.core.handlers.wsgi.WSGIHandler",
+          "similarity": 0.511364
+        }
+      ],
+      "entered_final": [
+        "django.db.models.sql.compiler.SQLAggregateCompiler",
+        "django.contrib.postgres.search.SearchVectorExact",
+        "django.db.models.fields.json.KeyTransformIsNull",
+        "django.contrib.postgres.fields.hstore.KeyTransform",
+        "django.template.base.Token",
+        "django.contrib.postgres.fields.array.ArrayRHSMixin",
+        "django.contrib.gis.db.models.functions.AsGML",
+        "django.db.models.expressions.Exists",
+        "django.template.backends.jinja2.Template",
+        "django.core.handlers.wsgi.WSGIHandler"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.511364,
+      "dead_reason": null
+    }
+  ]
+}

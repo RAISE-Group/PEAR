@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.6.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.contour.ClabelText",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.backends.backend_webagg.WebAggApplication.MplJs",
+      "api_type": "class",
+      "similarity": 0.42857142857142855
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg.WebAggApplication.FavIcon",
+      "api_type": "class",
+      "similarity": 0.4067796610169492
+    },
+    {
+      "fqn": "matplotlib.backend_bases.ResizeEvent",
+      "api_type": "class",
+      "similarity": 0.36065573770491804
+    },
+    {
+      "fqn": "matplotlib.transforms._ScaledRotation",
+      "api_type": "class",
+      "similarity": 0.3473684210526316
+    },
+    {
+      "fqn": "matplotlib.backends._backend_tk.HelpTk",
+      "api_type": "class",
+      "similarity": 0.3283582089552239
+    },
+    {
+      "fqn": "matplotlib.backends.backend_qt.MainWindow",
+      "api_type": "class",
+      "similarity": 0.328125
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg.WebAggApplication.Download",
+      "api_type": "class",
+      "similarity": 0.32098765432098764
+    },
+    {
+      "fqn": "matplotlib.collections.CircleCollection",
+      "api_type": "class",
+      "similarity": 0.3116883116883117
+    },
+    {
+      "fqn": "matplotlib.testing.compare._SVGWithMatplotlibFontsConverter",
+      "api_type": "class",
+      "similarity": 0.30864197530864196
+    },
+    {
+      "fqn": "matplotlib.transforms.AffineDeltaTransform",
+      "api_type": "class",
+      "similarity": 0.30851063829787234
+    }
+  ]
+}

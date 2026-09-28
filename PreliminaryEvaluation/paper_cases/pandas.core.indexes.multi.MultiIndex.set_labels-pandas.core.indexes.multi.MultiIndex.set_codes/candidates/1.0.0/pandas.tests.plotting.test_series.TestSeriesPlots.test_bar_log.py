@@ -1,0 +1,27 @@
+@pytest.mark.slow
+def test_bar_log(self):
+    expected = np.array([0.1, 1.0, 10.0, 100.0, 1000.0, 10000.0])
+    _, ax = self.plt.subplots()
+    ax = Series([200, 500]).plot.bar(log=True, ax=ax)
+    tm.assert_numpy_array_equal(ax.yaxis.get_ticklocs(), expected)
+    tm.close()
+    _, ax = self.plt.subplots()
+    ax = Series([200, 500]).plot.barh(log=True, ax=ax)
+    tm.assert_numpy_array_equal(ax.xaxis.get_ticklocs(), expected)
+    tm.close()
+    expected = np.array([1e-05, 0.0001, 0.001, 0.01, 0.1, 1.0, 10.0])
+    _, ax = self.plt.subplots()
+    ax = Series([0.1, 0.01, 0.001]).plot(log=True, kind='bar', ax=ax)
+    ymin = 0.0007943282347242822
+    ymax = 0.12589254117941673
+    res = ax.get_ylim()
+    tm.assert_almost_equal(res[0], ymin)
+    tm.assert_almost_equal(res[1], ymax)
+    tm.assert_numpy_array_equal(ax.yaxis.get_ticklocs(), expected)
+    tm.close()
+    _, ax = self.plt.subplots()
+    ax = Series([0.1, 0.01, 0.001]).plot(log=True, kind='barh', ax=ax)
+    res = ax.get_xlim()
+    tm.assert_almost_equal(res[0], ymin)
+    tm.assert_almost_equal(res[1], ymax)
+    tm.assert_numpy_array_equal(ax.xaxis.get_ticklocs(), expected)

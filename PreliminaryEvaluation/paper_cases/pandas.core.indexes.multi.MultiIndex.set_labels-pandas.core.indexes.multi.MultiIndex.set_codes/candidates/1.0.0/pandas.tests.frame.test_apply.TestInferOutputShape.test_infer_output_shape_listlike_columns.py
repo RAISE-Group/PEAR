@@ -1,0 +1,22 @@
+def test_infer_output_shape_listlike_columns(self):
+    df = DataFrame(np.random.randn(6, 3), columns=['A', 'B', 'C'])
+    result = df.apply(lambda x: [1, 2, 3], axis=1)
+    expected = Series([[1, 2, 3] for t in df.itertuples()])
+    tm.assert_series_equal(result, expected)
+    result = df.apply(lambda x: [1, 2], axis=1)
+    expected = Series([[1, 2] for t in df.itertuples()])
+    tm.assert_series_equal(result, expected)
+    df = DataFrame({'a': [1, 2, 3]}, index=list('abc'))
+    result = df.apply(lambda row: np.ones(1), axis=1)
+    expected = Series([np.ones(1) for t in df.itertuples()], index=df.index)
+    tm.assert_series_equal(result, expected)
+    result = df.apply(lambda row: np.ones(2), axis=1)
+    expected = Series([np.ones(2) for t in df.itertuples()], index=df.index)
+    tm.assert_series_equal(result, expected)
+    df = pd.DataFrame({'a': [pd.Timestamp('2010-02-01'), pd.Timestamp('2010-02-04'), pd.Timestamp('2010-02-05'), pd.Timestamp('2010-02-06')], 'b': [9, 5, 4, 3], 'c': [5, 3, 4, 2], 'd': [1, 2, 3, 4]})
+
+    def fun(x):
+        return (1, 2)
+    result = df.apply(fun, axis=1)
+    expected = Series([(1, 2) for t in df.itertuples()])
+    tm.assert_series_equal(result, expected)

@@ -1,0 +1,2 @@
+def build_alignment(self, props) -> Dict[str, Optional[Union[bool, str]]]:
+    return {'horizontal': props.get('text-align'), 'vertical': self.VERTICAL_MAP.get(props.get('vertical-align')), 'wrap_text': None if props.get('white-space') is None else props['white-space'] not in ('nowrap', 'pre', 'pre-line')}

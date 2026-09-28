@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.10.8",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_indexes",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_constraints",
+      "api_type": "method",
+      "similarity": 0.5053763440860215
+    },
+    {
+      "fqn": "django.contrib.admin.widgets.FilteredSelectMultiple.get_context",
+      "api_type": "method",
+      "similarity": 0.47474747474747475
+    },
+    {
+      "fqn": "django.db.models.fields.__init__.SlugField.deconstruct",
+      "api_type": "method",
+      "similarity": 0.46236559139784944
+    },
+    {
+      "fqn": "django.contrib.admin.widgets.AdminSplitDateTime.get_context",
+      "api_type": "method",
+      "similarity": 0.4574468085106383
+    },
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_sequences",
+      "api_type": "method",
+      "similarity": 0.4563106796116505
+    },
+    {
+      "fqn": "django.contrib.admin.widgets.AdminURLFieldWidget.get_context",
+      "api_type": "method",
+      "similarity": 0.4537037037037037
+    },
+    {
+      "fqn": "django.db.models.query_utils.DeferredAttribute.__get__",
+      "api_type": "method",
+      "similarity": 0.45
+    },
+    {
+      "fqn": "django.views.debug.SafeExceptionReporterFilter.get_post_parameters",
+      "api_type": "method",
+      "similarity": 0.44761904761904764
+    },
+    {
+      "fqn": "django.db.migrations.state.ProjectState._get_concrete_models_mapping_and_proxy_models",
+      "api_type": "method",
+      "similarity": 0.44680851063829785
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.base.models.SpatialRefSysMixin.get_spheroid",
+      "api_type": "method",
+      "similarity": 0.44554455445544555
+    }
+  ]
+}

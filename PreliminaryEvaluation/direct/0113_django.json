@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.8.19",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.models.fields.related.ReverseSingleRelatedObjectDescriptor",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor",
+      "api_type": "class",
+      "similarity": 0.7846385542168675
+    },
+    {
+      "fqn": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor",
+      "api_type": "class",
+      "similarity": 0.6883720930232559
+    },
+    {
+      "fqn": "django.forms.models.BaseModelForm",
+      "api_type": "class",
+      "similarity": 0.5824468085106383
+    },
+    {
+      "fqn": "django.db.models.aggregates.Aggregate",
+      "api_type": "class",
+      "similarity": 0.5725094577553594
+    },
+    {
+      "fqn": "django.db.migrations.migration.Migration",
+      "api_type": "class",
+      "similarity": 0.5667574931880109
+    },
+    {
+      "fqn": "django.contrib.contenttypes.fields.GenericForeignKey",
+      "api_type": "class",
+      "similarity": 0.5629139072847682
+    },
+    {
+      "fqn": "django.db.models.fields.generated.GeneratedField",
+      "api_type": "class",
+      "similarity": 0.5596221959858324
+    },
+    {
+      "fqn": "django.forms.models.BaseInlineFormSet",
+      "api_type": "class",
+      "similarity": 0.550354609929078
+    },
+    {
+      "fqn": "django.apps.config.AppConfig",
+      "api_type": "class",
+      "similarity": 0.5390334572490706
+    },
+    {
+      "fqn": "django.core.mail.backends.smtp.EmailBackend",
+      "api_type": "class",
+      "similarity": 0.5328185328185329
+    }
+  ]
+}

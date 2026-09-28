@@ -1,0 +1,17 @@
+@pytest.mark.parametrize('jit', [True, False])
+def test_numba_vs_cython(self, jit, nogil, parallel, nopython):
+
+    def f(x, *args):
+        arg_sum = 0
+        for arg in args:
+            arg_sum += arg
+        return np.mean(x) + arg_sum
+    if jit:
+        import numba
+        f = numba.jit(f)
+    engine_kwargs = {'nogil': nogil, 'parallel': parallel, 'nopython': nopython}
+    args = (2,)
+    s = Series(range(10))
+    result = s.rolling(2).apply(f, args=args, engine='numba', engine_kwargs=engine_kwargs, raw=True)
+    expected = s.rolling(2).apply(f, engine='cython', args=args, raw=True)
+    tm.assert_series_equal(result, expected)

@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.5.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backend_bases.FigureCanvasBase.pick",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.figure.Figure.pick",
+      "api_type": "method",
+      "similarity": 0.782608695652174
+    },
+    {
+      "fqn": "matplotlib.widgets.LockDraw.available",
+      "api_type": "method",
+      "similarity": 0.48
+    },
+    {
+      "fqn": "matplotlib.dviread.Dvi.close",
+      "api_type": "method",
+      "similarity": 0.4782608695652174
+    },
+    {
+      "fqn": "matplotlib.backends.backend_pdf.PdfFile.write",
+      "api_type": "method",
+      "similarity": 0.4642857142857143
+    },
+    {
+      "fqn": "matplotlib.backends.backend_qt.TimerQT.__del__",
+      "api_type": "method",
+      "similarity": 0.4583333333333333
+    },
+    {
+      "fqn": "matplotlib.backend_tools.AxisScaleBase.disable",
+      "api_type": "method",
+      "similarity": 0.4444444444444444
+    },
+    {
+      "fqn": "matplotlib.backend_tools.AxisScaleBase.enable",
+      "api_type": "method",
+      "similarity": 0.4444444444444444
+    },
+    {
+      "fqn": "matplotlib.colorbar.Colorbar.get_ticks",
+      "api_type": "method",
+      "similarity": 0.43333333333333335
+    },
+    {
+      "fqn": "matplotlib.animation.Animation.pause",
+      "api_type": "method",
+      "similarity": 0.42857142857142855
+    },
+    {
+      "fqn": "matplotlib.animation.Animation.resume",
+      "api_type": "method",
+      "similarity": 0.42857142857142855
+    }
+  ]
+}

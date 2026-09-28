@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.5.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.ticker.LogLocator.subs",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.ticker.LogLocator._set_subs",
+      "api_type": "method",
+      "similarity": 0.8472222222222222
+    },
+    {
+      "fqn": "matplotlib.cm.ColormapRegistry.register",
+      "api_type": "method",
+      "similarity": 0.5425531914893617
+    },
+    {
+      "fqn": "matplotlib.widgets.SliderBase._stepped_value",
+      "api_type": "method",
+      "similarity": 0.5333333333333333
+    },
+    {
+      "fqn": "matplotlib.backends.backend_pdf.PdfPages.savefig",
+      "api_type": "method",
+      "similarity": 0.5308641975308642
+    },
+    {
+      "fqn": "matplotlib.colors.MultiNorm.clip",
+      "api_type": "method",
+      "similarity": 0.5308641975308642
+    },
+    {
+      "fqn": "matplotlib.colors.MultiNorm.vmax",
+      "api_type": "method",
+      "similarity": 0.5308641975308642
+    },
+    {
+      "fqn": "matplotlib.colors.MultiNorm.vmin",
+      "api_type": "method",
+      "similarity": 0.5308641975308642
+    },
+    {
+      "fqn": "matplotlib.backends.backend_pgf.PdfPages.savefig",
+      "api_type": "method",
+      "similarity": 0.53
+    },
+    {
+      "fqn": "matplotlib.colorizer.Colorizer._set_cmap",
+      "api_type": "method",
+      "similarity": 0.5185185185185185
+    },
+    {
+      "fqn": "matplotlib.ticker.ScalarFormatter.set_useMathText",
+      "api_type": "method",
+      "similarity": 0.5168539325842697
+    }
+  ]
+}

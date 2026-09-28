@@ -1,0 +1,29 @@
+@Substitution(**_shared_doc_kwargs)
+@Appender(NDFrame.sort_index.__doc__)
+def sort_index(self, axis=0, level=None, ascending=True, inplace=False, kind='quicksort', na_position='last', sort_remaining=True, ignore_index: bool=False):
+    inplace = validate_bool_kwarg(inplace, 'inplace')
+    axis = self._get_axis_number(axis)
+    labels = self._get_axis(axis)
+    labels = labels._sort_levels_monotonic()
+    if level is not None:
+        new_axis, indexer = labels.sortlevel(level, ascending=ascending, sort_remaining=sort_remaining)
+    elif isinstance(labels, ABCMultiIndex):
+        from pandas.core.sorting import lexsort_indexer
+        indexer = lexsort_indexer(labels._get_codes_for_sorting(), orders=ascending, na_position=na_position)
+    else:
+        from pandas.core.sorting import nargsort
+        if ascending and labels.is_monotonic_increasing or (not ascending and labels.is_monotonic_decreasing):
+            if inplace:
+                return
+            else:
+                return self.copy()
+        indexer = nargsort(labels, kind=kind, ascending=ascending, na_position=na_position)
+    baxis = self._get_block_manager_axis(axis)
+    new_data = self._data.take(indexer, axis=baxis, verify=False)
+    new_data.axes[baxis] = new_data.axes[baxis]._sort_levels_monotonic()
+    if ignore_index:
+        new_data.axes[1] = ibase.default_index(len(indexer))
+    if inplace:
+        return self._update_inplace(new_data)
+    else:
+        return self._constructor(new_data).__finalize__(self)

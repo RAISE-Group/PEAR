@@ -1,0 +1,11 @@
+def test_strip_lstrip_rstrip(self):
+    values = Series(['  aa   ', ' bb \n', np.nan, 'cc  '])
+    result = values.str.strip()
+    exp = Series(['aa', 'bb', np.nan, 'cc'])
+    tm.assert_series_equal(result, exp)
+    result = values.str.lstrip()
+    exp = Series(['aa   ', 'bb \n', np.nan, 'cc  '])
+    tm.assert_series_equal(result, exp)
+    result = values.str.rstrip()
+    exp = Series(['  aa', ' bb', np.nan, 'cc'])
+    tm.assert_series_equal(result, exp)

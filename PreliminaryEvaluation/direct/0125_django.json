@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.10.8",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.mysql.introspection.DatabaseIntrospection.get_indexes",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_geometry_type",
+      "api_type": "method",
+      "similarity": 0.5579710144927537
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_geometry_type",
+      "api_type": "method",
+      "similarity": 0.5454545454545454
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_column_collations",
+      "api_type": "method",
+      "similarity": 0.5306122448979592
+    },
+    {
+      "fqn": "django.forms.widgets.MultipleHiddenInput.get_context",
+      "api_type": "method",
+      "similarity": 0.5208333333333334
+    },
+    {
+      "fqn": "django.contrib.admin.views.main.ChangeList.get_query_string",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.core.management.commands.loaddata.Command.parse_name",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.contrib.gis.forms.widgets.BaseGeometryWidget.get_context",
+      "api_type": "method",
+      "similarity": 0.47651006711409394
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.oracle.introspection.OracleIntrospection.get_geometry_type",
+      "api_type": "method",
+      "similarity": 0.475177304964539
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.postgis.operations.PostGISOperations.get_distance",
+      "api_type": "method",
+      "similarity": 0.46923076923076923
+    },
+    {
+      "fqn": "django.template.base.Lexer.create_token",
+      "api_type": "method",
+      "similarity": 0.46875
+    }
+  ]
+}

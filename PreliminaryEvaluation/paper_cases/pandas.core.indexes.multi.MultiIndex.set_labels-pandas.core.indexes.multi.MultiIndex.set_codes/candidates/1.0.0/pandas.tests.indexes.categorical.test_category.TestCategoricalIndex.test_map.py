@@ -1,0 +1,21 @@
+def test_map(self):
+    ci = pd.CategoricalIndex(list('ABABC'), categories=list('CBA'), ordered=True)
+    result = ci.map(lambda x: x.lower())
+    exp = pd.CategoricalIndex(list('ababc'), categories=list('cba'), ordered=True)
+    tm.assert_index_equal(result, exp)
+    ci = pd.CategoricalIndex(list('ABABC'), categories=list('BAC'), ordered=False, name='XXX')
+    result = ci.map(lambda x: x.lower())
+    exp = pd.CategoricalIndex(list('ababc'), categories=list('bac'), ordered=False, name='XXX')
+    tm.assert_index_equal(result, exp)
+    tm.assert_index_equal(ci.map(lambda x: 1), Index(np.array([1] * 5, dtype=np.int64), name='XXX'))
+    ci = pd.CategoricalIndex(list('ABABC'), categories=list('BAC'), ordered=False)
+
+    def f(x):
+        return {'A': 10, 'B': 20, 'C': 30}.get(x)
+    result = ci.map(f)
+    exp = pd.CategoricalIndex([10, 20, 10, 20, 30], categories=[20, 10, 30], ordered=False)
+    tm.assert_index_equal(result, exp)
+    result = ci.map(pd.Series([10, 20, 30], index=['A', 'B', 'C']))
+    tm.assert_index_equal(result, exp)
+    result = ci.map({'A': 10, 'B': 20, 'C': 30})
+    tm.assert_index_equal(result, exp)

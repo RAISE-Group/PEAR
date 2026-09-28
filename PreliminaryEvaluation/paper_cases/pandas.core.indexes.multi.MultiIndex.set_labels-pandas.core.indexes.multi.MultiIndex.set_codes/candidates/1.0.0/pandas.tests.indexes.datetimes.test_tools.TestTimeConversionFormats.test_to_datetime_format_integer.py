@@ -1,0 +1,10 @@
+@pytest.mark.parametrize('cache', [True, False])
+def test_to_datetime_format_integer(self, cache):
+    s = Series([2000, 2001, 2002])
+    expected = Series([Timestamp(x) for x in s.apply(str)])
+    result = to_datetime(s, format='%Y', cache=cache)
+    tm.assert_series_equal(result, expected)
+    s = Series([200001, 200105, 200206])
+    expected = Series([Timestamp(x[:4] + '-' + x[4:]) for x in s.apply(str)])
+    result = to_datetime(s, format='%Y%m', cache=cache)
+    tm.assert_series_equal(result, expected)

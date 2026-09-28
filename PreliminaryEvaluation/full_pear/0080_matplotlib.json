@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.3.4",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.spines.Spine.cla",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.spines.Spine.clear",
+      "api_type": "method",
+      "similarity": 0.6363636363636364,
+      "evolution_path": [
+        "matplotlib.spines.Spine.clear"
+      ],
+      "local_scores": [
+        0.6363636363636364
+      ]
+    },
+    {
+      "fqn": "matplotlib.axes._base._AxesBase.cla",
+      "api_type": "method",
+      "similarity": 0.5714285714285714,
+      "evolution_path": [
+        "matplotlib.axes._base._AxesBase.cla"
+      ],
+      "local_scores": [
+        0.5714285714285714
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_pdf.PdfFile.endStream",
+      "api_type": "method",
+      "similarity": 0.56,
+      "evolution_path": [
+        "matplotlib.backends.backend_pdf.PdfFile.endStream"
+      ],
+      "local_scores": [
+        0.56
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg_core.TimerAsyncio._timer_stop",
+      "api_type": "method",
+      "similarity": 0.56,
+      "evolution_path": [
+        "matplotlib.backends.backend_webagg_core.TimerAsyncio._timer_stop"
+      ],
+      "local_scores": [
+        0.56
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends._backend_gtk.TimerGTK._timer_stop",
+      "api_type": "method",
+      "similarity": 0.5384615384615384,
+      "evolution_path": [
+        "matplotlib.backends._backend_gtk.TimerGTK._timer_stop"
+      ],
+      "local_scores": [
+        0.5384615384615384
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends._backend_tk.TimerTk._timer_stop",
+      "api_type": "method",
+      "similarity": 0.5384615384615384,
+      "evolution_path": [
+        "matplotlib.backends._backend_tk.TimerTk._timer_stop"
+      ],
+      "local_scores": [
+        0.5384615384615384
+      ]
+    },
+    {
+      "fqn": "matplotlib.widgets.PolygonSelector._remove_box",
+      "api_type": "method",
+      "similarity": 0.5384615384615384,
+      "evolution_path": [
+        "matplotlib.widgets.PolygonSelector._remove_box"
+      ],
+      "local_scores": [
+        0.5384615384615384
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_pdf.Stream._flush",
+      "api_type": "method",
+      "similarity": 0.4827586206896552,
+      "evolution_path": [
+        "matplotlib.backends.backend_pdf.Stream._flush"
+      ],
+      "local_scores": [
+        0.4827586206896552
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.TimerBase.start",
+      "api_type": "method",
+      "similarity": 0.48,
+      "evolution_path": [
+        "matplotlib.backend_bases.TimerBase.start"
+      ],
+      "local_scores": [
+        0.48
+      ]
+    },
+    {
+      "fqn": "matplotlib.colorbar.Colorbar._cbar_cla",
+      "api_type": "method",
+      "similarity": 0.4482758620689655,
+      "evolution_path": [
+        "matplotlib.colorbar.Colorbar._cbar_cla"
+      ],
+      "local_scores": [
+        0.4482758620689655
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.spines.Spine.cla",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.5.3",
+      "vpost": "3.6.0",
+      "resolved_fqn": "matplotlib.spines.Spine.cla",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.spines.Spine.clear",
+          "similarity": 0.636364
+        },
+        {
+          "fqn": "matplotlib.axes._base._AxesBase.cla",
+          "similarity": 0.571429
+        },
+        {
+          "fqn": "matplotlib.backends.backend_pdf.PdfFile.endStream",
+          "similarity": 0.56
+        },
+        {
+          "fqn": "matplotlib.backends.backend_webagg_core.TimerAsyncio._timer_stop",
+          "similarity": 0.56
+        },
+        {
+          "fqn": "matplotlib.backends._backend_gtk.TimerGTK._timer_stop",
+          "similarity": 0.538462
+        },
+        {
+          "fqn": "matplotlib.backends._backend_tk.TimerTk._timer_stop",
+          "similarity": 0.538462
+        },
+        {
+          "fqn": "matplotlib.widgets.PolygonSelector._remove_box",
+          "similarity": 0.538462
+        },
+        {
+          "fqn": "matplotlib.backends.backend_pdf.Stream._flush",
+          "similarity": 0.482759
+        },
+        {
+          "fqn": "matplotlib.backend_bases.TimerBase.start",
+          "similarity": 0.48
+        },
+        {
+          "fqn": "matplotlib.colorbar.Colorbar._cbar_cla",
+          "similarity": 0.448276
+        }
+      ],
+      "entered_final": [
+        "matplotlib.spines.Spine.clear",
+        "matplotlib.axes._base._AxesBase.cla",
+        "matplotlib.backends.backend_pdf.PdfFile.endStream",
+        "matplotlib.backends.backend_webagg_core.TimerAsyncio._timer_stop",
+        "matplotlib.backends._backend_gtk.TimerGTK._timer_stop",
+        "matplotlib.backends._backend_tk.TimerTk._timer_stop",
+        "matplotlib.widgets.PolygonSelector._remove_box",
+        "matplotlib.backends.backend_pdf.Stream._flush",
+        "matplotlib.backend_bases.TimerBase.start",
+        "matplotlib.colorbar.Colorbar._cbar_cla"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.448276,
+      "dead_reason": null
+    }
+  ]
+}

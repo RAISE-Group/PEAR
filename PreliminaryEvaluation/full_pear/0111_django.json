@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.8.19",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.base.operations.BaseDatabaseOperations.check_aggregate_support",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.db.backends.base.operations.BaseDatabaseOperations.check_expression_support",
+      "api_type": "method",
+      "similarity": 1.0,
+      "evolution_path": [
+        "django.db.backends.base.operations.BaseDatabaseOperations.check_expression_support"
+      ],
+      "local_scores": [
+        1.0
+      ]
+    },
+    {
+      "fqn": "django.db.backends.base.base.BaseDatabaseWrapper.check_constraints",
+      "api_type": "method",
+      "similarity": 0.4444444444444444,
+      "evolution_path": [
+        "django.db.backends.base.base.BaseDatabaseWrapper.check_constraints"
+      ],
+      "local_scores": [
+        0.4444444444444444
+      ]
+    },
+    {
+      "fqn": "django.urls.resolvers.LocalePrefixPattern.check",
+      "api_type": "method",
+      "similarity": 0.4375,
+      "evolution_path": [
+        "django.urls.resolvers.LocalePrefixPattern.check"
+      ],
+      "local_scores": [
+        0.4375
+      ]
+    },
+    {
+      "fqn": "django.db.models.fields.related.ForeignKey.db_check",
+      "api_type": "method",
+      "similarity": 0.42105263157894735,
+      "evolution_path": [
+        "django.db.models.fields.related.ForeignKey.db_check"
+      ],
+      "local_scores": [
+        0.42105263157894735
+      ]
+    },
+    {
+      "fqn": "django.db.models.fields.related.ManyToManyField.db_check",
+      "api_type": "method",
+      "similarity": 0.42105263157894735,
+      "evolution_path": [
+        "django.db.models.fields.related.ManyToManyField.db_check"
+      ],
+      "local_scores": [
+        0.42105263157894735
+      ]
+    },
+    {
+      "fqn": "django.db.backends.base.validation.BaseDatabaseValidation.check",
+      "api_type": "method",
+      "similarity": 0.4117647058823529,
+      "evolution_path": [
+        "django.db.backends.base.validation.BaseDatabaseValidation.check"
+      ],
+      "local_scores": [
+        0.4117647058823529
+      ]
+    },
+    {
+      "fqn": "django.db.models.manager.BaseManager.check",
+      "api_type": "method",
+      "similarity": 0.4117647058823529,
+      "evolution_path": [
+        "django.db.models.manager.BaseManager.check"
+      ],
+      "local_scores": [
+        0.4117647058823529
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.check_expression_support",
+      "api_type": "method",
+      "similarity": 0.4,
+      "evolution_path": [
+        "django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.check_expression_support"
+      ],
+      "local_scores": [
+        0.4
+      ]
+    },
+    {
+      "fqn": "django.contrib.auth.models.AnonymousUser.check_password",
+      "api_type": "method",
+      "similarity": 0.36363636363636365,
+      "evolution_path": [
+        "django.contrib.auth.models.AnonymousUser.check_password"
+      ],
+      "local_scores": [
+        0.36363636363636365
+      ]
+    },
+    {
+      "fqn": "django.contrib.staticfiles.finders.BaseFinder.check",
+      "api_type": "method",
+      "similarity": 0.35,
+      "evolution_path": [
+        "django.contrib.staticfiles.finders.BaseFinder.check"
+      ],
+      "local_scores": [
+        0.35
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.db.backends.base.operations.BaseDatabaseOperations.check_aggregate_support",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "1.11.29",
+      "vpost": "2.0",
+      "resolved_fqn": "django.db.backends.base.operations.BaseDatabaseOperations.check_expression_support",
+      "resolved_kind": "forward",
+      "candidates": [
+        {
+          "fqn": "django.db.backends.base.operations.BaseDatabaseOperations.check_expression_support",
+          "similarity": 1.0
+        },
+        {
+          "fqn": "django.db.backends.base.base.BaseDatabaseWrapper.check_constraints",
+          "similarity": 0.444444
+        },
+        {
+          "fqn": "django.urls.resolvers.LocalePrefixPattern.check",
+          "similarity": 0.4375
+        },
+        {
+          "fqn": "django.db.models.fields.related.ForeignKey.db_check",
+          "similarity": 0.421053
+        },
+        {
+          "fqn": "django.db.models.fields.related.ManyToManyField.db_check",
+          "similarity": 0.421053
+        },
+        {
+          "fqn": "django.db.backends.base.validation.BaseDatabaseValidation.check",
+          "similarity": 0.411765
+        },
+        {
+          "fqn": "django.db.models.manager.BaseManager.check",
+          "similarity": 0.411765
+        },
+        {
+          "fqn": "django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.check_expression_support",
+          "similarity": 0.4
+        },
+        {
+          "fqn": "django.contrib.auth.models.AnonymousUser.check_password",
+          "similarity": 0.363636
+        },
+        {
+          "fqn": "django.contrib.staticfiles.finders.BaseFinder.check",
+          "similarity": 0.35
+        }
+      ],
+      "entered_final": [
+        "django.db.backends.base.operations.BaseDatabaseOperations.check_expression_support",
+        "django.db.backends.base.base.BaseDatabaseWrapper.check_constraints",
+        "django.urls.resolvers.LocalePrefixPattern.check",
+        "django.db.models.fields.related.ForeignKey.db_check",
+        "django.db.models.fields.related.ManyToManyField.db_check",
+        "django.db.backends.base.validation.BaseDatabaseValidation.check",
+        "django.db.models.manager.BaseManager.check",
+        "django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.check_expression_support",
+        "django.contrib.auth.models.AnonymousUser.check_password",
+        "django.contrib.staticfiles.finders.BaseFinder.check"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.35,
+      "dead_reason": null
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+@pytest.mark.parametrize('file', ['dta15_113', 'dta15_114', 'dta15_115', 'dta15_117'])
+def test_read_write_reread_dta15(self, file):
+    expected = self.read_csv(self.csv15)
+    expected['byte_'] = expected['byte_'].astype(np.int8)
+    expected['int_'] = expected['int_'].astype(np.int16)
+    expected['long_'] = expected['long_'].astype(np.int32)
+    expected['float_'] = expected['float_'].astype(np.float32)
+    expected['double_'] = expected['double_'].astype(np.float64)
+    expected['date_td'] = expected['date_td'].apply(datetime.strptime, args=('%Y-%m-%d',))
+    file = getattr(self, file)
+    parsed = self.read_dta(file)
+    tm.assert_frame_equal(expected, parsed)

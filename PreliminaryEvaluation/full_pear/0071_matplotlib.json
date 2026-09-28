@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.2.2",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.ticker.OldScalarFormatter",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib._mathtext.Vlist",
+      "api_type": "class",
+      "similarity": 0.48753462603878117,
+      "evolution_path": [
+        "matplotlib._mathtext.Vlist"
+      ],
+      "local_scores": [
+        0.48753462603878117
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.EngFormatter",
+      "api_type": "class",
+      "similarity": 0.4777777777777778,
+      "evolution_path": [
+        "matplotlib.ticker.EngFormatter"
+      ],
+      "local_scores": [
+        0.4777777777777778
+      ]
+    },
+    {
+      "fqn": "matplotlib._mathtext.StixFonts",
+      "api_type": "class",
+      "similarity": 0.4774774774774775,
+      "evolution_path": [
+        "matplotlib._mathtext.StixFonts"
+      ],
+      "local_scores": [
+        0.4774774774774775
+      ]
+    },
+    {
+      "fqn": "matplotlib.colors.BoundaryNorm",
+      "api_type": "class",
+      "similarity": 0.4760705289672544,
+      "evolution_path": [
+        "matplotlib.colors.BoundaryNorm"
+      ],
+      "local_scores": [
+        0.4760705289672544
+      ]
+    },
+    {
+      "fqn": "matplotlib.tests.test_image.QuantityND",
+      "api_type": "class",
+      "similarity": 0.46472019464720193,
+      "evolution_path": [
+        "matplotlib.tests.test_image.QuantityND"
+      ],
+      "local_scores": [
+        0.46472019464720193
+      ]
+    },
+    {
+      "fqn": "matplotlib.testing.jpl_units.StrConverter.StrConverter",
+      "api_type": "class",
+      "similarity": 0.46467391304347827,
+      "evolution_path": [
+        "matplotlib.testing.jpl_units.StrConverter.StrConverter"
+      ],
+      "local_scores": [
+        0.46467391304347827
+      ]
+    },
+    {
+      "fqn": "matplotlib.projections.geo.MollweideAxes.MollweideTransform",
+      "api_type": "class",
+      "similarity": 0.4645669291338583,
+      "evolution_path": [
+        "matplotlib.projections.geo.MollweideAxes.MollweideTransform"
+      ],
+      "local_scores": [
+        0.4645669291338583
+      ]
+    },
+    {
+      "fqn": "matplotlib._mathtext.Hlist",
+      "api_type": "class",
+      "similarity": 0.46226415094339623,
+      "evolution_path": [
+        "matplotlib._mathtext.Hlist"
+      ],
+      "local_scores": [
+        0.46226415094339623
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.LogFormatterMathtext",
+      "api_type": "class",
+      "similarity": 0.4574780058651026,
+      "evolution_path": [
+        "matplotlib.ticker.LogFormatterMathtext"
+      ],
+      "local_scores": [
+        0.4574780058651026
+      ]
+    },
+    {
+      "fqn": "matplotlib.colors.PowerNorm",
+      "api_type": "class",
+      "similarity": 0.4572192513368984,
+      "evolution_path": [
+        "matplotlib.colors.PowerNorm"
+      ],
+      "local_scores": [
+        0.4572192513368984
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.ticker.OldScalarFormatter",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.ticker.OldScalarFormatter",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib._mathtext.Vlist",
+          "similarity": 0.487535
+        },
+        {
+          "fqn": "matplotlib.ticker.EngFormatter",
+          "similarity": 0.477778
+        },
+        {
+          "fqn": "matplotlib._mathtext.StixFonts",
+          "similarity": 0.477477
+        },
+        {
+          "fqn": "matplotlib.colors.BoundaryNorm",
+          "similarity": 0.476071
+        },
+        {
+          "fqn": "matplotlib.tests.test_image.QuantityND",
+          "similarity": 0.46472
+        },
+        {
+          "fqn": "matplotlib.testing.jpl_units.StrConverter.StrConverter",
+          "similarity": 0.464674
+        },
+        {
+          "fqn": "matplotlib.projections.geo.MollweideAxes.MollweideTransform",
+          "similarity": 0.464567
+        },
+        {
+          "fqn": "matplotlib._mathtext.Hlist",
+          "similarity": 0.462264
+        },
+        {
+          "fqn": "matplotlib.ticker.LogFormatterMathtext",
+          "similarity": 0.457478
+        },
+        {
+          "fqn": "matplotlib.colors.PowerNorm",
+          "similarity": 0.457219
+        }
+      ],
+      "entered_final": [
+        "matplotlib._mathtext.Vlist",
+        "matplotlib.ticker.EngFormatter",
+        "matplotlib._mathtext.StixFonts",
+        "matplotlib.colors.BoundaryNorm",
+        "matplotlib.tests.test_image.QuantityND",
+        "matplotlib.testing.jpl_units.StrConverter.StrConverter",
+        "matplotlib.projections.geo.MollweideAxes.MollweideTransform",
+        "matplotlib._mathtext.Hlist",
+        "matplotlib.ticker.LogFormatterMathtext",
+        "matplotlib.colors.PowerNorm"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.457219,
+      "dead_reason": null
+    }
+  ]
+}

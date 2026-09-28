@@ -1,0 +1,10 @@
+def test_union(self):
+    i1 = timedelta_range('1day', periods=5)
+    i2 = timedelta_range('3day', periods=5)
+    result = i1.union(i2)
+    expected = timedelta_range('1day', periods=7)
+    tm.assert_index_equal(result, expected)
+    i1 = Int64Index(np.arange(0, 20, 2))
+    i2 = timedelta_range(start='1 day', periods=10, freq='D')
+    i1.union(i2)
+    i2.union(i1)

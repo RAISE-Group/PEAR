@@ -1,0 +1,12 @@
+def test_identical(self):
+    t1 = self.rng.copy()
+    t2 = self.rng.copy()
+    assert t1.identical(t2)
+    t1 = t1.rename('foo')
+    assert t1.equals(t2)
+    assert not t1.identical(t2)
+    t2 = t2.rename('foo')
+    assert t1.identical(t2)
+    t2v = Index(t2.values)
+    assert t1.equals(t2v)
+    assert not t1.identical(t2v)

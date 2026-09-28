@@ -1,0 +1,3 @@
+@pytest.mark.parametrize('data', [[datetime(2017, 6, 12, 19, 30), datetime(2017, 3, 11, 1, 15)], [Timestamp('20170612'), Timestamp('20170311')], [Timestamp('20170612', tz='US/Eastern'), Timestamp('20170311', tz='US/Eastern')], [date(2017, 6, 12), Timestamp('20170311', tz='US/Eastern')], [np.datetime64('2017-06-12'), np.datetime64('2017-03-11')], [np.datetime64('2017-06-12'), datetime(2017, 3, 11, 1, 15)]])
+def test_infer_datetimelike_array_datetime(self, data):
+    assert lib.infer_datetimelike_array(data) == 'datetime'

@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.6.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.backends._backend_gtk.RubberbandGTK.draw_rubberband",
+      "api_type": "method",
+      "similarity": 0.41304347826086957,
+      "evolution_path": [
+        "matplotlib.backends._backend_gtk.RubberbandGTK.draw_rubberband"
+      ],
+      "local_scores": [
+        0.41304347826086957
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends._backend_tk.RubberbandTk.draw_rubberband",
+      "api_type": "method",
+      "similarity": 0.41304347826086957,
+      "evolution_path": [
+        "matplotlib.backends._backend_tk.RubberbandTk.draw_rubberband"
+      ],
+      "local_scores": [
+        0.41304347826086957
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_qt.RubberbandQt.draw_rubberband",
+      "api_type": "method",
+      "similarity": 0.41304347826086957,
+      "evolution_path": [
+        "matplotlib.backends.backend_qt.RubberbandQt.draw_rubberband"
+      ],
+      "local_scores": [
+        0.41304347826086957
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_wx.RubberbandWx.draw_rubberband",
+      "api_type": "method",
+      "similarity": 0.41304347826086957,
+      "evolution_path": [
+        "matplotlib.backends.backend_wx.RubberbandWx.draw_rubberband"
+      ],
+      "local_scores": [
+        0.41304347826086957
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg_core.NavigationToolbar2WebAgg.draw_rubberband",
+      "api_type": "method",
+      "similarity": 0.4,
+      "evolution_path": [
+        "matplotlib.backends.backend_webagg_core.NavigationToolbar2WebAgg.draw_rubberband"
+      ],
+      "local_scores": [
+        0.4
+      ]
+    },
+    {
+      "fqn": "matplotlib.patches.Shadow.draw",
+      "api_type": "method",
+      "similarity": 0.38095238095238093,
+      "evolution_path": [
+        "matplotlib.patches.Shadow.draw"
+      ],
+      "local_scores": [
+        0.38095238095238093
+      ]
+    },
+    {
+      "fqn": "matplotlib.patheffects.PathEffectRenderer.draw_path",
+      "api_type": "method",
+      "similarity": 0.375,
+      "evolution_path": [
+        "matplotlib.patheffects.PathEffectRenderer.draw_path"
+      ],
+      "local_scores": [
+        0.375
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_macosx.NavigationToolbar2Mac.draw_rubberband",
+      "api_type": "method",
+      "similarity": 0.37037037037037035,
+      "evolution_path": [
+        "matplotlib.backends.backend_macosx.NavigationToolbar2Mac.draw_rubberband"
+      ],
+      "local_scores": [
+        0.37037037037037035
+      ]
+    },
+    {
+      "fqn": "matplotlib.collections._CollectionWithSizes.draw",
+      "api_type": "method",
+      "similarity": 0.35555555555555557,
+      "evolution_path": [
+        "matplotlib.collections._CollectionWithSizes.draw"
+      ],
+      "local_scores": [
+        0.35555555555555557
+      ]
+    },
+    {
+      "fqn": "matplotlib.colorbar._ColorbarSpine.draw",
+      "api_type": "method",
+      "similarity": 0.35555555555555557,
+      "evolution_path": [
+        "matplotlib.colorbar._ColorbarSpine.draw"
+      ],
+      "local_scores": [
+        0.35555555555555557
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.8.4",
+      "vpost": "3.9.0",
+      "resolved_fqn": "matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.backends._backend_gtk.RubberbandGTK.draw_rubberband",
+          "similarity": 0.413043
+        },
+        {
+          "fqn": "matplotlib.backends._backend_tk.RubberbandTk.draw_rubberband",
+          "similarity": 0.413043
+        },
+        {
+          "fqn": "matplotlib.backends.backend_qt.RubberbandQt.draw_rubberband",
+          "similarity": 0.413043
+        },
+        {
+          "fqn": "matplotlib.backends.backend_wx.RubberbandWx.draw_rubberband",
+          "similarity": 0.413043
+        },
+        {
+          "fqn": "matplotlib.backends.backend_webagg_core.NavigationToolbar2WebAgg.draw_rubberband",
+          "similarity": 0.4
+        },
+        {
+          "fqn": "matplotlib.patches.Shadow.draw",
+          "similarity": 0.380952
+        },
+        {
+          "fqn": "matplotlib.patheffects.PathEffectRenderer.draw_path",
+          "similarity": 0.375
+        },
+        {
+          "fqn": "matplotlib.backends.backend_macosx.NavigationToolbar2Mac.draw_rubberband",
+          "similarity": 0.37037
+        },
+        {
+          "fqn": "matplotlib.collections._CollectionWithSizes.draw",
+          "similarity": 0.355556
+        },
+        {
+          "fqn": "matplotlib.colorbar._ColorbarSpine.draw",
+          "similarity": 0.355556
+        }
+      ],
+      "entered_final": [
+        "matplotlib.backends._backend_gtk.RubberbandGTK.draw_rubberband",
+        "matplotlib.backends._backend_tk.RubberbandTk.draw_rubberband",
+        "matplotlib.backends.backend_qt.RubberbandQt.draw_rubberband",
+        "matplotlib.backends.backend_wx.RubberbandWx.draw_rubberband",
+        "matplotlib.backends.backend_webagg_core.NavigationToolbar2WebAgg.draw_rubberband",
+        "matplotlib.patches.Shadow.draw",
+        "matplotlib.patheffects.PathEffectRenderer.draw_path",
+        "matplotlib.backends.backend_macosx.NavigationToolbar2Mac.draw_rubberband",
+        "matplotlib.collections._CollectionWithSizes.draw",
+        "matplotlib.colorbar._ColorbarSpine.draw"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.355556,
+      "dead_reason": null
+    }
+  ]
+}

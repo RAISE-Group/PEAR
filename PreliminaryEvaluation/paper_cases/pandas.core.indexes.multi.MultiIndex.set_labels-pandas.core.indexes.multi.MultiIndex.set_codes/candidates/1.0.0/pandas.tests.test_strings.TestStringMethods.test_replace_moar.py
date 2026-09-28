@@ -1,0 +1,11 @@
+def test_replace_moar(self):
+    s = Series(['A', 'B', 'C', 'Aaba', 'Baca', '', np.nan, 'CABA', 'dog', 'cat'])
+    result = s.str.replace('A', 'YYY')
+    expected = Series(['YYY', 'B', 'C', 'YYYaba', 'Baca', '', np.nan, 'CYYYBYYY', 'dog', 'cat'])
+    tm.assert_series_equal(result, expected)
+    result = s.str.replace('A', 'YYY', case=False)
+    expected = Series(['YYY', 'B', 'C', 'YYYYYYbYYY', 'BYYYcYYY', '', np.nan, 'CYYYBYYY', 'dog', 'cYYYt'])
+    tm.assert_series_equal(result, expected)
+    result = s.str.replace('^.a|dog', 'XX-XX ', case=False)
+    expected = Series(['A', 'B', 'C', 'XX-XX ba', 'XX-XX ca', '', np.nan, 'XX-XX BA', 'XX-XX ', 'XX-XX t'])
+    tm.assert_series_equal(result, expected)

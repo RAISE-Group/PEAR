@@ -1,0 +1,13 @@
+@pytest.mark.parametrize('freq, periods', [(1, 100), (2.5, 40), (5, 20), (25, 4)])
+def test_constructor_numeric(self, closed, name, freq, periods):
+    start, end = (0, 100)
+    breaks = np.arange(101, step=freq)
+    expected = IntervalIndex.from_breaks(breaks, name=name, closed=closed)
+    result = interval_range(start=start, end=end, freq=freq, name=name, closed=closed)
+    tm.assert_index_equal(result, expected)
+    result = interval_range(start=start, periods=periods, freq=freq, name=name, closed=closed)
+    tm.assert_index_equal(result, expected)
+    result = interval_range(end=end, periods=periods, freq=freq, name=name, closed=closed)
+    tm.assert_index_equal(result, expected)
+    result = interval_range(start=start, end=end, periods=periods, name=name, closed=closed)
+    tm.assert_index_equal(result, expected)

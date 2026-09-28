@@ -1,0 +1,12 @@
+def test_basic_drop_first_one_level(self, sparse):
+    s_list = list('aaa')
+    s_series = Series(s_list)
+    s_series_index = Series(s_list, list('ABC'))
+    expected = DataFrame(index=np.arange(3))
+    result = get_dummies(s_list, drop_first=True, sparse=sparse)
+    tm.assert_frame_equal(result, expected)
+    result = get_dummies(s_series, drop_first=True, sparse=sparse)
+    tm.assert_frame_equal(result, expected)
+    expected = DataFrame(index=list('ABC'))
+    result = get_dummies(s_series_index, drop_first=True, sparse=sparse)
+    tm.assert_frame_equal(result, expected)

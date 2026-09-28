@@ -1,0 +1,10 @@
+def test_to_basic(self, julian_dates):
+    result = Series(pd.to_datetime(julian_dates, unit='D', origin='julian'))
+    expected = Series(pd.to_datetime(julian_dates - pd.Timestamp(0).to_julian_date(), unit='D'))
+    tm.assert_series_equal(result, expected)
+    result = Series(pd.to_datetime([0, 1, 2], unit='D', origin='unix'))
+    expected = Series([Timestamp('1970-01-01'), Timestamp('1970-01-02'), Timestamp('1970-01-03')])
+    tm.assert_series_equal(result, expected)
+    result = Series(pd.to_datetime([0, 1, 2], unit='D'))
+    expected = Series([Timestamp('1970-01-01'), Timestamp('1970-01-02'), Timestamp('1970-01-03')])
+    tm.assert_series_equal(result, expected)

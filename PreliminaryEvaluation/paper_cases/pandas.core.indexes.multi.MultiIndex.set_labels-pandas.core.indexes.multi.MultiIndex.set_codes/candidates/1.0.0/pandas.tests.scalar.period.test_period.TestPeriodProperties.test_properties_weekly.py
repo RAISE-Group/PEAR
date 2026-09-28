@@ -1,0 +1,9 @@
+def test_properties_weekly(self):
+    w_date = Period(freq='W', year=2007, month=1, day=7)
+    assert w_date.year == 2007
+    assert w_date.quarter == 1
+    assert w_date.month == 1
+    assert w_date.week == 1
+    assert (w_date - 1).week == 52
+    assert w_date.days_in_month == 31
+    assert Period(freq='W', year=2012, month=2, day=1).days_in_month == 29

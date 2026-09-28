@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.10.8",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.mysql.introspection.DatabaseIntrospection.get_indexes",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_geometry_type",
+      "api_type": "method",
+      "similarity": 0.5526315789473685,
+      "evolution_path": [
+        "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_geometry_type"
+      ],
+      "local_scores": [
+        0.5526315789473685
+      ]
+    },
+    {
+      "fqn": "django.core.servers.basehttp.WSGIRequestHandler.log_message",
+      "api_type": "method",
+      "similarity": 0.5524475524475524,
+      "evolution_path": [
+        "django.core.servers.basehttp.WSGIRequestHandler.log_message"
+      ],
+      "local_scores": [
+        0.5524475524475524
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_geometry_type",
+      "api_type": "method",
+      "similarity": 0.5234899328859061,
+      "evolution_path": [
+        "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_geometry_type"
+      ],
+      "local_scores": [
+        0.5234899328859061
+      ]
+    },
+    {
+      "fqn": "django.forms.widgets.MultipleHiddenInput.get_context",
+      "api_type": "method",
+      "similarity": 0.5208333333333334,
+      "evolution_path": [
+        "django.forms.widgets.MultipleHiddenInput.get_context"
+      ],
+      "local_scores": [
+        0.5208333333333334
+      ]
+    },
+    {
+      "fqn": "django.core.management.commands.inspectdb.Command.get_field_type",
+      "api_type": "method",
+      "similarity": 0.5174418604651163,
+      "evolution_path": [
+        "django.core.management.commands.inspectdb.Command.get_field_type"
+      ],
+      "local_scores": [
+        0.5174418604651163
+      ]
+    },
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_table_description",
+      "api_type": "method",
+      "similarity": 0.5,
+      "evolution_path": [
+        "django.db.backends.oracle.introspection.DatabaseIntrospection.get_table_description"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "django.db.backends.postgresql.base.DatabaseWrapper.get_connection_params",
+      "api_type": "method",
+      "similarity": 0.49673202614379086,
+      "evolution_path": [
+        "django.db.backends.postgresql.base.DatabaseWrapper.get_connection_params"
+      ],
+      "local_scores": [
+        0.49673202614379086
+      ]
+    },
+    {
+      "fqn": "django.contrib.admin.views.main.ChangeList.get_query_string",
+      "api_type": "method",
+      "similarity": 0.4927536231884058,
+      "evolution_path": [
+        "django.contrib.admin.views.main.ChangeList.get_query_string"
+      ],
+      "local_scores": [
+        0.4927536231884058
+      ]
+    },
+    {
+      "fqn": "django.core.management.commands.loaddata.Command.parse_name",
+      "api_type": "method",
+      "similarity": 0.49032258064516127,
+      "evolution_path": [
+        "django.core.management.commands.loaddata.Command.parse_name"
+      ],
+      "local_scores": [
+        0.49032258064516127
+      ]
+    },
+    {
+      "fqn": "django.core.management.commands.inspectdb.Command.get_meta",
+      "api_type": "method",
+      "similarity": 0.4838709677419355,
+      "evolution_path": [
+        "django.core.management.commands.inspectdb.Command.get_meta"
+      ],
+      "local_scores": [
+        0.4838709677419355
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.db.backends.mysql.introspection.DatabaseIntrospection.get_indexes",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "2.0.13",
+      "vpost": "2.1",
+      "resolved_fqn": "django.db.backends.mysql.introspection.DatabaseIntrospection.get_indexes",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_geometry_type",
+          "similarity": 0.552632
+        },
+        {
+          "fqn": "django.core.servers.basehttp.WSGIRequestHandler.log_message",
+          "similarity": 0.552448
+        },
+        {
+          "fqn": "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_geometry_type",
+          "similarity": 0.52349
+        },
+        {
+          "fqn": "django.forms.widgets.MultipleHiddenInput.get_context",
+          "similarity": 0.520833
+        },
+        {
+          "fqn": "django.core.management.commands.inspectdb.Command.get_field_type",
+          "similarity": 0.517442
+        },
+        {
+          "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_table_description",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "django.db.backends.postgresql.base.DatabaseWrapper.get_connection_params",
+          "similarity": 0.496732
+        },
+        {
+          "fqn": "django.contrib.admin.views.main.ChangeList.get_query_string",
+          "similarity": 0.492754
+        },
+        {
+          "fqn": "django.core.management.commands.loaddata.Command.parse_name",
+          "similarity": 0.490323
+        },
+        {
+          "fqn": "django.core.management.commands.inspectdb.Command.get_meta",
+          "similarity": 0.483871
+        }
+      ],
+      "entered_final": [
+        "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_geometry_type",
+        "django.core.servers.basehttp.WSGIRequestHandler.log_message",
+        "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_geometry_type",
+        "django.forms.widgets.MultipleHiddenInput.get_context",
+        "django.core.management.commands.inspectdb.Command.get_field_type",
+        "django.db.backends.oracle.introspection.DatabaseIntrospection.get_table_description",
+        "django.db.backends.postgresql.base.DatabaseWrapper.get_connection_params",
+        "django.contrib.admin.views.main.ChangeList.get_query_string",
+        "django.core.management.commands.loaddata.Command.parse_name",
+        "django.core.management.commands.inspectdb.Command.get_meta"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.483871,
+      "dead_reason": null
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+@classmethod
+@Appender(_interval_shared_docs['from_arrays'] % dict(klass='IntervalIndex', examples=textwrap.dedent("        Examples\n        --------\n        >>> pd.IntervalIndex.from_arrays([0, 1, 2], [1, 2, 3])\n        IntervalIndex([(0, 1], (1, 2], (2, 3]],\n                      closed='right',\n                      dtype='interval[int64]')\n        ")))
+def from_arrays(cls, left, right, closed: str='right', name=None, copy: bool=False, dtype=None):
+    with rewrite_exception('IntervalArray', cls.__name__):
+        array = IntervalArray.from_arrays(left, right, closed, copy=copy, dtype=dtype)
+    return cls._simple_new(array, name=name)

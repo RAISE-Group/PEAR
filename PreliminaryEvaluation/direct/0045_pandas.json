@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "2.0.3",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.frame.DataFrame.applymap",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.frame.DataFrame.map",
+      "api_type": "method",
+      "similarity": 0.5982142857142857
+    },
+    {
+      "fqn": "pandas.core.dtypes.dtypes.CategoricalDtype.update_dtype",
+      "api_type": "method",
+      "similarity": 0.4782608695652174
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame.reorder_levels",
+      "api_type": "method",
+      "similarity": 0.4701492537313433
+    },
+    {
+      "fqn": "pandas.core.arrays.timedeltas.TimedeltaArray._accumulate",
+      "api_type": "method",
+      "similarity": 0.4608695652173913
+    },
+    {
+      "fqn": "pandas.core.arrays.timedeltas.TimedeltaArray.astype",
+      "api_type": "method",
+      "similarity": 0.45528455284552843
+    },
+    {
+      "fqn": "pandas.core.window.rolling.BaseWindow._apply_series",
+      "api_type": "method",
+      "similarity": 0.44360902255639095
+    },
+    {
+      "fqn": "pandas.core.arrays.sparse.array.SparseArray.take",
+      "api_type": "method",
+      "similarity": 0.4435483870967742
+    },
+    {
+      "fqn": "pandas.core.indexes.accessors.ArrowTemporalProperties._delegate_method",
+      "api_type": "method",
+      "similarity": 0.44166666666666665
+    },
+    {
+      "fqn": "pandas.core.arrays.categorical.Categorical.__array_ufunc__",
+      "api_type": "method",
+      "similarity": 0.44
+    },
+    {
+      "fqn": "pandas.core.indexes.accessors.ArrowTemporalProperties._delegate_property_get",
+      "api_type": "method",
+      "similarity": 0.432
+    }
+  ]
+}

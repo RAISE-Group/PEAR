@@ -1,0 +1,12 @@
+@pytest.mark.parametrize('method, unit', [('sum', 0.0), ('prod', 1.0)])
+def test_empty_multi(self, method, unit):
+    s = pd.Series([1, np.nan, np.nan, np.nan], index=pd.MultiIndex.from_product([('a', 'b'), (0, 1)]))
+    result = getattr(s, method)(level=0)
+    expected = pd.Series([1, unit], index=['a', 'b'])
+    tm.assert_series_equal(result, expected)
+    result = getattr(s, method)(level=0, min_count=0)
+    expected = pd.Series([1, unit], index=['a', 'b'])
+    tm.assert_series_equal(result, expected)
+    result = getattr(s, method)(level=0, min_count=1)
+    expected = pd.Series([1, np.nan], index=['a', 'b'])
+    tm.assert_series_equal(result, expected)

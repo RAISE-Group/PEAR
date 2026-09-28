@@ -1,0 +1,10 @@
+def test_quantile_empty_no_rows(self):
+    df = DataFrame(columns=['a', 'b'], dtype='float64')
+    res = df.quantile(0.5)
+    exp = Series([np.nan, np.nan], index=['a', 'b'], name=0.5)
+    tm.assert_series_equal(res, exp)
+    res = df.quantile([0.5])
+    exp = DataFrame([[np.nan, np.nan]], columns=['a', 'b'], index=[0.5])
+    tm.assert_frame_equal(res, exp)
+    df = DataFrame(columns=['a', 'b'], dtype='int64')
+    df = DataFrame(columns=['a', 'b'], dtype='datetime64[ns]')

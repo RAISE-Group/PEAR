@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.9.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.models.expressions.DateTime",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.db.models.expressions.When",
+      "api_type": "class",
+      "similarity": 0.6438356164383562,
+      "evolution_path": [
+        "django.db.models.expressions.When"
+      ],
+      "local_scores": [
+        0.6438356164383562
+      ]
+    },
+    {
+      "fqn": "django.db.models.expressions.CombinedExpression",
+      "api_type": "class",
+      "similarity": 0.6358695652173914,
+      "evolution_path": [
+        "django.db.models.expressions.CombinedExpression"
+      ],
+      "local_scores": [
+        0.6358695652173914
+      ]
+    },
+    {
+      "fqn": "django.db.models.expressions.Case",
+      "api_type": "class",
+      "similarity": 0.5823389021479713,
+      "evolution_path": [
+        "django.db.models.expressions.Case"
+      ],
+      "local_scores": [
+        0.5823389021479713
+      ]
+    },
+    {
+      "fqn": "django.contrib.postgres.search.SearchQuery",
+      "api_type": "class",
+      "similarity": 0.5614973262032086,
+      "evolution_path": [
+        "django.contrib.postgres.search.SearchQuery"
+      ],
+      "local_scores": [
+        0.5614973262032086
+      ]
+    },
+    {
+      "fqn": "django.db.models.expressions.Func",
+      "api_type": "class",
+      "similarity": 0.5538116591928252,
+      "evolution_path": [
+        "django.db.models.expressions.Func"
+      ],
+      "local_scores": [
+        0.5538116591928252
+      ]
+    },
+    {
+      "fqn": "django.db.models.functions.datetime.TruncBase",
+      "api_type": "class",
+      "similarity": 0.5441988950276243,
+      "evolution_path": [
+        "django.db.models.functions.datetime.TruncBase"
+      ],
+      "local_scores": [
+        0.5441988950276243
+      ]
+    },
+    {
+      "fqn": "django.db.models.functions.datetime.Extract",
+      "api_type": "class",
+      "similarity": 0.5297619047619048,
+      "evolution_path": [
+        "django.db.models.functions.datetime.Extract"
+      ],
+      "local_scores": [
+        0.5297619047619048
+      ]
+    },
+    {
+      "fqn": "django.db.models.sql.query.RawQuery",
+      "api_type": "class",
+      "similarity": 0.5270655270655271,
+      "evolution_path": [
+        "django.db.models.sql.query.RawQuery"
+      ],
+      "local_scores": [
+        0.5270655270655271
+      ]
+    },
+    {
+      "fqn": "django.db.migrations.operations.special.RunSQL",
+      "api_type": "class",
+      "similarity": 0.5245901639344263,
+      "evolution_path": [
+        "django.db.migrations.operations.special.RunSQL"
+      ],
+      "local_scores": [
+        0.5245901639344263
+      ]
+    },
+    {
+      "fqn": "django.contrib.postgres.search.SearchVector",
+      "api_type": "class",
+      "similarity": 0.5185185185185185,
+      "evolution_path": [
+        "django.contrib.postgres.search.SearchVector"
+      ],
+      "local_scores": [
+        0.5185185185185185
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.db.models.expressions.DateTime",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "1.9.13",
+      "vpost": "1.10",
+      "resolved_fqn": "django.db.models.expressions.DateTime",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.db.models.expressions.When",
+          "similarity": 0.643836
+        },
+        {
+          "fqn": "django.db.models.expressions.CombinedExpression",
+          "similarity": 0.63587
+        },
+        {
+          "fqn": "django.db.models.expressions.Case",
+          "similarity": 0.582339
+        },
+        {
+          "fqn": "django.contrib.postgres.search.SearchQuery",
+          "similarity": 0.561497
+        },
+        {
+          "fqn": "django.db.models.expressions.Func",
+          "similarity": 0.553812
+        },
+        {
+          "fqn": "django.db.models.functions.datetime.TruncBase",
+          "similarity": 0.544199
+        },
+        {
+          "fqn": "django.db.models.functions.datetime.Extract",
+          "similarity": 0.529762
+        },
+        {
+          "fqn": "django.db.models.sql.query.RawQuery",
+          "similarity": 0.527066
+        },
+        {
+          "fqn": "django.db.migrations.operations.special.RunSQL",
+          "similarity": 0.52459
+        },
+        {
+          "fqn": "django.contrib.postgres.search.SearchVector",
+          "similarity": 0.518519
+        }
+      ],
+      "entered_final": [
+        "django.db.models.expressions.When",
+        "django.db.models.expressions.CombinedExpression",
+        "django.db.models.expressions.Case",
+        "django.contrib.postgres.search.SearchQuery",
+        "django.db.models.expressions.Func",
+        "django.db.models.functions.datetime.TruncBase",
+        "django.db.models.functions.datetime.Extract",
+        "django.db.models.sql.query.RawQuery",
+        "django.db.migrations.operations.special.RunSQL",
+        "django.contrib.postgres.search.SearchVector"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.518519,
+      "dead_reason": null
+    }
+  ]
+}

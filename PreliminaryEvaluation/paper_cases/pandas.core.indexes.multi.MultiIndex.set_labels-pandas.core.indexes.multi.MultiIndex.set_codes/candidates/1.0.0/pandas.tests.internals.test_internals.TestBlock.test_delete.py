@@ -1,0 +1,18 @@
+def test_delete(self):
+    newb = self.fblock.copy()
+    newb.delete(0)
+    assert isinstance(newb.mgr_locs, BlockPlacement)
+    tm.assert_numpy_array_equal(newb.mgr_locs.as_array, np.array([2, 4], dtype=np.int64))
+    assert (newb.values[0] == 1).all()
+    newb = self.fblock.copy()
+    newb.delete(1)
+    assert isinstance(newb.mgr_locs, BlockPlacement)
+    tm.assert_numpy_array_equal(newb.mgr_locs.as_array, np.array([0, 4], dtype=np.int64))
+    assert (newb.values[1] == 2).all()
+    newb = self.fblock.copy()
+    newb.delete(2)
+    tm.assert_numpy_array_equal(newb.mgr_locs.as_array, np.array([0, 2], dtype=np.int64))
+    assert (newb.values[1] == 1).all()
+    newb = self.fblock.copy()
+    with pytest.raises(Exception):
+        newb.delete(3)

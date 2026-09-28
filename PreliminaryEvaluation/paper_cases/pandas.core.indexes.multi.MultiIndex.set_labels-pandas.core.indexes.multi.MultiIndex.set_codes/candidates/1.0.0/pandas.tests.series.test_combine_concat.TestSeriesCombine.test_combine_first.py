@@ -1,0 +1,22 @@
+def test_combine_first(self):
+    values = tm.makeIntIndex(20).values.astype(float)
+    series = Series(values, index=tm.makeIntIndex(20))
+    series_copy = series * 2
+    series_copy[::2] = np.NaN
+    combined = series.combine_first(series_copy)
+    tm.assert_series_equal(combined, series)
+    combined = series_copy.combine_first(series)
+    assert np.isfinite(combined).all()
+    tm.assert_series_equal(combined[::2], series[::2])
+    tm.assert_series_equal(combined[1::2], series_copy[1::2])
+    index = tm.makeStringIndex(20)
+    floats = Series(tm.randn(20), index=index)
+    strings = Series(tm.makeStringIndex(10), index=index[::2])
+    combined = strings.combine_first(floats)
+    tm.assert_series_equal(strings, combined.loc[index[::2]])
+    tm.assert_series_equal(floats[1::2].astype(object), combined.loc[index[1::2]])
+    s = Series([1.0, 2, 3], index=[0, 1, 2])
+    empty = Series([], index=[], dtype=object)
+    result = s.combine_first(empty)
+    s.index = s.index.astype('O')
+    tm.assert_series_equal(s, result)

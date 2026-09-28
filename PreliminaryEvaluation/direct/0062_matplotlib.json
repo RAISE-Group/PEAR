@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.0.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.scale.NaturalLogTransform",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform",
+      "api_type": "class",
+      "similarity": 0.3559322033898305
+    },
+    {
+      "fqn": "matplotlib.tests.test_axes._Translation",
+      "api_type": "class",
+      "similarity": 0.3559322033898305
+    },
+    {
+      "fqn": "matplotlib.backend_bases._Mode",
+      "api_type": "class",
+      "similarity": 0.3181818181818182
+    },
+    {
+      "fqn": "matplotlib.tri._trirefine.TriRefiner",
+      "api_type": "class",
+      "similarity": 0.3111111111111111
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg.WebAggApplication.MplJs",
+      "api_type": "class",
+      "similarity": 0.3
+    },
+    {
+      "fqn": "matplotlib.tests.test_cbook.Unhashable",
+      "api_type": "class",
+      "similarity": 0.2972972972972973
+    },
+    {
+      "fqn": "matplotlib.colors.SymLogNorm",
+      "api_type": "class",
+      "similarity": 0.2909090909090909
+    },
+    {
+      "fqn": "matplotlib.axes.__init__._SubplotBaseMeta",
+      "api_type": "class",
+      "similarity": 0.28846153846153844
+    },
+    {
+      "fqn": "matplotlib.tests.test_ticker.TestFormatStrFormatter",
+      "api_type": "class",
+      "similarity": 0.28846153846153844
+    },
+    {
+      "fqn": "matplotlib.tests.test_axes.SubclassAxes",
+      "api_type": "class",
+      "similarity": 0.2857142857142857
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+def test_join_left(self):
+    index = self.create_index()
+    other = Int64Index([7, 12, 25, 1, 2, 5])
+    other_mono = Int64Index([1, 2, 5, 7, 12, 25])
+    res, lidx, ridx = index.join(other, how='left', return_indexers=True)
+    eres = index
+    eridx = np.array([-1, 4, -1, -1, -1, -1, 1, -1, -1, -1], dtype=np.intp)
+    assert isinstance(res, Int64Index)
+    tm.assert_index_equal(res, eres)
+    assert lidx is None
+    tm.assert_numpy_array_equal(ridx, eridx)
+    res, lidx, ridx = index.join(other_mono, how='left', return_indexers=True)
+    eridx = np.array([-1, 1, -1, -1, -1, -1, 4, -1, -1, -1], dtype=np.intp)
+    assert isinstance(res, Int64Index)
+    tm.assert_index_equal(res, eres)
+    assert lidx is None
+    tm.assert_numpy_array_equal(ridx, eridx)
+    idx = Index([1, 1, 2, 5])
+    idx2 = Index([1, 2, 5, 7, 9])
+    res, lidx, ridx = idx2.join(idx, how='left', return_indexers=True)
+    eres = Index([1, 1, 2, 5, 7, 9])
+    eridx = np.array([0, 1, 2, 3, -1, -1], dtype=np.intp)
+    elidx = np.array([0, 0, 1, 2, 3, 4], dtype=np.intp)
+    tm.assert_index_equal(res, eres)
+    tm.assert_numpy_array_equal(lidx, elidx)
+    tm.assert_numpy_array_equal(ridx, eridx)

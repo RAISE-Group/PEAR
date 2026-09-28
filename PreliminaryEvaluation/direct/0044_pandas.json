@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "1.5.3",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.dtypes.common.is_categorical",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.dtypes.common.is_sparse",
+      "api_type": "function",
+      "similarity": 0.6097560975609756
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_categorical_dtype",
+      "api_type": "function",
+      "similarity": 0.56
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_float_dtype",
+      "api_type": "function",
+      "similarity": 0.5416666666666666
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_integer_dtype",
+      "api_type": "function",
+      "similarity": 0.5416666666666666
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_signed_integer_dtype",
+      "api_type": "function",
+      "similarity": 0.5416666666666666
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_unsigned_integer_dtype",
+      "api_type": "function",
+      "similarity": 0.5416666666666666
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_datetime64_dtype",
+      "api_type": "function",
+      "similarity": 0.5217391304347826
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_timedelta64_dtype",
+      "api_type": "function",
+      "similarity": 0.5217391304347826
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_int64_dtype",
+      "api_type": "function",
+      "similarity": 0.5116279069767442
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_numeric_dtype",
+      "api_type": "function",
+      "similarity": 0.5102040816326531
+    }
+  ]
+}

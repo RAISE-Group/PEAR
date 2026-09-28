@@ -1,0 +1,26 @@
+
+Libraries/
+
+**/tmp/
+
+docs/
+
+CodeCache/
+
+**/__pycache__/
+*.pyc
+
+.pytest_cache/
+
+
+Detect/
+Repair/
+Report/
+
+.vscode/
+.idea/
+.DS_Store
+
+# Paper-case experiment build artifacts (large generated/downloaded data)
+**/.build_cache/
+**/candidates/

@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.9.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.models.fields.files.FileField.get_directory_name",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.contrib.gis.gdal.field.Field.name",
+      "api_type": "method",
+      "similarity": 0.46153846153846156,
+      "evolution_path": [
+        "django.contrib.gis.gdal.field.Field.name"
+      ],
+      "local_scores": [
+        0.46153846153846156
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.layer.Layer.name",
+      "api_type": "method",
+      "similarity": 0.46153846153846156,
+      "evolution_path": [
+        "django.contrib.gis.gdal.layer.Layer.name"
+      ],
+      "local_scores": [
+        0.46153846153846156
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.datasource.DataSource.name",
+      "api_type": "method",
+      "similarity": 0.4358974358974359,
+      "evolution_path": [
+        "django.contrib.gis.gdal.datasource.DataSource.name"
+      ],
+      "local_scores": [
+        0.4358974358974359
+      ]
+    },
+    {
+      "fqn": "django.contrib.admindocs.views.BaseAdminDocsView.get_context_data",
+      "api_type": "method",
+      "similarity": 0.4339622641509434,
+      "evolution_path": [
+        "django.contrib.admindocs.views.BaseAdminDocsView.get_context_data"
+      ],
+      "local_scores": [
+        0.4339622641509434
+      ]
+    },
+    {
+      "fqn": "django.contrib.admin.widgets.AutocompleteMixin.get_url",
+      "api_type": "method",
+      "similarity": 0.4318181818181818,
+      "evolution_path": [
+        "django.contrib.admin.widgets.AutocompleteMixin.get_url"
+      ],
+      "local_scores": [
+        0.4318181818181818
+      ]
+    },
+    {
+      "fqn": "django.core.mail.backends.filebased.EmailBackend._get_filename",
+      "api_type": "method",
+      "similarity": 0.43103448275862066,
+      "evolution_path": [
+        "django.core.mail.backends.filebased.EmailBackend._get_filename"
+      ],
+      "local_scores": [
+        0.43103448275862066
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.feature.Feature.layer_name",
+      "api_type": "method",
+      "similarity": 0.42857142857142855,
+      "evolution_path": [
+        "django.contrib.gis.gdal.feature.Feature.layer_name"
+      ],
+      "local_scores": [
+        0.42857142857142855
+      ]
+    },
+    {
+      "fqn": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_queryset",
+      "api_type": "method",
+      "similarity": 0.425,
+      "evolution_path": [
+        "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_queryset"
+      ],
+      "local_scores": [
+        0.425
+      ]
+    },
+    {
+      "fqn": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_object",
+      "api_type": "method",
+      "similarity": 0.4186046511627907,
+      "evolution_path": [
+        "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_object"
+      ],
+      "local_scores": [
+        0.4186046511627907
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.driver.Driver.name",
+      "api_type": "method",
+      "similarity": 0.4166666666666667,
+      "evolution_path": [
+        "django.contrib.gis.gdal.driver.Driver.name"
+      ],
+      "local_scores": [
+        0.4166666666666667
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.db.models.fields.files.FileField.get_directory_name",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "1.11.29",
+      "vpost": "2.0",
+      "resolved_fqn": "django.db.models.fields.files.FileField.get_directory_name",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.contrib.gis.gdal.field.Field.name",
+          "similarity": 0.461538
+        },
+        {
+          "fqn": "django.contrib.gis.gdal.layer.Layer.name",
+          "similarity": 0.461538
+        },
+        {
+          "fqn": "django.contrib.gis.gdal.datasource.DataSource.name",
+          "similarity": 0.435897
+        },
+        {
+          "fqn": "django.contrib.admindocs.views.BaseAdminDocsView.get_context_data",
+          "similarity": 0.433962
+        },
+        {
+          "fqn": "django.contrib.admin.widgets.AutocompleteMixin.get_url",
+          "similarity": 0.431818
+        },
+        {
+          "fqn": "django.core.mail.backends.filebased.EmailBackend._get_filename",
+          "similarity": 0.431034
+        },
+        {
+          "fqn": "django.contrib.gis.gdal.feature.Feature.layer_name",
+          "similarity": 0.428571
+        },
+        {
+          "fqn": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_queryset",
+          "similarity": 0.425
+        },
+        {
+          "fqn": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_object",
+          "similarity": 0.418605
+        },
+        {
+          "fqn": "django.contrib.gis.gdal.driver.Driver.name",
+          "similarity": 0.416667
+        }
+      ],
+      "entered_final": [
+        "django.contrib.gis.gdal.field.Field.name",
+        "django.contrib.gis.gdal.layer.Layer.name",
+        "django.contrib.gis.gdal.datasource.DataSource.name",
+        "django.contrib.admindocs.views.BaseAdminDocsView.get_context_data",
+        "django.contrib.admin.widgets.AutocompleteMixin.get_url",
+        "django.core.mail.backends.filebased.EmailBackend._get_filename",
+        "django.contrib.gis.gdal.feature.Feature.layer_name",
+        "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_queryset",
+        "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_object",
+        "django.contrib.gis.gdal.driver.Driver.name"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.416667,
+      "dead_reason": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+@pytest.mark.parametrize('arr_dtype', [np.int64, np.float64])
+@pytest.mark.parametrize('dtype', ['M8', 'm8'])
+@pytest.mark.parametrize('unit', ['ns', 'us', 'ms', 's', 'h', 'm', 'D'])
+def test_construction_to_datetimelike_unit(self, arr_dtype, dtype, unit):
+    dtype = '{}[{}]'.format(dtype, unit)
+    arr = np.array([1, 2, 3], dtype=arr_dtype)
+    s = Series(arr)
+    result = s.astype(dtype)
+    expected = Series(arr.astype(dtype))
+    tm.assert_series_equal(result, expected)

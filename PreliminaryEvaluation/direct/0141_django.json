@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.0.14",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.postgres.fields.jsonb.KeyTextTransform",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.contrib.postgres.fields.hstore.KeysTransform",
+      "api_type": "class",
+      "similarity": 0.5588235294117647
+    },
+    {
+      "fqn": "django.contrib.postgres.fields.hstore.ValuesTransform",
+      "api_type": "class",
+      "similarity": 0.5588235294117647
+    },
+    {
+      "fqn": "django.contrib.postgres.lookups.HasKey",
+      "api_type": "class",
+      "similarity": 0.5161290322580645
+    },
+    {
+      "fqn": "django.db.models.fields.json.HasKey",
+      "api_type": "class",
+      "similarity": 0.5161290322580645
+    },
+    {
+      "fqn": "django.forms.widgets.TextInput",
+      "api_type": "class",
+      "similarity": 0.4666666666666667
+    },
+    {
+      "fqn": "django.contrib.auth.forms.UserChangeForm.Meta",
+      "api_type": "class",
+      "similarity": 0.45161290322580644
+    },
+    {
+      "fqn": "django.contrib.auth.models.AbstractUser.Meta",
+      "api_type": "class",
+      "similarity": 0.4411764705882353
+    },
+    {
+      "fqn": "django.contrib.sessions.base_session.AbstractBaseSession.Meta",
+      "api_type": "class",
+      "similarity": 0.4411764705882353
+    },
+    {
+      "fqn": "django.contrib.auth.forms.BaseUserCreationForm.Meta",
+      "api_type": "class",
+      "similarity": 0.4375
+    },
+    {
+      "fqn": "django.contrib.auth.models.Group.Meta",
+      "api_type": "class",
+      "similarity": 0.4375
+    }
+  ]
+}

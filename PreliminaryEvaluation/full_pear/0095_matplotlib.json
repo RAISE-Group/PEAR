@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.5.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backend_bases.FigureCanvasBase.resize",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.backend_bases.FigureManagerBase.resize",
+      "api_type": "method",
+      "similarity": 1.0,
+      "evolution_path": [
+        "matplotlib.backend_bases.FigureManagerBase.resize"
+      ],
+      "local_scores": [
+        1.0
+      ]
+    },
+    {
+      "fqn": "matplotlib.widgets.TextBox._resize",
+      "api_type": "method",
+      "similarity": 0.6666666666666666,
+      "evolution_path": [
+        "matplotlib.widgets.TextBox._resize"
+      ],
+      "local_scores": [
+        0.6666666666666666
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_tools.ToolBase.trigger",
+      "api_type": "method",
+      "similarity": 0.42857142857142855,
+      "evolution_path": [
+        "matplotlib.backend_tools.ToolBase.trigger"
+      ],
+      "local_scores": [
+        0.42857142857142855
+      ]
+    },
+    {
+      "fqn": "matplotlib.widgets._SelectorWidget._onmove",
+      "api_type": "method",
+      "similarity": 0.4166666666666667,
+      "evolution_path": [
+        "matplotlib.widgets._SelectorWidget._onmove"
+      ],
+      "local_scores": [
+        0.4166666666666667
+      ]
+    },
+    {
+      "fqn": "matplotlib.widgets._SelectorWidget._press",
+      "api_type": "method",
+      "similarity": 0.4166666666666667,
+      "evolution_path": [
+        "matplotlib.widgets._SelectorWidget._press"
+      ],
+      "local_scores": [
+        0.4166666666666667
+      ]
+    },
+    {
+      "fqn": "matplotlib.widgets._SelectorWidget._release",
+      "api_type": "method",
+      "similarity": 0.4166666666666667,
+      "evolution_path": [
+        "matplotlib.widgets._SelectorWidget._release"
+      ],
+      "local_scores": [
+        0.4166666666666667
+      ]
+    },
+    {
+      "fqn": "matplotlib.offsetbox.DraggableBase.update_offset",
+      "api_type": "method",
+      "similarity": 0.4,
+      "evolution_path": [
+        "matplotlib.offsetbox.DraggableBase.update_offset"
+      ],
+      "local_scores": [
+        0.4
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.FigureCanvasBase.blit",
+      "api_type": "method",
+      "similarity": 0.38461538461538464,
+      "evolution_path": [
+        "matplotlib.backend_bases.FigureCanvasBase.blit"
+      ],
+      "local_scores": [
+        0.38461538461538464
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_tools.ToolToggleBase.disable",
+      "api_type": "method",
+      "similarity": 0.38461538461538464,
+      "evolution_path": [
+        "matplotlib.backend_tools.ToolToggleBase.disable"
+      ],
+      "local_scores": [
+        0.38461538461538464
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_tools.ToolToggleBase.enable",
+      "api_type": "method",
+      "similarity": 0.38461538461538464,
+      "evolution_path": [
+        "matplotlib.backend_tools.ToolToggleBase.enable"
+      ],
+      "local_scores": [
+        0.38461538461538464
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.backend_bases.FigureCanvasBase.resize",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.7.5",
+      "vpost": "3.8.0",
+      "resolved_fqn": "matplotlib.backend_bases.FigureCanvasBase.resize",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.backend_bases.FigureManagerBase.resize",
+          "similarity": 1.0
+        },
+        {
+          "fqn": "matplotlib.widgets.TextBox._resize",
+          "similarity": 0.666667
+        },
+        {
+          "fqn": "matplotlib.backend_tools.ToolBase.trigger",
+          "similarity": 0.428571
+        },
+        {
+          "fqn": "matplotlib.widgets._SelectorWidget._onmove",
+          "similarity": 0.416667
+        },
+        {
+          "fqn": "matplotlib.widgets._SelectorWidget._press",
+          "similarity": 0.416667
+        },
+        {
+          "fqn": "matplotlib.widgets._SelectorWidget._release",
+          "similarity": 0.416667
+        },
+        {
+          "fqn": "matplotlib.offsetbox.DraggableBase.update_offset",
+          "similarity": 0.4
+        },
+        {
+          "fqn": "matplotlib.backend_bases.FigureCanvasBase.blit",
+          "similarity": 0.384615
+        },
+        {
+          "fqn": "matplotlib.backend_tools.ToolToggleBase.disable",
+          "similarity": 0.384615
+        },
+        {
+          "fqn": "matplotlib.backend_tools.ToolToggleBase.enable",
+          "similarity": 0.384615
+        }
+      ],
+      "entered_final": [
+        "matplotlib.backend_bases.FigureManagerBase.resize",
+        "matplotlib.widgets.TextBox._resize",
+        "matplotlib.backend_tools.ToolBase.trigger",
+        "matplotlib.widgets._SelectorWidget._onmove",
+        "matplotlib.widgets._SelectorWidget._press",
+        "matplotlib.widgets._SelectorWidget._release",
+        "matplotlib.offsetbox.DraggableBase.update_offset",
+        "matplotlib.backend_bases.FigureCanvasBase.blit",
+        "matplotlib.backend_tools.ToolToggleBase.disable",
+        "matplotlib.backend_tools.ToolToggleBase.enable"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.384615,
+      "dead_reason": null
+    }
+  ]
+}

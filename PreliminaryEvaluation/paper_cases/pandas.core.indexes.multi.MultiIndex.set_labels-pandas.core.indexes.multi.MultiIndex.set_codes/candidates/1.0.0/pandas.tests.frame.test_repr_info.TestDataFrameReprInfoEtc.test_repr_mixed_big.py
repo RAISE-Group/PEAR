@@ -1,0 +1,6 @@
+@pytest.mark.slow
+def test_repr_mixed_big(self):
+    biggie = DataFrame({'A': np.random.randn(200), 'B': tm.makeStringIndex(200)}, index=range(200))
+    biggie.loc[:20, 'A'] = np.nan
+    biggie.loc[:20, 'B'] = np.nan
+    repr(biggie)

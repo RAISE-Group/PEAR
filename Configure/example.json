@@ -1,0 +1,9 @@
+{
+    "libName": "pandas",
+    "sourceVersion": "0.23.4",
+    "targetVersion": "1.0.0",
+    "oldApiFqn": "pandas.core.indexes.multi.MultiIndex.set_labels",
+    "apiType": "method",
+    "topK": 3,
+    "libRepoPath": "/path/to/pandas_repo"
+}

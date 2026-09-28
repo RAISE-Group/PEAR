@@ -1,0 +1,8 @@
+def concat_same_type(self, to_concat, placement=None):
+    if len({x.dtype for x in to_concat}) > 1:
+        values = concat_datetime([x.values for x in to_concat])
+        placement = placement or slice(0, len(values), 1)
+        if self.ndim > 1:
+            values = np.atleast_2d(values)
+        return ObjectBlock(values, ndim=self.ndim, placement=placement)
+    return super().concat_same_type(to_concat, placement)

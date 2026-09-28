@@ -1,0 +1,13 @@
+def test_maybe_convert_objects_datetime(self):
+    arr = np.array([np.datetime64('2000-01-01'), np.timedelta64(1, 's')], dtype=object)
+    exp = arr.copy()
+    out = lib.maybe_convert_objects(arr, convert_datetime=1, convert_timedelta=1)
+    tm.assert_numpy_array_equal(out, exp)
+    arr = np.array([pd.NaT, np.timedelta64(1, 's')], dtype=object)
+    exp = np.array([np.timedelta64('NaT'), np.timedelta64(1, 's')], dtype='m8[ns]')
+    out = lib.maybe_convert_objects(arr, convert_datetime=1, convert_timedelta=1)
+    tm.assert_numpy_array_equal(out, exp)
+    arr = np.array([np.timedelta64(1, 's'), np.nan], dtype=object)
+    exp = arr.copy()
+    out = lib.maybe_convert_objects(arr, convert_datetime=1, convert_timedelta=1)
+    tm.assert_numpy_array_equal(out, exp)

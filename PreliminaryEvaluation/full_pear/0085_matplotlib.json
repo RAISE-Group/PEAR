@@ -1,0 +1,490 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.3.4",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.cbook.deprecation.MatplotlibDeprecationWarning",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib._api.deprecation.MatplotlibDeprecationWarning",
+      "api_type": "class",
+      "similarity": 1.0,
+      "evolution_path": [
+        "matplotlib._api.deprecation.MatplotlibDeprecationWarning"
+      ],
+      "local_scores": [
+        1.0
+      ]
+    },
+    {
+      "fqn": "matplotlib.patheffects.Normal",
+      "api_type": "class",
+      "similarity": 0.3,
+      "evolution_path": [
+        "matplotlib.patheffects.Normal"
+      ],
+      "local_scores": [
+        0.3
+      ]
+    },
+    {
+      "fqn": "matplotlib.rcsetup._ignorecase",
+      "api_type": "class",
+      "similarity": 0.3,
+      "evolution_path": [
+        "matplotlib.rcsetup._ignorecase"
+      ],
+      "local_scores": [
+        0.3
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.CloseEvent",
+      "api_type": "class",
+      "similarity": 0.2608695652173913,
+      "evolution_path": [
+        "matplotlib.backend_bases.CloseEvent"
+      ],
+      "local_scores": [
+        0.2608695652173913
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_macosx.TimerMac",
+      "api_type": "class",
+      "similarity": 0.25,
+      "evolution_path": [
+        "matplotlib.backends.backend_macosx.TimerMac"
+      ],
+      "local_scores": [
+        0.25
+      ]
+    },
+    {
+      "fqn": "matplotlib.colors.FuncNorm",
+      "api_type": "class",
+      "similarity": 0.25,
+      "evolution_path": [
+        "matplotlib.colors.FuncNorm"
+      ],
+      "local_scores": [
+        0.25
+      ]
+    },
+    {
+      "fqn": "matplotlib.sphinxext.mathmpl.latex_math",
+      "api_type": "class",
+      "similarity": 0.1391304347826087,
+      "evolution_path": [
+        "matplotlib.mathtext.MathTextWarning",
+        "matplotlib.sphinxext.mathmpl.latex_math"
+      ],
+      "local_scores": [
+        0.34782608695652173,
+        0.4
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_nbagg.FigureCanvasNbAgg",
+      "api_type": "class",
+      "similarity": 0.13894736842105262,
+      "evolution_path": [
+        "matplotlib.backends.backend_qt4._BackendQT4.FigureCanvas",
+        "matplotlib.backends.backend_nbagg.FigureCanvasNbAgg"
+      ],
+      "local_scores": [
+        0.24,
+        0.5789473684210527
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg.FigureCanvasWebAgg",
+      "api_type": "class",
+      "similarity": 0.13894736842105262,
+      "evolution_path": [
+        "matplotlib.backends.backend_qt4._BackendQT4.FigureCanvas",
+        "matplotlib.backends.backend_webagg.FigureCanvasWebAgg"
+      ],
+      "local_scores": [
+        0.24,
+        0.5789473684210527
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_template.FigureManagerTemplate",
+      "api_type": "class",
+      "similarity": 0.09818181818181819,
+      "evolution_path": [
+        "matplotlib.backends.backend_qt4._BackendQT4.FigureCanvas",
+        "matplotlib.backends.backend_template.FigureManagerTemplate"
+      ],
+      "local_scores": [
+        0.24,
+        0.4090909090909091
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.cbook.deprecation.MatplotlibDeprecationWarning",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.3.4",
+      "vpost": "3.4.0",
+      "resolved_fqn": "matplotlib.cbook.deprecation.MatplotlibDeprecationWarning",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib._api.deprecation.MatplotlibDeprecationWarning",
+          "similarity": 1.0
+        },
+        {
+          "fqn": "matplotlib.cbook.__init__.IgnoredKeywordWarning",
+          "similarity": 0.434783
+        },
+        {
+          "fqn": "matplotlib.mathtext.MathTextWarning",
+          "similarity": 0.347826
+        },
+        {
+          "fqn": "matplotlib.patheffects.Normal",
+          "similarity": 0.3
+        },
+        {
+          "fqn": "matplotlib.rcsetup._ignorecase",
+          "similarity": 0.3
+        },
+        {
+          "fqn": "matplotlib.backend_bases.CloseEvent",
+          "similarity": 0.26087
+        },
+        {
+          "fqn": "matplotlib.backends.backend_macosx.TimerMac",
+          "similarity": 0.25
+        },
+        {
+          "fqn": "matplotlib.colors.FuncNorm",
+          "similarity": 0.25
+        },
+        {
+          "fqn": "matplotlib.animation.AVConvWriter",
+          "similarity": 0.24
+        },
+        {
+          "fqn": "matplotlib.backends.backend_qt4._BackendQT4.FigureCanvas",
+          "similarity": 0.24
+        }
+      ],
+      "entered_final": [
+        "matplotlib._api.deprecation.MatplotlibDeprecationWarning",
+        "matplotlib.patheffects.Normal",
+        "matplotlib.rcsetup._ignorecase",
+        "matplotlib.backend_bases.CloseEvent",
+        "matplotlib.backends.backend_macosx.TimerMac",
+        "matplotlib.colors.FuncNorm"
+      ],
+      "entered_iter": [
+        "matplotlib.cbook.__init__.IgnoredKeywordWarning",
+        "matplotlib.mathtext.MathTextWarning",
+        "matplotlib.animation.AVConvWriter",
+        "matplotlib.backends.backend_qt4._BackendQT4.FigureCanvas"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.cbook.__init__.IgnoredKeywordWarning",
+      "path_score": 0.434783,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.cbook.__init__.IgnoredKeywordWarning",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib._api.deprecation.MatplotlibDeprecationWarning",
+          "similarity": 0.375
+        },
+        {
+          "fqn": "matplotlib.mathtext.MathTextWarning",
+          "similarity": 0.333333
+        },
+        {
+          "fqn": "matplotlib.patheffects.Normal",
+          "similarity": 0.285714
+        },
+        {
+          "fqn": "matplotlib.rcsetup._ignorecase",
+          "similarity": 0.285714
+        },
+        {
+          "fqn": "matplotlib.backend_bases.CloseEvent",
+          "similarity": 0.25
+        },
+        {
+          "fqn": "matplotlib.colorbar.ColorbarPatch",
+          "similarity": 0.25
+        },
+        {
+          "fqn": "matplotlib.backends.backend_macosx.TimerMac",
+          "similarity": 0.24
+        },
+        {
+          "fqn": "matplotlib.colors.FuncNorm",
+          "similarity": 0.24
+        },
+        {
+          "fqn": "matplotlib.hatch.HatchPatternBase",
+          "similarity": 0.230769
+        },
+        {
+          "fqn": "matplotlib.__init__.ExecutableNotFoundError",
+          "similarity": 0.222222
+        }
+      ],
+      "entered_final": [
+        "matplotlib._api.deprecation.MatplotlibDeprecationWarning",
+        "matplotlib.patheffects.Normal",
+        "matplotlib.rcsetup._ignorecase",
+        "matplotlib.backend_bases.CloseEvent",
+        "matplotlib.backends.backend_macosx.TimerMac",
+        "matplotlib.colors.FuncNorm",
+        "matplotlib.__init__.ExecutableNotFoundError"
+      ],
+      "entered_iter": [
+        "matplotlib.mathtext.MathTextWarning",
+        "matplotlib.colorbar.ColorbarPatch"
+      ],
+      "pruned": [
+        "matplotlib.hatch.HatchPatternBase"
+      ],
+      "prune_bound": 0.108696,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.mathtext.MathTextWarning",
+      "path_score": 0.347826,
+      "boundary": "DEPRECATED",
+      "vpre": "3.7.5",
+      "vpost": "3.8.0",
+      "resolved_fqn": "matplotlib.mathtext.MathTextWarning",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.sphinxext.mathmpl.latex_math",
+          "similarity": 0.4
+        },
+        {
+          "fqn": "matplotlib._api.deprecation.MatplotlibDeprecationWarning",
+          "similarity": 0.347826
+        },
+        {
+          "fqn": "matplotlib._mathtext.Parser._MathStyle",
+          "similarity": 0.258065
+        },
+        {
+          "fqn": "matplotlib.patheffects.Normal",
+          "similarity": 0.25
+        },
+        {
+          "fqn": "matplotlib.rcsetup._ignorecase",
+          "similarity": 0.25
+        },
+        {
+          "fqn": "matplotlib.sphinxext.figmpl_directive.figmplnode",
+          "similarity": 0.25
+        },
+        {
+          "fqn": "matplotlib.axes.__init__.SubplotBase",
+          "similarity": 0.238095
+        },
+        {
+          "fqn": "matplotlib._type1font._BalancedExpression",
+          "similarity": 0.227273
+        },
+        {
+          "fqn": "matplotlib.sphinxext.plot_directive.PlotError",
+          "similarity": 0.227273
+        },
+        {
+          "fqn": "matplotlib.streamplot.TerminateTrajectory",
+          "similarity": 0.227273
+        }
+      ],
+      "entered_final": [
+        "matplotlib.sphinxext.mathmpl.latex_math",
+        "matplotlib._api.deprecation.MatplotlibDeprecationWarning",
+        "matplotlib._mathtext.Parser._MathStyle",
+        "matplotlib.patheffects.Normal",
+        "matplotlib.rcsetup._ignorecase",
+        "matplotlib.sphinxext.figmpl_directive.figmplnode",
+        "matplotlib.axes.__init__.SubplotBase",
+        "matplotlib._type1font._BalancedExpression",
+        "matplotlib.sphinxext.plot_directive.PlotError",
+        "matplotlib.streamplot.TerminateTrajectory"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.124224,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.animation.AVConvWriter",
+      "path_score": 0.24,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.animation.AVConvWriter",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.patheffects.Normal",
+          "similarity": 0.315789
+        },
+        {
+          "fqn": "matplotlib.rcsetup._ignorecase",
+          "similarity": 0.315789
+        },
+        {
+          "fqn": "matplotlib.backend_bases.CloseEvent",
+          "similarity": 0.272727
+        },
+        {
+          "fqn": "matplotlib.backends.backend_macosx.TimerMac",
+          "similarity": 0.26087
+        },
+        {
+          "fqn": "matplotlib.colors.FuncNorm",
+          "similarity": 0.26087
+        },
+        {
+          "fqn": "matplotlib.hatch.HatchPatternBase",
+          "similarity": 0.25
+        },
+        {
+          "fqn": "matplotlib.__init__.ExecutableNotFoundError",
+          "similarity": 0.24
+        },
+        {
+          "fqn": "matplotlib._api.deprecation.MatplotlibDeprecationWarning",
+          "similarity": 0.24
+        },
+        {
+          "fqn": "matplotlib.backend_bases.NonGuiException",
+          "similarity": 0.24
+        },
+        {
+          "fqn": "matplotlib.backends.backend_template.FigureManagerTemplate",
+          "similarity": 0.24
+        }
+      ],
+      "entered_final": [
+        "matplotlib.patheffects.Normal",
+        "matplotlib.rcsetup._ignorecase",
+        "matplotlib.backend_bases.CloseEvent",
+        "matplotlib.backends.backend_macosx.TimerMac",
+        "matplotlib.colors.FuncNorm",
+        "matplotlib.__init__.ExecutableNotFoundError",
+        "matplotlib._api.deprecation.MatplotlibDeprecationWarning",
+        "matplotlib.backend_bases.NonGuiException",
+        "matplotlib.backends.backend_template.FigureManagerTemplate"
+      ],
+      "entered_iter": [],
+      "pruned": [
+        "matplotlib.hatch.HatchPatternBase"
+      ],
+      "prune_bound": 0.124224,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.backends.backend_qt4._BackendQT4.FigureCanvas",
+      "path_score": 0.24,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.backends.backend_qt4._BackendQT4.FigureCanvas",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.backends.backend_nbagg.FigureCanvasNbAgg",
+          "similarity": 0.578947
+        },
+        {
+          "fqn": "matplotlib.backends.backend_webagg.FigureCanvasWebAgg",
+          "similarity": 0.578947
+        },
+        {
+          "fqn": "matplotlib.backends.backend_template.FigureManagerTemplate",
+          "similarity": 0.409091
+        },
+        {
+          "fqn": "matplotlib.backends.backend_gtk3agg.FigureManagerGTK3Agg",
+          "similarity": 0.363636
+        },
+        {
+          "fqn": "matplotlib.backends.backend_gtk4agg.FigureManagerGTK4Agg",
+          "similarity": 0.363636
+        },
+        {
+          "fqn": "matplotlib.backend_tools.SaveFigureBase",
+          "similarity": 0.34375
+        },
+        {
+          "fqn": "matplotlib.backends.backend_wxagg.FigureFrameWxAgg",
+          "similarity": 0.333333
+        },
+        {
+          "fqn": "matplotlib.backends.backend_wxcairo.FigureFrameWxCairo",
+          "similarity": 0.333333
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle.CurveA",
+          "similarity": 0.333333
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle.CurveAB",
+          "similarity": 0.333333
+        }
+      ],
+      "entered_final": [
+        "matplotlib.backends.backend_nbagg.FigureCanvasNbAgg",
+        "matplotlib.backends.backend_webagg.FigureCanvasWebAgg",
+        "matplotlib.backends.backend_template.FigureManagerTemplate",
+        "matplotlib.backend_tools.SaveFigureBase",
+        "matplotlib.patches.ArrowStyle.CurveA",
+        "matplotlib.patches.ArrowStyle.CurveAB"
+      ],
+      "entered_iter": [],
+      "pruned": [
+        "matplotlib.backends.backend_gtk3agg.FigureManagerGTK3Agg",
+        "matplotlib.backends.backend_gtk4agg.FigureManagerGTK4Agg",
+        "matplotlib.backends.backend_wxagg.FigureFrameWxAgg",
+        "matplotlib.backends.backend_wxcairo.FigureFrameWxCairo"
+      ],
+      "prune_bound": 0.138947,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.colorbar.ColorbarPatch",
+      "path_score": 0.108696,
+      "boundary": null,
+      "vpre": null,
+      "vpost": null,
+      "resolved_fqn": null,
+      "resolved_kind": null,
+      "candidates": [],
+      "entered_final": [],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.138947,
+      "dead_reason": "pruned_at_pop"
+    }
+  ]
+}

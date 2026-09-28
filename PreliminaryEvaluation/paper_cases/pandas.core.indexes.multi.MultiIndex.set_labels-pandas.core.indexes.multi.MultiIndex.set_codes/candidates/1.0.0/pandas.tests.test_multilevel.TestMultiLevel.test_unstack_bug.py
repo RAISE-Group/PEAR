@@ -1,0 +1,6 @@
+def test_unstack_bug(self):
+    df = DataFrame({'state': ['naive', 'naive', 'naive', 'activ', 'activ', 'activ'], 'exp': ['a', 'b', 'b', 'b', 'a', 'a'], 'barcode': [1, 2, 3, 4, 1, 3], 'v': ['hi', 'hi', 'bye', 'bye', 'bye', 'peace'], 'extra': np.arange(6.0)})
+    result = df.groupby(['state', 'exp', 'barcode', 'v']).apply(len)
+    unstacked = result.unstack()
+    restacked = unstacked.stack()
+    tm.assert_series_equal(restacked, result.reindex(restacked.index).astype(float))

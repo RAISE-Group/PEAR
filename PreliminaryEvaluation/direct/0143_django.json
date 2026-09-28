@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.1.14",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.proj4_version",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.geos_version",
+      "api_type": "method",
+      "similarity": 0.6666666666666666
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.lwgeom_version",
+      "api_type": "method",
+      "similarity": 0.6666666666666666
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.proj_version",
+      "api_type": "method",
+      "similarity": 0.6666666666666666
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.rttopo_version",
+      "api_type": "method",
+      "similarity": 0.6666666666666666
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations.spatialite_version",
+      "api_type": "method",
+      "similarity": 0.6666666666666666
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.postgis.operations.PostGISOperations.postgis_version",
+      "api_type": "method",
+      "similarity": 0.5789473684210527
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.srs.SpatialReference.proj4",
+      "api_type": "method",
+      "similarity": 0.5625
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.postgis.operations.PostGISOperations.postgis_full_version",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.postgis.operations.PostGISOperations.postgis_geos_version",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.postgis.operations.PostGISOperations.postgis_lib_version",
+      "api_type": "method",
+      "similarity": 0.5
+    }
+  ]
+}

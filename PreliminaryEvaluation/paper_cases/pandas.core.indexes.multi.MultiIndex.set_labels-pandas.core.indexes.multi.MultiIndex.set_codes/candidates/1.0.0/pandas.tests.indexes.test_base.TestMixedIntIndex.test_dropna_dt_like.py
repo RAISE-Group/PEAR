@@ -1,0 +1,5 @@
+@pytest.mark.parametrize('how', ['any', 'all'])
+@pytest.mark.parametrize('index,expected', [(pd.DatetimeIndex(['2011-01-01', '2011-01-02', '2011-01-03']), pd.DatetimeIndex(['2011-01-01', '2011-01-02', '2011-01-03'])), (pd.DatetimeIndex(['2011-01-01', '2011-01-02', '2011-01-03', pd.NaT]), pd.DatetimeIndex(['2011-01-01', '2011-01-02', '2011-01-03'])), (pd.TimedeltaIndex(['1 days', '2 days', '3 days']), pd.TimedeltaIndex(['1 days', '2 days', '3 days'])), (pd.TimedeltaIndex([pd.NaT, '1 days', '2 days', '3 days', pd.NaT]), pd.TimedeltaIndex(['1 days', '2 days', '3 days'])), (pd.PeriodIndex(['2012-02', '2012-04', '2012-05'], freq='M'), pd.PeriodIndex(['2012-02', '2012-04', '2012-05'], freq='M')), (pd.PeriodIndex(['2012-02', '2012-04', 'NaT', '2012-05'], freq='M'), pd.PeriodIndex(['2012-02', '2012-04', '2012-05'], freq='M'))])
+def test_dropna_dt_like(self, how, index, expected):
+    result = index.dropna(how=how)
+    tm.assert_index_equal(result, expected)

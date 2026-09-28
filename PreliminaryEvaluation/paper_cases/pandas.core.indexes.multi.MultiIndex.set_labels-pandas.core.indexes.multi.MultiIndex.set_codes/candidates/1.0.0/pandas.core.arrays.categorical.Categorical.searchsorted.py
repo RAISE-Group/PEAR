@@ -1,0 +1,10 @@
+@Substitution(klass='Categorical')
+@Appender(_shared_docs['searchsorted'])
+def searchsorted(self, value, side='left', sorter=None):
+    if is_scalar(value):
+        codes = self.categories.get_loc(value)
+        codes = self.codes.dtype.type(codes)
+    else:
+        locs = [self.categories.get_loc(x) for x in value]
+        codes = np.array(locs, dtype=self.codes.dtype)
+    return self.codes.searchsorted(codes, side=side, sorter=sorter)

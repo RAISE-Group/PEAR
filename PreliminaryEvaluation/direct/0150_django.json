@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "4.0.10",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.postgresql.operations.DatabaseOperations._convert_field_to_tz",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.backends.postgresql.operations.DatabaseOperations._convert_sql_to_tz",
+      "api_type": "method",
+      "similarity": 0.6666666666666666
+    },
+    {
+      "fqn": "django.db.backends.mysql.operations.DatabaseOperations._convert_sql_to_tz",
+      "api_type": "method",
+      "similarity": 0.574468085106383
+    },
+    {
+      "fqn": "django.contrib.admin.filters.RelatedFieldListFilter.field_choices",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.operations.DatabaseOperations._convert_tznames_to_sql",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.forms.fields.Field.get_bound_field",
+      "api_type": "method",
+      "similarity": 0.4878048780487805
+    },
+    {
+      "fqn": "django.contrib.postgres.fields.hstore.HStoreField.to_python",
+      "api_type": "method",
+      "similarity": 0.48717948717948717
+    },
+    {
+      "fqn": "django.contrib.postgres.search.SearchConfig.as_sql",
+      "api_type": "method",
+      "similarity": 0.475
+    },
+    {
+      "fqn": "django.db.backends.mysql.operations.DatabaseOperations.convert_datetimefield_value",
+      "api_type": "method",
+      "similarity": 0.46511627906976744
+    },
+    {
+      "fqn": "django.db.backends.oracle.operations.DatabaseOperations.convert_datefield_value",
+      "api_type": "method",
+      "similarity": 0.46511627906976744
+    },
+    {
+      "fqn": "django.db.backends.oracle.operations.DatabaseOperations.convert_datetimefield_value",
+      "api_type": "method",
+      "similarity": 0.46511627906976744
+    }
+  ]
+}

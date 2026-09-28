@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.2.2",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.dates.IndexDateFormatter",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.dates.DateFormatter",
+      "api_type": "class",
+      "similarity": 0.6915887850467289,
+      "evolution_path": [
+        "matplotlib.dates.DateFormatter"
+      ],
+      "local_scores": [
+        0.6915887850467289
+      ]
+    },
+    {
+      "fqn": "matplotlib.category.StrCategoryFormatter",
+      "api_type": "class",
+      "similarity": 0.49635036496350365,
+      "evolution_path": [
+        "matplotlib.category.StrCategoryFormatter"
+      ],
+      "local_scores": [
+        0.49635036496350365
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.IndexLocator",
+      "api_type": "class",
+      "similarity": 0.49612403100775193,
+      "evolution_path": [
+        "matplotlib.ticker.IndexLocator"
+      ],
+      "local_scores": [
+        0.49612403100775193
+      ]
+    },
+    {
+      "fqn": "matplotlib.animation.TimedAnimation",
+      "api_type": "class",
+      "similarity": 0.49242424242424243,
+      "evolution_path": [
+        "matplotlib.animation.TimedAnimation"
+      ],
+      "local_scores": [
+        0.49242424242424243
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.MouseEvent",
+      "api_type": "class",
+      "similarity": 0.47580645161290325,
+      "evolution_path": [
+        "matplotlib.backend_bases.MouseEvent"
+      ],
+      "local_scores": [
+        0.47580645161290325
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.FixedFormatter",
+      "api_type": "class",
+      "similarity": 0.4700854700854701,
+      "evolution_path": [
+        "matplotlib.ticker.FixedFormatter"
+      ],
+      "local_scores": [
+        0.4700854700854701
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg.WebAggApplication.SingleFigurePage",
+      "api_type": "class",
+      "similarity": 0.46956521739130436,
+      "evolution_path": [
+        "matplotlib.backends.backend_webagg.WebAggApplication.SingleFigurePage"
+      ],
+      "local_scores": [
+        0.46956521739130436
+      ]
+    },
+    {
+      "fqn": "matplotlib.patheffects.Stroke",
+      "api_type": "class",
+      "similarity": 0.4491525423728814,
+      "evolution_path": [
+        "matplotlib.patheffects.Stroke"
+      ],
+      "local_scores": [
+        0.4491525423728814
+      ]
+    },
+    {
+      "fqn": "matplotlib.projections.geo.GeoAxes.ThetaFormatter",
+      "api_type": "class",
+      "similarity": 0.4489795918367347,
+      "evolution_path": [
+        "matplotlib.projections.geo.GeoAxes.ThetaFormatter"
+      ],
+      "local_scores": [
+        0.4489795918367347
+      ]
+    },
+    {
+      "fqn": "matplotlib.offsetbox.AnchoredText",
+      "api_type": "class",
+      "similarity": 0.4482758620689655,
+      "evolution_path": [
+        "matplotlib.offsetbox.AnchoredText"
+      ],
+      "local_scores": [
+        0.4482758620689655
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.dates.IndexDateFormatter",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.dates.IndexDateFormatter",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.dates.DateFormatter",
+          "similarity": 0.691589
+        },
+        {
+          "fqn": "matplotlib.category.StrCategoryFormatter",
+          "similarity": 0.49635
+        },
+        {
+          "fqn": "matplotlib.ticker.IndexLocator",
+          "similarity": 0.496124
+        },
+        {
+          "fqn": "matplotlib.animation.TimedAnimation",
+          "similarity": 0.492424
+        },
+        {
+          "fqn": "matplotlib.backend_bases.MouseEvent",
+          "similarity": 0.475806
+        },
+        {
+          "fqn": "matplotlib.ticker.FixedFormatter",
+          "similarity": 0.470085
+        },
+        {
+          "fqn": "matplotlib.backends.backend_webagg.WebAggApplication.SingleFigurePage",
+          "similarity": 0.469565
+        },
+        {
+          "fqn": "matplotlib.patheffects.Stroke",
+          "similarity": 0.449153
+        },
+        {
+          "fqn": "matplotlib.projections.geo.GeoAxes.ThetaFormatter",
+          "similarity": 0.44898
+        },
+        {
+          "fqn": "matplotlib.offsetbox.AnchoredText",
+          "similarity": 0.448276
+        }
+      ],
+      "entered_final": [
+        "matplotlib.dates.DateFormatter",
+        "matplotlib.category.StrCategoryFormatter",
+        "matplotlib.ticker.IndexLocator",
+        "matplotlib.animation.TimedAnimation",
+        "matplotlib.backend_bases.MouseEvent",
+        "matplotlib.ticker.FixedFormatter",
+        "matplotlib.backends.backend_webagg.WebAggApplication.SingleFigurePage",
+        "matplotlib.patheffects.Stroke",
+        "matplotlib.projections.geo.GeoAxes.ThetaFormatter",
+        "matplotlib.offsetbox.AnchoredText"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.448276,
+      "dead_reason": null
+    }
+  ]
+}

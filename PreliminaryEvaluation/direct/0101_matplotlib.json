@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.6.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.backends.backend_svg.RendererSVG._draw_gouraud_triangle",
+      "api_type": "method",
+      "similarity": 0.8173076923076923
+    },
+    {
+      "fqn": "matplotlib._type1font.Type1Font._parse",
+      "api_type": "method",
+      "similarity": 0.5286259541984732
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.RendererSVG.draw_image",
+      "api_type": "method",
+      "similarity": 0.5234215885947047
+    },
+    {
+      "fqn": "matplotlib.backends.backend_ps.RendererPS.draw_text",
+      "api_type": "method",
+      "similarity": 0.5122950819672131
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.RendererSVG._draw_text_as_path",
+      "api_type": "method",
+      "similarity": 0.5031446540880503
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.RendererSVG._write_metadata",
+      "api_type": "method",
+      "similarity": 0.4925124792013311
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.RendererSVG.draw_path_collection",
+      "api_type": "method",
+      "similarity": 0.4904051172707889
+    },
+    {
+      "fqn": "matplotlib.patches.ConnectionPatch._get_xy",
+      "api_type": "method",
+      "similarity": 0.4883720930232558
+    },
+    {
+      "fqn": "matplotlib.quiver.Barbs._make_barbs",
+      "api_type": "method",
+      "similarity": 0.48697394789579157
+    },
+    {
+      "fqn": "matplotlib.widgets._Buttons._init_layout",
+      "api_type": "method",
+      "similarity": 0.4860557768924303
+    }
+  ]
+}

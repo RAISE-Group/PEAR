@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.20.3",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.series.Series.reindex_axis",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.arrays.sparse.array.SparseArray.__setitem__",
+      "api_type": "method",
+      "similarity": 0.4722222222222222
+    },
+    {
+      "fqn": "pandas.tests.extension.test_sparse.TestSparseArray.test_reindex",
+      "api_type": "method",
+      "similarity": 0.43243243243243246
+    },
+    {
+      "fqn": "pandas.core.arrays.base.ExtensionArray.__setitem__",
+      "api_type": "method",
+      "similarity": 0.42105263157894735
+    },
+    {
+      "fqn": "pandas.core.indexes.base.Index._validate_can_reindex",
+      "api_type": "method",
+      "similarity": 0.4186046511627907
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame._get_agg_axis",
+      "api_type": "method",
+      "similarity": 0.4166666666666667
+    },
+    {
+      "fqn": "pandas.tests.plotting.test_converter.TestPeriodConverter.axis",
+      "api_type": "method",
+      "similarity": 0.4117647058823529
+    },
+    {
+      "fqn": "pandas.core.computation.expr.BaseExprVisitor.visit_Module",
+      "api_type": "method",
+      "similarity": 0.40425531914893614
+    },
+    {
+      "fqn": "pandas.core.groupby.groupby.GroupBy.resample",
+      "api_type": "method",
+      "similarity": 0.4
+    },
+    {
+      "fqn": "pandas.core.indexing._iAtIndexer._convert_key",
+      "api_type": "method",
+      "similarity": 0.4
+    },
+    {
+      "fqn": "pandas.core.indexing._iLocIndexer._get_list_axis",
+      "api_type": "method",
+      "similarity": 0.3958333333333333
+    }
+  ]
+}

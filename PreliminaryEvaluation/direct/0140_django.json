@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.0.14",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.postgres.forms.jsonb.JSONString",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.forms.fields.JSONString",
+      "api_type": "class",
+      "similarity": 1.0
+    },
+    {
+      "fqn": "django.core.management.color.Style",
+      "api_type": "class",
+      "similarity": 0.4166666666666667
+    },
+    {
+      "fqn": "django.db.models.fields.__init__.Empty",
+      "api_type": "class",
+      "similarity": 0.4166666666666667
+    },
+    {
+      "fqn": "django.db.models.manager.Manager",
+      "api_type": "class",
+      "similarity": 0.4166666666666667
+    },
+    {
+      "fqn": "django.db.models.sql.datastructures.Empty",
+      "api_type": "class",
+      "similarity": 0.4166666666666667
+    },
+    {
+      "fqn": "django.forms.fields.InvalidJSONInput",
+      "api_type": "class",
+      "similarity": 0.4
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.error.GDALException",
+      "api_type": "class",
+      "similarity": 0.38461538461538464
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.error.SRSException",
+      "api_type": "class",
+      "similarity": 0.38461538461538464
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.field.OFTBinary",
+      "api_type": "class",
+      "similarity": 0.38461538461538464
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.field.OFTString",
+      "api_type": "class",
+      "similarity": 0.38461538461538464
+    }
+  ]
+}

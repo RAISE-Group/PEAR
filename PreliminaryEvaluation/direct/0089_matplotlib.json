@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.4.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.ticker.OldAutoLocator",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.ticker.AutoMinorLocator",
+      "api_type": "class",
+      "similarity": 0.5427509293680297
+    },
+    {
+      "fqn": "matplotlib.ticker.MultipleLocator",
+      "api_type": "class",
+      "similarity": 0.5422535211267606
+    },
+    {
+      "fqn": "matplotlib.ticker.LinearLocator",
+      "api_type": "class",
+      "similarity": 0.509375
+    },
+    {
+      "fqn": "matplotlib.dates.MicrosecondLocator",
+      "api_type": "class",
+      "similarity": 0.4883720930232558
+    },
+    {
+      "fqn": "matplotlib.text.OffsetFrom",
+      "api_type": "class",
+      "similarity": 0.4690909090909091
+    },
+    {
+      "fqn": "matplotlib.ticker.LogFormatterMathtext",
+      "api_type": "class",
+      "similarity": 0.45985401459854014
+    },
+    {
+      "fqn": "matplotlib.dates.DateLocator",
+      "api_type": "class",
+      "similarity": 0.453125
+    },
+    {
+      "fqn": "matplotlib.projections.geo.HammerAxes",
+      "api_type": "class",
+      "similarity": 0.4520547945205479
+    },
+    {
+      "fqn": "matplotlib.dates.RRuleLocator",
+      "api_type": "class",
+      "similarity": 0.45132743362831856
+    },
+    {
+      "fqn": "matplotlib.dates.AutoDateFormatter",
+      "api_type": "class",
+      "similarity": 0.4509090909090909
+    }
+  ]
+}

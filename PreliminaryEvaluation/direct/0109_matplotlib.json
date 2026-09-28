@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.9.4",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.contour.ContourLabeler.add_label_clabeltext",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.transforms.Transform.__add__",
+      "api_type": "method",
+      "similarity": 0.4594594594594595
+    },
+    {
+      "fqn": "matplotlib._layoutgrid.LayoutGrid.add_child",
+      "api_type": "method",
+      "similarity": 0.425531914893617
+    },
+    {
+      "fqn": "matplotlib.colorbar.Colorbar.set_label",
+      "api_type": "method",
+      "similarity": 0.40816326530612246
+    },
+    {
+      "fqn": "matplotlib.axes._axes.Axes.quiverkey",
+      "api_type": "method",
+      "similarity": 0.40425531914893614
+    },
+    {
+      "fqn": "matplotlib.testing.jpl_units.Duration.Duration.__add__",
+      "api_type": "method",
+      "similarity": 0.3958333333333333
+    },
+    {
+      "fqn": "matplotlib.backends._backend_gtk.RubberbandGTK.draw_rubberband",
+      "api_type": "method",
+      "similarity": 0.3953488372093023
+    },
+    {
+      "fqn": "matplotlib.backends._backend_tk.RubberbandTk.draw_rubberband",
+      "api_type": "method",
+      "similarity": 0.3953488372093023
+    },
+    {
+      "fqn": "matplotlib.backends.backend_qt.RubberbandQt.draw_rubberband",
+      "api_type": "method",
+      "similarity": 0.3953488372093023
+    },
+    {
+      "fqn": "matplotlib.backends.backend_wx.RubberbandWx.draw_rubberband",
+      "api_type": "method",
+      "similarity": 0.3953488372093023
+    },
+    {
+      "fqn": "matplotlib.dviread.Dvi._fnt_def",
+      "api_type": "method",
+      "similarity": 0.3953488372093023
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+def test_get_bool_data(self):
+    mgr = create_mgr('int: int; float: float; complex: complex;str: object; bool: bool; obj: object; dt: datetime', item_shape=(3,))
+    mgr.set('obj', np.array([True, False, True], dtype=np.object_))
+    bools = mgr.get_bool_data()
+    tm.assert_index_equal(bools.items, pd.Index(['bool']))
+    tm.assert_almost_equal(mgr.get('bool').internal_values(), bools.get('bool').internal_values())
+    bools.set('bool', np.array([True, False, True]))
+    tm.assert_numpy_array_equal(mgr.get('bool').internal_values(), np.array([True, False, True]))
+    bools2 = mgr.get_bool_data(copy=True)
+    bools2.set('bool', np.array([False, True, False]))
+    tm.assert_numpy_array_equal(mgr.get('bool').internal_values(), np.array([True, False, True]))

@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.12.0",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.panel.Panel.__neg__",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas._libs.tslibs.nattype.NaTType.__neg__",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas._libs.tslibs.offsets.BaseOffset.__neg__",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas._libs.tslibs.timedeltas.Timedelta.__neg__",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.core.indexes.base.Index.__neg__",
+      "api_type": "method",
+      "similarity": 0.4444444444444444
+    },
+    {
+      "fqn": "pandas.tests.frame.methods.test_select_dtypes.DummyArray.copy",
+      "api_type": "method",
+      "similarity": 0.42857142857142855
+    },
+    {
+      "fqn": "pandas.tests.frame.methods.test_select_dtypes.DummyArray.view",
+      "api_type": "method",
+      "similarity": 0.42857142857142855
+    },
+    {
+      "fqn": "pandas.core.arrays.numpy_.NumpyExtensionArray.__neg__",
+      "api_type": "method",
+      "similarity": 0.4090909090909091
+    },
+    {
+      "fqn": "pandas.core.arrays.sparse.array.SparseArray.__neg__",
+      "api_type": "method",
+      "similarity": 0.4
+    },
+    {
+      "fqn": "pandas.tests.series.indexing.test_setitem.CoercionTest.key",
+      "api_type": "method",
+      "similarity": 0.4
+    },
+    {
+      "fqn": "pandas.tests.series.indexing.test_setitem.TestSetitemIntoIntegerSeriesNeedsUpcast.key",
+      "api_type": "method",
+      "similarity": 0.4
+    }
+  ]
+}

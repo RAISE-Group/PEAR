@@ -1,0 +1,22 @@
+def test_quantile_nan(self):
+    df = DataFrame({'a': np.arange(1, 6.0), 'b': np.arange(1, 6.0)})
+    df.iloc[-1, 1] = np.nan
+    res = df.quantile(0.5)
+    exp = Series([3.0, 2.5], index=['a', 'b'], name=0.5)
+    tm.assert_series_equal(res, exp)
+    res = df.quantile([0.5, 0.75])
+    exp = DataFrame({'a': [3.0, 4.0], 'b': [2.5, 3.25]}, index=[0.5, 0.75])
+    tm.assert_frame_equal(res, exp)
+    res = df.quantile(0.5, axis=1)
+    exp = Series(np.arange(1.0, 6.0), name=0.5)
+    tm.assert_series_equal(res, exp)
+    res = df.quantile([0.5, 0.75], axis=1)
+    exp = DataFrame([np.arange(1.0, 6.0)] * 2, index=[0.5, 0.75])
+    tm.assert_frame_equal(res, exp)
+    df['b'] = np.nan
+    res = df.quantile(0.5)
+    exp = Series([3.0, np.nan], index=['a', 'b'], name=0.5)
+    tm.assert_series_equal(res, exp)
+    res = df.quantile([0.5, 0.75])
+    exp = DataFrame({'a': [3.0, 4.0], 'b': [np.nan, np.nan]}, index=[0.5, 0.75])
+    tm.assert_frame_equal(res, exp)

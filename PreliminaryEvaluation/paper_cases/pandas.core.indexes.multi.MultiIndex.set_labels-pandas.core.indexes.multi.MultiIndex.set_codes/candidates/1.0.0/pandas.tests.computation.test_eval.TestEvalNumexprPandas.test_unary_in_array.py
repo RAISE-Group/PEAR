@@ -1,0 +1,2 @@
+def test_unary_in_array(self):
+    tm.assert_numpy_array_equal(pd.eval('[-True, True, ~True, +True,-False, False, ~False, +False,-37, 37, ~37, +37]'), np.array([-True, True, ~True, +True, -False, False, ~False, +False, -37, 37, ~37, +37], dtype=np.object_))

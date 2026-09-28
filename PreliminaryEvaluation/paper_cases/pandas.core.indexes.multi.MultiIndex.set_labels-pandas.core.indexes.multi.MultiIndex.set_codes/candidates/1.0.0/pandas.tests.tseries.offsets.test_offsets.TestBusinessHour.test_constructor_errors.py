@@ -1,0 +1,4 @@
+@pytest.mark.parametrize('start,end,match', [(dt_time(11, 0, 5), '17:00', 'time data must be specified only with hour and minute'), ('AAA', '17:00', "time data must match '%H:%M' format"), ('14:00:05', '17:00', "time data must match '%H:%M' format"), ([], '17:00', 'Must include at least 1 start time'), ('09:00', [], 'Must include at least 1 end time'), (['09:00', '11:00'], '17:00', 'number of starting time and ending time must be the same'), (['09:00', '11:00'], ['10:00'], 'number of starting time and ending time must be the same'), (['09:00', '11:00'], ['12:00', '20:00'], 'invalid starting and ending time\\(s\\): opening hours should not touch or overlap with one another'), (['12:00', '20:00'], ['09:00', '11:00'], 'invalid starting and ending time\\(s\\): opening hours should not touch or overlap with one another')])
+def test_constructor_errors(self, start, end, match):
+    with pytest.raises(ValueError, match=match):
+        BusinessHour(start=start, end=end)

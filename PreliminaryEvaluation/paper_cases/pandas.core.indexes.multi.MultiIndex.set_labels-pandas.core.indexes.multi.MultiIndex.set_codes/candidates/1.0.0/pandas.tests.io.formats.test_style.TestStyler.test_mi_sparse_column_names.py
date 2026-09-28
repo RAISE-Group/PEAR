@@ -1,0 +1,6 @@
+def test_mi_sparse_column_names(self):
+    df = pd.DataFrame(np.arange(16).reshape(4, 4), index=pd.MultiIndex.from_arrays([['a', 'a', 'b', 'a'], [0, 1, 1, 2]], names=['idx_level_0', 'idx_level_1']), columns=pd.MultiIndex.from_arrays([['C1', 'C1', 'C2', 'C2'], [1, 0, 1, 0]], names=['col_0', 'col_1']))
+    result = df.style._translate()
+    head = result['head'][1]
+    expected = [{'class': 'blank', 'value': '', 'display_value': '', 'type': 'th', 'is_visible': True}, {'class': 'index_name level1', 'value': 'col_1', 'display_value': 'col_1', 'is_visible': True, 'type': 'th'}, {'class': 'col_heading level1 col0', 'display_value': 1, 'is_visible': True, 'type': 'th', 'value': 1}, {'class': 'col_heading level1 col1', 'display_value': 0, 'is_visible': True, 'type': 'th', 'value': 0}, {'class': 'col_heading level1 col2', 'display_value': 1, 'is_visible': True, 'type': 'th', 'value': 1}, {'class': 'col_heading level1 col3', 'display_value': 0, 'is_visible': True, 'type': 'th', 'value': 0}]
+    assert head == expected

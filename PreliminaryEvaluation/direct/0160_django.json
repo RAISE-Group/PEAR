@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "4.1.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.http.multipartparser.parse_header",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.utils.http.parse_header_parameters",
+      "api_type": "function",
+      "similarity": 0.7205882352941176
+    },
+    {
+      "fqn": "django.http.multipartparser.parse_boundary_stream",
+      "api_type": "function",
+      "similarity": 0.5720720720720721
+    },
+    {
+      "fqn": "django.template.defaulttags.url",
+      "api_type": "function",
+      "similarity": 0.5384615384615384
+    },
+    {
+      "fqn": "django.utils.termcolors.parse_color_setting",
+      "api_type": "function",
+      "similarity": 0.5272727272727272
+    },
+    {
+      "fqn": "django.template.loader_tags.do_include",
+      "api_type": "function",
+      "similarity": 0.5213270142180095
+    },
+    {
+      "fqn": "django.utils.dateparse.parse_datetime",
+      "api_type": "function",
+      "similarity": 0.5177664974619289
+    },
+    {
+      "fqn": "django.template.defaulttags.do_for",
+      "api_type": "function",
+      "similarity": 0.5161290322580645
+    },
+    {
+      "fqn": "django.test.utils.get_unique_databases_and_mirrors",
+      "api_type": "function",
+      "similarity": 0.5069767441860465
+    },
+    {
+      "fqn": "django.contrib.admin.templatetags.admin_urls.add_preserved_filters",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.template.backends.jinja2.get_exception_info",
+      "api_type": "function",
+      "similarity": 0.5
+    }
+  ]
+}

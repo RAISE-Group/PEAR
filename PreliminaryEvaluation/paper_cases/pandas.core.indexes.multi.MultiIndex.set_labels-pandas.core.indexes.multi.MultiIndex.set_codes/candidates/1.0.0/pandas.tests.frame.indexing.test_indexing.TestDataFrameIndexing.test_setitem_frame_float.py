@@ -1,0 +1,6 @@
+def test_setitem_frame_float(self, float_frame):
+    piece = float_frame.loc[float_frame.index[:2], ['A', 'B']]
+    float_frame.loc[float_frame.index[-2]:, ['A', 'B']] = piece.values
+    result = float_frame.loc[float_frame.index[-2:], ['A', 'B']].values
+    expected = piece.values
+    tm.assert_almost_equal(result, expected)

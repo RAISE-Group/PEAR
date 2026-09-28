@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.2.2",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.offsetbox.DraggableBase.artist_picker",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.axis.Tick._set_artist_props",
+      "api_type": "method",
+      "similarity": 0.48,
+      "evolution_path": [
+        "matplotlib.axis.Tick._set_artist_props"
+      ],
+      "local_scores": [
+        0.48
+      ]
+    },
+    {
+      "fqn": "matplotlib.widgets.RectangleSelector._contains",
+      "api_type": "method",
+      "similarity": 0.4583333333333333,
+      "evolution_path": [
+        "matplotlib.widgets.RectangleSelector._contains"
+      ],
+      "local_scores": [
+        0.4583333333333333
+      ]
+    },
+    {
+      "fqn": "matplotlib.widgets.SpanSelector._contains",
+      "api_type": "method",
+      "similarity": 0.4583333333333333,
+      "evolution_path": [
+        "matplotlib.widgets.SpanSelector._contains"
+      ],
+      "local_scores": [
+        0.4583333333333333
+      ]
+    },
+    {
+      "fqn": "matplotlib._api.__init__.classproperty.__get__",
+      "api_type": "method",
+      "similarity": 0.45454545454545453,
+      "evolution_path": [
+        "matplotlib._api.__init__.classproperty.__get__"
+      ],
+      "local_scores": [
+        0.45454545454545453
+      ]
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.set_picker",
+      "api_type": "method",
+      "similarity": 0.45454545454545453,
+      "evolution_path": [
+        "matplotlib.artist.Artist.set_picker"
+      ],
+      "local_scores": [
+        0.45454545454545453
+      ]
+    },
+    {
+      "fqn": "matplotlib.tests.test_cbook.Test_callback_registry.disconnect",
+      "api_type": "method",
+      "similarity": 0.45454545454545453,
+      "evolution_path": [
+        "matplotlib.tests.test_cbook.Test_callback_registry.disconnect"
+      ],
+      "local_scores": [
+        0.45454545454545453
+      ]
+    },
+    {
+      "fqn": "matplotlib.transforms.TransformWrapper.__eq__",
+      "api_type": "method",
+      "similarity": 0.45454545454545453,
+      "evolution_path": [
+        "matplotlib.transforms.TransformWrapper.__eq__"
+      ],
+      "local_scores": [
+        0.45454545454545453
+      ]
+    },
+    {
+      "fqn": "matplotlib.axis.Axis._set_artist_props",
+      "api_type": "method",
+      "similarity": 0.4482758620689655,
+      "evolution_path": [
+        "matplotlib.axis.Axis._set_artist_props"
+      ],
+      "local_scores": [
+        0.4482758620689655
+      ]
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.get_picker",
+      "api_type": "method",
+      "similarity": 0.42857142857142855,
+      "evolution_path": [
+        "matplotlib.artist.Artist.get_picker"
+      ],
+      "local_scores": [
+        0.42857142857142855
+      ]
+    },
+    {
+      "fqn": "matplotlib.axes._base._AxesBase.in_axes",
+      "api_type": "method",
+      "similarity": 0.4230769230769231,
+      "evolution_path": [
+        "matplotlib.axes._base._AxesBase.in_axes"
+      ],
+      "local_scores": [
+        0.4230769230769231
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.offsetbox.DraggableBase.artist_picker",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.offsetbox.DraggableBase.artist_picker",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.axis.Tick._set_artist_props",
+          "similarity": 0.48
+        },
+        {
+          "fqn": "matplotlib.widgets.RectangleSelector._contains",
+          "similarity": 0.458333
+        },
+        {
+          "fqn": "matplotlib.widgets.SpanSelector._contains",
+          "similarity": 0.458333
+        },
+        {
+          "fqn": "matplotlib._api.__init__.classproperty.__get__",
+          "similarity": 0.454545
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_picker",
+          "similarity": 0.454545
+        },
+        {
+          "fqn": "matplotlib.tests.test_cbook.Test_callback_registry.disconnect",
+          "similarity": 0.454545
+        },
+        {
+          "fqn": "matplotlib.transforms.TransformWrapper.__eq__",
+          "similarity": 0.454545
+        },
+        {
+          "fqn": "matplotlib.axis.Axis._set_artist_props",
+          "similarity": 0.448276
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.get_picker",
+          "similarity": 0.428571
+        },
+        {
+          "fqn": "matplotlib.axes._base._AxesBase.in_axes",
+          "similarity": 0.423077
+        }
+      ],
+      "entered_final": [
+        "matplotlib.axis.Tick._set_artist_props",
+        "matplotlib.widgets.RectangleSelector._contains",
+        "matplotlib.widgets.SpanSelector._contains",
+        "matplotlib._api.__init__.classproperty.__get__",
+        "matplotlib.artist.Artist.set_picker",
+        "matplotlib.tests.test_cbook.Test_callback_registry.disconnect",
+        "matplotlib.transforms.TransformWrapper.__eq__",
+        "matplotlib.axis.Axis._set_artist_props",
+        "matplotlib.artist.Artist.get_picker",
+        "matplotlib.axes._base._AxesBase.in_axes"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.423077,
+      "dead_reason": null
+    }
+  ]
+}

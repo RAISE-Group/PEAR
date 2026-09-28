@@ -1,0 +1,403 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.1.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.ticker.Locator.autoscale",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.ticker.Locator.view_limits",
+      "api_type": "method",
+      "similarity": 1.0,
+      "evolution_path": [
+        "matplotlib.ticker.Locator.view_limits"
+      ],
+      "local_scores": [
+        1.0
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.Locator.nonsingular",
+      "api_type": "method",
+      "similarity": 0.5652173913043478,
+      "evolution_path": [
+        "matplotlib.ticker.Locator.nonsingular"
+      ],
+      "local_scores": [
+        0.5652173913043478
+      ]
+    },
+    {
+      "fqn": "matplotlib.projections.polar.ThetaLocator.view_limits",
+      "api_type": "method",
+      "similarity": 0.5142857142857142,
+      "evolution_path": [
+        "matplotlib.projections.polar.ThetaLocator.view_limits"
+      ],
+      "local_scores": [
+        0.5142857142857142
+      ]
+    },
+    {
+      "fqn": "matplotlib.axes._axes.Axes.clabel",
+      "api_type": "method",
+      "similarity": 0.48,
+      "evolution_path": [
+        "matplotlib.axes._axes.Axes.clabel"
+      ],
+      "local_scores": [
+        0.48
+      ]
+    },
+    {
+      "fqn": "matplotlib.projections.polar.RadialLocator.view_limits",
+      "api_type": "method",
+      "similarity": 0.475,
+      "evolution_path": [
+        "matplotlib.projections.polar.RadialLocator.view_limits"
+      ],
+      "local_scores": [
+        0.475
+      ]
+    },
+    {
+      "fqn": "matplotlib.projections.polar._AxisWrapper.set_view_interval",
+      "api_type": "method",
+      "similarity": 0.45161290322580644,
+      "evolution_path": [
+        "matplotlib.projections.polar._AxisWrapper.set_view_interval"
+      ],
+      "local_scores": [
+        0.45161290322580644
+      ]
+    },
+    {
+      "fqn": "matplotlib.transforms.IdentityTransform.transform",
+      "api_type": "method",
+      "similarity": 0.43478260869565216,
+      "evolution_path": [
+        "matplotlib.transforms.IdentityTransform.transform"
+      ],
+      "local_scores": [
+        0.43478260869565216
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker._DummyAxis.set_view_interval",
+      "api_type": "method",
+      "similarity": 0.3977455716586151,
+      "evolution_path": [
+        "matplotlib.ticker.TickHelper.set_view_interval",
+        "matplotlib.ticker._DummyAxis.set_view_interval"
+      ],
+      "local_scores": [
+        0.48148148148148145,
+        0.8260869565217391
+      ]
+    },
+    {
+      "fqn": "matplotlib.axis.Axis.set_view_interval",
+      "api_type": "method",
+      "similarity": 0.3148148148148148,
+      "evolution_path": [
+        "matplotlib.ticker.TickHelper.set_view_interval",
+        "matplotlib.axis.Axis.set_view_interval"
+      ],
+      "local_scores": [
+        0.48148148148148145,
+        0.6538461538461539
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker._DummyAxis.set_data_interval",
+      "api_type": "method",
+      "similarity": 0.2962962962962963,
+      "evolution_path": [
+        "matplotlib.ticker.TickHelper.set_view_interval",
+        "matplotlib.ticker._DummyAxis.set_data_interval"
+      ],
+      "local_scores": [
+        0.48148148148148145,
+        0.6153846153846154
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.ticker.Locator.autoscale",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.3.4",
+      "vpost": "3.4.0",
+      "resolved_fqn": "matplotlib.ticker.Locator.view_limits",
+      "resolved_kind": "forward",
+      "candidates": [
+        {
+          "fqn": "matplotlib.ticker.Locator.view_limits",
+          "similarity": 1.0
+        },
+        {
+          "fqn": "matplotlib.ticker.Locator.nonsingular",
+          "similarity": 0.565217
+        },
+        {
+          "fqn": "matplotlib.ticker.OldAutoLocator.view_limits",
+          "similarity": 0.529412
+        },
+        {
+          "fqn": "matplotlib.projections.polar.ThetaLocator.view_limits",
+          "similarity": 0.514286
+        },
+        {
+          "fqn": "matplotlib.ticker.TickHelper.set_view_interval",
+          "similarity": 0.481481
+        },
+        {
+          "fqn": "matplotlib.axes._axes.Axes.clabel",
+          "similarity": 0.48
+        },
+        {
+          "fqn": "matplotlib.projections.polar.RadialLocator.view_limits",
+          "similarity": 0.475
+        },
+        {
+          "fqn": "matplotlib.projections.polar._AxisWrapper.set_view_interval",
+          "similarity": 0.451613
+        },
+        {
+          "fqn": "matplotlib.dates.MicrosecondLocator.set_view_interval",
+          "similarity": 0.441176
+        },
+        {
+          "fqn": "matplotlib.transforms.IdentityTransform.transform",
+          "similarity": 0.434783
+        }
+      ],
+      "entered_final": [
+        "matplotlib.ticker.Locator.view_limits",
+        "matplotlib.ticker.Locator.nonsingular",
+        "matplotlib.projections.polar.ThetaLocator.view_limits",
+        "matplotlib.axes._axes.Axes.clabel",
+        "matplotlib.projections.polar.RadialLocator.view_limits",
+        "matplotlib.projections.polar._AxisWrapper.set_view_interval",
+        "matplotlib.transforms.IdentityTransform.transform"
+      ],
+      "entered_iter": [
+        "matplotlib.ticker.OldAutoLocator.view_limits",
+        "matplotlib.ticker.TickHelper.set_view_interval",
+        "matplotlib.dates.MicrosecondLocator.set_view_interval"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.ticker.OldAutoLocator.view_limits",
+      "path_score": 0.529412,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.ticker.OldAutoLocator.view_limits",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.projections.polar.ThetaLocator.view_limits",
+          "similarity": 0.717949
+        },
+        {
+          "fqn": "matplotlib.projections.polar.RadialLocator.view_limits",
+          "similarity": 0.697674
+        },
+        {
+          "fqn": "matplotlib.ticker.Locator.view_limits",
+          "similarity": 0.529412
+        },
+        {
+          "fqn": "matplotlib.axes._base._AxesBase._get_view",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.axes._base._AxesBase._set_view",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.testing.jpl_units.EpochConverter.EpochConverter.axisinfo",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib._mathtext.Parser.function",
+          "similarity": 0.487179
+        },
+        {
+          "fqn": "matplotlib.path.Path.clip_to_bbox",
+          "similarity": 0.479167
+        },
+        {
+          "fqn": "matplotlib.axes._base._AxesBase._update_image_limits",
+          "similarity": 0.478261
+        },
+        {
+          "fqn": "matplotlib.transforms.TransformNode.__deepcopy__",
+          "similarity": 0.478261
+        }
+      ],
+      "entered_final": [
+        "matplotlib.projections.polar.ThetaLocator.view_limits",
+        "matplotlib.projections.polar.RadialLocator.view_limits",
+        "matplotlib.ticker.Locator.view_limits",
+        "matplotlib.axes._base._AxesBase._get_view",
+        "matplotlib.axes._base._AxesBase._set_view",
+        "matplotlib.testing.jpl_units.EpochConverter.EpochConverter.axisinfo",
+        "matplotlib._mathtext.Parser.function",
+        "matplotlib.path.Path.clip_to_bbox",
+        "matplotlib.axes._base._AxesBase._update_image_limits"
+      ],
+      "entered_iter": [],
+      "pruned": [
+        "matplotlib.transforms.TransformNode.__deepcopy__"
+      ],
+      "prune_bound": 0.280277,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.ticker.TickHelper.set_view_interval",
+      "path_score": 0.481481,
+      "boundary": "DEPRECATED",
+      "vpre": "3.6.3",
+      "vpost": "3.7.0",
+      "resolved_fqn": "matplotlib.ticker.TickHelper.set_view_interval",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.ticker._DummyAxis.set_view_interval",
+          "similarity": 0.826087
+        },
+        {
+          "fqn": "matplotlib.projections.polar._AxisWrapper.set_view_interval",
+          "similarity": 0.807692
+        },
+        {
+          "fqn": "matplotlib.axis.Axis.set_view_interval",
+          "similarity": 0.653846
+        },
+        {
+          "fqn": "matplotlib.ticker._DummyAxis.set_data_interval",
+          "similarity": 0.615385
+        },
+        {
+          "fqn": "matplotlib.projections.polar._AxisWrapper.set_data_interval",
+          "similarity": 0.566667
+        },
+        {
+          "fqn": "matplotlib.colorbar.Colorbar._set_view",
+          "similarity": 0.56
+        },
+        {
+          "fqn": "matplotlib.__init__.RcParams._set",
+          "similarity": 0.541667
+        },
+        {
+          "fqn": "matplotlib.backend_tools.ToolXScale.set_scale",
+          "similarity": 0.52
+        },
+        {
+          "fqn": "matplotlib.backend_tools.ToolYScale.set_scale",
+          "similarity": 0.52
+        },
+        {
+          "fqn": "matplotlib.backends.backend_qt.TimerQT._timer_set_interval",
+          "similarity": 0.5
+        }
+      ],
+      "entered_final": [
+        "matplotlib.ticker._DummyAxis.set_view_interval",
+        "matplotlib.projections.polar._AxisWrapper.set_view_interval",
+        "matplotlib.axis.Axis.set_view_interval",
+        "matplotlib.ticker._DummyAxis.set_data_interval",
+        "matplotlib.projections.polar._AxisWrapper.set_data_interval",
+        "matplotlib.colorbar.Colorbar._set_view",
+        "matplotlib.__init__.RcParams._set",
+        "matplotlib.backend_tools.ToolXScale.set_scale",
+        "matplotlib.backend_tools.ToolYScale.set_scale",
+        "matplotlib.backends.backend_qt.TimerQT._timer_set_interval"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.38009,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.dates.MicrosecondLocator.set_view_interval",
+      "path_score": 0.441176,
+      "boundary": "DEPRECATED",
+      "vpre": "3.6.3",
+      "vpost": "3.7.0",
+      "resolved_fqn": "matplotlib.dates.MicrosecondLocator.set_view_interval",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.projections.polar._AxisWrapper.set_view_interval",
+          "similarity": 0.75
+        },
+        {
+          "fqn": "matplotlib.ticker._DummyAxis.set_view_interval",
+          "similarity": 0.59375
+        },
+        {
+          "fqn": "matplotlib.projections.polar._AxisWrapper.set_data_interval",
+          "similarity": 0.555556
+        },
+        {
+          "fqn": "matplotlib.dates.MicrosecondLocator.set_axis",
+          "similarity": 0.542857
+        },
+        {
+          "fqn": "matplotlib.offsetbox.OffsetBox.set_figure",
+          "similarity": 0.526316
+        },
+        {
+          "fqn": "matplotlib.quiver.QuiverKey.set_figure",
+          "similarity": 0.514286
+        },
+        {
+          "fqn": "matplotlib.table.Cell.set_figure",
+          "similarity": 0.514286
+        },
+        {
+          "fqn": "matplotlib.transforms.Affine2D.set",
+          "similarity": 0.514286
+        },
+        {
+          "fqn": "matplotlib.axis.Tick.set_clip_path",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.projections.polar.ThetaLocator.view_limits",
+          "similarity": 0.488372
+        }
+      ],
+      "entered_final": [
+        "matplotlib.projections.polar._AxisWrapper.set_view_interval",
+        "matplotlib.ticker._DummyAxis.set_view_interval",
+        "matplotlib.projections.polar._AxisWrapper.set_data_interval",
+        "matplotlib.dates.MicrosecondLocator.set_axis",
+        "matplotlib.offsetbox.OffsetBox.set_figure",
+        "matplotlib.quiver.QuiverKey.set_figure",
+        "matplotlib.table.Cell.set_figure",
+        "matplotlib.transforms.Affine2D.set",
+        "matplotlib.axis.Tick.set_clip_path",
+        "matplotlib.projections.polar.ThetaLocator.view_limits"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.38009,
+      "dead_reason": null
+    }
+  ]
+}

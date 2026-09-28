@@ -1,0 +1,13 @@
+def test_compare_list_like_interval(self, op, array, interval_constructor):
+    other = interval_constructor(array.left, array.right)
+    result = op(array, other)
+    expected = self.elementwise_comparison(op, array, other)
+    tm.assert_numpy_array_equal(result, expected)
+    other = interval_constructor(array.left[::-1], array.right[::-1])
+    result = op(array, other)
+    expected = self.elementwise_comparison(op, array, other)
+    tm.assert_numpy_array_equal(result, expected)
+    other = interval_constructor([np.nan] * 4, [np.nan] * 4)
+    result = op(array, other)
+    expected = self.elementwise_comparison(op, array, other)
+    tm.assert_numpy_array_equal(result, expected)

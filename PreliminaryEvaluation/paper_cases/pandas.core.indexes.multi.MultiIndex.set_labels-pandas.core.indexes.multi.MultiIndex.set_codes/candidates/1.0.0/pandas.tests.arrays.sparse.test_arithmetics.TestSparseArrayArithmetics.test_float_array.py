@@ -1,0 +1,17 @@
+def test_float_array(self, kind, mix, all_arithmetic_functions):
+    op = all_arithmetic_functions
+    values = self._base([np.nan, 1, 2, 0, np.nan, 0, 1, 2, 1, np.nan])
+    rvalues = self._base([2, np.nan, 2, 3, np.nan, 0, 1, 5, 2, np.nan])
+    a = self._klass(values, kind=kind)
+    b = self._klass(rvalues, kind=kind)
+    self._check_numeric_ops(a, b, values, rvalues, mix, op)
+    self._check_numeric_ops(a, b * 0, values, rvalues * 0, mix, op)
+    a = self._klass(values, kind=kind, fill_value=0)
+    b = self._klass(rvalues, kind=kind)
+    self._check_numeric_ops(a, b, values, rvalues, mix, op)
+    a = self._klass(values, kind=kind, fill_value=0)
+    b = self._klass(rvalues, kind=kind, fill_value=0)
+    self._check_numeric_ops(a, b, values, rvalues, mix, op)
+    a = self._klass(values, kind=kind, fill_value=1)
+    b = self._klass(rvalues, kind=kind, fill_value=2)
+    self._check_numeric_ops(a, b, values, rvalues, mix, op)

@@ -1,0 +1,3 @@
+def test_weird_nested_json(self):
+    s = '{\n        "status": "success",\n        "data": {\n        "posts": [\n            {\n            "id": 1,\n            "title": "A blog post",\n            "body": "Some useful content"\n            },\n            {\n            "id": 2,\n            "title": "Another blog post",\n            "body": "More content"\n            }\n           ]\n          }\n        }'
+    read_json(s)

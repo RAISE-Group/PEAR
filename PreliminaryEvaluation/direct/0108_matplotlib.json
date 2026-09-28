@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.8.4",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.pyplot.plot_date",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.pyplot.ecdf",
+      "api_type": "function",
+      "similarity": 0.5677966101694916
+    },
+    {
+      "fqn": "matplotlib.pyplot.plot",
+      "api_type": "function",
+      "similarity": 0.5648148148148148
+    },
+    {
+      "fqn": "matplotlib.pyplot.xcorr",
+      "api_type": "function",
+      "similarity": 0.45185185185185184
+    },
+    {
+      "fqn": "matplotlib.pyplot.stairs",
+      "api_type": "function",
+      "similarity": 0.4172661870503597
+    },
+    {
+      "fqn": "matplotlib.pyplot.step",
+      "api_type": "function",
+      "similarity": 0.4146341463414634
+    },
+    {
+      "fqn": "matplotlib.pyplot.bar_label",
+      "api_type": "function",
+      "similarity": 0.36428571428571427
+    },
+    {
+      "fqn": "matplotlib.pyplot.hlines",
+      "api_type": "function",
+      "similarity": 0.3532934131736527
+    },
+    {
+      "fqn": "matplotlib.pyplot.vlines",
+      "api_type": "function",
+      "similarity": 0.3532934131736527
+    },
+    {
+      "fqn": "matplotlib.pyplot.angle_spectrum",
+      "api_type": "function",
+      "similarity": 0.3515151515151515
+    },
+    {
+      "fqn": "matplotlib.pyplot.phase_spectrum",
+      "api_type": "function",
+      "similarity": 0.3515151515151515
+    }
+  ]
+}

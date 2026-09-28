@@ -1,0 +1,16 @@
+@pytest.mark.parametrize('tzstr', ['US/Eastern', 'dateutil/US/Eastern'])
+def test_localized_at_time_between_time(self, tzstr):
+    from datetime import time
+    tz = timezones.maybe_get_tz(tzstr)
+    rng = date_range('4/16/2012', '5/1/2012', freq='H')
+    ts = Series(np.random.randn(len(rng)), index=rng)
+    ts_local = ts.tz_localize(tzstr)
+    result = ts_local.at_time(time(10, 0))
+    expected = ts.at_time(time(10, 0)).tz_localize(tzstr)
+    tm.assert_series_equal(result, expected)
+    assert timezones.tz_compare(result.index.tz, tz)
+    t1, t2 = (time(10, 0), time(11, 0))
+    result = ts_local.between_time(t1, t2)
+    expected = ts.between_time(t1, t2).tz_localize(tzstr)
+    tm.assert_series_equal(result, expected)
+    assert timezones.tz_compare(result.index.tz, tz)

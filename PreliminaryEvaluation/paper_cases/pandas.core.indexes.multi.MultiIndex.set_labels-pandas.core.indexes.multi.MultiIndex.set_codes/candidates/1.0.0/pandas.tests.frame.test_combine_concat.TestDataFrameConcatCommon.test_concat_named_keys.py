@@ -1,0 +1,12 @@
+def test_concat_named_keys(self):
+    df = pd.DataFrame({'foo': [1, 2], 'bar': [0.1, 0.2]})
+    index = Index(['a', 'b'], name='baz')
+    concatted_named_from_keys = pd.concat([df, df], keys=index)
+    expected_named = pd.DataFrame({'foo': [1, 2, 1, 2], 'bar': [0.1, 0.2, 0.1, 0.2]}, index=pd.MultiIndex.from_product((['a', 'b'], [0, 1]), names=['baz', None]))
+    tm.assert_frame_equal(concatted_named_from_keys, expected_named)
+    index_no_name = Index(['a', 'b'], name=None)
+    concatted_named_from_names = pd.concat([df, df], keys=index_no_name, names=['baz'])
+    tm.assert_frame_equal(concatted_named_from_names, expected_named)
+    concatted_unnamed = pd.concat([df, df], keys=index_no_name)
+    expected_unnamed = pd.DataFrame({'foo': [1, 2, 1, 2], 'bar': [0.1, 0.2, 0.1, 0.2]}, index=pd.MultiIndex.from_product((['a', 'b'], [0, 1]), names=[None, None]))
+    tm.assert_frame_equal(concatted_unnamed, expected_unnamed)

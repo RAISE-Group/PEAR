@@ -1,0 +1,17 @@
+def test_int_array_comparison(self, kind):
+    dtype = 'int64'
+    values = self._base([0, 1, 2, 0, 0, 0, 1, 2, 1, 0], dtype=dtype)
+    rvalues = self._base([2, 0, 2, 3, 0, 0, 1, 5, 2, 0], dtype=dtype)
+    a = self._klass(values, dtype=dtype, kind=kind)
+    b = self._klass(rvalues, dtype=dtype, kind=kind)
+    self._check_comparison_ops(a, b, values, rvalues)
+    self._check_comparison_ops(a, b * 0, values, rvalues * 0)
+    a = self._klass(values, dtype=dtype, kind=kind, fill_value=0)
+    b = self._klass(rvalues, dtype=dtype, kind=kind)
+    self._check_comparison_ops(a, b, values, rvalues)
+    a = self._klass(values, dtype=dtype, kind=kind, fill_value=0)
+    b = self._klass(rvalues, dtype=dtype, kind=kind, fill_value=0)
+    self._check_comparison_ops(a, b, values, rvalues)
+    a = self._klass(values, dtype=dtype, kind=kind, fill_value=1)
+    b = self._klass(rvalues, dtype=dtype, kind=kind, fill_value=2)
+    self._check_comparison_ops(a, b, values, rvalues)

@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.3.4",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backend_bases.FigureCanvasBase.get_window_title",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.backends._backend_gtk._FigureManagerGTK.get_window_title",
+      "api_type": "method",
+      "similarity": 0.7391304347826086,
+      "evolution_path": [
+        "matplotlib.backends._backend_gtk._FigureManagerGTK.get_window_title"
+      ],
+      "local_scores": [
+        0.7391304347826086
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends._backend_tk.FigureManagerTk.get_window_title",
+      "api_type": "method",
+      "similarity": 0.7391304347826086,
+      "evolution_path": [
+        "matplotlib.backends._backend_tk.FigureManagerTk.get_window_title"
+      ],
+      "local_scores": [
+        0.7391304347826086
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_qt.FigureManagerQT.get_window_title",
+      "api_type": "method",
+      "similarity": 0.7391304347826086,
+      "evolution_path": [
+        "matplotlib.backends.backend_qt.FigureManagerQT.get_window_title"
+      ],
+      "local_scores": [
+        0.7391304347826086
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_wx.FigureManagerWx.get_window_title",
+      "api_type": "method",
+      "similarity": 0.7391304347826086,
+      "evolution_path": [
+        "matplotlib.backends.backend_wx.FigureManagerWx.get_window_title"
+      ],
+      "local_scores": [
+        0.7391304347826086
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.FigureManagerBase.get_window_title",
+      "api_type": "method",
+      "similarity": 0.6086956521739131,
+      "evolution_path": [
+        "matplotlib.backend_bases.FigureManagerBase.get_window_title"
+      ],
+      "local_scores": [
+        0.6086956521739131
+      ]
+    },
+    {
+      "fqn": "matplotlib.legend.Legend.get_title",
+      "api_type": "method",
+      "similarity": 0.5909090909090909,
+      "evolution_path": [
+        "matplotlib.legend.Legend.get_title"
+      ],
+      "local_scores": [
+        0.5909090909090909
+      ]
+    },
+    {
+      "fqn": "matplotlib.markers.MarkerStyle.get_user_transform",
+      "api_type": "method",
+      "similarity": 0.5172413793103449,
+      "evolution_path": [
+        "matplotlib.markers.MarkerStyle.get_user_transform"
+      ],
+      "local_scores": [
+        0.5172413793103449
+      ]
+    },
+    {
+      "fqn": "matplotlib.patches.Patch.get_window_extent",
+      "api_type": "method",
+      "similarity": 0.5161290322580645,
+      "evolution_path": [
+        "matplotlib.patches.Patch.get_window_extent"
+      ],
+      "local_scores": [
+        0.5161290322580645
+      ]
+    },
+    {
+      "fqn": "matplotlib.collections.Collection.get_window_extent",
+      "api_type": "method",
+      "similarity": 0.5,
+      "evolution_path": [
+        "matplotlib.collections.Collection.get_window_extent"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "matplotlib.text.Text._get_multialignment",
+      "api_type": "method",
+      "similarity": 0.48148148148148145,
+      "evolution_path": [
+        "matplotlib.text.Text._get_multialignment"
+      ],
+      "local_scores": [
+        0.48148148148148145
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.backend_bases.FigureCanvasBase.get_window_title",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.5.3",
+      "vpost": "3.6.0",
+      "resolved_fqn": "matplotlib.backend_bases.FigureCanvasBase.get_window_title",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.backends._backend_gtk._FigureManagerGTK.get_window_title",
+          "similarity": 0.73913
+        },
+        {
+          "fqn": "matplotlib.backends._backend_tk.FigureManagerTk.get_window_title",
+          "similarity": 0.73913
+        },
+        {
+          "fqn": "matplotlib.backends.backend_qt.FigureManagerQT.get_window_title",
+          "similarity": 0.73913
+        },
+        {
+          "fqn": "matplotlib.backends.backend_wx.FigureManagerWx.get_window_title",
+          "similarity": 0.73913
+        },
+        {
+          "fqn": "matplotlib.backend_bases.FigureManagerBase.get_window_title",
+          "similarity": 0.608696
+        },
+        {
+          "fqn": "matplotlib.legend.Legend.get_title",
+          "similarity": 0.590909
+        },
+        {
+          "fqn": "matplotlib.markers.MarkerStyle.get_user_transform",
+          "similarity": 0.517241
+        },
+        {
+          "fqn": "matplotlib.patches.Patch.get_window_extent",
+          "similarity": 0.516129
+        },
+        {
+          "fqn": "matplotlib.collections.Collection.get_window_extent",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.text.Text._get_multialignment",
+          "similarity": 0.481481
+        }
+      ],
+      "entered_final": [
+        "matplotlib.backends._backend_gtk._FigureManagerGTK.get_window_title",
+        "matplotlib.backends._backend_tk.FigureManagerTk.get_window_title",
+        "matplotlib.backends.backend_qt.FigureManagerQT.get_window_title",
+        "matplotlib.backends.backend_wx.FigureManagerWx.get_window_title",
+        "matplotlib.backend_bases.FigureManagerBase.get_window_title",
+        "matplotlib.legend.Legend.get_title",
+        "matplotlib.markers.MarkerStyle.get_user_transform",
+        "matplotlib.patches.Patch.get_window_extent",
+        "matplotlib.collections.Collection.get_window_extent",
+        "matplotlib.text.Text._get_multialignment"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.481481,
+      "dead_reason": null
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+@pytest.mark.parametrize('categories,expected', [(list('ABC'), np.NaN), ([1, 2, 3], np.NaN), pytest.param(Series(date_range('2020-01-01', periods=3), dtype='category'), NaT, marks=pytest.mark.xfail(reason='https://github.com/pandas-dev/pandas/issues/29962'))])
+@pytest.mark.parametrize('aggregation', ['min', 'max'])
+def test_min_max_ordered_empty(self, categories, expected, aggregation):
+    cat = Categorical([], categories=list('ABC'), ordered=True)
+    agg_func = getattr(cat, aggregation)
+    result = agg_func()
+    assert result is expected

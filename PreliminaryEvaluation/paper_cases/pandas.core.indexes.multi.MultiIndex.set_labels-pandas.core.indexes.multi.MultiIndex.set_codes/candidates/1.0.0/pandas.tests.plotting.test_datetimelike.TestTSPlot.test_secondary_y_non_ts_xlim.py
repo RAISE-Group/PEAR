@@ -1,0 +1,13 @@
+@pytest.mark.slow
+def test_secondary_y_non_ts_xlim(self):
+    index_1 = [1, 2, 3, 4]
+    index_2 = [5, 6, 7, 8]
+    s1 = Series(1, index=index_1)
+    s2 = Series(2, index=index_2)
+    _, ax = self.plt.subplots()
+    s1.plot(ax=ax)
+    left_before, right_before = ax.get_xlim()
+    s2.plot(secondary_y=True, ax=ax)
+    left_after, right_after = ax.get_xlim()
+    assert left_before >= left_after
+    assert right_before < right_after

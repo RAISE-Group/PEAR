@@ -1,0 +1,15 @@
+def test_fillna_consistency(self):
+    s = Series([Timestamp('20130101'), pd.NaT])
+    result = s.fillna(Timestamp('20130101', tz='US/Eastern'))
+    expected = Series([Timestamp('20130101'), Timestamp('2013-01-01', tz='US/Eastern')], dtype='object')
+    tm.assert_series_equal(result, expected)
+    result = s.where([True, False], Timestamp('20130101', tz='US/Eastern'), errors='ignore')
+    tm.assert_series_equal(result, expected)
+    result = s.where([True, False], Timestamp('20130101', tz='US/Eastern'), errors='ignore')
+    tm.assert_series_equal(result, expected)
+    result = s.fillna('foo')
+    expected = Series([Timestamp('20130101'), 'foo'])
+    tm.assert_series_equal(result, expected)
+    s2 = s.copy()
+    s2[1] = 'foo'
+    tm.assert_series_equal(s2, expected)

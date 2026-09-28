@@ -1,0 +1,10 @@
+def test_apply_same_length_inference_bug(self):
+    s = Series([1, 2])
+    f = lambda x: (x, x + 1)
+    result = s.apply(f)
+    expected = s.map(f)
+    tm.assert_series_equal(result, expected)
+    s = Series([1, 2, 3])
+    result = s.apply(f)
+    expected = s.map(f)
+    tm.assert_series_equal(result, expected)

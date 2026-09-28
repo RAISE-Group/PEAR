@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.2.25",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.test.runner.reorder_suite",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.test.runner.reorder_tests",
+      "api_type": "function",
+      "similarity": 0.5445544554455446
+    },
+    {
+      "fqn": "django.template.defaulttags.load",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.utils.lorem_ipsum.words",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.test.runner.shuffle_tests",
+      "api_type": "function",
+      "similarity": 0.4946236559139785
+    },
+    {
+      "fqn": "django.middleware.csrf._mask_cipher_secret",
+      "api_type": "function",
+      "similarity": 0.4883720930232558
+    },
+    {
+      "fqn": "django.utils.encoding.force_str",
+      "api_type": "function",
+      "similarity": 0.4777777777777778
+    },
+    {
+      "fqn": "django.utils.crypto.salted_hmac",
+      "api_type": "function",
+      "similarity": 0.47368421052631576
+    },
+    {
+      "fqn": "django.template.defaultfilters.stringfilter",
+      "api_type": "function",
+      "similarity": 0.4625
+    },
+    {
+      "fqn": "django.utils.translation.trans_real.gettext",
+      "api_type": "function",
+      "similarity": 0.46153846153846156
+    },
+    {
+      "fqn": "django.template.defaulttags.regroup",
+      "api_type": "function",
+      "similarity": 0.46078431372549017
+    }
+  ]
+}

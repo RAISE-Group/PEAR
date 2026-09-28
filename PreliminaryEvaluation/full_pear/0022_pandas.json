@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.23.4",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.dtypes.common.is_datetimetz",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "pandas.core.dtypes.common.is_datetime64tz_dtype",
+      "api_type": "function",
+      "similarity": 0.9259259259259259,
+      "evolution_path": [
+        "pandas.core.dtypes.common.is_datetime64tz_dtype"
+      ],
+      "local_scores": [
+        0.9259259259259259
+      ]
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_categorical_dtype",
+      "api_type": "function",
+      "similarity": 0.7333333333333333,
+      "evolution_path": [
+        "pandas.core.dtypes.common.is_categorical_dtype"
+      ],
+      "local_scores": [
+        0.7333333333333333
+      ]
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_interval_dtype",
+      "api_type": "function",
+      "similarity": 0.7333333333333333,
+      "evolution_path": [
+        "pandas.core.dtypes.common.is_interval_dtype"
+      ],
+      "local_scores": [
+        0.7333333333333333
+      ]
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_period_dtype",
+      "api_type": "function",
+      "similarity": 0.7333333333333333,
+      "evolution_path": [
+        "pandas.core.dtypes.common.is_period_dtype"
+      ],
+      "local_scores": [
+        0.7333333333333333
+      ]
+    },
+    {
+      "fqn": "pandas.core.arrays.datetimes.tz_to_dtype",
+      "api_type": "function",
+      "similarity": 0.48484848484848486,
+      "evolution_path": [
+        "pandas.core.arrays.datetimes.tz_to_dtype"
+      ],
+      "local_scores": [
+        0.48484848484848486
+      ]
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_complex_dtype",
+      "api_type": "function",
+      "similarity": 0.47058823529411764,
+      "evolution_path": [
+        "pandas.core.dtypes.common.is_complex_dtype"
+      ],
+      "local_scores": [
+        0.47058823529411764
+      ]
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_datetime64_dtype",
+      "api_type": "function",
+      "similarity": 0.47058823529411764,
+      "evolution_path": [
+        "pandas.core.dtypes.common.is_datetime64_dtype"
+      ],
+      "local_scores": [
+        0.47058823529411764
+      ]
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_float_dtype",
+      "api_type": "function",
+      "similarity": 0.47058823529411764,
+      "evolution_path": [
+        "pandas.core.dtypes.common.is_float_dtype"
+      ],
+      "local_scores": [
+        0.47058823529411764
+      ]
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_int64_dtype",
+      "api_type": "function",
+      "similarity": 0.47058823529411764,
+      "evolution_path": [
+        "pandas.core.dtypes.common.is_int64_dtype"
+      ],
+      "local_scores": [
+        0.47058823529411764
+      ]
+    },
+    {
+      "fqn": "pandas.core.dtypes.common.is_integer_dtype",
+      "api_type": "function",
+      "similarity": 0.47058823529411764,
+      "evolution_path": [
+        "pandas.core.dtypes.common.is_integer_dtype"
+      ],
+      "local_scores": [
+        0.47058823529411764
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "pandas.core.dtypes.common.is_datetimetz",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "0.25.3",
+      "vpost": "1.0.0",
+      "resolved_fqn": "pandas.core.dtypes.common.is_datetime64tz_dtype",
+      "resolved_kind": "forward",
+      "candidates": [
+        {
+          "fqn": "pandas.core.dtypes.common.is_datetime64tz_dtype",
+          "similarity": 0.925926
+        },
+        {
+          "fqn": "pandas.core.dtypes.common.is_categorical_dtype",
+          "similarity": 0.733333
+        },
+        {
+          "fqn": "pandas.core.dtypes.common.is_interval_dtype",
+          "similarity": 0.733333
+        },
+        {
+          "fqn": "pandas.core.dtypes.common.is_period_dtype",
+          "similarity": 0.733333
+        },
+        {
+          "fqn": "pandas.core.arrays.datetimes.tz_to_dtype",
+          "similarity": 0.484848
+        },
+        {
+          "fqn": "pandas.core.dtypes.common.is_complex_dtype",
+          "similarity": 0.470588
+        },
+        {
+          "fqn": "pandas.core.dtypes.common.is_datetime64_dtype",
+          "similarity": 0.470588
+        },
+        {
+          "fqn": "pandas.core.dtypes.common.is_float_dtype",
+          "similarity": 0.470588
+        },
+        {
+          "fqn": "pandas.core.dtypes.common.is_int64_dtype",
+          "similarity": 0.470588
+        },
+        {
+          "fqn": "pandas.core.dtypes.common.is_integer_dtype",
+          "similarity": 0.470588
+        }
+      ],
+      "entered_final": [
+        "pandas.core.dtypes.common.is_datetime64tz_dtype",
+        "pandas.core.dtypes.common.is_categorical_dtype",
+        "pandas.core.dtypes.common.is_interval_dtype",
+        "pandas.core.dtypes.common.is_period_dtype",
+        "pandas.core.arrays.datetimes.tz_to_dtype",
+        "pandas.core.dtypes.common.is_complex_dtype",
+        "pandas.core.dtypes.common.is_datetime64_dtype",
+        "pandas.core.dtypes.common.is_float_dtype",
+        "pandas.core.dtypes.common.is_int64_dtype",
+        "pandas.core.dtypes.common.is_integer_dtype"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.470588,
+      "dead_reason": null
+    }
+  ]
+}

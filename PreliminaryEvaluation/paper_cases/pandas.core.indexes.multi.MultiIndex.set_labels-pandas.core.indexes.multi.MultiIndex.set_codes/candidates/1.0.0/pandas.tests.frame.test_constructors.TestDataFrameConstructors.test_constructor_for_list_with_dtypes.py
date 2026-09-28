@@ -1,0 +1,27 @@
+def test_constructor_for_list_with_dtypes(self):
+    df = DataFrame([np.arange(5) for x in range(5)])
+    result = df.dtypes
+    expected = Series([np.dtype('int64')] * 5)
+    tm.assert_series_equal(result, expected)
+    df = DataFrame([np.array(np.arange(5), dtype='int32') for x in range(5)])
+    result = df.dtypes
+    expected = Series([np.dtype('int64')] * 5)
+    tm.assert_series_equal(result, expected)
+    df = DataFrame({'a': [2 ** 31, 2 ** 31 + 1]})
+    assert df.dtypes.iloc[0] == np.dtype('int64')
+    df = DataFrame([1, 2])
+    assert df.dtypes.iloc[0] == np.dtype('int64')
+    df = DataFrame([1.0, 2.0])
+    assert df.dtypes.iloc[0] == np.dtype('float64')
+    df = DataFrame({'a': [1, 2]})
+    assert df.dtypes.iloc[0] == np.dtype('int64')
+    df = DataFrame({'a': [1.0, 2.0]})
+    assert df.dtypes.iloc[0] == np.dtype('float64')
+    df = DataFrame({'a': 1}, index=range(3))
+    assert df.dtypes.iloc[0] == np.dtype('int64')
+    df = DataFrame({'a': 1.0}, index=range(3))
+    assert df.dtypes.iloc[0] == np.dtype('float64')
+    df = DataFrame({'a': [1, 2, 4, 7], 'b': [1.2, 2.3, 5.1, 6.3], 'c': list('abcd'), 'd': [datetime(2000, 1, 1) for i in range(4)], 'e': [1.0, 2, 4.0, 7]})
+    result = df.dtypes
+    expected = Series([np.dtype('int64'), np.dtype('float64'), np.dtype('object'), np.dtype('datetime64[ns]'), np.dtype('float64')], index=list('abcde'))
+    tm.assert_series_equal(result, expected)

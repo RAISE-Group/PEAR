@@ -1,0 +1,12 @@
+def test_split_maxsplit(self):
+    s = Series(['bd asdf jfg', 'kjasdflqw asdfnfk'])
+    result = s.str.split(n=-1)
+    xp = s.str.split()
+    tm.assert_series_equal(result, xp)
+    result = s.str.split(n=0)
+    tm.assert_series_equal(result, xp)
+    xp = s.str.split('asdf')
+    result = s.str.split('asdf', n=0)
+    tm.assert_series_equal(result, xp)
+    result = s.str.split('asdf', n=-1)
+    tm.assert_series_equal(result, xp)

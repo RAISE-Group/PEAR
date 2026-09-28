@@ -1,0 +1,7 @@
+@pytest.mark.parametrize('fmt,dates,expected_dates', [['%Y-%m-%d %H:%M:%S %Z', ['2010-01-01 12:00:00 UTC'] * 2, [pd.Timestamp('2010-01-01 12:00:00', tz='UTC')] * 2], ['%Y-%m-%d %H:%M:%S %Z', ['2010-01-01 12:00:00 UTC', '2010-01-01 12:00:00 GMT', '2010-01-01 12:00:00 US/Pacific'], [pd.Timestamp('2010-01-01 12:00:00', tz='UTC'), pd.Timestamp('2010-01-01 12:00:00', tz='GMT'), pd.Timestamp('2010-01-01 12:00:00', tz='US/Pacific')]], ['%Y-%m-%d %H:%M:%S%z', ['2010-01-01 12:00:00+0100'] * 2, [pd.Timestamp('2010-01-01 12:00:00', tzinfo=pytz.FixedOffset(60))] * 2], ['%Y-%m-%d %H:%M:%S %z', ['2010-01-01 12:00:00 +0100'] * 2, [pd.Timestamp('2010-01-01 12:00:00', tzinfo=pytz.FixedOffset(60))] * 2], ['%Y-%m-%d %H:%M:%S %z', ['2010-01-01 12:00:00 +0100', '2010-01-01 12:00:00 -0100'], [pd.Timestamp('2010-01-01 12:00:00', tzinfo=pytz.FixedOffset(60)), pd.Timestamp('2010-01-01 12:00:00', tzinfo=pytz.FixedOffset(-60))]], ['%Y-%m-%d %H:%M:%S %z', ['2010-01-01 12:00:00 Z', '2010-01-01 12:00:00 Z'], [pd.Timestamp('2010-01-01 12:00:00', tzinfo=pytz.FixedOffset(0)), pd.Timestamp('2010-01-01 12:00:00', tzinfo=pytz.FixedOffset(0))]]])
+def test_to_datetime_parse_tzname_or_tzoffset(self, fmt, dates, expected_dates):
+    result = pd.to_datetime(dates, format=fmt)
+    expected = pd.Index(expected_dates)
+    tm.assert_equal(result, expected)
+    with pytest.raises(ValueError):
+        pd.to_datetime(dates, format=fmt, utc=True)

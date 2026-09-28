@@ -1,0 +1,13 @@
+def test_with_listlike_columns(self):
+    df = DataFrame({'a': Series(np.random.randn(4)), 'b': ['a', 'list', 'of', 'words'], 'ts': date_range('2016-10-01', periods=4, freq='H')})
+    result = df[['a', 'b']].apply(tuple, axis=1)
+    expected = Series([t[1:] for t in df[['a', 'b']].itertuples()])
+    tm.assert_series_equal(result, expected)
+    result = df[['a', 'ts']].apply(tuple, axis=1)
+    expected = Series([t[1:] for t in df[['a', 'ts']].itertuples()])
+    tm.assert_series_equal(result, expected)
+    df = DataFrame({'x': Series([['a', 'b'], ['q']]), 'y': Series([['z'], ['q', 't']])})
+    df.index = MultiIndex.from_tuples([('i0', 'j0'), ('i1', 'j1')])
+    result = df.apply(lambda row: [el for el in row['x'] if el in row['y']], axis=1)
+    expected = Series([[], ['q']], index=df.index)
+    tm.assert_series_equal(result, expected)

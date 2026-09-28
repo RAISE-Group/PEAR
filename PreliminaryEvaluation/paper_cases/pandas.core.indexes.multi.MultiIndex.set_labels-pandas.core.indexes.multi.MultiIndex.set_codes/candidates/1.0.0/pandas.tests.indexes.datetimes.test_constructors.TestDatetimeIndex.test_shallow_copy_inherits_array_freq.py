@@ -1,0 +1,7 @@
+@pytest.mark.parametrize('index', [pd.date_range('2016-01-01', periods=5, tz='US/Pacific'), pd.timedelta_range('1 Day', periods=5)])
+def test_shallow_copy_inherits_array_freq(self, index):
+    array = index._data
+    arr = array[[0, 3, 2, 4, 1]]
+    assert arr.freq is None
+    result = index._shallow_copy(arr)
+    assert result.freq is None

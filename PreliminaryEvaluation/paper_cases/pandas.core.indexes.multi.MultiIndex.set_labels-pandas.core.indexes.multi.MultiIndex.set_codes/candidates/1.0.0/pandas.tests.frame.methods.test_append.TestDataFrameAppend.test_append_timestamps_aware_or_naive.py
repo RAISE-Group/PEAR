@@ -1,0 +1,7 @@
+@pytest.mark.parametrize('timestamp', ['2019-07-19 07:04:57+0100', '2019-07-19 07:04:57'])
+def test_append_timestamps_aware_or_naive(self, tz_naive_fixture, timestamp):
+    tz = tz_naive_fixture
+    df = pd.DataFrame([pd.Timestamp(timestamp, tz=tz)])
+    result = df.append(df.iloc[0]).iloc[-1]
+    expected = pd.Series(pd.Timestamp(timestamp, tz=tz), name=0)
+    tm.assert_series_equal(result, expected)

@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "2.1.4",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.tests.extension.base.reduce.BaseBooleanReduceTests",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.errors.__init__.PyperclipWindowsException",
+      "api_type": "class",
+      "similarity": 0.2898550724637681
+    },
+    {
+      "fqn": "pandas.core.accessor.Accessor",
+      "api_type": "class",
+      "similarity": 0.2876712328767123
+    },
+    {
+      "fqn": "pandas.plotting._matplotlib.converter.PandasAutoDateFormatter",
+      "api_type": "class",
+      "similarity": 0.2835820895522388
+    },
+    {
+      "fqn": "pandas.tests.indexing.test_coercion.CoercionBase",
+      "api_type": "class",
+      "similarity": 0.27941176470588236
+    },
+    {
+      "fqn": "pandas.tests.series.indexing.test_setitem.TestCoercionString",
+      "api_type": "class",
+      "similarity": 0.2727272727272727
+    },
+    {
+      "fqn": "pandas.core.arrays.datetimelike.DatelikeOps",
+      "api_type": "class",
+      "similarity": 0.2682926829268293
+    },
+    {
+      "fqn": "pandas.errors.__init__.UndefinedVariableError",
+      "api_type": "class",
+      "similarity": 0.26506024096385544
+    },
+    {
+      "fqn": "pandas.core.arrays.sparse.accessor.BaseAccessor",
+      "api_type": "class",
+      "similarity": 0.2647058823529412
+    },
+    {
+      "fqn": "pandas.tests.indexes.datetimelike_.test_drop_duplicates.TestDropDuplicatesDatetimeIndex",
+      "api_type": "class",
+      "similarity": 0.25806451612903225
+    },
+    {
+      "fqn": "pandas.tests.indexes.datetimelike_.test_drop_duplicates.TestDropDuplicatesTimedeltaIndex",
+      "api_type": "class",
+      "similarity": 0.25806451612903225
+    }
+  ]
+}

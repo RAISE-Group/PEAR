@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.0.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.scale.Log10Transform",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.tests.test_axes._Translation",
+      "api_type": "class",
+      "similarity": 0.35714285714285715
+    },
+    {
+      "fqn": "matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform",
+      "api_type": "class",
+      "similarity": 0.3333333333333333
+    },
+    {
+      "fqn": "matplotlib.tests.test_cbook.Unhashable",
+      "api_type": "class",
+      "similarity": 0.3333333333333333
+    },
+    {
+      "fqn": "matplotlib.backend_bases._Mode",
+      "api_type": "class",
+      "similarity": 0.3170731707317073
+    },
+    {
+      "fqn": "matplotlib._api.__init__._Unset",
+      "api_type": "class",
+      "similarity": 0.30303030303030304
+    },
+    {
+      "fqn": "matplotlib._type1font._KeywordToken",
+      "api_type": "class",
+      "similarity": 0.3023255813953488
+    },
+    {
+      "fqn": "matplotlib._type1font._BinaryToken",
+      "api_type": "class",
+      "similarity": 0.3
+    },
+    {
+      "fqn": "matplotlib._type1font._BooleanToken",
+      "api_type": "class",
+      "similarity": 0.3
+    },
+    {
+      "fqn": "matplotlib.backend_bases.ShowBase",
+      "api_type": "class",
+      "similarity": 0.2926829268292683
+    },
+    {
+      "fqn": "matplotlib.tests.test_cbook.Hashable",
+      "api_type": "class",
+      "similarity": 0.28125
+    }
+  ]
+}

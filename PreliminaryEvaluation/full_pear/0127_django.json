@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.10.8",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_indexes",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_table_description",
+      "api_type": "method",
+      "similarity": 0.6137931034482759,
+      "evolution_path": [
+        "django.db.backends.oracle.introspection.DatabaseIntrospection.get_table_description"
+      ],
+      "local_scores": [
+        0.6137931034482759
+      ]
+    },
+    {
+      "fqn": "django.contrib.admin.widgets.ForeignKeyRawIdWidget.get_context",
+      "api_type": "method",
+      "similarity": 0.6,
+      "evolution_path": [
+        "django.contrib.admin.widgets.ForeignKeyRawIdWidget.get_context"
+      ],
+      "local_scores": [
+        0.6
+      ]
+    },
+    {
+      "fqn": "django.forms.widgets.MultipleHiddenInput.get_context",
+      "api_type": "method",
+      "similarity": 0.5625,
+      "evolution_path": [
+        "django.forms.widgets.MultipleHiddenInput.get_context"
+      ],
+      "local_scores": [
+        0.5625
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.oracle.schema.OracleGISSchemaEditor.column_sql",
+      "api_type": "method",
+      "similarity": 0.5466666666666666,
+      "evolution_path": [
+        "django.contrib.gis.db.backends.oracle.schema.OracleGISSchemaEditor.column_sql"
+      ],
+      "local_scores": [
+        0.5466666666666666
+      ]
+    },
+    {
+      "fqn": "django.middleware.common.BrokenLinkEmailsMiddleware.process_response",
+      "api_type": "method",
+      "similarity": 0.5434782608695652,
+      "evolution_path": [
+        "django.middleware.common.BrokenLinkEmailsMiddleware.process_response"
+      ],
+      "local_scores": [
+        0.5434782608695652
+      ]
+    },
+    {
+      "fqn": "django.template.utils.EngineHandler.templates",
+      "api_type": "method",
+      "similarity": 0.5424836601307189,
+      "evolution_path": [
+        "django.template.utils.EngineHandler.templates"
+      ],
+      "local_scores": [
+        0.5424836601307189
+      ]
+    },
+    {
+      "fqn": "django.contrib.postgres.forms.array.SplitArrayWidget.get_context",
+      "api_type": "method",
+      "similarity": 0.5414012738853503,
+      "evolution_path": [
+        "django.contrib.postgres.forms.array.SplitArrayWidget.get_context"
+      ],
+      "local_scores": [
+        0.5414012738853503
+      ]
+    },
+    {
+      "fqn": "django.core.servers.basehttp.WSGIRequestHandler.log_message",
+      "api_type": "method",
+      "similarity": 0.5405405405405406,
+      "evolution_path": [
+        "django.core.servers.basehttp.WSGIRequestHandler.log_message"
+      ],
+      "local_scores": [
+        0.5405405405405406
+      ]
+    },
+    {
+      "fqn": "django.db.models.base.Model._get_next_or_previous_by_FIELD",
+      "api_type": "method",
+      "similarity": 0.5359477124183006,
+      "evolution_path": [
+        "django.db.models.base.Model._get_next_or_previous_by_FIELD"
+      ],
+      "local_scores": [
+        0.5359477124183006
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_geometry_type",
+      "api_type": "method",
+      "similarity": 0.5328947368421053,
+      "evolution_path": [
+        "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_geometry_type"
+      ],
+      "local_scores": [
+        0.5328947368421053
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_indexes",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "2.0.13",
+      "vpost": "2.1",
+      "resolved_fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_indexes",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_table_description",
+          "similarity": 0.613793
+        },
+        {
+          "fqn": "django.contrib.admin.widgets.ForeignKeyRawIdWidget.get_context",
+          "similarity": 0.6
+        },
+        {
+          "fqn": "django.forms.widgets.MultipleHiddenInput.get_context",
+          "similarity": 0.5625
+        },
+        {
+          "fqn": "django.contrib.gis.db.backends.oracle.schema.OracleGISSchemaEditor.column_sql",
+          "similarity": 0.546667
+        },
+        {
+          "fqn": "django.middleware.common.BrokenLinkEmailsMiddleware.process_response",
+          "similarity": 0.543478
+        },
+        {
+          "fqn": "django.template.utils.EngineHandler.templates",
+          "similarity": 0.542484
+        },
+        {
+          "fqn": "django.contrib.postgres.forms.array.SplitArrayWidget.get_context",
+          "similarity": 0.541401
+        },
+        {
+          "fqn": "django.core.servers.basehttp.WSGIRequestHandler.log_message",
+          "similarity": 0.540541
+        },
+        {
+          "fqn": "django.db.models.base.Model._get_next_or_previous_by_FIELD",
+          "similarity": 0.535948
+        },
+        {
+          "fqn": "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_geometry_type",
+          "similarity": 0.532895
+        }
+      ],
+      "entered_final": [
+        "django.db.backends.oracle.introspection.DatabaseIntrospection.get_table_description",
+        "django.contrib.admin.widgets.ForeignKeyRawIdWidget.get_context",
+        "django.forms.widgets.MultipleHiddenInput.get_context",
+        "django.contrib.gis.db.backends.oracle.schema.OracleGISSchemaEditor.column_sql",
+        "django.middleware.common.BrokenLinkEmailsMiddleware.process_response",
+        "django.template.utils.EngineHandler.templates",
+        "django.contrib.postgres.forms.array.SplitArrayWidget.get_context",
+        "django.core.servers.basehttp.WSGIRequestHandler.log_message",
+        "django.db.models.base.Model._get_next_or_previous_by_FIELD",
+        "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_geometry_type"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.532895,
+      "dead_reason": null
+    }
+  ]
+}

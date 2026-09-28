@@ -1,0 +1,17 @@
+def test_datetime_time(self):
+    df = DataFrame([time(9, 0, 0), time(9, 1, 30)], columns=['a'])
+    df.to_sql('test_time', self.conn, index=False)
+    res = read_sql_table('test_time', self.conn)
+    tm.assert_frame_equal(res, df)
+    sqlite_conn = TestSQLiteFallback.connect()
+    sql.to_sql(df, 'test_time2', sqlite_conn, index=False)
+    res = sql.read_sql_query('SELECT * FROM test_time2', sqlite_conn)
+    ref = df.applymap(lambda _: _.strftime('%H:%M:%S.%f'))
+    tm.assert_frame_equal(ref, res)
+    sql.to_sql(df, 'test_time3', self.conn, index=False)
+    if self.flavor == 'sqlite':
+        res = sql.read_sql_query('SELECT * FROM test_time3', self.conn)
+        ref = df.applymap(lambda _: _.strftime('%H:%M:%S.%f'))
+        tm.assert_frame_equal(ref, res)
+    res = sql.read_sql_table('test_time3', self.conn)
+    tm.assert_frame_equal(df, res)

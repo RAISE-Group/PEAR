@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.2.2",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.text.TextWithDash",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.patches.ConnectionPatch",
+      "api_type": "class",
+      "similarity": 0.5269872423945045
+    },
+    {
+      "fqn": "matplotlib.text.Annotation",
+      "api_type": "class",
+      "similarity": 0.5209260908281389
+    },
+    {
+      "fqn": "matplotlib.patches.Rectangle",
+      "api_type": "class",
+      "similarity": 0.5133470225872689
+    },
+    {
+      "fqn": "matplotlib.colors.Colormap",
+      "api_type": "class",
+      "similarity": 0.5119617224880383
+    },
+    {
+      "fqn": "matplotlib.patches.Arc",
+      "api_type": "class",
+      "similarity": 0.4927395934172314
+    },
+    {
+      "fqn": "matplotlib.font_manager.FontProperties",
+      "api_type": "class",
+      "similarity": 0.48813868613138683
+    },
+    {
+      "fqn": "matplotlib.inset.InsetIndicator",
+      "api_type": "class",
+      "similarity": 0.48717948717948717
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg_core.FigureCanvasWebAggCore",
+      "api_type": "class",
+      "similarity": 0.4832379394930499
+    },
+    {
+      "fqn": "matplotlib.offsetbox.AnnotationBbox",
+      "api_type": "class",
+      "similarity": 0.48112294288480156
+    },
+    {
+      "fqn": "matplotlib.patches.FancyArrowPatch",
+      "api_type": "class",
+      "similarity": 0.4808259587020649
+    }
+  ]
+}

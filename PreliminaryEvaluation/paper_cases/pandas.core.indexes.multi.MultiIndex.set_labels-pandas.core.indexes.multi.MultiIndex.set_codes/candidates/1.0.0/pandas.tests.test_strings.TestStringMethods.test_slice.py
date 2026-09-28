@@ -1,0 +1,12 @@
+@pytest.mark.parametrize('start, stop, step, expected', [(2, 5, None, Series(['foo', 'bar', np.nan, 'baz'])), (0, 3, -1, Series(['', '', np.nan, ''])), (None, None, -1, Series(['owtoofaa', 'owtrabaa', np.nan, 'xuqzabaa'])), (3, 10, 2, Series(['oto', 'ato', np.nan, 'aqx'])), (3, 0, -1, Series(['ofa', 'aba', np.nan, 'aba']))])
+def test_slice(self, start, stop, step, expected):
+    values = Series(['aafootwo', 'aabartwo', np.nan, 'aabazqux'])
+    result = values.str.slice(start, stop, step)
+    tm.assert_series_equal(result, expected)
+    mixed = Series(['aafootwo', np.nan, 'aabartwo', True, datetime.today(), None, 1, 2.0])
+    rs = Series(mixed).str.slice(2, 5)
+    xp = Series(['foo', np.nan, 'bar', np.nan, np.nan, np.nan, np.nan, np.nan])
+    assert isinstance(rs, Series)
+    tm.assert_almost_equal(rs, xp)
+    rs = Series(mixed).str.slice(2, 5, -1)
+    xp = Series(['oof', np.nan, 'rab', np.nan, np.nan, np.nan, np.nan, np.nan])

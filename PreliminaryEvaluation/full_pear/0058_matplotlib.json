@@ -1,0 +1,420 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.0.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.scale.InvertedNaturalLogTransform",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform",
+      "api_type": "class",
+      "similarity": 0.37037037037037035,
+      "evolution_path": [
+        "matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform"
+      ],
+      "local_scores": [
+        0.37037037037037035
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_gtk3.SaveFigureGTK3",
+      "api_type": "class",
+      "similarity": 0.32,
+      "evolution_path": [
+        "matplotlib.backends.backend_gtk3.SaveFigureGTK3"
+      ],
+      "local_scores": [
+        0.32
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases._Mode",
+      "api_type": "class",
+      "similarity": 0.3181818181818182,
+      "evolution_path": [
+        "matplotlib.backend_bases._Mode"
+      ],
+      "local_scores": [
+        0.3181818181818182
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg.FigureCanvasWebAgg",
+      "api_type": "class",
+      "similarity": 0.3181818181818182,
+      "evolution_path": [
+        "matplotlib.backends.backend_webagg.FigureCanvasWebAgg"
+      ],
+      "local_scores": [
+        0.3181818181818182
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg.WebAggApplication.MplJs",
+      "api_type": "class",
+      "similarity": 0.3,
+      "evolution_path": [
+        "matplotlib.backends.backend_webagg.WebAggApplication.MplJs"
+      ],
+      "local_scores": [
+        0.3
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_pgf.LatexError",
+      "api_type": "class",
+      "similarity": 0.2916666666666667,
+      "evolution_path": [
+        "matplotlib.backends.backend_pgf.LatexError"
+      ],
+      "local_scores": [
+        0.2916666666666667
+      ]
+    },
+    {
+      "fqn": "matplotlib.tri._trifinder.TriFinder",
+      "api_type": "class",
+      "similarity": 0.2903703703703704,
+      "evolution_path": [
+        "matplotlib.tri.trifinder.TriFinder",
+        "matplotlib.tri._trifinder.TriFinder"
+      ],
+      "local_scores": [
+        0.3111111111111111,
+        0.9333333333333333
+      ]
+    },
+    {
+      "fqn": "matplotlib.tri._trirefine.TriRefiner",
+      "api_type": "class",
+      "similarity": 0.2903703703703704,
+      "evolution_path": [
+        "matplotlib.tri.trirefine.TriRefiner",
+        "matplotlib.tri._trirefine.TriRefiner"
+      ],
+      "local_scores": [
+        0.3111111111111111,
+        0.9333333333333333
+      ]
+    },
+    {
+      "fqn": "matplotlib._mathtext.Vbox",
+      "api_type": "class",
+      "similarity": 0.26489028213166144,
+      "evolution_path": [
+        "matplotlib.mathtext.Vbox",
+        "matplotlib._mathtext.Vbox"
+      ],
+      "local_scores": [
+        0.29545454545454547,
+        0.896551724137931
+      ]
+    },
+    {
+      "fqn": "matplotlib._mathtext.Hbox",
+      "api_type": "class",
+      "similarity": 0.18801652892561985,
+      "evolution_path": [
+        "matplotlib.mathtext.Vbox",
+        "matplotlib._mathtext.Hbox"
+      ],
+      "local_scores": [
+        0.29545454545454547,
+        0.6363636363636364
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.scale.InvertedNaturalLogTransform",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.2.2",
+      "vpost": "3.3.0",
+      "resolved_fqn": "matplotlib.scale.InvertedNaturalLogTransform",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform",
+          "similarity": 0.37037
+        },
+        {
+          "fqn": "matplotlib.backends.backend_gtk3.SaveFigureGTK3",
+          "similarity": 0.32
+        },
+        {
+          "fqn": "matplotlib.backend_bases._Mode",
+          "similarity": 0.318182
+        },
+        {
+          "fqn": "matplotlib.backends.backend_webagg.FigureCanvasWebAgg",
+          "similarity": 0.318182
+        },
+        {
+          "fqn": "matplotlib.tri.trifinder.TriFinder",
+          "similarity": 0.311111
+        },
+        {
+          "fqn": "matplotlib.tri.trirefine.TriRefiner",
+          "similarity": 0.311111
+        },
+        {
+          "fqn": "matplotlib.backends.backend_webagg.WebAggApplication.MplJs",
+          "similarity": 0.3
+        },
+        {
+          "fqn": "matplotlib.mathtext.Vbox",
+          "similarity": 0.295455
+        },
+        {
+          "fqn": "matplotlib.backends.backend_pgf.LatexError",
+          "similarity": 0.291667
+        },
+        {
+          "fqn": "matplotlib.tests.test_ticker.TestFormatStrFormatter",
+          "similarity": 0.288462
+        }
+      ],
+      "entered_final": [
+        "matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform",
+        "matplotlib.backends.backend_gtk3.SaveFigureGTK3",
+        "matplotlib.backend_bases._Mode",
+        "matplotlib.backends.backend_webagg.FigureCanvasWebAgg",
+        "matplotlib.backends.backend_webagg.WebAggApplication.MplJs",
+        "matplotlib.backends.backend_pgf.LatexError"
+      ],
+      "entered_iter": [
+        "matplotlib.tri.trifinder.TriFinder",
+        "matplotlib.tri.trirefine.TriRefiner",
+        "matplotlib.mathtext.Vbox",
+        "matplotlib.tests.test_ticker.TestFormatStrFormatter"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.tri.trifinder.TriFinder",
+      "path_score": 0.311111,
+      "boundary": "DEPRECATED",
+      "vpre": "3.6.3",
+      "vpost": "3.7.0",
+      "resolved_fqn": "matplotlib.tri.trifinder.TriFinder",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.tri._trifinder.TriFinder",
+          "similarity": 0.933333
+        },
+        {
+          "fqn": "matplotlib.tri._trirefine.TriRefiner",
+          "similarity": 0.757576
+        },
+        {
+          "fqn": "matplotlib.backend_bases.DrawEvent",
+          "similarity": 0.536585
+        },
+        {
+          "fqn": "matplotlib._mathtext.Vbox",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.backend_bases.ResizeEvent",
+          "similarity": 0.488889
+        },
+        {
+          "fqn": "matplotlib._mathtext.Vrule",
+          "similarity": 0.477273
+        },
+        {
+          "fqn": "matplotlib._mathtext.Hbox",
+          "similarity": 0.473684
+        },
+        {
+          "fqn": "matplotlib._mathtext.VCentered",
+          "similarity": 0.465116
+        },
+        {
+          "fqn": "matplotlib.hatch.LargeCircles",
+          "similarity": 0.458333
+        },
+        {
+          "fqn": "matplotlib.hatch.SmallCircles",
+          "similarity": 0.458333
+        }
+      ],
+      "entered_final": [
+        "matplotlib.tri._trifinder.TriFinder",
+        "matplotlib.tri._trirefine.TriRefiner",
+        "matplotlib.backend_bases.DrawEvent",
+        "matplotlib._mathtext.Vbox",
+        "matplotlib.backend_bases.ResizeEvent",
+        "matplotlib._mathtext.Vrule",
+        "matplotlib._mathtext.Hbox",
+        "matplotlib._mathtext.VCentered",
+        "matplotlib.hatch.LargeCircles",
+        "matplotlib.hatch.SmallCircles"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.155556,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.tri.trirefine.TriRefiner",
+      "path_score": 0.311111,
+      "boundary": "DEPRECATED",
+      "vpre": "3.6.3",
+      "vpost": "3.7.0",
+      "resolved_fqn": "matplotlib.tri.trirefine.TriRefiner",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.tri._trirefine.TriRefiner",
+          "similarity": 0.933333
+        },
+        {
+          "fqn": "matplotlib.tri._trifinder.TriFinder",
+          "similarity": 0.757576
+        },
+        {
+          "fqn": "matplotlib.backend_bases.DrawEvent",
+          "similarity": 0.536585
+        },
+        {
+          "fqn": "matplotlib._mathtext.Vbox",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.backend_bases.ResizeEvent",
+          "similarity": 0.488889
+        },
+        {
+          "fqn": "matplotlib._mathtext.Vrule",
+          "similarity": 0.477273
+        },
+        {
+          "fqn": "matplotlib._mathtext.Hbox",
+          "similarity": 0.473684
+        },
+        {
+          "fqn": "matplotlib._mathtext.VCentered",
+          "similarity": 0.465116
+        },
+        {
+          "fqn": "matplotlib.hatch.LargeCircles",
+          "similarity": 0.458333
+        },
+        {
+          "fqn": "matplotlib.hatch.SmallCircles",
+          "similarity": 0.458333
+        }
+      ],
+      "entered_final": [
+        "matplotlib.tri._trirefine.TriRefiner",
+        "matplotlib.tri._trifinder.TriFinder",
+        "matplotlib.backend_bases.DrawEvent",
+        "matplotlib._mathtext.Vbox",
+        "matplotlib.backend_bases.ResizeEvent",
+        "matplotlib._mathtext.Vrule",
+        "matplotlib._mathtext.Hbox",
+        "matplotlib._mathtext.VCentered",
+        "matplotlib.hatch.LargeCircles",
+        "matplotlib.hatch.SmallCircles"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.23569,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.mathtext.Vbox",
+      "path_score": 0.295455,
+      "boundary": "DEPRECATED",
+      "vpre": "3.3.4",
+      "vpost": "3.4.0",
+      "resolved_fqn": "matplotlib.mathtext.Vbox",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib._mathtext.Vbox",
+          "similarity": 0.896552
+        },
+        {
+          "fqn": "matplotlib._mathtext.Hbox",
+          "similarity": 0.636364
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle.CurveA",
+          "similarity": 0.55
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle.CurveAB",
+          "similarity": 0.55
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle.CurveB",
+          "similarity": 0.55
+        },
+        {
+          "fqn": "matplotlib.backend_bases.DrawEvent",
+          "similarity": 0.525
+        },
+        {
+          "fqn": "matplotlib.tri.trifinder.TriFinder",
+          "similarity": 0.513514
+        },
+        {
+          "fqn": "matplotlib.tri.trirefine.TriRefiner",
+          "similarity": 0.513514
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle.BracketA",
+          "similarity": 0.511628
+        },
+        {
+          "fqn": "matplotlib.patches.ArrowStyle.BracketB",
+          "similarity": 0.511628
+        }
+      ],
+      "entered_final": [
+        "matplotlib._mathtext.Vbox",
+        "matplotlib._mathtext.Hbox",
+        "matplotlib.patches.ArrowStyle.CurveA",
+        "matplotlib.patches.ArrowStyle.CurveAB",
+        "matplotlib.patches.ArrowStyle.CurveB",
+        "matplotlib.backend_bases.DrawEvent",
+        "matplotlib.patches.ArrowStyle.BracketA",
+        "matplotlib.patches.ArrowStyle.BracketB"
+      ],
+      "entered_iter": [],
+      "pruned": [
+        "matplotlib.tri.trifinder.TriFinder",
+        "matplotlib.tri.trirefine.TriRefiner"
+      ],
+      "prune_bound": 0.23569,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.tests.test_ticker.TestFormatStrFormatter",
+      "path_score": 0.288462,
+      "boundary": "NOT_FOUND",
+      "vpre": null,
+      "vpost": null,
+      "resolved_fqn": null,
+      "resolved_kind": null,
+      "candidates": [],
+      "entered_final": [],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": "not_found"
+    }
+  ]
+}

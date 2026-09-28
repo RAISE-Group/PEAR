@@ -1,0 +1,402 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "1.1.5",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.io.date_converters.parse_all_fields",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "pandas.tests.resample.test_resample_api.test_end_and_end_day_origin",
+      "api_type": "function",
+      "similarity": 0.5113636363636364,
+      "evolution_path": [
+        "pandas.tests.resample.test_resample_api.test_end_and_end_day_origin"
+      ],
+      "local_scores": [
+        0.5113636363636364
+      ]
+    },
+    {
+      "fqn": "pandas.tests.window.test_api.test_dont_modify_attributes_after_methods",
+      "api_type": "function",
+      "similarity": 0.4942528735632184,
+      "evolution_path": [
+        "pandas.tests.window.test_api.test_dont_modify_attributes_after_methods"
+      ],
+      "local_scores": [
+        0.4942528735632184
+      ]
+    },
+    {
+      "fqn": "pandas.tests.frame.methods.test_drop_duplicates.test_drop_duplicates_ignore_index",
+      "api_type": "function",
+      "similarity": 0.4888888888888889,
+      "evolution_path": [
+        "pandas.tests.frame.methods.test_drop_duplicates.test_drop_duplicates_ignore_index"
+      ],
+      "local_scores": [
+        0.4888888888888889
+      ]
+    },
+    {
+      "fqn": "pandas.core.ops.array_ops.fill_binop",
+      "api_type": "function",
+      "similarity": 0.4838709677419355,
+      "evolution_path": [
+        "pandas.core.ops.__init__.fill_binop",
+        "pandas.core.ops.array_ops.fill_binop"
+      ],
+      "local_scores": [
+        0.4838709677419355,
+        1.0
+      ]
+    },
+    {
+      "fqn": "pandas.tests.scalar.test_nat.test_nat_fields",
+      "api_type": "function",
+      "similarity": 0.4782608695652174,
+      "evolution_path": [
+        "pandas.tests.scalar.test_nat.test_nat_fields"
+      ],
+      "local_scores": [
+        0.4782608695652174
+      ]
+    },
+    {
+      "fqn": "pandas.tests.groupby.methods.test_value_counts.test_data_frame_value_counts_dropna",
+      "api_type": "function",
+      "similarity": 0.4782608695652174,
+      "evolution_path": [
+        "pandas.tests.groupby.test_value_counts.test_data_frame_value_counts_dropna",
+        "pandas.tests.groupby.methods.test_value_counts.test_data_frame_value_counts_dropna"
+      ],
+      "local_scores": [
+        0.4782608695652174,
+        1.0
+      ]
+    },
+    {
+      "fqn": "pandas.tests.scalar.test_nat._get_overlap_public_nat_methods",
+      "api_type": "function",
+      "similarity": 0.47674418604651164,
+      "evolution_path": [
+        "pandas.tests.scalar.test_nat._get_overlap_public_nat_methods"
+      ],
+      "local_scores": [
+        0.47674418604651164
+      ]
+    },
+    {
+      "fqn": "pandas.tests.series.methods.test_reindex.test_reindex_periodindex_with_object",
+      "api_type": "function",
+      "similarity": 0.47560975609756095,
+      "evolution_path": [
+        "pandas.tests.series.methods.test_reindex.test_reindex_periodindex_with_object"
+      ],
+      "local_scores": [
+        0.47560975609756095
+      ]
+    },
+    {
+      "fqn": "pandas.tests.groupby.transform.test_transform.test_as_index_no_change",
+      "api_type": "function",
+      "similarity": 0.4731182795698925,
+      "evolution_path": [
+        "pandas.tests.groupby.transform.test_transform.test_as_index_no_change"
+      ],
+      "local_scores": [
+        0.4731182795698925
+      ]
+    },
+    {
+      "fqn": "pandas.tests.groupby.methods.test_value_counts.test_data_frame_value_counts",
+      "api_type": "function",
+      "similarity": 0.3862876254180602,
+      "evolution_path": [
+        "pandas.tests.groupby.test_value_counts.test_data_frame_value_counts_dropna",
+        "pandas.tests.groupby.methods.test_value_counts.test_data_frame_value_counts"
+      ],
+      "local_scores": [
+        0.4782608695652174,
+        0.8076923076923077
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "pandas.io.date_converters.parse_all_fields",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "1.5.3",
+      "vpost": "2.0.0",
+      "resolved_fqn": "pandas.io.date_converters.parse_all_fields",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "pandas.tests.resample.test_resample_api.test_end_and_end_day_origin",
+          "similarity": 0.511364
+        },
+        {
+          "fqn": "pandas.tests.window.test_api.test_dont_modify_attributes_after_methods",
+          "similarity": 0.494253
+        },
+        {
+          "fqn": "pandas.tests.frame.methods.test_drop_duplicates.test_drop_duplicates_ignore_index",
+          "similarity": 0.488889
+        },
+        {
+          "fqn": "pandas.core.ops.__init__.fill_binop",
+          "similarity": 0.483871
+        },
+        {
+          "fqn": "pandas.tests.groupby.test_value_counts.test_data_frame_value_counts_dropna",
+          "similarity": 0.478261
+        },
+        {
+          "fqn": "pandas.tests.scalar.test_nat.test_nat_fields",
+          "similarity": 0.478261
+        },
+        {
+          "fqn": "pandas.tests.scalar.test_nat._get_overlap_public_nat_methods",
+          "similarity": 0.476744
+        },
+        {
+          "fqn": "pandas.tests.series.methods.test_reindex.test_reindex_periodindex_with_object",
+          "similarity": 0.47561
+        },
+        {
+          "fqn": "pandas.tests.groupby.test_value_counts.test_dropna_combinations",
+          "similarity": 0.474227
+        },
+        {
+          "fqn": "pandas.tests.groupby.transform.test_transform.test_as_index_no_change",
+          "similarity": 0.473118
+        }
+      ],
+      "entered_final": [
+        "pandas.tests.resample.test_resample_api.test_end_and_end_day_origin",
+        "pandas.tests.window.test_api.test_dont_modify_attributes_after_methods",
+        "pandas.tests.frame.methods.test_drop_duplicates.test_drop_duplicates_ignore_index",
+        "pandas.tests.scalar.test_nat.test_nat_fields",
+        "pandas.tests.scalar.test_nat._get_overlap_public_nat_methods",
+        "pandas.tests.series.methods.test_reindex.test_reindex_periodindex_with_object",
+        "pandas.tests.groupby.transform.test_transform.test_as_index_no_change"
+      ],
+      "entered_iter": [
+        "pandas.core.ops.__init__.fill_binop",
+        "pandas.tests.groupby.test_value_counts.test_data_frame_value_counts_dropna",
+        "pandas.tests.groupby.test_value_counts.test_dropna_combinations"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "pandas.core.ops.__init__.fill_binop",
+      "path_score": 0.483871,
+      "boundary": "DEPRECATED",
+      "vpre": "2.0.3",
+      "vpost": "2.1.0",
+      "resolved_fqn": "pandas.core.ops.__init__.fill_binop",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "pandas.core.ops.array_ops.fill_binop",
+          "similarity": 1.0
+        },
+        {
+          "fqn": "pandas.tests.indexes.multi.test_setops.test_intersection_base",
+          "similarity": 0.539216
+        },
+        {
+          "fqn": "pandas.tests.indexes.multi.test_setops.test_union_base",
+          "similarity": 0.539216
+        },
+        {
+          "fqn": "pandas.tests.arrays.integer.test_dtypes.test_astype_index",
+          "similarity": 0.530612
+        },
+        {
+          "fqn": "pandas.core.nanops._nanminmax",
+          "similarity": 0.525773
+        },
+        {
+          "fqn": "pandas.core.arrays.period.raise_on_incompatible",
+          "similarity": 0.520833
+        },
+        {
+          "fqn": "pandas.tests.groupby.test_raises.test_groupby_raises_datetime_np",
+          "similarity": 0.515152
+        },
+        {
+          "fqn": "pandas.tests.groupby.test_raises.test_groupby_raises_string_np",
+          "similarity": 0.509804
+        },
+        {
+          "fqn": "pandas.core.array_algos.take._view_wrapper",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "pandas.tests.dtypes.cast.test_promote.test_maybe_promote_datetime64_with_any",
+          "similarity": 0.5
+        }
+      ],
+      "entered_final": [
+        "pandas.core.ops.array_ops.fill_binop",
+        "pandas.tests.indexes.multi.test_setops.test_intersection_base",
+        "pandas.tests.indexes.multi.test_setops.test_union_base",
+        "pandas.tests.arrays.integer.test_dtypes.test_astype_index",
+        "pandas.core.nanops._nanminmax",
+        "pandas.core.arrays.period.raise_on_incompatible",
+        "pandas.tests.groupby.test_raises.test_groupby_raises_datetime_np",
+        "pandas.tests.groupby.test_raises.test_groupby_raises_string_np",
+        "pandas.core.array_algos.take._view_wrapper",
+        "pandas.tests.dtypes.cast.test_promote.test_maybe_promote_datetime64_with_any"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.260911,
+      "dead_reason": null
+    },
+    {
+      "fqn": "pandas.tests.groupby.test_value_counts.test_data_frame_value_counts_dropna",
+      "path_score": 0.478261,
+      "boundary": "DEPRECATED",
+      "vpre": "2.1.4",
+      "vpost": "2.2.0",
+      "resolved_fqn": "pandas.tests.groupby.test_value_counts.test_data_frame_value_counts_dropna",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "pandas.tests.groupby.methods.test_value_counts.test_data_frame_value_counts_dropna",
+          "similarity": 1.0
+        },
+        {
+          "fqn": "pandas.tests.groupby.methods.test_value_counts.test_data_frame_value_counts",
+          "similarity": 0.807692
+        },
+        {
+          "fqn": "pandas.tests.frame.methods.test_drop_duplicates.test_drop_duplicates_ignore_index",
+          "similarity": 0.627907
+        },
+        {
+          "fqn": "pandas.tests.apply.test_series_apply.test_apply_dictlike_reducer",
+          "similarity": 0.625
+        },
+        {
+          "fqn": "pandas.tests.apply.test_str.test_apply_with_string_funcs",
+          "similarity": 0.62069
+        },
+        {
+          "fqn": "pandas.tests.io.excel.test_openpyxl.test_read_with_bad_dimension",
+          "similarity": 0.597826
+        },
+        {
+          "fqn": "pandas.tests.resample.test_resample_api.test_end_and_end_day_origin",
+          "similarity": 0.597701
+        },
+        {
+          "fqn": "pandas.tests.apply.test_series_apply.test_apply_listlike_reducer",
+          "similarity": 0.585106
+        },
+        {
+          "fqn": "pandas.tests.series.methods.test_drop_duplicates.test_drop_duplicates_no_duplicates",
+          "similarity": 0.583333
+        },
+        {
+          "fqn": "pandas.tests.window.test_rolling_functions.test_frame",
+          "similarity": 0.580645
+        }
+      ],
+      "entered_final": [
+        "pandas.tests.groupby.methods.test_value_counts.test_data_frame_value_counts_dropna",
+        "pandas.tests.groupby.methods.test_value_counts.test_data_frame_value_counts",
+        "pandas.tests.frame.methods.test_drop_duplicates.test_drop_duplicates_ignore_index",
+        "pandas.tests.apply.test_series_apply.test_apply_dictlike_reducer",
+        "pandas.tests.apply.test_str.test_apply_with_string_funcs",
+        "pandas.tests.io.excel.test_openpyxl.test_read_with_bad_dimension",
+        "pandas.tests.resample.test_resample_api.test_end_and_end_day_origin",
+        "pandas.tests.apply.test_series_apply.test_apply_listlike_reducer",
+        "pandas.tests.series.methods.test_drop_duplicates.test_drop_duplicates_no_duplicates",
+        "pandas.tests.window.test_rolling_functions.test_frame"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.386288,
+      "dead_reason": null
+    },
+    {
+      "fqn": "pandas.tests.groupby.test_value_counts.test_dropna_combinations",
+      "path_score": 0.474227,
+      "boundary": "DEPRECATED",
+      "vpre": "2.1.4",
+      "vpost": "2.2.0",
+      "resolved_fqn": "pandas.tests.groupby.test_value_counts.test_dropna_combinations",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "pandas.tests.groupby.methods.test_value_counts.test_dropna_combinations",
+          "similarity": 0.75
+        },
+        {
+          "fqn": "pandas.tests.groupby.test_indexing.test_against_df_iloc",
+          "similarity": 0.634409
+        },
+        {
+          "fqn": "pandas.tests.groupby.transform.test_transform.test_groupby_cum_skipna",
+          "similarity": 0.622222
+        },
+        {
+          "fqn": "pandas.tests.apply.test_series_apply.test_apply_dictlike_reducer",
+          "similarity": 0.612903
+        },
+        {
+          "fqn": "pandas.tests.groupby.methods.test_value_counts.test_data_frame_value_counts",
+          "similarity": 0.608696
+        },
+        {
+          "fqn": "pandas.tests.apply.test_series_apply.test_apply_listlike_reducer",
+          "similarity": 0.608247
+        },
+        {
+          "fqn": "pandas.tests.groupby.test_cumulative.test_cummin_max_skipna",
+          "similarity": 0.608247
+        },
+        {
+          "fqn": "pandas.tests.indexing.multiindex.test_iloc.test_iloc_setitem_int_multiindex_series",
+          "similarity": 0.606383
+        },
+        {
+          "fqn": "pandas.tests.series.methods.test_drop_duplicates.test_drop_duplicates_no_duplicates",
+          "similarity": 0.606061
+        },
+        {
+          "fqn": "pandas.tests.io.json.test_compression.test_to_json_compression",
+          "similarity": 0.598039
+        }
+      ],
+      "entered_final": [
+        "pandas.tests.groupby.methods.test_value_counts.test_dropna_combinations",
+        "pandas.tests.groupby.test_indexing.test_against_df_iloc",
+        "pandas.tests.groupby.transform.test_transform.test_groupby_cum_skipna",
+        "pandas.tests.apply.test_series_apply.test_apply_dictlike_reducer",
+        "pandas.tests.groupby.methods.test_value_counts.test_data_frame_value_counts",
+        "pandas.tests.apply.test_series_apply.test_apply_listlike_reducer",
+        "pandas.tests.groupby.test_cumulative.test_cummin_max_skipna",
+        "pandas.tests.indexing.multiindex.test_iloc.test_iloc_setitem_int_multiindex_series",
+        "pandas.tests.series.methods.test_drop_duplicates.test_drop_duplicates_no_duplicates",
+        "pandas.tests.io.json.test_compression.test_to_json_compression"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.386288,
+      "dead_reason": null
+    }
+  ]
+}

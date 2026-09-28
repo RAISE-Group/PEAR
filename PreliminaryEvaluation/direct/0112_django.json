@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.8.19",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.models.fields.related.ManyRelatedObjectsDescriptor",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.contrib.contenttypes.forms.BaseGenericInlineFormSet",
+      "api_type": "class",
+      "similarity": 0.4925373134328358
+    },
+    {
+      "fqn": "django.contrib.admin.helpers.InlineAdminForm",
+      "api_type": "class",
+      "similarity": 0.4904214559386973
+    },
+    {
+      "fqn": "django.db.models.fields.reverse_related.ManyToOneRel",
+      "api_type": "class",
+      "similarity": 0.4681818181818182
+    },
+    {
+      "fqn": "django.db.models.fields.reverse_related.ManyToManyRel",
+      "api_type": "class",
+      "similarity": 0.4646017699115044
+    },
+    {
+      "fqn": "django.db.models.fields.files.FileDescriptor",
+      "api_type": "class",
+      "similarity": 0.464
+    },
+    {
+      "fqn": "django.db.backends.ddl_references.Expressions",
+      "api_type": "class",
+      "similarity": 0.4628099173553719
+    },
+    {
+      "fqn": "django.template.loader_tags.BlockNode",
+      "api_type": "class",
+      "similarity": 0.46184738955823296
+    },
+    {
+      "fqn": "django.contrib.contenttypes.management.__init__.RenameContentType",
+      "api_type": "class",
+      "similarity": 0.4608695652173913
+    },
+    {
+      "fqn": "django.core.serializers.base.DeserializedObject",
+      "api_type": "class",
+      "similarity": 0.4606741573033708
+    },
+    {
+      "fqn": "django.db.models.expressions.RawSQL",
+      "api_type": "class",
+      "similarity": 0.4595744680851064
+    }
+  ]
+}

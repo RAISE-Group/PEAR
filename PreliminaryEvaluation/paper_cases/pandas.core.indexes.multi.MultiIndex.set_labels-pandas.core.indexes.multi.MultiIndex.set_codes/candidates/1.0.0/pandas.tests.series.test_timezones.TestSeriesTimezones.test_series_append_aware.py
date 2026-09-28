@@ -1,0 +1,28 @@
+def test_series_append_aware(self):
+    rng1 = date_range('1/1/2011 01:00', periods=1, freq='H', tz='US/Eastern')
+    rng2 = date_range('1/1/2011 02:00', periods=1, freq='H', tz='US/Eastern')
+    ser1 = Series([1], index=rng1)
+    ser2 = Series([2], index=rng2)
+    ts_result = ser1.append(ser2)
+    exp_index = DatetimeIndex(['2011-01-01 01:00', '2011-01-01 02:00'], tz='US/Eastern')
+    exp = Series([1, 2], index=exp_index)
+    tm.assert_series_equal(ts_result, exp)
+    assert ts_result.index.tz == rng1.tz
+    rng1 = date_range('1/1/2011 01:00', periods=1, freq='H', tz='UTC')
+    rng2 = date_range('1/1/2011 02:00', periods=1, freq='H', tz='UTC')
+    ser1 = Series([1], index=rng1)
+    ser2 = Series([2], index=rng2)
+    ts_result = ser1.append(ser2)
+    exp_index = DatetimeIndex(['2011-01-01 01:00', '2011-01-01 02:00'], tz='UTC')
+    exp = Series([1, 2], index=exp_index)
+    tm.assert_series_equal(ts_result, exp)
+    utc = rng1.tz
+    assert utc == ts_result.index.tz
+    rng1 = date_range('1/1/2011 01:00', periods=1, freq='H', tz='US/Eastern')
+    rng2 = date_range('1/1/2011 02:00', periods=1, freq='H', tz='US/Central')
+    ser1 = Series([1], index=rng1)
+    ser2 = Series([2], index=rng2)
+    ts_result = ser1.append(ser2)
+    exp_index = Index([Timestamp('1/1/2011 01:00', tz='US/Eastern'), Timestamp('1/1/2011 02:00', tz='US/Central')])
+    exp = Series([1, 2], index=exp_index)
+    tm.assert_series_equal(ts_result, exp)

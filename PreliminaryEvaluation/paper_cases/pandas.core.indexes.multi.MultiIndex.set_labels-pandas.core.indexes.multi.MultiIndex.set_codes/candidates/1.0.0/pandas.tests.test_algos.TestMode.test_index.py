@@ -1,0 +1,13 @@
+def test_index(self):
+    idx = Index([1, 2, 3])
+    exp = Series([1, 2, 3], dtype=np.int64)
+    tm.assert_series_equal(algos.mode(idx), exp)
+    idx = Index([1, 'a', 'a'])
+    exp = Series(['a'], dtype=object)
+    tm.assert_series_equal(algos.mode(idx), exp)
+    idx = Index([1, 1, 2, 3, 3])
+    exp = Series([1, 3], dtype=np.int64)
+    tm.assert_series_equal(algos.mode(idx), exp)
+    exp = Series(['2 min', '1 day'], dtype='timedelta64[ns]')
+    idx = Index(['1 day', '1 day', '-1 day', '-1 day 2 min', '2 min', '2 min'], dtype='timedelta64[ns]')
+    tm.assert_series_equal(algos.mode(idx), exp)

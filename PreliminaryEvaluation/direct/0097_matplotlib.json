@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.6.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.offsetbox.bbox_artist",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.offsetbox._bbox_artist",
+      "api_type": "function",
+      "similarity": 1.0
+    },
+    {
+      "fqn": "matplotlib.pyplot.get",
+      "api_type": "function",
+      "similarity": 0.37037037037037035
+    },
+    {
+      "fqn": "matplotlib.pyplot.getp",
+      "api_type": "function",
+      "similarity": 0.37037037037037035
+    },
+    {
+      "fqn": "matplotlib.pyplot.setp",
+      "api_type": "function",
+      "similarity": 0.37037037037037035
+    },
+    {
+      "fqn": "matplotlib.pyplot.show",
+      "api_type": "function",
+      "similarity": 0.35714285714285715
+    },
+    {
+      "fqn": "matplotlib.tests.test_constrainedlayout.test_bbox",
+      "api_type": "function",
+      "similarity": 0.3548387096774194
+    },
+    {
+      "fqn": "matplotlib.tests.test_transforms.assert_bbox_eq",
+      "api_type": "function",
+      "similarity": 0.3448275862068966
+    },
+    {
+      "fqn": "matplotlib.pyplot.triplot",
+      "api_type": "function",
+      "similarity": 0.3333333333333333
+    },
+    {
+      "fqn": "matplotlib.tri._tricontour.tricontour",
+      "api_type": "function",
+      "similarity": 0.3225806451612903
+    },
+    {
+      "fqn": "matplotlib.tri._tricontour.tricontourf",
+      "api_type": "function",
+      "similarity": 0.3225806451612903
+    }
+  ]
+}

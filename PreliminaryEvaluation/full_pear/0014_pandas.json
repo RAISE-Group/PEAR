@@ -1,0 +1,405 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.20.0",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.frame.DataFrame.sortlevel",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "pandas.core.frame.DataFrame.sort_index",
+      "api_type": "method",
+      "similarity": 0.9836956521739131,
+      "evolution_path": [
+        "pandas.core.frame.DataFrame.sort_index"
+      ],
+      "local_scores": [
+        0.9836956521739131
+      ]
+    },
+    {
+      "fqn": "pandas.core.series.Series.sort_index",
+      "api_type": "method",
+      "similarity": 0.7741935483870968,
+      "evolution_path": [
+        "pandas.core.series.Series.sort_index"
+      ],
+      "local_scores": [
+        0.7741935483870968
+      ]
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame.sort_values",
+      "api_type": "method",
+      "similarity": 0.6714285714285714,
+      "evolution_path": [
+        "pandas.core.frame.DataFrame.sort_values"
+      ],
+      "local_scores": [
+        0.6714285714285714
+      ]
+    },
+    {
+      "fqn": "pandas.core.indexes.base.Index.get_indexer",
+      "api_type": "method",
+      "similarity": 0.6311111111111111,
+      "evolution_path": [
+        "pandas.core.indexes.base.Index.get_indexer"
+      ],
+      "local_scores": [
+        0.6311111111111111
+      ]
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame.dropna",
+      "api_type": "method",
+      "similarity": 0.6137339055793991,
+      "evolution_path": [
+        "pandas.core.frame.DataFrame.dropna"
+      ],
+      "local_scores": [
+        0.6137339055793991
+      ]
+    },
+    {
+      "fqn": "pandas.core.indexes.category.CategoricalIndex.reindex",
+      "api_type": "method",
+      "similarity": 0.6059322033898306,
+      "evolution_path": [
+        "pandas.core.indexes.category.CategoricalIndex.reindex"
+      ],
+      "local_scores": [
+        0.6059322033898306
+      ]
+    },
+    {
+      "fqn": "pandas.core.generic.NDFrame.tz_localize",
+      "api_type": "method",
+      "similarity": 0.6035242290748899,
+      "evolution_path": [
+        "pandas.core.generic.NDFrame.tz_localize"
+      ],
+      "local_scores": [
+        0.6035242290748899
+      ]
+    },
+    {
+      "fqn": "pandas.core.generic.NDFrame.shift",
+      "api_type": "method",
+      "similarity": 0.42312177244710975,
+      "evolution_path": [
+        "pandas.core.generic.NDFrame.tshift",
+        "pandas.core.generic.NDFrame.shift"
+      ],
+      "local_scores": [
+        0.6135265700483091,
+        0.6896551724137931
+      ]
+    },
+    {
+      "fqn": "pandas.core.base.IndexOpsMixin._map_values",
+      "api_type": "method",
+      "similarity": 0.4170959313176558,
+      "evolution_path": [
+        "pandas.core.indexes.multi.MultiIndex.reindex",
+        "pandas.core.base.IndexOpsMixin._map_values"
+      ],
+      "local_scores": [
+        0.6297872340425532,
+        0.6622807017543859
+      ]
+    },
+    {
+      "fqn": "pandas.core.indexes.base.Index.reindex",
+      "api_type": "method",
+      "similarity": 0.40702406392269813,
+      "evolution_path": [
+        "pandas.core.indexes.multi.MultiIndex.reindex",
+        "pandas.core.indexes.base.Index.reindex"
+      ],
+      "local_scores": [
+        0.6297872340425532,
+        0.6462882096069869
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "pandas.core.frame.DataFrame.sortlevel",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "0.23.4",
+      "vpost": "0.24.0",
+      "resolved_fqn": "pandas.core.frame.DataFrame.sort_index",
+      "resolved_kind": "forward",
+      "candidates": [
+        {
+          "fqn": "pandas.core.frame.DataFrame.sort_index",
+          "similarity": 0.983696
+        },
+        {
+          "fqn": "pandas.core.series.Series.sort_index",
+          "similarity": 0.774194
+        },
+        {
+          "fqn": "pandas.core.frame.DataFrame.sort_values",
+          "similarity": 0.671429
+        },
+        {
+          "fqn": "pandas.core.indexes.base.Index.get_indexer",
+          "similarity": 0.631111
+        },
+        {
+          "fqn": "pandas.core.indexes.multi.MultiIndex.reindex",
+          "similarity": 0.629787
+        },
+        {
+          "fqn": "pandas.core.frame.DataFrame.dropna",
+          "similarity": 0.613734
+        },
+        {
+          "fqn": "pandas.core.generic.NDFrame.tshift",
+          "similarity": 0.613527
+        },
+        {
+          "fqn": "pandas.core.sparse.frame.SparseDataFrame._reindex_index",
+          "similarity": 0.613527
+        },
+        {
+          "fqn": "pandas.core.indexes.category.CategoricalIndex.reindex",
+          "similarity": 0.605932
+        },
+        {
+          "fqn": "pandas.core.generic.NDFrame.tz_localize",
+          "similarity": 0.603524
+        }
+      ],
+      "entered_final": [
+        "pandas.core.frame.DataFrame.sort_index",
+        "pandas.core.series.Series.sort_index",
+        "pandas.core.frame.DataFrame.sort_values",
+        "pandas.core.indexes.base.Index.get_indexer",
+        "pandas.core.frame.DataFrame.dropna",
+        "pandas.core.indexes.category.CategoricalIndex.reindex",
+        "pandas.core.generic.NDFrame.tz_localize"
+      ],
+      "entered_iter": [
+        "pandas.core.indexes.multi.MultiIndex.reindex",
+        "pandas.core.generic.NDFrame.tshift",
+        "pandas.core.sparse.frame.SparseDataFrame._reindex_index"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "pandas.core.indexes.multi.MultiIndex.reindex",
+      "path_score": 0.629787,
+      "boundary": "DEPRECATED",
+      "vpre": "1.3.5",
+      "vpost": "1.4.0",
+      "resolved_fqn": "pandas.core.indexes.multi.MultiIndex.reindex",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "pandas.core.indexes.category.CategoricalIndex.reindex",
+          "similarity": 0.69685
+        },
+        {
+          "fqn": "pandas.core.base.IndexOpsMixin._map_values",
+          "similarity": 0.662281
+        },
+        {
+          "fqn": "pandas.core.indexes.base.Index.reindex",
+          "similarity": 0.646288
+        },
+        {
+          "fqn": "pandas.core.generic.NDFrame.rename_axis",
+          "similarity": 0.643725
+        },
+        {
+          "fqn": "pandas.core.frame.DataFrame.dropna",
+          "similarity": 0.636719
+        },
+        {
+          "fqn": "pandas.core.frame.DataFrame._append",
+          "similarity": 0.619608
+        },
+        {
+          "fqn": "pandas.core.generic.NDFrame._align_series",
+          "similarity": 0.598616
+        },
+        {
+          "fqn": "pandas.core.groupby.generic.SeriesGroupBy.aggregate",
+          "similarity": 0.595833
+        },
+        {
+          "fqn": "pandas.core.indexes.interval.IntervalIndex._maybe_convert_i8",
+          "similarity": 0.594017
+        },
+        {
+          "fqn": "pandas.core.arrays.boolean.BooleanArray._logical_method",
+          "similarity": 0.59127
+        }
+      ],
+      "entered_final": [
+        "pandas.core.indexes.category.CategoricalIndex.reindex",
+        "pandas.core.base.IndexOpsMixin._map_values",
+        "pandas.core.indexes.base.Index.reindex",
+        "pandas.core.generic.NDFrame.rename_axis",
+        "pandas.core.frame.DataFrame.dropna",
+        "pandas.core.generic.NDFrame._align_series",
+        "pandas.core.groupby.generic.SeriesGroupBy.aggregate",
+        "pandas.core.indexes.interval.IntervalIndex._maybe_convert_i8",
+        "pandas.core.arrays.boolean.BooleanArray._logical_method"
+      ],
+      "entered_iter": [],
+      "pruned": [
+        "pandas.core.frame.DataFrame._append"
+      ],
+      "prune_bound": 0.407024,
+      "dead_reason": null
+    },
+    {
+      "fqn": "pandas.core.generic.NDFrame.tshift",
+      "path_score": 0.613527,
+      "boundary": "DEPRECATED",
+      "vpre": "1.5.3",
+      "vpost": "2.0.0",
+      "resolved_fqn": "pandas.core.generic.NDFrame.tshift",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "pandas.core.generic.NDFrame.shift",
+          "similarity": 0.689655
+        },
+        {
+          "fqn": "pandas.core.frame.DataFrame._getitem_multilevel",
+          "similarity": 0.632432
+        },
+        {
+          "fqn": "pandas.core.internals.array_manager.ArrayManager.as_array",
+          "similarity": 0.592593
+        },
+        {
+          "fqn": "pandas.core.arrays.masked.BaseMaskedArray._cmp_method",
+          "similarity": 0.588832
+        },
+        {
+          "fqn": "pandas.core.indexes.multi.MultiIndex.__getitem__",
+          "similarity": 0.588571
+        },
+        {
+          "fqn": "pandas.core.arrays.string_.StringArray._cmp_method",
+          "similarity": 0.586022
+        },
+        {
+          "fqn": "pandas.core.generic.NDFrame._clip_with_one_bound",
+          "similarity": 0.584699
+        },
+        {
+          "fqn": "pandas.core.indexes.base.Index.reindex",
+          "similarity": 0.57561
+        },
+        {
+          "fqn": "pandas.io.pytables.GenericFixed._get_index_factory",
+          "similarity": 0.573604
+        },
+        {
+          "fqn": "pandas.core.indexes.interval.IntervalIndex.get_loc",
+          "similarity": 0.572165
+        }
+      ],
+      "entered_final": [
+        "pandas.core.generic.NDFrame.shift",
+        "pandas.core.frame.DataFrame._getitem_multilevel",
+        "pandas.core.arrays.masked.BaseMaskedArray._cmp_method",
+        "pandas.core.indexes.multi.MultiIndex.__getitem__",
+        "pandas.core.arrays.string_.StringArray._cmp_method",
+        "pandas.core.generic.NDFrame._clip_with_one_bound",
+        "pandas.core.indexes.base.Index.reindex",
+        "pandas.io.pytables.GenericFixed._get_index_factory",
+        "pandas.core.indexes.interval.IntervalIndex.get_loc"
+      ],
+      "entered_iter": [],
+      "pruned": [
+        "pandas.core.internals.array_manager.ArrayManager.as_array"
+      ],
+      "prune_bound": 0.417096,
+      "dead_reason": null
+    },
+    {
+      "fqn": "pandas.core.sparse.frame.SparseDataFrame._reindex_index",
+      "path_score": 0.613527,
+      "boundary": "DEPRECATED",
+      "vpre": "0.25.3",
+      "vpost": "1.0.0",
+      "resolved_fqn": "pandas.core.sparse.frame.SparseDataFrame._reindex_index",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "pandas.core.frame.DataFrame.sort_index",
+          "similarity": 0.638191
+        },
+        {
+          "fqn": "pandas.core.series.Series.sort_index",
+          "similarity": 0.635897
+        },
+        {
+          "fqn": "pandas.core.indexes.base.Index.reindex",
+          "similarity": 0.61194
+        },
+        {
+          "fqn": "pandas.core.frame.DataFrame._getitem_multilevel",
+          "similarity": 0.606742
+        },
+        {
+          "fqn": "pandas.core.window.rolling._Window._wrap_results",
+          "similarity": 0.603015
+        },
+        {
+          "fqn": "pandas.core.indexes.category.CategoricalIndex.get_indexer",
+          "similarity": 0.601064
+        },
+        {
+          "fqn": "pandas.core.series.Series.reset_index",
+          "similarity": 0.596491
+        },
+        {
+          "fqn": "pandas.core.indexes.category.CategoricalIndex.reindex",
+          "similarity": 0.590698
+        },
+        {
+          "fqn": "pandas.core.internals.managers.BlockManager.fast_xs",
+          "similarity": 0.587571
+        },
+        {
+          "fqn": "pandas.core.internals.managers.BlockManager.reindex_indexer",
+          "similarity": 0.582857
+        }
+      ],
+      "entered_final": [
+        "pandas.core.frame.DataFrame.sort_index",
+        "pandas.core.series.Series.sort_index",
+        "pandas.core.indexes.base.Index.reindex",
+        "pandas.core.frame.DataFrame._getitem_multilevel",
+        "pandas.core.series.Series.reset_index",
+        "pandas.core.indexes.category.CategoricalIndex.reindex",
+        "pandas.core.internals.managers.BlockManager.fast_xs"
+      ],
+      "entered_iter": [],
+      "pruned": [
+        "pandas.core.window.rolling._Window._wrap_results",
+        "pandas.core.indexes.category.CategoricalIndex.get_indexer",
+        "pandas.core.internals.managers.BlockManager.reindex_indexer"
+      ],
+      "prune_bound": 0.417096,
+      "dead_reason": null
+    }
+  ]
+}

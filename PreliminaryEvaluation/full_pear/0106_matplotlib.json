@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.7.5",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backends.backend_agg.RendererAgg.tostring_rgb",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.backends.backend_agg.RendererAgg.tostring_argb",
+      "api_type": "method",
+      "similarity": 0.7741935483870968,
+      "evolution_path": [
+        "matplotlib.backends.backend_agg.RendererAgg.tostring_argb"
+      ],
+      "local_scores": [
+        0.7741935483870968
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_cairo.GraphicsContextCairo.get_rgb",
+      "api_type": "method",
+      "similarity": 0.42424242424242425,
+      "evolution_path": [
+        "matplotlib.backends.backend_cairo.GraphicsContextCairo.get_rgb"
+      ],
+      "local_scores": [
+        0.42424242424242425
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_tkagg.FigureCanvasTkAgg.blit",
+      "api_type": "method",
+      "similarity": 0.3783783783783784,
+      "evolution_path": [
+        "matplotlib.backends.backend_tkagg.FigureCanvasTkAgg.blit"
+      ],
+      "local_scores": [
+        0.3783783783783784
+      ]
+    },
+    {
+      "fqn": "matplotlib.transforms.Affine2DBase.to_values",
+      "api_type": "method",
+      "similarity": 0.375,
+      "evolution_path": [
+        "matplotlib.transforms.Affine2DBase.to_values"
+      ],
+      "local_scores": [
+        0.375
+      ]
+    },
+    {
+      "fqn": "matplotlib.axis.Axis.__str__",
+      "api_type": "method",
+      "similarity": 0.3684210526315789,
+      "evolution_path": [
+        "matplotlib.axis.Axis.__str__"
+      ],
+      "local_scores": [
+        0.3684210526315789
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_pdf.FigureCanvasPdf.draw",
+      "api_type": "method",
+      "similarity": 0.36363636363636365,
+      "evolution_path": [
+        "matplotlib.backends.backend_pdf.FigureCanvasPdf.draw"
+      ],
+      "local_scores": [
+        0.36363636363636365
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_pgf.FigureCanvasPgf.draw",
+      "api_type": "method",
+      "similarity": 0.36363636363636365,
+      "evolution_path": [
+        "matplotlib.backends.backend_pgf.FigureCanvasPgf.draw"
+      ],
+      "local_scores": [
+        0.36363636363636365
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_ps.FigureCanvasPS.draw",
+      "api_type": "method",
+      "similarity": 0.36363636363636365,
+      "evolution_path": [
+        "matplotlib.backends.backend_ps.FigureCanvasPS.draw"
+      ],
+      "local_scores": [
+        0.36363636363636365
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.FigureCanvasSVG.draw",
+      "api_type": "method",
+      "similarity": 0.36363636363636365,
+      "evolution_path": [
+        "matplotlib.backends.backend_svg.FigureCanvasSVG.draw"
+      ],
+      "local_scores": [
+        0.36363636363636365
+      ]
+    },
+    {
+      "fqn": "matplotlib.collections._MeshData.get_edgecolor",
+      "api_type": "method",
+      "similarity": 0.3611111111111111,
+      "evolution_path": [
+        "matplotlib.collections._MeshData.get_edgecolor"
+      ],
+      "local_scores": [
+        0.3611111111111111
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.backends.backend_agg.RendererAgg.tostring_rgb",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.9.4",
+      "vpost": "3.10.0",
+      "resolved_fqn": "matplotlib.backends.backend_agg.RendererAgg.tostring_rgb",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.backends.backend_agg.RendererAgg.tostring_argb",
+          "similarity": 0.774194
+        },
+        {
+          "fqn": "matplotlib.backends.backend_cairo.GraphicsContextCairo.get_rgb",
+          "similarity": 0.424242
+        },
+        {
+          "fqn": "matplotlib.backends.backend_tkagg.FigureCanvasTkAgg.blit",
+          "similarity": 0.378378
+        },
+        {
+          "fqn": "matplotlib.transforms.Affine2DBase.to_values",
+          "similarity": 0.375
+        },
+        {
+          "fqn": "matplotlib.axis.Axis.__str__",
+          "similarity": 0.368421
+        },
+        {
+          "fqn": "matplotlib.backends.backend_pdf.FigureCanvasPdf.draw",
+          "similarity": 0.363636
+        },
+        {
+          "fqn": "matplotlib.backends.backend_pgf.FigureCanvasPgf.draw",
+          "similarity": 0.363636
+        },
+        {
+          "fqn": "matplotlib.backends.backend_ps.FigureCanvasPS.draw",
+          "similarity": 0.363636
+        },
+        {
+          "fqn": "matplotlib.backends.backend_svg.FigureCanvasSVG.draw",
+          "similarity": 0.363636
+        },
+        {
+          "fqn": "matplotlib.collections._MeshData.get_edgecolor",
+          "similarity": 0.361111
+        }
+      ],
+      "entered_final": [
+        "matplotlib.backends.backend_agg.RendererAgg.tostring_argb",
+        "matplotlib.backends.backend_cairo.GraphicsContextCairo.get_rgb",
+        "matplotlib.backends.backend_tkagg.FigureCanvasTkAgg.blit",
+        "matplotlib.transforms.Affine2DBase.to_values",
+        "matplotlib.axis.Axis.__str__",
+        "matplotlib.backends.backend_pdf.FigureCanvasPdf.draw",
+        "matplotlib.backends.backend_pgf.FigureCanvasPgf.draw",
+        "matplotlib.backends.backend_ps.FigureCanvasPS.draw",
+        "matplotlib.backends.backend_svg.FigureCanvasSVG.draw",
+        "matplotlib.collections._MeshData.get_edgecolor"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.361111,
+      "dead_reason": null
+    }
+  ]
+}

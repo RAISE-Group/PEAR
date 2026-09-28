@@ -1,0 +1,12 @@
+def test_rolling_skew_edge_cases(self):
+    all_nan = Series([np.NaN] * 5)
+    d = Series([1] * 5)
+    x = d.rolling(window=5).skew()
+    tm.assert_series_equal(all_nan, x)
+    d = Series(np.random.randn(5))
+    x = d.rolling(window=2).skew()
+    tm.assert_series_equal(all_nan, x)
+    d = Series([-1.50837035, -0.1297039, 0.19501095, 1.73508164, 0.41941401])
+    expected = Series([np.NaN, np.NaN, np.NaN, 0.177994, 1.548824])
+    x = d.rolling(window=4).skew()
+    tm.assert_series_equal(expected, x)

@@ -1,0 +1,35 @@
+@pytest.mark.slow
+def test_subplots_multiple_axes(self):
+    fig, axes = self.plt.subplots(2, 3)
+    df = DataFrame(np.random.rand(10, 3), index=list(string.ascii_letters[:10]))
+    returned = df.plot(subplots=True, ax=axes[0], sharex=False, sharey=False)
+    self._check_axes_shape(returned, axes_num=3, layout=(1, 3))
+    assert returned.shape == (3,)
+    assert returned[0].figure is fig
+    returned = df.plot(subplots=True, ax=axes[1], sharex=False, sharey=False)
+    self._check_axes_shape(returned, axes_num=3, layout=(1, 3))
+    assert returned.shape == (3,)
+    assert returned[0].figure is fig
+    self._check_axes_shape(axes, axes_num=6, layout=(2, 3))
+    tm.close()
+    with pytest.raises(ValueError):
+        fig, axes = self.plt.subplots(2, 3)
+        df.plot(subplots=True, ax=axes)
+    fig, axes = self.plt.subplots(2, 2)
+    with warnings.catch_warnings():
+        warnings.simplefilter('ignore', UserWarning)
+        df = DataFrame(np.random.rand(10, 4), index=list(string.ascii_letters[:10]))
+        returned = df.plot(subplots=True, ax=axes, layout=(2, 1), sharex=False, sharey=False)
+        self._check_axes_shape(returned, axes_num=4, layout=(2, 2))
+        assert returned.shape == (4,)
+        returned = df.plot(subplots=True, ax=axes, layout=(2, -1), sharex=False, sharey=False)
+        self._check_axes_shape(returned, axes_num=4, layout=(2, 2))
+        assert returned.shape == (4,)
+        returned = df.plot(subplots=True, ax=axes, layout=(-1, 2), sharex=False, sharey=False)
+    self._check_axes_shape(returned, axes_num=4, layout=(2, 2))
+    assert returned.shape == (4,)
+    fig, axes = self.plt.subplots(1, 1)
+    df = DataFrame(np.random.rand(10, 1), index=list(string.ascii_letters[:10]))
+    axes = df.plot(subplots=True, ax=[axes], sharex=False, sharey=False)
+    self._check_axes_shape(axes, axes_num=1, layout=(1, 1))
+    assert axes.shape == (1,)

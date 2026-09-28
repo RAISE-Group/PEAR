@@ -1,0 +1,13 @@
+def test_drop_and_dropna_caching(self):
+    original = Series([1, 2, np.nan], name='A')
+    expected = Series([1, 2], dtype=original.dtype, name='A')
+    df = pd.DataFrame({'A': original.values.copy()})
+    df2 = df.copy()
+    df['A'].dropna()
+    tm.assert_series_equal(df['A'], original)
+    df['A'].dropna(inplace=True)
+    tm.assert_series_equal(df['A'], expected)
+    df2['A'].drop([1])
+    tm.assert_series_equal(df2['A'], original)
+    df2['A'].drop([1], inplace=True)
+    tm.assert_series_equal(df2['A'], original.drop([1]))

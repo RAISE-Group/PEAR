@@ -1,0 +1,10 @@
+def test_ser_divmod_inf(self):
+    left = pd.Series([np.inf, 1.0])
+    right = pd.Series([np.inf, 2.0])
+    expected = (left // right, left % right)
+    result = divmod(left, right)
+    tm.assert_series_equal(result[0], expected[0])
+    tm.assert_series_equal(result[1], expected[1])
+    result = divmod(left.values, right)
+    tm.assert_series_equal(result[0], expected[0])
+    tm.assert_series_equal(result[1], expected[1])

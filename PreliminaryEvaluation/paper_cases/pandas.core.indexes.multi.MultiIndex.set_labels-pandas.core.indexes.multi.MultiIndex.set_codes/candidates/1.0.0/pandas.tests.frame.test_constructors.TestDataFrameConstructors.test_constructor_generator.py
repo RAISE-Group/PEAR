@@ -1,0 +1,10 @@
+def test_constructor_generator(self):
+    gen1 = (i for i in range(10))
+    gen2 = (i for i in range(10))
+    expected = DataFrame([list(range(10)), list(range(10))])
+    result = DataFrame([gen1, gen2])
+    tm.assert_frame_equal(result, expected)
+    gen = ([i, 'a'] for i in range(10))
+    result = DataFrame(gen)
+    expected = DataFrame({0: range(10), 1: 'a'})
+    tm.assert_frame_equal(result, expected, check_dtype=False)

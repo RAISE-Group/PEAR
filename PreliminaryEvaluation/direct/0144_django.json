@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.2.25",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.gis.admin.options.GeoModelAdmin",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.contrib.admin.widgets.AutocompleteMixin",
+      "api_type": "class",
+      "similarity": 0.5116279069767442
+    },
+    {
+      "fqn": "django.core.handlers.asgi.ASGIRequest",
+      "api_type": "class",
+      "similarity": 0.48411214953271026
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.features.DatabaseFeatures",
+      "api_type": "class",
+      "similarity": 0.482897384305835
+    },
+    {
+      "fqn": "django.contrib.admin.filters.AllValuesFieldListFilter",
+      "api_type": "class",
+      "similarity": 0.4786516853932584
+    },
+    {
+      "fqn": "django.template.defaulttags.ForNode",
+      "api_type": "class",
+      "similarity": 0.46956521739130436
+    },
+    {
+      "fqn": "django.contrib.admin.filters.BooleanFieldListFilter",
+      "api_type": "class",
+      "similarity": 0.4678492239467849
+    },
+    {
+      "fqn": "django.contrib.admin.widgets.RelatedFieldWidgetWrapper",
+      "api_type": "class",
+      "similarity": 0.4677716390423573
+    },
+    {
+      "fqn": "django.core.management.commands.runserver.Command",
+      "api_type": "class",
+      "similarity": 0.4519230769230769
+    },
+    {
+      "fqn": "django.test.runner.ParallelTestSuite",
+      "api_type": "class",
+      "similarity": 0.44948453608247424
+    },
+    {
+      "fqn": "django.templatetags.i18n.BlockTranslateNode",
+      "api_type": "class",
+      "similarity": 0.44639376218323584
+    }
+  ]
+}

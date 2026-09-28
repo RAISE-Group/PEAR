@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.0.14",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.postgres.fields.jsonb.KeyTransform",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.models.sql.compiler.SQLAggregateCompiler",
+      "api_type": "class",
+      "similarity": 0.5816993464052288
+    },
+    {
+      "fqn": "django.contrib.postgres.search.CombinedLexeme",
+      "api_type": "class",
+      "similarity": 0.5751633986928104
+    },
+    {
+      "fqn": "django.contrib.postgres.search.SearchVectorExact",
+      "api_type": "class",
+      "similarity": 0.5548387096774193
+    },
+    {
+      "fqn": "django.db.models.fields.json.KeyTextTransform",
+      "api_type": "class",
+      "similarity": 0.5529411764705883
+    },
+    {
+      "fqn": "django.db.models.fields.json.KeyTransformIsNull",
+      "api_type": "class",
+      "similarity": 0.5483870967741935
+    },
+    {
+      "fqn": "django.contrib.postgres.fields.array.SliceTransform",
+      "api_type": "class",
+      "similarity": 0.5447761194029851
+    },
+    {
+      "fqn": "django.contrib.gis.db.models.functions.AsGML",
+      "api_type": "class",
+      "similarity": 0.5341614906832298
+    },
+    {
+      "fqn": "django.db.models.fields.json.JSONExact",
+      "api_type": "class",
+      "similarity": 0.5269461077844312
+    },
+    {
+      "fqn": "django.template.base.Token",
+      "api_type": "class",
+      "similarity": 0.5263157894736842
+    },
+    {
+      "fqn": "django.db.models.lookups.BuiltinLookup",
+      "api_type": "class",
+      "similarity": 0.5260115606936416
+    }
+  ]
+}

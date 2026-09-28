@@ -1,0 +1,13 @@
+def test_astype_object(self):
+    idx = pd.PeriodIndex([], freq='M')
+    exp = np.array([], dtype=object)
+    tm.assert_numpy_array_equal(idx.astype(object).values, exp)
+    tm.assert_numpy_array_equal(idx._mpl_repr(), exp)
+    idx = pd.PeriodIndex(['2011-01', pd.NaT], freq='M')
+    exp = np.array([pd.Period('2011-01', freq='M'), pd.NaT], dtype=object)
+    tm.assert_numpy_array_equal(idx.astype(object).values, exp)
+    tm.assert_numpy_array_equal(idx._mpl_repr(), exp)
+    exp = np.array([pd.Period('2011-01-01', freq='D'), pd.NaT], dtype=object)
+    idx = pd.PeriodIndex(['2011-01-01', pd.NaT], freq='D')
+    tm.assert_numpy_array_equal(idx.astype(object).values, exp)
+    tm.assert_numpy_array_equal(idx._mpl_repr(), exp)

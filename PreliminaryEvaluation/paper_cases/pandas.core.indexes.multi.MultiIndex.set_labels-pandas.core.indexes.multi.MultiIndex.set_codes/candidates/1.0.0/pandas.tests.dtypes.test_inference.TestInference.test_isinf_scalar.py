@@ -1,0 +1,11 @@
+def test_isinf_scalar(self):
+    assert libmissing.isposinf_scalar(float('inf'))
+    assert libmissing.isposinf_scalar(np.inf)
+    assert not libmissing.isposinf_scalar(-np.inf)
+    assert not libmissing.isposinf_scalar(1)
+    assert not libmissing.isposinf_scalar('a')
+    assert libmissing.isneginf_scalar(float('-inf'))
+    assert libmissing.isneginf_scalar(-np.inf)
+    assert not libmissing.isneginf_scalar(np.inf)
+    assert not libmissing.isneginf_scalar(1)
+    assert not libmissing.isneginf_scalar('a')

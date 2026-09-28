@@ -1,0 +1,10 @@
+def test_constructor_empty_with_string_dtype(self):
+    expected = DataFrame(index=[0, 1], columns=[0, 1], dtype=object)
+    df = DataFrame(index=[0, 1], columns=[0, 1], dtype=str)
+    tm.assert_frame_equal(df, expected)
+    df = DataFrame(index=[0, 1], columns=[0, 1], dtype=np.str_)
+    tm.assert_frame_equal(df, expected)
+    df = DataFrame(index=[0, 1], columns=[0, 1], dtype=np.unicode_)
+    tm.assert_frame_equal(df, expected)
+    df = DataFrame(index=[0, 1], columns=[0, 1], dtype='U5')
+    tm.assert_frame_equal(df, expected)

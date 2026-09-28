@@ -1,0 +1,6 @@
+@pytest.mark.parametrize('other, dtype, expected', [([61, 63], 'int32', pd.Series([10, 61, 12], dtype='int32')), ([61, 63], 'int64', pd.Series([10, 61, 12])), ([61, 63], float, pd.Series([10.0, 61.0, 12.0])), ([61, 63], object, pd.Series([10, 61, 12], dtype=object)), ([61.0, 63.0], 'int32', pd.Series([10, 61, 12], dtype='int32')), ([61.0, 63.0], 'int64', pd.Series([10, 61, 12])), ([61.0, 63.0], float, pd.Series([10.0, 61.0, 12.0])), ([61.0, 63.0], object, pd.Series([10, 61.0, 12], dtype=object)), ([61.1, 63.1], 'int32', pd.Series([10.0, 61.1, 12.0])), ([61.1, 63.1], 'int64', pd.Series([10.0, 61.1, 12.0])), ([61.1, 63.1], float, pd.Series([10.0, 61.1, 12.0])), ([61.1, 63.1], object, pd.Series([10, 61.1, 12], dtype=object)), ([(61,), (63,)], 'int32', pd.Series([10, (61,), 12])), ([(61,), (63,)], 'int64', pd.Series([10, (61,), 12])), ([(61,), (63,)], float, pd.Series([10.0, (61,), 12.0])), ([(61,), (63,)], object, pd.Series([10, (61,), 12]))])
+def test_update_dtypes(self, other, dtype, expected):
+    s = Series([10, 11, 12], dtype=dtype)
+    other = Series(other, index=[1, 3])
+    s.update(other)
+    tm.assert_series_equal(s, expected)

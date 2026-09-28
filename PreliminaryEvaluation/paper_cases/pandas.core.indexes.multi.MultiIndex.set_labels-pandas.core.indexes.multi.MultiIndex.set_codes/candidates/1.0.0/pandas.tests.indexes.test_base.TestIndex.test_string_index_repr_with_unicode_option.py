@@ -1,0 +1,5 @@
+@pytest.mark.parametrize('index,expected', [(pd.Index(['あ', 'いい', 'ううう']), "Index(['あ', 'いい', 'ううう'], dtype='object')"), (pd.Index(['あ', 'いい', 'ううう'] * 10), "Index(['あ', 'いい', 'ううう', 'あ', 'いい', 'ううう', 'あ', 'いい', 'ううう',\n       'あ', 'いい', 'ううう', 'あ', 'いい', 'ううう', 'あ', 'いい', 'ううう',\n       'あ', 'いい', 'ううう', 'あ', 'いい', 'ううう', 'あ', 'いい', 'ううう',\n       'あ', 'いい', 'ううう'],\n      dtype='object')"), (pd.Index(['あ', 'いい', 'ううう'] * 100), "Index(['あ', 'いい', 'ううう', 'あ', 'いい', 'ううう', 'あ', 'いい', 'ううう',\n       'あ',\n       ...\n       'ううう', 'あ', 'いい', 'ううう', 'あ', 'いい', 'ううう', 'あ', 'いい',\n       'ううう'],\n      dtype='object', length=300)")])
+def test_string_index_repr_with_unicode_option(self, index, expected):
+    with cf.option_context('display.unicode.east_asian_width', True):
+        result = repr(index)
+        assert result == expected

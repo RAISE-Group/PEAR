@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.6.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.offsetbox.bbox_artist",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.offsetbox._bbox_artist",
+      "api_type": "function",
+      "similarity": 1.0,
+      "evolution_path": [
+        "matplotlib.offsetbox._bbox_artist"
+      ],
+      "local_scores": [
+        1.0
+      ]
+    },
+    {
+      "fqn": "matplotlib.pyplot.get",
+      "api_type": "function",
+      "similarity": 0.37037037037037035,
+      "evolution_path": [
+        "matplotlib.pyplot.get"
+      ],
+      "local_scores": [
+        0.37037037037037035
+      ]
+    },
+    {
+      "fqn": "matplotlib.pyplot.getp",
+      "api_type": "function",
+      "similarity": 0.37037037037037035,
+      "evolution_path": [
+        "matplotlib.pyplot.getp"
+      ],
+      "local_scores": [
+        0.37037037037037035
+      ]
+    },
+    {
+      "fqn": "matplotlib.pyplot.setp",
+      "api_type": "function",
+      "similarity": 0.37037037037037035,
+      "evolution_path": [
+        "matplotlib.pyplot.setp"
+      ],
+      "local_scores": [
+        0.37037037037037035
+      ]
+    },
+    {
+      "fqn": "matplotlib.pyplot.show",
+      "api_type": "function",
+      "similarity": 0.35714285714285715,
+      "evolution_path": [
+        "matplotlib.pyplot.show"
+      ],
+      "local_scores": [
+        0.35714285714285715
+      ]
+    },
+    {
+      "fqn": "matplotlib.tests.test_constrainedlayout.test_bbox",
+      "api_type": "function",
+      "similarity": 0.3548387096774194,
+      "evolution_path": [
+        "matplotlib.tests.test_constrainedlayout.test_bbox"
+      ],
+      "local_scores": [
+        0.3548387096774194
+      ]
+    },
+    {
+      "fqn": "matplotlib.tests.test_transforms.assert_bbox_eq",
+      "api_type": "function",
+      "similarity": 0.3448275862068966,
+      "evolution_path": [
+        "matplotlib.tests.test_transforms.assert_bbox_eq"
+      ],
+      "local_scores": [
+        0.3448275862068966
+      ]
+    },
+    {
+      "fqn": "matplotlib.pyplot.triplot",
+      "api_type": "function",
+      "similarity": 0.3333333333333333,
+      "evolution_path": [
+        "matplotlib.pyplot.triplot"
+      ],
+      "local_scores": [
+        0.3333333333333333
+      ]
+    },
+    {
+      "fqn": "matplotlib.tri._tricontour.tricontour",
+      "api_type": "function",
+      "similarity": 0.3225806451612903,
+      "evolution_path": [
+        "matplotlib.tri._tricontour.tricontour"
+      ],
+      "local_scores": [
+        0.3225806451612903
+      ]
+    },
+    {
+      "fqn": "matplotlib.tri._tricontour.tricontourf",
+      "api_type": "function",
+      "similarity": 0.3225806451612903,
+      "evolution_path": [
+        "matplotlib.tri._tricontour.tricontourf"
+      ],
+      "local_scores": [
+        0.3225806451612903
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.offsetbox.bbox_artist",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.8.4",
+      "vpost": "3.9.0",
+      "resolved_fqn": "matplotlib.offsetbox.bbox_artist",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.offsetbox._bbox_artist",
+          "similarity": 1.0
+        },
+        {
+          "fqn": "matplotlib.pyplot.get",
+          "similarity": 0.37037
+        },
+        {
+          "fqn": "matplotlib.pyplot.getp",
+          "similarity": 0.37037
+        },
+        {
+          "fqn": "matplotlib.pyplot.setp",
+          "similarity": 0.37037
+        },
+        {
+          "fqn": "matplotlib.pyplot.show",
+          "similarity": 0.357143
+        },
+        {
+          "fqn": "matplotlib.tests.test_constrainedlayout.test_bbox",
+          "similarity": 0.354839
+        },
+        {
+          "fqn": "matplotlib.tests.test_transforms.assert_bbox_eq",
+          "similarity": 0.344828
+        },
+        {
+          "fqn": "matplotlib.pyplot.triplot",
+          "similarity": 0.333333
+        },
+        {
+          "fqn": "matplotlib.tri._tricontour.tricontour",
+          "similarity": 0.322581
+        },
+        {
+          "fqn": "matplotlib.tri._tricontour.tricontourf",
+          "similarity": 0.322581
+        }
+      ],
+      "entered_final": [
+        "matplotlib.offsetbox._bbox_artist",
+        "matplotlib.pyplot.get",
+        "matplotlib.pyplot.getp",
+        "matplotlib.pyplot.setp",
+        "matplotlib.pyplot.show",
+        "matplotlib.tests.test_constrainedlayout.test_bbox",
+        "matplotlib.tests.test_transforms.assert_bbox_eq",
+        "matplotlib.pyplot.triplot",
+        "matplotlib.tri._tricontour.tricontour",
+        "matplotlib.tri._tricontour.tricontourf"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.322581,
+      "dead_reason": null
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "4.0.10",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_key_columns",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_primary_key_columns",
+      "api_type": "method",
+      "similarity": 0.6444444444444445
+    },
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.6153846153846154
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_primary_key_columns",
+      "api_type": "method",
+      "similarity": 0.6086956521739131
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.574468085106383
+    },
+    {
+      "fqn": "django.db.backends.mysql.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.5681818181818182
+    },
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_table_list",
+      "api_type": "method",
+      "similarity": 0.5094339622641509
+    },
+    {
+      "fqn": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.contrib.admin.filters.DateFieldListFilter.get_facet_counts",
+      "api_type": "method",
+      "similarity": 0.4897959183673469
+    },
+    {
+      "fqn": "django.db.backends.oracle.operations.DatabaseOperations.__foreign_key_constraints",
+      "api_type": "method",
+      "similarity": 0.48214285714285715
+    },
+    {
+      "fqn": "django.contrib.admin.options.ModelAdmin._get_edited_object_pks",
+      "api_type": "method",
+      "similarity": 0.4727272727272727
+    }
+  ]
+}

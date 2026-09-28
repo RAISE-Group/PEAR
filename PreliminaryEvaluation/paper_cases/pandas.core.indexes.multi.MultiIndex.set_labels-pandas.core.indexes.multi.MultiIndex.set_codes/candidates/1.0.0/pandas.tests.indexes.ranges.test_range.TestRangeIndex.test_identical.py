@@ -1,0 +1,15 @@
+def test_identical(self):
+    index = self.create_index()
+    i = Index(index.copy())
+    assert i.identical(index)
+    if isinstance(index, RangeIndex):
+        return
+    same_values_different_type = Index(i, dtype=object)
+    assert not i.identical(same_values_different_type)
+    i = index.copy(dtype=object)
+    i = i.rename('foo')
+    same_values = Index(i, dtype=object)
+    assert same_values.identical(index.copy(dtype=object))
+    assert not i.identical(index)
+    assert Index(same_values, name='foo', dtype=object).identical(i)
+    assert not index.copy(dtype=object).identical(index.copy(dtype='int64'))

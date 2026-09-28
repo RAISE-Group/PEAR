@@ -1,0 +1,10 @@
+def test_len(self):
+    values = Series(['foo', 'fooo', 'fooooo', np.nan, 'fooooooo'])
+    result = values.str.len()
+    exp = values.map(lambda x: len(x) if notna(x) else np.nan)
+    tm.assert_series_equal(result, exp)
+    mixed = Series(['a_b', np.nan, 'asdf_cas_asdf', True, datetime.today(), 'foo', None, 1, 2.0])
+    rs = Series(mixed).str.len()
+    xp = Series([3, np.nan, 13, np.nan, np.nan, 3, np.nan, np.nan, np.nan])
+    assert isinstance(rs, Series)
+    tm.assert_almost_equal(rs, xp)

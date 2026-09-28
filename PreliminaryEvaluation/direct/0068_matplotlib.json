@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.2.2",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backends.backend_pgf.GraphicsContextPgf",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.backends.backend_template.GraphicsContextTemplate",
+      "api_type": "class",
+      "similarity": 0.631578947368421
+    },
+    {
+      "fqn": "matplotlib.backends.backend_pgf._BackendPgf",
+      "api_type": "class",
+      "similarity": 0.34782608695652173
+    },
+    {
+      "fqn": "matplotlib.patheffects.Normal",
+      "api_type": "class",
+      "similarity": 0.25
+    },
+    {
+      "fqn": "matplotlib.rcsetup._ignorecase",
+      "api_type": "class",
+      "similarity": 0.25
+    },
+    {
+      "fqn": "matplotlib.sphinxext.figmpl_directive.figmplnode",
+      "api_type": "class",
+      "similarity": 0.25
+    },
+    {
+      "fqn": "matplotlib.axes.__init__.SubplotBase",
+      "api_type": "class",
+      "similarity": 0.23809523809523808
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.XMLWriter",
+      "api_type": "class",
+      "similarity": 0.23809523809523808
+    },
+    {
+      "fqn": "matplotlib._type1font._BalancedExpression",
+      "api_type": "class",
+      "similarity": 0.22727272727272727
+    },
+    {
+      "fqn": "matplotlib.sphinxext.plot_directive.PlotError",
+      "api_type": "class",
+      "similarity": 0.22727272727272727
+    },
+    {
+      "fqn": "matplotlib.streamplot.TerminateTrajectory",
+      "api_type": "class",
+      "similarity": 0.22727272727272727
+    }
+  ]
+}

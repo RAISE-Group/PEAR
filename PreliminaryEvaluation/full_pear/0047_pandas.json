@@ -1,0 +1,199 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "2.1.4",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.tests.extension.base.reduce.BaseBooleanReduceTests",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "pandas.errors.__init__.PyperclipWindowsException",
+      "api_type": "class",
+      "similarity": 0.2898550724637681,
+      "evolution_path": [
+        "pandas.errors.__init__.PyperclipWindowsException"
+      ],
+      "local_scores": [
+        0.2898550724637681
+      ]
+    },
+    {
+      "fqn": "pandas.core.accessor.Accessor",
+      "api_type": "class",
+      "similarity": 0.2876712328767123,
+      "evolution_path": [
+        "pandas.core.accessor.Accessor"
+      ],
+      "local_scores": [
+        0.2876712328767123
+      ]
+    },
+    {
+      "fqn": "pandas.plotting._matplotlib.converter.PandasAutoDateFormatter",
+      "api_type": "class",
+      "similarity": 0.2835820895522388,
+      "evolution_path": [
+        "pandas.plotting._matplotlib.converter.PandasAutoDateFormatter"
+      ],
+      "local_scores": [
+        0.2835820895522388
+      ]
+    },
+    {
+      "fqn": "pandas.tests.series.indexing.test_setitem.TestCoercionString",
+      "api_type": "class",
+      "similarity": 0.2727272727272727,
+      "evolution_path": [
+        "pandas.tests.series.indexing.test_setitem.TestCoercionString"
+      ],
+      "local_scores": [
+        0.2727272727272727
+      ]
+    },
+    {
+      "fqn": "pandas.core.arrays.datetimelike.DatelikeOps",
+      "api_type": "class",
+      "similarity": 0.2682926829268293,
+      "evolution_path": [
+        "pandas.core.arrays.datetimelike.DatelikeOps"
+      ],
+      "local_scores": [
+        0.2682926829268293
+      ]
+    },
+    {
+      "fqn": "pandas.errors.__init__.UndefinedVariableError",
+      "api_type": "class",
+      "similarity": 0.26506024096385544,
+      "evolution_path": [
+        "pandas.errors.__init__.UndefinedVariableError"
+      ],
+      "local_scores": [
+        0.26506024096385544
+      ]
+    },
+    {
+      "fqn": "pandas.core.arrays.sparse.accessor.BaseAccessor",
+      "api_type": "class",
+      "similarity": 0.2647058823529412,
+      "evolution_path": [
+        "pandas.core.arrays.sparse.accessor.BaseAccessor"
+      ],
+      "local_scores": [
+        0.2647058823529412
+      ]
+    },
+    {
+      "fqn": "pandas.tests.indexes.datetimelike_.test_drop_duplicates.TestDropDuplicatesDatetimeIndex",
+      "api_type": "class",
+      "similarity": 0.25806451612903225,
+      "evolution_path": [
+        "pandas.tests.indexes.datetimelike_.test_drop_duplicates.TestDropDuplicatesDatetimeIndex"
+      ],
+      "local_scores": [
+        0.25806451612903225
+      ]
+    },
+    {
+      "fqn": "pandas.tests.indexes.datetimelike_.test_drop_duplicates.TestDropDuplicatesTimedeltaIndex",
+      "api_type": "class",
+      "similarity": 0.25806451612903225,
+      "evolution_path": [
+        "pandas.tests.indexes.datetimelike_.test_drop_duplicates.TestDropDuplicatesTimedeltaIndex"
+      ],
+      "local_scores": [
+        0.25806451612903225
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "pandas.tests.extension.base.reduce.BaseBooleanReduceTests",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "2.3.3",
+      "vpost": "3.0.0",
+      "resolved_fqn": "pandas.tests.extension.base.reduce.BaseBooleanReduceTests",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "pandas.errors.__init__.PyperclipWindowsException",
+          "similarity": 0.289855
+        },
+        {
+          "fqn": "pandas.core.accessor.Accessor",
+          "similarity": 0.287671
+        },
+        {
+          "fqn": "pandas.plotting._matplotlib.converter.PandasAutoDateFormatter",
+          "similarity": 0.283582
+        },
+        {
+          "fqn": "pandas.tests.indexing.test_coercion.CoercionBase",
+          "similarity": 0.279412
+        },
+        {
+          "fqn": "pandas.tests.series.indexing.test_setitem.TestCoercionString",
+          "similarity": 0.272727
+        },
+        {
+          "fqn": "pandas.core.arrays.datetimelike.DatelikeOps",
+          "similarity": 0.268293
+        },
+        {
+          "fqn": "pandas.errors.__init__.UndefinedVariableError",
+          "similarity": 0.26506
+        },
+        {
+          "fqn": "pandas.core.arrays.sparse.accessor.BaseAccessor",
+          "similarity": 0.264706
+        },
+        {
+          "fqn": "pandas.tests.indexes.datetimelike_.test_drop_duplicates.TestDropDuplicatesDatetimeIndex",
+          "similarity": 0.258065
+        },
+        {
+          "fqn": "pandas.tests.indexes.datetimelike_.test_drop_duplicates.TestDropDuplicatesTimedeltaIndex",
+          "similarity": 0.258065
+        }
+      ],
+      "entered_final": [
+        "pandas.errors.__init__.PyperclipWindowsException",
+        "pandas.core.accessor.Accessor",
+        "pandas.plotting._matplotlib.converter.PandasAutoDateFormatter",
+        "pandas.tests.series.indexing.test_setitem.TestCoercionString",
+        "pandas.core.arrays.datetimelike.DatelikeOps",
+        "pandas.errors.__init__.UndefinedVariableError",
+        "pandas.core.arrays.sparse.accessor.BaseAccessor",
+        "pandas.tests.indexes.datetimelike_.test_drop_duplicates.TestDropDuplicatesDatetimeIndex",
+        "pandas.tests.indexes.datetimelike_.test_drop_duplicates.TestDropDuplicatesTimedeltaIndex"
+      ],
+      "entered_iter": [
+        "pandas.tests.indexing.test_coercion.CoercionBase"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "pandas.tests.indexing.test_coercion.CoercionBase",
+      "path_score": 0.279412,
+      "boundary": "NOT_FOUND",
+      "vpre": null,
+      "vpost": null,
+      "resolved_fqn": null,
+      "resolved_kind": null,
+      "candidates": [],
+      "entered_final": [],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": "not_found"
+    }
+  ]
+}

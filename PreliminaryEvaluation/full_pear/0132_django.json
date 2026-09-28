@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "2.0.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.staticfiles.templatetags.staticfiles.static",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.templatetags.static.static",
+      "api_type": "function",
+      "similarity": 1.0,
+      "evolution_path": [
+        "django.templatetags.static.static"
+      ],
+      "local_scores": [
+        1.0
+      ]
+    },
+    {
+      "fqn": "django.template.context_processors.static",
+      "api_type": "function",
+      "similarity": 0.6666666666666666,
+      "evolution_path": [
+        "django.template.context_processors.static"
+      ],
+      "local_scores": [
+        0.6666666666666666
+      ]
+    },
+    {
+      "fqn": "django.templatetags.static.do_static",
+      "api_type": "function",
+      "similarity": 0.6,
+      "evolution_path": [
+        "django.templatetags.static.do_static"
+      ],
+      "local_scores": [
+        0.6
+      ]
+    },
+    {
+      "fqn": "django.utils.translation.__init__.activate",
+      "api_type": "function",
+      "similarity": 0.5294117647058824,
+      "evolution_path": [
+        "django.utils.translation.__init__.activate"
+      ],
+      "local_scores": [
+        0.5294117647058824
+      ]
+    },
+    {
+      "fqn": "django.utils.translation.__init__.gettext",
+      "api_type": "function",
+      "similarity": 0.5294117647058824,
+      "evolution_path": [
+        "django.utils.translation.__init__.gettext"
+      ],
+      "local_scores": [
+        0.5294117647058824
+      ]
+    },
+    {
+      "fqn": "django.contrib.humanize.templatetags.humanize.naturaltime",
+      "api_type": "function",
+      "similarity": 0.5,
+      "evolution_path": [
+        "django.contrib.humanize.templatetags.humanize.naturaltime"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "django.template.defaultfilters.random",
+      "api_type": "function",
+      "similarity": 0.5,
+      "evolution_path": [
+        "django.template.defaultfilters.random"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "django.templatetags.static.get_static_prefix",
+      "api_type": "function",
+      "similarity": 0.5,
+      "evolution_path": [
+        "django.templatetags.static.get_static_prefix"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "django.templatetags.tz.utc",
+      "api_type": "function",
+      "similarity": 0.47368421052631576,
+      "evolution_path": [
+        "django.templatetags.tz.utc"
+      ],
+      "local_scores": [
+        0.47368421052631576
+      ]
+    },
+    {
+      "fqn": "django.utils.translation.__init__.pgettext",
+      "api_type": "function",
+      "similarity": 0.47368421052631576,
+      "evolution_path": [
+        "django.utils.translation.__init__.pgettext"
+      ],
+      "local_scores": [
+        0.47368421052631576
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.contrib.staticfiles.templatetags.staticfiles.static",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "2.2.28",
+      "vpost": "3.0",
+      "resolved_fqn": "django.templatetags.static.static",
+      "resolved_kind": "forward",
+      "candidates": [
+        {
+          "fqn": "django.templatetags.static.static",
+          "similarity": 1.0
+        },
+        {
+          "fqn": "django.template.context_processors.static",
+          "similarity": 0.666667
+        },
+        {
+          "fqn": "django.templatetags.static.do_static",
+          "similarity": 0.6
+        },
+        {
+          "fqn": "django.utils.translation.__init__.activate",
+          "similarity": 0.529412
+        },
+        {
+          "fqn": "django.utils.translation.__init__.gettext",
+          "similarity": 0.529412
+        },
+        {
+          "fqn": "django.contrib.humanize.templatetags.humanize.naturaltime",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "django.template.defaultfilters.random",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "django.templatetags.static.get_static_prefix",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "django.templatetags.tz.utc",
+          "similarity": 0.473684
+        },
+        {
+          "fqn": "django.utils.translation.__init__.pgettext",
+          "similarity": 0.473684
+        }
+      ],
+      "entered_final": [
+        "django.templatetags.static.static",
+        "django.template.context_processors.static",
+        "django.templatetags.static.do_static",
+        "django.utils.translation.__init__.activate",
+        "django.utils.translation.__init__.gettext",
+        "django.contrib.humanize.templatetags.humanize.naturaltime",
+        "django.template.defaultfilters.random",
+        "django.templatetags.static.get_static_prefix",
+        "django.templatetags.tz.utc",
+        "django.utils.translation.__init__.pgettext"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.473684,
+      "dead_reason": null
+    }
+  ]
+}

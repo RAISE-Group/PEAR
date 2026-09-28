@@ -1,0 +1,52 @@
+def test_order_compat(self):
+
+    def _check_freq(index, expected_index):
+        if isinstance(index, PeriodIndex):
+            assert index.freq == expected_index.freq
+    pidx = PeriodIndex(['2011', '2012', '2013'], name='pidx', freq='A')
+    iidx = Index([2011, 2012, 2013], name='idx')
+    for idx in [pidx, iidx]:
+        ordered = idx.sort_values()
+        tm.assert_index_equal(ordered, idx)
+        _check_freq(ordered, idx)
+        ordered = idx.sort_values(ascending=False)
+        tm.assert_index_equal(ordered, idx[::-1])
+        _check_freq(ordered, idx[::-1])
+        ordered, indexer = idx.sort_values(return_indexer=True)
+        tm.assert_index_equal(ordered, idx)
+        tm.assert_numpy_array_equal(indexer, np.array([0, 1, 2]), check_dtype=False)
+        _check_freq(ordered, idx)
+        ordered, indexer = idx.sort_values(return_indexer=True, ascending=False)
+        tm.assert_index_equal(ordered, idx[::-1])
+        tm.assert_numpy_array_equal(indexer, np.array([2, 1, 0]), check_dtype=False)
+        _check_freq(ordered, idx[::-1])
+    pidx = PeriodIndex(['2011', '2013', '2015', '2012', '2011'], name='pidx', freq='A')
+    pexpected = PeriodIndex(['2011', '2011', '2012', '2013', '2015'], name='pidx', freq='A')
+    iidx = Index([2011, 2013, 2015, 2012, 2011], name='idx')
+    iexpected = Index([2011, 2011, 2012, 2013, 2015], name='idx')
+    for idx, expected in [(pidx, pexpected), (iidx, iexpected)]:
+        ordered = idx.sort_values()
+        tm.assert_index_equal(ordered, expected)
+        _check_freq(ordered, idx)
+        ordered = idx.sort_values(ascending=False)
+        tm.assert_index_equal(ordered, expected[::-1])
+        _check_freq(ordered, idx)
+        ordered, indexer = idx.sort_values(return_indexer=True)
+        tm.assert_index_equal(ordered, expected)
+        exp = np.array([0, 4, 3, 1, 2])
+        tm.assert_numpy_array_equal(indexer, exp, check_dtype=False)
+        _check_freq(ordered, idx)
+        ordered, indexer = idx.sort_values(return_indexer=True, ascending=False)
+        tm.assert_index_equal(ordered, expected[::-1])
+        exp = np.array([2, 1, 3, 4, 0])
+        tm.assert_numpy_array_equal(indexer, exp, check_dtype=False)
+        _check_freq(ordered, idx)
+    pidx = PeriodIndex(['2011', '2013', 'NaT', '2011'], name='pidx', freq='D')
+    result = pidx.sort_values()
+    expected = PeriodIndex(['NaT', '2011', '2011', '2013'], name='pidx', freq='D')
+    tm.assert_index_equal(result, expected)
+    assert result.freq == 'D'
+    result = pidx.sort_values(ascending=False)
+    expected = PeriodIndex(['2013', '2011', '2011', 'NaT'], name='pidx', freq='D')
+    tm.assert_index_equal(result, expected)
+    assert result.freq == 'D'

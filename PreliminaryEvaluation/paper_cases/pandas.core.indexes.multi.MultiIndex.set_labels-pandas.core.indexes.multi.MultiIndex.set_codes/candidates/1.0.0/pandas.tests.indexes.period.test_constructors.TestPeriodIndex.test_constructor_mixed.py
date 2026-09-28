@@ -1,0 +1,10 @@
+def test_constructor_mixed(self):
+    idx = PeriodIndex(['2011-01', pd.NaT, Period('2011-01', freq='M')])
+    exp = PeriodIndex(['2011-01', 'NaT', '2011-01'], freq='M')
+    tm.assert_index_equal(idx, exp)
+    idx = PeriodIndex(['NaT', pd.NaT, Period('2011-01', freq='M')])
+    exp = PeriodIndex(['NaT', 'NaT', '2011-01'], freq='M')
+    tm.assert_index_equal(idx, exp)
+    idx = PeriodIndex([Period('2011-01-01', freq='D'), pd.NaT, '2012-01-01'])
+    exp = PeriodIndex(['2011-01-01', 'NaT', '2012-01-01'], freq='D')
+    tm.assert_index_equal(idx, exp)

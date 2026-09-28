@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.2.2",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.ticker.OldScalarFormatter",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.colors.BoundaryNorm",
+      "api_type": "class",
+      "similarity": 0.4760705289672544
+    },
+    {
+      "fqn": "matplotlib.streamplot.Grid",
+      "api_type": "class",
+      "similarity": 0.4648241206030151
+    },
+    {
+      "fqn": "matplotlib.testing.jpl_units.StrConverter.StrConverter",
+      "api_type": "class",
+      "similarity": 0.46467391304347827
+    },
+    {
+      "fqn": "matplotlib.projections.geo.MollweideAxes.MollweideTransform",
+      "api_type": "class",
+      "similarity": 0.4645669291338583
+    },
+    {
+      "fqn": "matplotlib.colors.PowerNorm",
+      "api_type": "class",
+      "similarity": 0.46335078534031415
+    },
+    {
+      "fqn": "matplotlib.dviread.Tfm",
+      "api_type": "class",
+      "similarity": 0.45663265306122447
+    },
+    {
+      "fqn": "matplotlib.tests.test_image.QuantityND",
+      "api_type": "class",
+      "similarity": 0.45305164319248825
+    },
+    {
+      "fqn": "matplotlib.ticker.LogFormatterMathtext",
+      "api_type": "class",
+      "similarity": 0.44868035190615835
+    },
+    {
+      "fqn": "matplotlib._type1font._CharstringSimulator",
+      "api_type": "class",
+      "similarity": 0.44713656387665196
+    },
+    {
+      "fqn": "matplotlib.ticker.AsinhLocator",
+      "api_type": "class",
+      "similarity": 0.4326086956521739
+    }
+  ]
+}

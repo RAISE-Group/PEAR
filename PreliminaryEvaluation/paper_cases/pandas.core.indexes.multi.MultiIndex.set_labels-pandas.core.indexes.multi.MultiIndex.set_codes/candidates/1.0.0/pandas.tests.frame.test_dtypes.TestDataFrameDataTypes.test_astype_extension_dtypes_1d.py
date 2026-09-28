@@ -1,0 +1,12 @@
+@pytest.mark.parametrize('dtype', ['Int64', 'Int32', 'Int16'])
+def test_astype_extension_dtypes_1d(self, dtype):
+    df = pd.DataFrame({'a': [1.0, 2.0, 3.0]})
+    expected1 = pd.DataFrame({'a': integer_array([1, 2, 3], dtype=dtype)})
+    tm.assert_frame_equal(df.astype(dtype), expected1)
+    tm.assert_frame_equal(df.astype('int64').astype(dtype), expected1)
+    df = pd.DataFrame({'a': [1.0, 2.0, 3.0]})
+    df['a'] = df['a'].astype(dtype)
+    expected2 = pd.DataFrame({'a': integer_array([1, 2, 3], dtype=dtype)})
+    tm.assert_frame_equal(df, expected2)
+    tm.assert_frame_equal(df.astype(dtype), expected1)
+    tm.assert_frame_equal(df.astype('int64').astype(dtype), expected1)

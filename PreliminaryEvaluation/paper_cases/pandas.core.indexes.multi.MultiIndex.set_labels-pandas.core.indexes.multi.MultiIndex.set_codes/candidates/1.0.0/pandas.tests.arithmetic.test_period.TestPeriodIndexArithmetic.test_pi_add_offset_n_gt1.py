@@ -1,0 +1,11 @@
+@pytest.mark.parametrize('transpose', [True, False])
+def test_pi_add_offset_n_gt1(self, box_with_array, transpose):
+    per = pd.Period('2016-01', freq='2M')
+    pi = pd.PeriodIndex([per])
+    expected = pd.PeriodIndex(['2016-03'], freq='2M')
+    pi = tm.box_expected(pi, box_with_array, transpose=transpose)
+    expected = tm.box_expected(expected, box_with_array, transpose=transpose)
+    result = pi + per.freq
+    tm.assert_equal(result, expected)
+    result = per.freq + pi
+    tm.assert_equal(result, expected)

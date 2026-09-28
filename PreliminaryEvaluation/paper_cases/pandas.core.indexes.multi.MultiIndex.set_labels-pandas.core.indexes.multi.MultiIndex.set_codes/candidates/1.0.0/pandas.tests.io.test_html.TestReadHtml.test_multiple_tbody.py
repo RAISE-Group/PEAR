@@ -1,0 +1,4 @@
+def test_multiple_tbody(self):
+    result = self.read_html('<table>\n            <thead>\n                <tr>\n                    <th>A</th>\n                    <th>B</th>\n                </tr>\n            </thead>\n            <tbody>\n                <tr>\n                    <td>1</td>\n                    <td>2</td>\n                </tr>\n            </tbody>\n            <tbody>\n                <tr>\n                    <td>3</td>\n                    <td>4</td>\n                </tr>\n            </tbody>\n        </table>')[0]
+    expected = DataFrame(data=[[1, 2], [3, 4]], columns=['A', 'B'])
+    tm.assert_frame_equal(result, expected)

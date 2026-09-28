@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.1.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.patches.YAArrow",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.patches.ConnectionStyle.Arc",
+      "api_type": "class",
+      "similarity": 0.6096033402922756
+    },
+    {
+      "fqn": "matplotlib.patches.ConnectionStyle.Bar",
+      "api_type": "class",
+      "similarity": 0.5862884160756501
+    },
+    {
+      "fqn": "matplotlib.patches.BoxStyle.Sawtooth",
+      "api_type": "class",
+      "similarity": 0.5456521739130434
+    },
+    {
+      "fqn": "matplotlib.patches.ArrowStyle.Fancy",
+      "api_type": "class",
+      "similarity": 0.5431034482758621
+    },
+    {
+      "fqn": "matplotlib.patches.BoxStyle.RArrow",
+      "api_type": "class",
+      "similarity": 0.5375586854460094
+    },
+    {
+      "fqn": "matplotlib.patches.BoxStyle.DArrow",
+      "api_type": "class",
+      "similarity": 0.5314685314685315
+    },
+    {
+      "fqn": "matplotlib.patheffects.TickedStroke",
+      "api_type": "class",
+      "similarity": 0.5302752293577981
+    },
+    {
+      "fqn": "matplotlib.projections.geo.LambertAxes",
+      "api_type": "class",
+      "similarity": 0.5203883495145631
+    },
+    {
+      "fqn": "matplotlib.projections.geo.MollweideAxes",
+      "api_type": "class",
+      "similarity": 0.5201612903225806
+    },
+    {
+      "fqn": "matplotlib.ticker.LogitLocator",
+      "api_type": "class",
+      "similarity": 0.5
+    }
+  ]
+}

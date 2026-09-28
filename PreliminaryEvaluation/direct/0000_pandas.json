@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.12.0",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.panel.Panel.__getattr__",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.groupby.groupby.GroupBy.__getattr__",
+      "api_type": "method",
+      "similarity": 0.6382978723404256
+    },
+    {
+      "fqn": "pandas.core.window.rolling.BaseWindow.__getattr__",
+      "api_type": "method",
+      "similarity": 0.6382978723404256
+    },
+    {
+      "fqn": "pandas.io.pytables.HDFStore.__getattr__",
+      "api_type": "method",
+      "similarity": 0.6190476190476191
+    },
+    {
+      "fqn": "pandas.tests.extension.list.array.ListArray.__getitem__",
+      "api_type": "method",
+      "similarity": 0.525
+    },
+    {
+      "fqn": "pandas.core.resample.Resampler.__getattr__",
+      "api_type": "method",
+      "similarity": 0.4909090909090909
+    },
+    {
+      "fqn": "pandas.core.groupby.groupby.GroupByPlot.__getattr__",
+      "api_type": "method",
+      "similarity": 0.4883720930232558
+    },
+    {
+      "fqn": "pandas.plotting._misc._Options.__getitem__",
+      "api_type": "method",
+      "similarity": 0.4772727272727273
+    },
+    {
+      "fqn": "pandas.core.generic.NDFrame.__getattr__",
+      "api_type": "method",
+      "similarity": 0.46
+    },
+    {
+      "fqn": "pandas.plotting._misc._Options.__delitem__",
+      "api_type": "method",
+      "similarity": 0.45454545454545453
+    },
+    {
+      "fqn": "pandas.core.arrays.arrow.extension_types.ArrowPeriodType.__eq__",
+      "api_type": "method",
+      "similarity": 0.4444444444444444
+    }
+  ]
+}

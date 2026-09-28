@@ -1,0 +1,38 @@
+@Appender(_index_shared_docs['get_value'] % _index_doc_kwargs)
+def get_value(self, series, key):
+    s = extract_array(series, extract_numpy=True)
+    if isinstance(s, ExtensionArray):
+        if is_scalar(key):
+            try:
+                iloc = self.get_loc(key)
+                return s[iloc]
+            except KeyError:
+                if len(self) > 0 and (self.holds_integer() or self.is_boolean()):
+                    raise
+                elif is_integer(key):
+                    return s[key]
+        else:
+            raise InvalidIndexError(key)
+    s = com.values_from_object(series)
+    k = com.values_from_object(key)
+    k = self._convert_scalar_indexer(k, kind='getitem')
+    try:
+        return self._engine.get_value(s, k, tz=getattr(series.dtype, 'tz', None))
+    except KeyError as e1:
+        if len(self) > 0 and (self.holds_integer() or self.is_boolean()):
+            raise
+        try:
+            return libindex.get_value_at(s, key)
+        except IndexError:
+            raise
+        except TypeError:
+            if is_iterator(key):
+                raise InvalidIndexError(key)
+            else:
+                raise e1
+        except Exception:
+            raise e1
+    except TypeError:
+        if is_scalar(key):
+            raise IndexError(key)
+        raise InvalidIndexError(key)

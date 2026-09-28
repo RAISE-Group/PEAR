@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.9.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.core.files.storage.FileSystemStorage.accessed_time",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.core.files.storage.filesystem.FileSystemStorage.get_accessed_time",
+      "api_type": "method",
+      "similarity": 0.7333333333333333
+    },
+    {
+      "fqn": "django.core.files.storage.memory.InMemoryStorage.get_accessed_time",
+      "api_type": "method",
+      "similarity": 0.6
+    },
+    {
+      "fqn": "django.core.files.storage.filesystem.FileSystemStorage.get_created_time",
+      "api_type": "method",
+      "similarity": 0.5294117647058824
+    },
+    {
+      "fqn": "django.core.files.storage.filesystem.FileSystemStorage.get_modified_time",
+      "api_type": "method",
+      "similarity": 0.5294117647058824
+    },
+    {
+      "fqn": "django.core.files.storage.filesystem.FileSystemStorage.exists",
+      "api_type": "method",
+      "similarity": 0.4827586206896552
+    },
+    {
+      "fqn": "django.core.files.storage.filesystem.FileSystemStorage.size",
+      "api_type": "method",
+      "similarity": 0.4827586206896552
+    },
+    {
+      "fqn": "django.contrib.sessions.base_session.BaseSessionManager.encode",
+      "api_type": "method",
+      "similarity": 0.46875
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.feature.Feature.__eq__",
+      "api_type": "method",
+      "similarity": 0.4666666666666667
+    },
+    {
+      "fqn": "django.contrib.gis.geos.geometry.GEOSGeometryBase.relate",
+      "api_type": "method",
+      "similarity": 0.4666666666666667
+    },
+    {
+      "fqn": "django.core.files.storage.memory.InMemoryStorage.get_created_time",
+      "api_type": "method",
+      "similarity": 0.45454545454545453
+    }
+  ]
+}

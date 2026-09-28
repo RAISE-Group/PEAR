@@ -1,0 +1,13 @@
+def test_regex_replace_dict_nested(self, mix_abc):
+    dfmix = DataFrame(mix_abc)
+    res = dfmix.replace({'b': {'\\s*\\.\\s*': np.nan}}, regex=True)
+    res2 = dfmix.copy()
+    res4 = dfmix.copy()
+    res2.replace({'b': {'\\s*\\.\\s*': np.nan}}, inplace=True, regex=True)
+    res3 = dfmix.replace(regex={'b': {'\\s*\\.\\s*': np.nan}})
+    res4.replace(regex={'b': {'\\s*\\.\\s*': np.nan}}, inplace=True)
+    expec = DataFrame({'a': mix_abc['a'], 'b': ['a', 'b', np.nan, np.nan], 'c': mix_abc['c']})
+    tm.assert_frame_equal(res, expec)
+    tm.assert_frame_equal(res2, expec)
+    tm.assert_frame_equal(res3, expec)
+    tm.assert_frame_equal(res4, expec)

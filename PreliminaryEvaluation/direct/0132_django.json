@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "2.0.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.staticfiles.templatetags.staticfiles.static",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.templatetags.static.static",
+      "api_type": "function",
+      "similarity": 0.7857142857142857
+    },
+    {
+      "fqn": "django.template.context_processors.static",
+      "api_type": "function",
+      "similarity": 0.6
+    },
+    {
+      "fqn": "django.templatetags.static.do_static",
+      "api_type": "function",
+      "similarity": 0.55
+    },
+    {
+      "fqn": "django.views.decorators.http.etag",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.utils.translation.__init__.activate",
+      "api_type": "function",
+      "similarity": 0.47058823529411764
+    },
+    {
+      "fqn": "django.utils.translation.__init__.gettext",
+      "api_type": "function",
+      "similarity": 0.47058823529411764
+    },
+    {
+      "fqn": "django.utils.translation.trans_null.pgettext",
+      "api_type": "function",
+      "similarity": 0.47058823529411764
+    },
+    {
+      "fqn": "django.templatetags.static.get_static_prefix",
+      "api_type": "function",
+      "similarity": 0.4583333333333333
+    },
+    {
+      "fqn": "django.contrib.gis.geos.factory.fromstr",
+      "api_type": "function",
+      "similarity": 0.4444444444444444
+    },
+    {
+      "fqn": "django.contrib.humanize.templatetags.humanize.naturaltime",
+      "api_type": "function",
+      "similarity": 0.4444444444444444
+    }
+  ]
+}

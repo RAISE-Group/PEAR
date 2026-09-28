@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.0.14",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.views.debug.ExceptionReporterFilter",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.models.query_utils.class_or_instance_method",
+      "api_type": "class",
+      "similarity": 0.367816091954023
+    },
+    {
+      "fqn": "django.views.generic.edit.BaseCreateView",
+      "api_type": "class",
+      "similarity": 0.358695652173913
+    },
+    {
+      "fqn": "django.contrib.admin.filters.FacetsMixin",
+      "api_type": "class",
+      "similarity": 0.3473684210526316
+    },
+    {
+      "fqn": "django.db.models.base.ModelStateFieldsCacheDescriptor",
+      "api_type": "class",
+      "similarity": 0.33783783783783783
+    },
+    {
+      "fqn": "django.db.backends.oracle.base._UninitializedOperatorsDescriptor",
+      "api_type": "class",
+      "similarity": 0.3375
+    },
+    {
+      "fqn": "django.views.generic.edit.BaseUpdateView",
+      "api_type": "class",
+      "similarity": 0.32989690721649484
+    },
+    {
+      "fqn": "django.core.signing.JSONSerializer",
+      "api_type": "class",
+      "similarity": 0.3253012048192771
+    },
+    {
+      "fqn": "django.contrib.gis.db.models.fields.ExtentField",
+      "api_type": "class",
+      "similarity": 0.3225806451612903
+    },
+    {
+      "fqn": "django.forms.renderers.EngineMixin",
+      "api_type": "class",
+      "similarity": 0.32222222222222224
+    },
+    {
+      "fqn": "django.db.models.lookups.YearExact",
+      "api_type": "class",
+      "similarity": 0.32142857142857145
+    }
+  ]
+}

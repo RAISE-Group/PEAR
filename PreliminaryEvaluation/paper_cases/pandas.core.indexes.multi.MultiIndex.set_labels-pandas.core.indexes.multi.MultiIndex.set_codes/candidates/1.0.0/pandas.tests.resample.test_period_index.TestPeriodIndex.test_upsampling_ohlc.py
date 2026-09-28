@@ -1,0 +1,10 @@
+@pytest.mark.parametrize('freq, period_mult', [('H', 24), ('12H', 2)])
+@pytest.mark.parametrize('kind', [None, 'period'])
+def test_upsampling_ohlc(self, freq, period_mult, kind):
+    pi = period_range(start='2000', freq='D', periods=10)
+    s = Series(range(len(pi)), index=pi)
+    expected = s.to_timestamp().resample(freq).ohlc().to_period(freq)
+    new_index = period_range(start='2000', freq=freq, periods=period_mult * len(pi))
+    expected = expected.reindex(new_index)
+    result = s.resample(freq, kind=kind).ohlc()
+    tm.assert_frame_equal(result, expected)

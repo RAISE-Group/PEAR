@@ -1,0 +1,11 @@
+def test_take_fill_value(self):
+    index = pd.Index(list('ABC'), name='xxx')
+    result = index.take(np.array([1, 0, -1]))
+    expected = pd.Index(list('BAC'), name='xxx')
+    tm.assert_index_equal(result, expected)
+    result = index.take(np.array([1, 0, -1]), fill_value=True)
+    expected = pd.Index(['B', 'A', np.nan], name='xxx')
+    tm.assert_index_equal(result, expected)
+    result = index.take(np.array([1, 0, -1]), allow_fill=False, fill_value=True)
+    expected = pd.Index(['B', 'A', 'C'], name='xxx')
+    tm.assert_index_equal(result, expected)

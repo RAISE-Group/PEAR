@@ -1,0 +1,6 @@
+@name.setter
+def name(self, value):
+    if self._no_setting_name:
+        raise RuntimeError("Cannot set name on a level of a MultiIndex. Use 'MultiIndex.set_names' instead.")
+    maybe_extract_name(value, None, type(self))
+    self._name = value

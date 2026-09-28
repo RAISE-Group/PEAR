@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.5.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.ticker.LogFormatter.base",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.ticker.LogFormatter.set_base",
+      "api_type": "method",
+      "similarity": 0.6470588235294118,
+      "evolution_path": [
+        "matplotlib.ticker.LogFormatter.set_base"
+      ],
+      "local_scores": [
+        0.6470588235294118
+      ]
+    },
+    {
+      "fqn": "matplotlib.transforms.Bbox.ignore",
+      "api_type": "method",
+      "similarity": 0.5714285714285714,
+      "evolution_path": [
+        "matplotlib.transforms.Bbox.ignore"
+      ],
+      "local_scores": [
+        0.5714285714285714
+      ]
+    },
+    {
+      "fqn": "matplotlib.gridspec.SubplotSpec.num2",
+      "api_type": "method",
+      "similarity": 0.5333333333333333,
+      "evolution_path": [
+        "matplotlib.gridspec.SubplotSpec.num2"
+      ],
+      "local_scores": [
+        0.5333333333333333
+      ]
+    },
+    {
+      "fqn": "matplotlib.scale.FuncScaleLog.base",
+      "api_type": "method",
+      "similarity": 0.5333333333333333,
+      "evolution_path": [
+        "matplotlib.scale.FuncScaleLog.base"
+      ],
+      "local_scores": [
+        0.5333333333333333
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.LinearLocator.numticks",
+      "api_type": "method",
+      "similarity": 0.5333333333333333,
+      "evolution_path": [
+        "matplotlib.ticker.LinearLocator.numticks"
+      ],
+      "local_scores": [
+        0.5333333333333333
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.PercentFormatter.symbol",
+      "api_type": "method",
+      "similarity": 0.5333333333333333,
+      "evolution_path": [
+        "matplotlib.ticker.PercentFormatter.symbol"
+      ],
+      "local_scores": [
+        0.5333333333333333
+      ]
+    },
+    {
+      "fqn": "matplotlib.colors.SymLogNorm.linthresh",
+      "api_type": "method",
+      "similarity": 0.5,
+      "evolution_path": [
+        "matplotlib.colors.SymLogNorm.linthresh"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "matplotlib.dviread.Dvi._post",
+      "api_type": "method",
+      "similarity": 0.5,
+      "evolution_path": [
+        "matplotlib.dviread.Dvi._post"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "matplotlib.figure.SubFigure.dpi",
+      "api_type": "method",
+      "similarity": 0.5,
+      "evolution_path": [
+        "matplotlib.figure.SubFigure.dpi"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.set_gid",
+      "api_type": "method",
+      "similarity": 0.47058823529411764,
+      "evolution_path": [
+        "matplotlib.artist.Artist.set_gid"
+      ],
+      "local_scores": [
+        0.47058823529411764
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.ticker.LogFormatter.base",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.7.5",
+      "vpost": "3.8.0",
+      "resolved_fqn": "matplotlib.ticker.LogFormatter.base",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.ticker.LogFormatter.set_base",
+          "similarity": 0.647059
+        },
+        {
+          "fqn": "matplotlib.transforms.Bbox.ignore",
+          "similarity": 0.571429
+        },
+        {
+          "fqn": "matplotlib.gridspec.SubplotSpec.num2",
+          "similarity": 0.533333
+        },
+        {
+          "fqn": "matplotlib.scale.FuncScaleLog.base",
+          "similarity": 0.533333
+        },
+        {
+          "fqn": "matplotlib.ticker.LinearLocator.numticks",
+          "similarity": 0.533333
+        },
+        {
+          "fqn": "matplotlib.ticker.PercentFormatter.symbol",
+          "similarity": 0.533333
+        },
+        {
+          "fqn": "matplotlib.colors.SymLogNorm.linthresh",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.dviread.Dvi._post",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.figure.SubFigure.dpi",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.set_gid",
+          "similarity": 0.470588
+        }
+      ],
+      "entered_final": [
+        "matplotlib.ticker.LogFormatter.set_base",
+        "matplotlib.transforms.Bbox.ignore",
+        "matplotlib.gridspec.SubplotSpec.num2",
+        "matplotlib.scale.FuncScaleLog.base",
+        "matplotlib.ticker.LinearLocator.numticks",
+        "matplotlib.ticker.PercentFormatter.symbol",
+        "matplotlib.colors.SymLogNorm.linthresh",
+        "matplotlib.dviread.Dvi._post",
+        "matplotlib.figure.SubFigure.dpi",
+        "matplotlib.artist.Artist.set_gid"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.470588,
+      "dead_reason": null
+    }
+  ]
+}

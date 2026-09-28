@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.9.13",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.models.fields.files.FileField.get_filename",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_queryset",
+      "api_type": "method",
+      "similarity": 0.5151515151515151
+    },
+    {
+      "fqn": "django.contrib.contenttypes.fields.GenericForeignKey.get_forward_related_filter",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.contrib.gis.geos.coordseq.GEOSCoordSeq._get_x",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.contrib.gis.geos.coordseq.GEOSCoordSeq._get_y",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.contrib.gis.geos.coordseq.GEOSCoordSeq._get_z",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_object",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.tasks.base.Task.get_result",
+      "api_type": "method",
+      "similarity": 0.4883720930232558
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_primary_key_columns",
+      "api_type": "method",
+      "similarity": 0.4878048780487805
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.4878048780487805
+    },
+    {
+      "fqn": "django.template.base.PartialTemplate.get_exception_info",
+      "api_type": "method",
+      "similarity": 0.48717948717948717
+    }
+  ]
+}

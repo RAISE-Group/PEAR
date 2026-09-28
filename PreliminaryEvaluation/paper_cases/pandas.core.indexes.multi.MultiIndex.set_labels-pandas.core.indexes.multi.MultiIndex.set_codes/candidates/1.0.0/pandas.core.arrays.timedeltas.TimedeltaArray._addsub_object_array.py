@@ -1,0 +1,5 @@
+def _addsub_object_array(self, other, op):
+    try:
+        return super()._addsub_object_array(other, op)
+    except AttributeError:
+        raise TypeError(f'Cannot add/subtract non-tick DateOffset to {type(self).__name__}')

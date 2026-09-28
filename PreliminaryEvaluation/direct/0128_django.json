@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.10.8",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_indexes",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection.get_constraints",
+      "api_type": "method",
+      "similarity": 0.5753424657534246
+    },
+    {
+      "fqn": "django.contrib.auth.forms.ReadOnlyPasswordHashWidget.get_context",
+      "api_type": "method",
+      "similarity": 0.5606060606060606
+    },
+    {
+      "fqn": "django.contrib.admin.widgets.AdminSplitDateTime.get_context",
+      "api_type": "method",
+      "similarity": 0.5555555555555556
+    },
+    {
+      "fqn": "django.contrib.gis.db.models.functions.AsGML.as_oracle",
+      "api_type": "method",
+      "similarity": 0.5555555555555556
+    },
+    {
+      "fqn": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_sequences",
+      "api_type": "method",
+      "similarity": 0.524390243902439
+    },
+    {
+      "fqn": "django.forms.widgets.ChoiceWidget.get_context",
+      "api_type": "method",
+      "similarity": 0.5238095238095238
+    },
+    {
+      "fqn": "django.contrib.admin.sites.AdminSite.get_app_list",
+      "api_type": "method",
+      "similarity": 0.5211267605633803
+    },
+    {
+      "fqn": "django.contrib.staticfiles.management.commands.runserver.Command.get_handler",
+      "api_type": "method",
+      "similarity": 0.5151515151515151
+    },
+    {
+      "fqn": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_relations",
+      "api_type": "method",
+      "similarity": 0.5084745762711864
+    },
+    {
+      "fqn": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_sequences",
+      "api_type": "method",
+      "similarity": 0.5081967213114754
+    }
+  ]
+}

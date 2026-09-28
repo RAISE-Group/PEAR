@@ -1,0 +1,11 @@
+def test_regex_replace_regex_list_to_numeric(self, mix_abc):
+    df = DataFrame(mix_abc)
+    res = df.replace(['\\s*\\.\\s*', 'b'], 0, regex=True)
+    res2 = df.copy()
+    res2.replace(['\\s*\\.\\s*', 'b'], 0, regex=True, inplace=True)
+    res3 = df.copy()
+    res3.replace(regex=['\\s*\\.\\s*', 'b'], value=0, inplace=True)
+    expec = DataFrame({'a': mix_abc['a'], 'b': ['a', 0, 0, 0], 'c': ['a', 0, np.nan, 'd']})
+    tm.assert_frame_equal(res, expec)
+    tm.assert_frame_equal(res2, expec)
+    tm.assert_frame_equal(res3, expec)

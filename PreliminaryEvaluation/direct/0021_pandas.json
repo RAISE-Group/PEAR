@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.23.4",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.arrays.base.ExtensionArray._formatting_values",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.arrays.base.ExtensionArray._values_for_argsort",
+      "api_type": "method",
+      "similarity": 0.5416666666666666
+    },
+    {
+      "fqn": "pandas.core.generic.NDFrame.values",
+      "api_type": "method",
+      "similarity": 0.5263157894736842
+    },
+    {
+      "fqn": "pandas.core.series.Series._values",
+      "api_type": "method",
+      "similarity": 0.5263157894736842
+    },
+    {
+      "fqn": "pandas.core.series.Series.values",
+      "api_type": "method",
+      "similarity": 0.5263157894736842
+    },
+    {
+      "fqn": "pandas.core.indexes.period.PeriodIndex.values",
+      "api_type": "method",
+      "similarity": 0.5217391304347826
+    },
+    {
+      "fqn": "pandas.core.apply.FrameApply.values",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.core.arrays.base.ExtensionArray._values_for_json",
+      "api_type": "method",
+      "similarity": 0.48
+    },
+    {
+      "fqn": "pandas.core.arrays.sparse.array.SparseArray._values_for_factorize",
+      "api_type": "method",
+      "similarity": 0.48
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame.values",
+      "api_type": "method",
+      "similarity": 0.47619047619047616
+    },
+    {
+      "fqn": "pandas.core.internals.managers.SingleBlockManager.external_values",
+      "api_type": "method",
+      "similarity": 0.47619047619047616
+    }
+  ]
+}

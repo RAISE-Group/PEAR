@@ -1,0 +1,11 @@
+def test_equals_numeric(self):
+    i = Float64Index([1.0, 2.0])
+    assert i.equals(i)
+    assert i.identical(i)
+    i2 = Float64Index([1.0, 2.0])
+    assert i.equals(i2)
+    i = Float64Index([1.0, np.nan])
+    assert i.equals(i)
+    assert i.identical(i)
+    i2 = Float64Index([1.0, np.nan])
+    assert i.equals(i2)

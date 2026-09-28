@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.2.25",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.http.request.HttpRequest.get_raw_uri",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.views.debug.ExceptionReporter._get_raw_insecure_uri",
+      "api_type": "method",
+      "similarity": 0.7096774193548387
+    },
+    {
+      "fqn": "django.views.generic.edit.DeletionMixin.get_success_url",
+      "api_type": "method",
+      "similarity": 0.4444444444444444
+    },
+    {
+      "fqn": "django.contrib.messages.storage.session.SessionStorage._get",
+      "api_type": "method",
+      "similarity": 0.4375
+    },
+    {
+      "fqn": "django.db.models.expressions.CombinedExpression.__str__",
+      "api_type": "method",
+      "similarity": 0.42857142857142855
+    },
+    {
+      "fqn": "django.contrib.postgres.fields.array.ArrayField.get_placeholder",
+      "api_type": "method",
+      "similarity": 0.42424242424242425
+    },
+    {
+      "fqn": "django.contrib.postgres.fields.ranges.RangeField.get_placeholder",
+      "api_type": "method",
+      "similarity": 0.42424242424242425
+    },
+    {
+      "fqn": "django.core.handlers.wsgi.WSGIRequest._get_scheme",
+      "api_type": "method",
+      "similarity": 0.41379310344827586
+    },
+    {
+      "fqn": "django.db.models.expressions.OrderBy.__repr__",
+      "api_type": "method",
+      "similarity": 0.41379310344827586
+    },
+    {
+      "fqn": "django.db.models.expressions.RawSQL.__repr__",
+      "api_type": "method",
+      "similarity": 0.41379310344827586
+    },
+    {
+      "fqn": "django.db.models.expressions.Ref.__repr__",
+      "api_type": "method",
+      "similarity": 0.41379310344827586
+    }
+  ]
+}

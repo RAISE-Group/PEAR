@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "1.1.5",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.io.date_converters.parse_date_time",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.tests.tslibs.test_parsing.test_parse_time_quarter_with_dash",
+      "api_type": "function",
+      "similarity": 0.5217391304347826
+    },
+    {
+      "fqn": "pandas.tests.tslibs.test_parsing.test_parse_time_quarter_with_dash_error",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.tests.io.parser.test_parse_dates.test_parse_date_float",
+      "api_type": "function",
+      "similarity": 0.48148148148148145
+    },
+    {
+      "fqn": "pandas.tests.io.parser.test_parse_dates.test_parse_dates_no_convert_thousands",
+      "api_type": "function",
+      "similarity": 0.46938775510204084
+    },
+    {
+      "fqn": "pandas.core.roperator.rmod",
+      "api_type": "function",
+      "similarity": 0.45454545454545453
+    },
+    {
+      "fqn": "pandas.tests.apply.test_str.test_with_string_args",
+      "api_type": "function",
+      "similarity": 0.4444444444444444
+    },
+    {
+      "fqn": "pandas.tests.indexes.multi.test_duplicates.test_duplicated",
+      "api_type": "function",
+      "similarity": 0.43478260869565216
+    },
+    {
+      "fqn": "pandas.util._validators.validate_kwargs",
+      "api_type": "function",
+      "similarity": 0.4318181818181818
+    },
+    {
+      "fqn": "pandas.tests.tslibs.test_fields.test_get_date_name_field_readonly",
+      "api_type": "function",
+      "similarity": 0.43137254901960786
+    },
+    {
+      "fqn": "pandas.tests.plotting.common._get_colors_mapped",
+      "api_type": "function",
+      "similarity": 0.42857142857142855
+    }
+  ]
+}

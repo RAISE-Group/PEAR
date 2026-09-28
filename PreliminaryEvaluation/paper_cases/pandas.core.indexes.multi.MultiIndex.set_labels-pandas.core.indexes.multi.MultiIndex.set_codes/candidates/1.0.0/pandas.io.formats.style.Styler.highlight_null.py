@@ -1,0 +1,14 @@
+def highlight_null(self, null_color='red'):
+    """
+        Shade the background ``null_color`` for missing values.
+
+        Parameters
+        ----------
+        null_color : str
+
+        Returns
+        -------
+        self : Styler
+        """
+    self.applymap(self._highlight_null, null_color=null_color)
+    return self

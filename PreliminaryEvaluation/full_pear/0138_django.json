@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.0.14",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.http.request.HttpRequest.is_ajax",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "django.http.request.HttpRequest.is_secure",
+      "api_type": "method",
+      "similarity": 0.5238095238095238,
+      "evolution_path": [
+        "django.http.request.HttpRequest.is_secure"
+      ],
+      "local_scores": [
+        0.5238095238095238
+      ]
+    },
+    {
+      "fqn": "django.forms.widgets.Widget.is_hidden",
+      "api_type": "method",
+      "similarity": 0.5,
+      "evolution_path": [
+        "django.forms.widgets.Widget.is_hidden"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.is_cached",
+      "api_type": "method",
+      "similarity": 0.4583333333333333,
+      "evolution_path": [
+        "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.is_cached"
+      ],
+      "local_scores": [
+        0.4583333333333333
+      ]
+    },
+    {
+      "fqn": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.is_cached",
+      "api_type": "method",
+      "similarity": 0.4583333333333333,
+      "evolution_path": [
+        "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.is_cached"
+      ],
+      "local_scores": [
+        0.4583333333333333
+      ]
+    },
+    {
+      "fqn": "django.contrib.admin.models.LogEntry.is_addition",
+      "api_type": "method",
+      "similarity": 0.45454545454545453,
+      "evolution_path": [
+        "django.contrib.admin.models.LogEntry.is_addition"
+      ],
+      "local_scores": [
+        0.45454545454545453
+      ]
+    },
+    {
+      "fqn": "django.contrib.admin.models.LogEntry.is_change",
+      "api_type": "method",
+      "similarity": 0.45454545454545453,
+      "evolution_path": [
+        "django.contrib.admin.models.LogEntry.is_change"
+      ],
+      "local_scores": [
+        0.45454545454545453
+      ]
+    },
+    {
+      "fqn": "django.contrib.admin.models.LogEntry.is_deletion",
+      "api_type": "method",
+      "similarity": 0.45454545454545453,
+      "evolution_path": [
+        "django.contrib.admin.models.LogEntry.is_deletion"
+      ],
+      "local_scores": [
+        0.45454545454545453
+      ]
+    },
+    {
+      "fqn": "django.contrib.admin.widgets.RelatedFieldWidgetWrapper.is_hidden",
+      "api_type": "method",
+      "similarity": 0.45454545454545453,
+      "evolution_path": [
+        "django.contrib.admin.widgets.RelatedFieldWidgetWrapper.is_hidden"
+      ],
+      "local_scores": [
+        0.45454545454545453
+      ]
+    },
+    {
+      "fqn": "django.contrib.postgres.forms.array.SplitArrayWidget.is_hidden",
+      "api_type": "method",
+      "similarity": 0.45454545454545453,
+      "evolution_path": [
+        "django.contrib.postgres.forms.array.SplitArrayWidget.is_hidden"
+      ],
+      "local_scores": [
+        0.45454545454545453
+      ]
+    },
+    {
+      "fqn": "django.contrib.gis.geos.linestring.LinearRing.is_counterclockwise",
+      "api_type": "method",
+      "similarity": 0.4444444444444444,
+      "evolution_path": [
+        "django.contrib.gis.geos.linestring.LinearRing.is_counterclockwise"
+      ],
+      "local_scores": [
+        0.4444444444444444
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "django.http.request.HttpRequest.is_ajax",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.2.25",
+      "vpost": "4.0",
+      "resolved_fqn": "django.http.request.HttpRequest.is_ajax",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "django.http.request.HttpRequest.is_secure",
+          "similarity": 0.52381
+        },
+        {
+          "fqn": "django.forms.widgets.Widget.is_hidden",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.is_cached",
+          "similarity": 0.458333
+        },
+        {
+          "fqn": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.is_cached",
+          "similarity": 0.458333
+        },
+        {
+          "fqn": "django.contrib.admin.models.LogEntry.is_addition",
+          "similarity": 0.454545
+        },
+        {
+          "fqn": "django.contrib.admin.models.LogEntry.is_change",
+          "similarity": 0.454545
+        },
+        {
+          "fqn": "django.contrib.admin.models.LogEntry.is_deletion",
+          "similarity": 0.454545
+        },
+        {
+          "fqn": "django.contrib.admin.widgets.RelatedFieldWidgetWrapper.is_hidden",
+          "similarity": 0.454545
+        },
+        {
+          "fqn": "django.contrib.postgres.forms.array.SplitArrayWidget.is_hidden",
+          "similarity": 0.454545
+        },
+        {
+          "fqn": "django.contrib.gis.geos.linestring.LinearRing.is_counterclockwise",
+          "similarity": 0.444444
+        }
+      ],
+      "entered_final": [
+        "django.http.request.HttpRequest.is_secure",
+        "django.forms.widgets.Widget.is_hidden",
+        "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.is_cached",
+        "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.is_cached",
+        "django.contrib.admin.models.LogEntry.is_addition",
+        "django.contrib.admin.models.LogEntry.is_change",
+        "django.contrib.admin.models.LogEntry.is_deletion",
+        "django.contrib.admin.widgets.RelatedFieldWidgetWrapper.is_hidden",
+        "django.contrib.postgres.forms.array.SplitArrayWidget.is_hidden",
+        "django.contrib.gis.geos.linestring.LinearRing.is_counterclockwise"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.444444,
+      "dead_reason": null
+    }
+  ]
+}

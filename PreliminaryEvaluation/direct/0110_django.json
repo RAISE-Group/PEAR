@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.8",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.test.utils.TestTemplateLoader",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.core.checks.messages.Critical",
+      "api_type": "class",
+      "similarity": 0.5111111111111111
+    },
+    {
+      "fqn": "django.core.checks.messages.Debug",
+      "api_type": "class",
+      "similarity": 0.5111111111111111
+    },
+    {
+      "fqn": "django.core.checks.messages.Error",
+      "api_type": "class",
+      "similarity": 0.5111111111111111
+    },
+    {
+      "fqn": "django.core.checks.messages.Info",
+      "api_type": "class",
+      "similarity": 0.5111111111111111
+    },
+    {
+      "fqn": "django.core.checks.messages.Warning",
+      "api_type": "class",
+      "similarity": 0.5111111111111111
+    },
+    {
+      "fqn": "django.forms.fields.EmailField",
+      "api_type": "class",
+      "similarity": 0.509090909090909
+    },
+    {
+      "fqn": "django.db.models.functions.text.Replace",
+      "api_type": "class",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.forms.widgets.Script",
+      "api_type": "class",
+      "similarity": 0.48936170212765956
+    },
+    {
+      "fqn": "django.contrib.postgres.aggregates.mixins._DeprecatedOrdering",
+      "api_type": "class",
+      "similarity": 0.47619047619047616
+    },
+    {
+      "fqn": "django.contrib.auth.forms.ReadOnlyPasswordHashField",
+      "api_type": "class",
+      "similarity": 0.4666666666666667
+    }
+  ]
+}

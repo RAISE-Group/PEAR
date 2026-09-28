@@ -1,0 +1,11 @@
+def test_repr(self):
+    assert repr(self.offset1) == '<BusinessHour: BH=09:00-17:00>'
+    assert repr(self.offset2) == '<3 * BusinessHours: BH=09:00-17:00>'
+    assert repr(self.offset3) == '<-1 * BusinessHour: BH=09:00-17:00>'
+    assert repr(self.offset4) == '<-4 * BusinessHours: BH=09:00-17:00>'
+    assert repr(self.offset5) == '<BusinessHour: BH=11:00-14:30>'
+    assert repr(self.offset6) == '<BusinessHour: BH=20:00-05:00>'
+    assert repr(self.offset7) == '<-2 * BusinessHours: BH=21:30-06:30>'
+    assert repr(self.offset8) == '<BusinessHour: BH=09:00-12:00,13:00-17:00>'
+    assert repr(self.offset9) == '<3 * BusinessHours: BH=09:00-13:00,22:00-03:00>'
+    assert repr(self.offset10) == '<-1 * BusinessHour: BH=13:00-17:00,23:00-02:00>'

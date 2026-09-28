@@ -1,0 +1,17 @@
+def test_grouper_column_and_index(self):
+    idx = pd.MultiIndex.from_tuples([('a', 1), ('a', 2), ('a', 3), ('b', 1), ('b', 2), ('b', 3)])
+    idx.names = ['outer', 'inner']
+    df_multi = pd.DataFrame({'A': np.arange(6), 'B': ['one', 'one', 'two', 'two', 'one', 'one']}, index=idx)
+    result = df_multi.groupby(['B', pd.Grouper(level='inner')]).mean()
+    expected = df_multi.reset_index().groupby(['B', 'inner']).mean()
+    tm.assert_frame_equal(result, expected)
+    result = df_multi.groupby([pd.Grouper(level='inner'), 'B']).mean()
+    expected = df_multi.reset_index().groupby(['inner', 'B']).mean()
+    tm.assert_frame_equal(result, expected)
+    df_single = df_multi.reset_index('outer')
+    result = df_single.groupby(['B', pd.Grouper(level='inner')]).mean()
+    expected = df_single.reset_index().groupby(['B', 'inner']).mean()
+    tm.assert_frame_equal(result, expected)
+    result = df_single.groupby([pd.Grouper(level='inner'), 'B']).mean()
+    expected = df_single.reset_index().groupby(['inner', 'B']).mean()
+    tm.assert_frame_equal(result, expected)

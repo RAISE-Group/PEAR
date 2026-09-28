@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.4.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.ticker.OldAutoLocator",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.ticker.AutoMinorLocator",
+      "api_type": "class",
+      "similarity": 0.601593625498008,
+      "evolution_path": [
+        "matplotlib.ticker.AutoMinorLocator"
+      ],
+      "local_scores": [
+        0.601593625498008
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.MultipleLocator",
+      "api_type": "class",
+      "similarity": 0.5653846153846154,
+      "evolution_path": [
+        "matplotlib.ticker.MultipleLocator"
+      ],
+      "local_scores": [
+        0.5653846153846154
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.LinearLocator",
+      "api_type": "class",
+      "similarity": 0.5015197568389058,
+      "evolution_path": [
+        "matplotlib.ticker.LinearLocator"
+      ],
+      "local_scores": [
+        0.5015197568389058
+      ]
+    },
+    {
+      "fqn": "matplotlib.dates.MicrosecondLocator",
+      "api_type": "class",
+      "similarity": 0.4866666666666667,
+      "evolution_path": [
+        "matplotlib.dates.MicrosecondLocator"
+      ],
+      "local_scores": [
+        0.4866666666666667
+      ]
+    },
+    {
+      "fqn": "matplotlib.text.OffsetFrom",
+      "api_type": "class",
+      "similarity": 0.4858156028368794,
+      "evolution_path": [
+        "matplotlib.text.OffsetFrom"
+      ],
+      "local_scores": [
+        0.4858156028368794
+      ]
+    },
+    {
+      "fqn": "matplotlib.patches.ConnectionStyle._Base",
+      "api_type": "class",
+      "similarity": 0.4763636363636364,
+      "evolution_path": [
+        "matplotlib.patches.ConnectionStyle._Base"
+      ],
+      "local_scores": [
+        0.4763636363636364
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.LogFormatterMathtext",
+      "api_type": "class",
+      "similarity": 0.4601449275362319,
+      "evolution_path": [
+        "matplotlib.ticker.LogFormatterMathtext"
+      ],
+      "local_scores": [
+        0.4601449275362319
+      ]
+    },
+    {
+      "fqn": "matplotlib.colors.PowerNorm",
+      "api_type": "class",
+      "similarity": 0.459546925566343,
+      "evolution_path": [
+        "matplotlib.colors.PowerNorm"
+      ],
+      "local_scores": [
+        0.459546925566343
+      ]
+    },
+    {
+      "fqn": "matplotlib._mathtext.DejaVuFonts",
+      "api_type": "class",
+      "similarity": 0.4552238805970149,
+      "evolution_path": [
+        "matplotlib._mathtext.DejaVuFonts"
+      ],
+      "local_scores": [
+        0.4552238805970149
+      ]
+    },
+    {
+      "fqn": "matplotlib.dates.AutoDateFormatter",
+      "api_type": "class",
+      "similarity": 0.4548736462093863,
+      "evolution_path": [
+        "matplotlib.dates.AutoDateFormatter"
+      ],
+      "local_scores": [
+        0.4548736462093863
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.ticker.OldAutoLocator",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.4.3",
+      "vpost": "3.5.0",
+      "resolved_fqn": "matplotlib.ticker.OldAutoLocator",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.ticker.AutoMinorLocator",
+          "similarity": 0.601594
+        },
+        {
+          "fqn": "matplotlib.ticker.MultipleLocator",
+          "similarity": 0.565385
+        },
+        {
+          "fqn": "matplotlib.ticker.LinearLocator",
+          "similarity": 0.50152
+        },
+        {
+          "fqn": "matplotlib.dates.MicrosecondLocator",
+          "similarity": 0.486667
+        },
+        {
+          "fqn": "matplotlib.text.OffsetFrom",
+          "similarity": 0.485816
+        },
+        {
+          "fqn": "matplotlib.patches.ConnectionStyle._Base",
+          "similarity": 0.476364
+        },
+        {
+          "fqn": "matplotlib.ticker.LogFormatterMathtext",
+          "similarity": 0.460145
+        },
+        {
+          "fqn": "matplotlib.colors.PowerNorm",
+          "similarity": 0.459547
+        },
+        {
+          "fqn": "matplotlib._mathtext.DejaVuFonts",
+          "similarity": 0.455224
+        },
+        {
+          "fqn": "matplotlib.dates.AutoDateFormatter",
+          "similarity": 0.454874
+        }
+      ],
+      "entered_final": [
+        "matplotlib.ticker.AutoMinorLocator",
+        "matplotlib.ticker.MultipleLocator",
+        "matplotlib.ticker.LinearLocator",
+        "matplotlib.dates.MicrosecondLocator",
+        "matplotlib.text.OffsetFrom",
+        "matplotlib.patches.ConnectionStyle._Base",
+        "matplotlib.ticker.LogFormatterMathtext",
+        "matplotlib.colors.PowerNorm",
+        "matplotlib._mathtext.DejaVuFonts",
+        "matplotlib.dates.AutoDateFormatter"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.454874,
+      "dead_reason": null
+    }
+  ]
+}

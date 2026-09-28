@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.0.14",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.postgres.forms.jsonb.JSONField",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.forms.fields.JSONField",
+      "api_type": "class",
+      "similarity": 0.8475336322869955
+    },
+    {
+      "fqn": "django.contrib.postgres.forms.hstore.HStoreField",
+      "api_type": "class",
+      "similarity": 0.6588785046728972
+    },
+    {
+      "fqn": "django.forms.fields.DateTimeField",
+      "api_type": "class",
+      "similarity": 0.6238532110091743
+    },
+    {
+      "fqn": "django.forms.fields.ChoiceField",
+      "api_type": "class",
+      "similarity": 0.5416666666666666
+    },
+    {
+      "fqn": "django.db.models.fields.__init__.UUIDField",
+      "api_type": "class",
+      "similarity": 0.5263157894736842
+    },
+    {
+      "fqn": "django.forms.fields.FloatField",
+      "api_type": "class",
+      "similarity": 0.5236051502145923
+    },
+    {
+      "fqn": "django.forms.fields.DecimalField",
+      "api_type": "class",
+      "similarity": 0.5171102661596958
+    },
+    {
+      "fqn": "django.forms.fields.FileField",
+      "api_type": "class",
+      "similarity": 0.5130718954248366
+    },
+    {
+      "fqn": "django.forms.fields.MultipleChoiceField",
+      "api_type": "class",
+      "similarity": 0.5102880658436214
+    },
+    {
+      "fqn": "django.db.models.fields.__init__.DurationField",
+      "api_type": "class",
+      "similarity": 0.5073529411764706
+    }
+  ]
+}

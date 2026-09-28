@@ -1,0 +1,11 @@
+def visit_Subscript(self, node, **kwargs):
+    value = self.visit(node.value)
+    slobj = self.visit(node.slice)
+    try:
+        value = value.value
+    except AttributeError:
+        pass
+    try:
+        return self.const_type(value[slobj], self.env)
+    except TypeError:
+        raise ValueError(f'cannot subscript {repr(value)} with {repr(slobj)}')

@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.12.0",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.panel.Panel.__getstate__",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas._libs.tslibs.offsets.BaseOffset.__getstate__",
+      "api_type": "method",
+      "similarity": 0.7
+    },
+    {
+      "fqn": "pandas.core.computation.pytables.ConditionBinOp.format",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.io.excel._base.ExcelFile.__fspath__",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.tests.io.test_common.CustomFSPath.__fspath__",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.tests.test_register_accessor.MyAccessor.method",
+      "api_type": "method",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "pandas.core._numba.extensions.IlocType.key",
+      "api_type": "method",
+      "similarity": 0.46153846153846156
+    },
+    {
+      "fqn": "pandas.core.arrays.arrow.extension_types.ArrowIntervalType.subtype",
+      "api_type": "method",
+      "similarity": 0.46153846153846156
+    },
+    {
+      "fqn": "pandas.core.arrays.arrow.extension_types.ArrowPeriodType.freq",
+      "api_type": "method",
+      "similarity": 0.46153846153846156
+    },
+    {
+      "fqn": "pandas.core.computation.ops.Constant.name",
+      "api_type": "method",
+      "similarity": 0.46153846153846156
+    },
+    {
+      "fqn": "pandas.core.computation.ops.Term.name",
+      "api_type": "method",
+      "similarity": 0.46153846153846156
+    }
+  ]
+}

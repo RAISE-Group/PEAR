@@ -1,0 +1,194 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.7.5",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backends.backend_agg.FigureCanvasAgg.tostring_rgb",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.backends.backend_agg.FigureCanvasAgg.tostring_argb",
+      "api_type": "method",
+      "similarity": 0.5789473684210527,
+      "evolution_path": [
+        "matplotlib.backends.backend_agg.FigureCanvasAgg.tostring_argb"
+      ],
+      "local_scores": [
+        0.5789473684210527
+      ]
+    },
+    {
+      "fqn": "matplotlib.backend_bases.GraphicsContextBase.get_rgb",
+      "api_type": "method",
+      "similarity": 0.5,
+      "evolution_path": [
+        "matplotlib.backend_bases.GraphicsContextBase.get_rgb"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_cairo.GraphicsContextCairo.get_rgb",
+      "api_type": "method",
+      "similarity": 0.4583333333333333,
+      "evolution_path": [
+        "matplotlib.backends.backend_cairo.GraphicsContextCairo.get_rgb"
+      ],
+      "local_scores": [
+        0.4583333333333333
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.backend_pdf.PdfPages.infodict",
+      "api_type": "method",
+      "similarity": 0.42105263157894735,
+      "evolution_path": [
+        "matplotlib.backends.backend_pdf.PdfPages.infodict"
+      ],
+      "local_scores": [
+        0.42105263157894735
+      ]
+    },
+    {
+      "fqn": "matplotlib.backends.qt_editor._formlayout.ColorLayout.text",
+      "api_type": "method",
+      "similarity": 0.42105263157894735,
+      "evolution_path": [
+        "matplotlib.backends.qt_editor._formlayout.ColorLayout.text"
+      ],
+      "local_scores": [
+        0.42105263157894735
+      ]
+    },
+    {
+      "fqn": "matplotlib.transforms.TransformWrapper.frozen",
+      "api_type": "method",
+      "similarity": 0.42105263157894735,
+      "evolution_path": [
+        "matplotlib.transforms.TransformWrapper.frozen"
+      ],
+      "local_scores": [
+        0.42105263157894735
+      ]
+    },
+    {
+      "fqn": "matplotlib.figure.Figure.axes",
+      "api_type": "method",
+      "similarity": 0.4,
+      "evolution_path": [
+        "matplotlib.figure.Figure.axes"
+      ],
+      "local_scores": [
+        0.4
+      ]
+    },
+    {
+      "fqn": "matplotlib.projections.geo.AitoffAxes.AitoffTransform.inverted",
+      "api_type": "method",
+      "similarity": 0.4,
+      "evolution_path": [
+        "matplotlib.projections.geo.AitoffAxes.AitoffTransform.inverted"
+      ],
+      "local_scores": [
+        0.4
+      ]
+    },
+    {
+      "fqn": "matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.inverted",
+      "api_type": "method",
+      "similarity": 0.4,
+      "evolution_path": [
+        "matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.inverted"
+      ],
+      "local_scores": [
+        0.4
+      ]
+    },
+    {
+      "fqn": "matplotlib.projections.geo.HammerAxes.HammerTransform.inverted",
+      "api_type": "method",
+      "similarity": 0.4,
+      "evolution_path": [
+        "matplotlib.projections.geo.HammerAxes.HammerTransform.inverted"
+      ],
+      "local_scores": [
+        0.4
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.backends.backend_agg.FigureCanvasAgg.tostring_rgb",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.9.4",
+      "vpost": "3.10.0",
+      "resolved_fqn": "matplotlib.backends.backend_agg.FigureCanvasAgg.tostring_rgb",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.backends.backend_agg.FigureCanvasAgg.tostring_argb",
+          "similarity": 0.578947
+        },
+        {
+          "fqn": "matplotlib.backend_bases.GraphicsContextBase.get_rgb",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.backends.backend_cairo.GraphicsContextCairo.get_rgb",
+          "similarity": 0.458333
+        },
+        {
+          "fqn": "matplotlib.backends.backend_pdf.PdfPages.infodict",
+          "similarity": 0.421053
+        },
+        {
+          "fqn": "matplotlib.backends.qt_editor._formlayout.ColorLayout.text",
+          "similarity": 0.421053
+        },
+        {
+          "fqn": "matplotlib.transforms.TransformWrapper.frozen",
+          "similarity": 0.421053
+        },
+        {
+          "fqn": "matplotlib.figure.Figure.axes",
+          "similarity": 0.4
+        },
+        {
+          "fqn": "matplotlib.projections.geo.AitoffAxes.AitoffTransform.inverted",
+          "similarity": 0.4
+        },
+        {
+          "fqn": "matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.inverted",
+          "similarity": 0.4
+        },
+        {
+          "fqn": "matplotlib.projections.geo.HammerAxes.HammerTransform.inverted",
+          "similarity": 0.4
+        }
+      ],
+      "entered_final": [
+        "matplotlib.backends.backend_agg.FigureCanvasAgg.tostring_argb",
+        "matplotlib.backend_bases.GraphicsContextBase.get_rgb",
+        "matplotlib.backends.backend_cairo.GraphicsContextCairo.get_rgb",
+        "matplotlib.backends.backend_pdf.PdfPages.infodict",
+        "matplotlib.backends.qt_editor._formlayout.ColorLayout.text",
+        "matplotlib.transforms.TransformWrapper.frozen",
+        "matplotlib.figure.Figure.axes",
+        "matplotlib.projections.geo.AitoffAxes.AitoffTransform.inverted",
+        "matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.inverted",
+        "matplotlib.projections.geo.HammerAxes.HammerTransform.inverted"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.4,
+      "dead_reason": null
+    }
+  ]
+}

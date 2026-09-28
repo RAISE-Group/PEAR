@@ -1,0 +1,4 @@
+@Substitution(klass='Resampler', versionadded='.. versionadded:: 0.23.0', examples="\n    >>> df = pd.DataFrame({'A': [1, 2, 3, 4]},\n    ...                   index=pd.date_range('2012-08-02', periods=4))\n    >>> df\n                A\n    2012-08-02  1\n    2012-08-03  2\n    2012-08-04  3\n    2012-08-05  4\n\n    To get the difference between each 2-day period's maximum and minimum\n    value in one pass, you can do\n\n    >>> df.resample('2D').pipe(lambda x: x.max() - x.min())\n                A\n    2012-08-02  1\n    2012-08-04  1")
+@Appender(_pipe_template)
+def pipe(self, func, *args, **kwargs):
+    return super().pipe(func, *args, **kwargs)

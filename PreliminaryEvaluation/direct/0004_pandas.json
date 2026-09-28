@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.12.0",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.panel.Panel.__iter__",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.arrays.interval.IntervalArray.__iter__",
+      "api_type": "method",
+      "similarity": 0.7
+    },
+    {
+      "fqn": "pandas.core.computation.ops.Op.__iter__",
+      "api_type": "method",
+      "similarity": 0.6666666666666666
+    },
+    {
+      "fqn": "pandas.core.generic.NDFrame.__iter__",
+      "api_type": "method",
+      "similarity": 0.6666666666666666
+    },
+    {
+      "fqn": "pandas.core.groupby.grouper.Grouping.__iter__",
+      "api_type": "method",
+      "similarity": 0.6666666666666666
+    },
+    {
+      "fqn": "pandas.io.pytables.IndexCol.__iter__",
+      "api_type": "method",
+      "similarity": 0.6666666666666666
+    },
+    {
+      "fqn": "pandas.tests.dtypes.test_inference.MockNumpyLikeArray.__iter__",
+      "api_type": "method",
+      "similarity": 0.6363636363636364
+    },
+    {
+      "fqn": "pandas.io.pytables.HDFStore.__iter__",
+      "api_type": "method",
+      "similarity": 0.6190476190476191
+    },
+    {
+      "fqn": "pandas.core.groupby.ops.BaseGrouper.__iter__",
+      "api_type": "method",
+      "similarity": 0.6
+    },
+    {
+      "fqn": "pandas.tests.io.formats.test_printing.MyMapping.__iter__",
+      "api_type": "method",
+      "similarity": 0.5789473684210527
+    },
+    {
+      "fqn": "pandas.core.arrays.arrow.accessors.ListAccessor.__iter__",
+      "api_type": "method",
+      "similarity": 0.5
+    }
+  ]
+}

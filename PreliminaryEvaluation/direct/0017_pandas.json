@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.20.3",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.generic.NDFrame.reindex_axis",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.arrays.interval.IntervalArray.take",
+      "api_type": "method",
+      "similarity": 0.5340909090909091
+    },
+    {
+      "fqn": "pandas.io.pytables.AppendableMultiFrameTable.write",
+      "api_type": "method",
+      "similarity": 0.5227272727272727
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame._reindex_multi",
+      "api_type": "method",
+      "similarity": 0.4954128440366973
+    },
+    {
+      "fqn": "pandas.core.arrays.sparse.array.SparseArray.take",
+      "api_type": "method",
+      "similarity": 0.49019607843137253
+    },
+    {
+      "fqn": "pandas.tests.frame.test_reductions.TestDataFrameAnalytics.test_axis_1_sum_na",
+      "api_type": "method",
+      "similarity": 0.4888888888888889
+    },
+    {
+      "fqn": "pandas.core.computation.expr.BaseExprVisitor.visit_BoolOp",
+      "api_type": "method",
+      "similarity": 0.4883720930232558
+    },
+    {
+      "fqn": "pandas.core.arrays.sparse.array.SparseArray.__setstate__",
+      "api_type": "method",
+      "similarity": 0.4878048780487805
+    },
+    {
+      "fqn": "pandas.core.generic.NDFrame._reindex_axes",
+      "api_type": "method",
+      "similarity": 0.48672566371681414
+    },
+    {
+      "fqn": "pandas.core.arrays.masked.BaseMaskedArray.shift",
+      "api_type": "method",
+      "similarity": 0.4838709677419355
+    },
+    {
+      "fqn": "pandas.tests.indexing.test_coercion.TestWhereCoercion._run_test",
+      "api_type": "method",
+      "similarity": 0.48314606741573035
+    }
+  ]
+}

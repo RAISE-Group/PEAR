@@ -1,0 +1,29 @@
+def get_loc(self, key, method=None, tolerance=None):
+    """
+        Get integer location for requested label
+
+        Returns
+        -------
+        loc : int
+        """
+    if is_list_like(key) or (isinstance(key, datetime) and key is not NaT):
+        raise TypeError
+    if isna(key):
+        key = NaT
+    if tolerance is not None:
+        tolerance = self._convert_tolerance(tolerance, np.asarray(key))
+    if _is_convertible_to_td(key) or key is NaT:
+        key = Timedelta(key)
+        return Index.get_loc(self, key, method, tolerance)
+    try:
+        return Index.get_loc(self, key, method, tolerance)
+    except (KeyError, ValueError, TypeError):
+        try:
+            return self._get_string_slice(key)
+        except (TypeError, KeyError, ValueError):
+            pass
+        try:
+            stamp = Timedelta(key)
+            return Index.get_loc(self, stamp, method, tolerance)
+        except (KeyError, ValueError):
+            raise KeyError(key)

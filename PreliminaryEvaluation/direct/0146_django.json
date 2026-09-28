@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.2.25",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.admin.utils.lookup_needs_distinct",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.contrib.admin.utils.lookup_spawns_duplicates",
+      "api_type": "function",
+      "similarity": 0.8227848101265823
+    },
+    {
+      "fqn": "django.template.defaulttags.ifchanged",
+      "api_type": "function",
+      "similarity": 0.5376344086021505
+    },
+    {
+      "fqn": "django.core.management.color.make_style",
+      "api_type": "function",
+      "similarity": 0.5340909090909091
+    },
+    {
+      "fqn": "django.http.cookie.parse_cookie",
+      "api_type": "function",
+      "similarity": 0.5268817204301075
+    },
+    {
+      "fqn": "django.utils._os.symlinks_supported",
+      "api_type": "function",
+      "similarity": 0.5116279069767442
+    },
+    {
+      "fqn": "django.utils.module_loading.autodiscover_modules",
+      "api_type": "function",
+      "similarity": 0.5111111111111111
+    },
+    {
+      "fqn": "django.contrib.humanize.templatetags.humanize.naturalday",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.db.models.utils.make_model_tuple",
+      "api_type": "function",
+      "similarity": 0.5
+    },
+    {
+      "fqn": "django.utils.http.content_disposition_header",
+      "api_type": "function",
+      "similarity": 0.49523809523809526
+    },
+    {
+      "fqn": "django.contrib.gis.gdal.prototypes.generation.string_output",
+      "api_type": "function",
+      "similarity": 0.4943820224719101
+    }
+  ]
+}

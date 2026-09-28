@@ -1,0 +1,11 @@
+@pytest.mark.parametrize('breaks', [date_range('2018-01-01', periods=5), timedelta_range('0 days', periods=5)])
+def test_maybe_convert_i8_nat(self, breaks):
+    index = IntervalIndex.from_breaks(breaks)
+    to_convert = breaks._constructor([pd.NaT] * 3)
+    expected = pd.Float64Index([np.nan] * 3)
+    result = index._maybe_convert_i8(to_convert)
+    tm.assert_index_equal(result, expected)
+    to_convert = to_convert.insert(0, breaks[0])
+    expected = expected.insert(0, float(breaks[0].value))
+    result = index._maybe_convert_i8(to_convert)
+    tm.assert_index_equal(result, expected)

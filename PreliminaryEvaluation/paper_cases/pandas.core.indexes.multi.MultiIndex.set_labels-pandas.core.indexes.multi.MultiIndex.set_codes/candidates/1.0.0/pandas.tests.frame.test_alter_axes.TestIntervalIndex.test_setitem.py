@@ -1,0 +1,23 @@
+def test_setitem(self):
+    df = DataFrame({'A': range(10)})
+    s = cut(df.A, 5)
+    assert isinstance(s.cat.categories, IntervalIndex)
+    df['B'] = s
+    df['C'] = np.array(s)
+    df['D'] = s.values
+    df['E'] = np.array(s.values)
+    assert is_categorical_dtype(df['B'])
+    assert is_interval_dtype(df['B'].cat.categories)
+    assert is_categorical_dtype(df['D'])
+    assert is_interval_dtype(df['D'].cat.categories)
+    assert is_object_dtype(df['C'])
+    assert is_object_dtype(df['E'])
+    c = lambda x: Index(np.array(x))
+    tm.assert_index_equal(c(df.B), c(df.B), check_names=False)
+    tm.assert_index_equal(c(df.B), c(df.C), check_names=False)
+    tm.assert_index_equal(c(df.B), c(df.D), check_names=False)
+    tm.assert_index_equal(c(df.B), c(df.D), check_names=False)
+    tm.assert_series_equal(df['B'], df['B'], check_names=False)
+    tm.assert_series_equal(df['B'], df['D'], check_names=False)
+    tm.assert_series_equal(df['C'], df['C'], check_names=False)
+    tm.assert_series_equal(df['C'], df['E'], check_names=False)

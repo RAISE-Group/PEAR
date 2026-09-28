@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "3.2.25",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.contrib.gis.admin.options.OSMGeoAdmin",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.contrib.postgres.fields.ranges.RangeOperators",
+      "api_type": "class",
+      "similarity": 0.49019607843137253
+    },
+    {
+      "fqn": "django.utils.csp.CSP",
+      "api_type": "class",
+      "similarity": 0.4716981132075472
+    },
+    {
+      "fqn": "django.db.migrations.operations.base.OperationCategory",
+      "api_type": "class",
+      "similarity": 0.4666666666666667
+    },
+    {
+      "fqn": "django.contrib.redirects.models.Redirect.Meta",
+      "api_type": "class",
+      "similarity": 0.44680851063829785
+    },
+    {
+      "fqn": "django.contrib.admin.models.LogEntry.Meta",
+      "api_type": "class",
+      "similarity": 0.4418604651162791
+    },
+    {
+      "fqn": "django.contrib.flatpages.models.FlatPage.Meta",
+      "api_type": "class",
+      "similarity": 0.4418604651162791
+    },
+    {
+      "fqn": "django.contrib.sites.models.Site.Meta",
+      "api_type": "class",
+      "similarity": 0.4418604651162791
+    },
+    {
+      "fqn": "django.db.migrations.autodetector.OperationDependency.Type",
+      "api_type": "class",
+      "similarity": 0.4418604651162791
+    },
+    {
+      "fqn": "django.contrib.contenttypes.models.ContentType.Meta",
+      "api_type": "class",
+      "similarity": 0.4222222222222222
+    },
+    {
+      "fqn": "django.contrib.redirects.admin.RedirectAdmin",
+      "api_type": "class",
+      "similarity": 0.4090909090909091
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+@classmethod
+def _convert_to_stop(cls, stop_seq):
+    """
+        Convert ``stop_seq`` to a list of openpyxl v2 Color objects,
+        suitable for initializing the ``GradientFill`` ``stop`` parameter.
+
+        Parameters
+        ----------
+        stop_seq : iterable
+            An iterable that yields objects suitable for consumption by
+            ``_convert_to_color``.
+
+        Returns
+        -------
+        stop : list of openpyxl.styles.Color
+        """
+    return map(cls._convert_to_color, stop_seq)

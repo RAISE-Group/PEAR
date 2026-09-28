@@ -1,0 +1,10 @@
+@pytest.mark.parametrize('month', MONTHS)
+@pytest.mark.parametrize('meth', ['ffill', 'bfill'])
+@pytest.mark.parametrize('conv', ['start', 'end'])
+@pytest.mark.parametrize('targ', ['D', 'B', 'M'])
+def test_annual_upsample_cases(self, targ, conv, meth, month, simple_period_range_series):
+    ts = simple_period_range_series('1/1/1990', '12/31/1991', freq='A-{month}'.format(month=month))
+    result = getattr(ts.resample(targ, convention=conv), meth)()
+    expected = result.to_timestamp(targ, how=conv)
+    expected = expected.asfreq(targ, meth).to_period()
+    tm.assert_series_equal(result, expected)

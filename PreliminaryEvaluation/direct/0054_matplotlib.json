@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "2.2.5",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backends.backend_tkagg.FigureManagerTkAgg",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.backends.backend_template.FigureManagerTemplate",
+      "api_type": "class",
+      "similarity": 0.5238095238095238
+    },
+    {
+      "fqn": "matplotlib.backends.backend_gtk3.FigureManagerGTK3",
+      "api_type": "class",
+      "similarity": 0.4230769230769231
+    },
+    {
+      "fqn": "matplotlib.backends.backend_gtk4.FigureManagerGTK4",
+      "api_type": "class",
+      "similarity": 0.4230769230769231
+    },
+    {
+      "fqn": "matplotlib.backends._backend_gtk._FigureCanvasGTK",
+      "api_type": "class",
+      "similarity": 0.3076923076923077
+    },
+    {
+      "fqn": "matplotlib.backends.backend_nbagg.FigureCanvasNbAgg",
+      "api_type": "class",
+      "similarity": 0.3076923076923077
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg.FigureCanvasWebAgg",
+      "api_type": "class",
+      "similarity": 0.3076923076923077
+    },
+    {
+      "fqn": "matplotlib.backends._backend_tk.SaveFigureTk",
+      "api_type": "class",
+      "similarity": 0.3055555555555556
+    },
+    {
+      "fqn": "matplotlib.backends.backend_tkagg._BackendTkAgg",
+      "api_type": "class",
+      "similarity": 0.2962962962962963
+    },
+    {
+      "fqn": "matplotlib.backends.backend_tkcairo._BackendTkCairo",
+      "api_type": "class",
+      "similarity": 0.2962962962962963
+    },
+    {
+      "fqn": "matplotlib.backends.backend_svg.XMLWriter",
+      "api_type": "class",
+      "similarity": 0.2857142857142857
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.19.2",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.tools.plotting.scatter_matrix",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.plotting._matplotlib.misc.scatter_matrix",
+      "api_type": "function",
+      "similarity": 0.87
+    },
+    {
+      "fqn": "pandas.plotting._matplotlib.misc.radviz",
+      "api_type": "function",
+      "similarity": 0.5839285714285715
+    },
+    {
+      "fqn": "pandas.io.stata._cast_to_stata_types",
+      "api_type": "function",
+      "similarity": 0.5538694992412747
+    },
+    {
+      "fqn": "pandas.core.indexes.base.get_values_for_csv",
+      "api_type": "function",
+      "similarity": 0.5483870967741935
+    },
+    {
+      "fqn": "pandas.io.clipboard.__init__.init_windows_clipboard",
+      "api_type": "function",
+      "similarity": 0.5334538878842676
+    },
+    {
+      "fqn": "pandas.core.reshape.reshape.stack_v3",
+      "api_type": "function",
+      "similarity": 0.5321428571428571
+    },
+    {
+      "fqn": "pandas.core.reshape.melt.melt",
+      "api_type": "function",
+      "similarity": 0.5283911671924291
+    },
+    {
+      "fqn": "pandas.core.reshape.pivot._generate_marginal_results",
+      "api_type": "function",
+      "similarity": 0.5283018867924528
+    },
+    {
+      "fqn": "pandas.core.arrays.sparse.array._sparse_array_op",
+      "api_type": "function",
+      "similarity": 0.5267857142857143
+    },
+    {
+      "fqn": "pandas.tests.groupby.test_groupby.test_empty_groupby",
+      "api_type": "function",
+      "similarity": 0.5254515599343186
+    }
+  ]
+}

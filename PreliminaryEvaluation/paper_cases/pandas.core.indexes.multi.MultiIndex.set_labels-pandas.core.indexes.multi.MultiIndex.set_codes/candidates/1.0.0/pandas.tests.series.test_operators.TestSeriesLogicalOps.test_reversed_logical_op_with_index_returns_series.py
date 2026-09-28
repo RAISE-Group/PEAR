@@ -1,0 +1,11 @@
+@pytest.mark.parametrize('op', [pytest.param(ops.rand_, marks=pytest.mark.xfail(reason='GH#22092 Index __and__ returns Index intersection', raises=AssertionError, strict=True)), pytest.param(ops.ror_, marks=pytest.mark.xfail(reason='GH#22092 Index __or__ returns Index union', raises=AssertionError, strict=True))])
+def test_reversed_logical_op_with_index_returns_series(self, op):
+    ser = Series([True, True, False, False])
+    idx1 = Index([True, False, True, False])
+    idx2 = Index([1, 0, 1, 0])
+    expected = pd.Series(op(idx1.values, ser.values))
+    result = op(ser, idx1)
+    tm.assert_series_equal(result, expected)
+    expected = pd.Series(op(idx2.values, ser.values))
+    result = op(ser, idx2)
+    tm.assert_series_equal(result, expected)

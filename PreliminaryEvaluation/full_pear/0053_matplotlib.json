@@ -1,0 +1,264 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "2.2.5",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.legend.Legend.draggable",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "error": null,
+  "candidates": [
+    {
+      "fqn": "matplotlib.text._AnnotationBase.draggable",
+      "api_type": "method",
+      "similarity": 0.9074074074074074,
+      "evolution_path": [
+        "matplotlib.text._AnnotationBase.draggable"
+      ],
+      "local_scores": [
+        0.9074074074074074
+      ]
+    },
+    {
+      "fqn": "matplotlib.legend.Legend.set_draggable",
+      "api_type": "method",
+      "similarity": 0.6964285714285714,
+      "evolution_path": [
+        "matplotlib.legend.Legend.set_draggable"
+      ],
+      "local_scores": [
+        0.6964285714285714
+      ]
+    },
+    {
+      "fqn": "matplotlib.ticker.LogLocator.set_params",
+      "api_type": "method",
+      "similarity": 0.5303030303030303,
+      "evolution_path": [
+        "matplotlib.ticker.LogLocator.set_params"
+      ],
+      "local_scores": [
+        0.5303030303030303
+      ]
+    },
+    {
+      "fqn": "matplotlib.axis.Axis.update_units",
+      "api_type": "method",
+      "similarity": 0.5064935064935064,
+      "evolution_path": [
+        "matplotlib.axis.Axis.update_units"
+      ],
+      "local_scores": [
+        0.5064935064935064
+      ]
+    },
+    {
+      "fqn": "matplotlib.animation.FileMovieWriter.setup",
+      "api_type": "method",
+      "similarity": 0.5,
+      "evolution_path": [
+        "matplotlib.animation.FileMovieWriter.setup"
+      ],
+      "local_scores": [
+        0.5
+      ]
+    },
+    {
+      "fqn": "matplotlib.animation.MovieWriter.setup",
+      "api_type": "method",
+      "similarity": 0.4918032786885246,
+      "evolution_path": [
+        "matplotlib.animation.MovieWriter.setup"
+      ],
+      "local_scores": [
+        0.4918032786885246
+      ]
+    },
+    {
+      "fqn": "matplotlib.collections.Collection.set_linewidth",
+      "api_type": "method",
+      "similarity": 0.4861111111111111,
+      "evolution_path": [
+        "matplotlib.collections.Collection.set_linewidth"
+      ],
+      "local_scores": [
+        0.4861111111111111
+      ]
+    },
+    {
+      "fqn": "matplotlib.text.Annotation.get_window_extent",
+      "api_type": "method",
+      "similarity": 0.4835164835164835,
+      "evolution_path": [
+        "matplotlib.text.Annotation.get_window_extent"
+      ],
+      "local_scores": [
+        0.4835164835164835
+      ]
+    },
+    {
+      "fqn": "matplotlib.axis.Axis.set_units",
+      "api_type": "method",
+      "similarity": 0.4788732394366197,
+      "evolution_path": [
+        "matplotlib.axis.Axis.set_units"
+      ],
+      "local_scores": [
+        0.4788732394366197
+      ]
+    },
+    {
+      "fqn": "matplotlib.tri._triangulation.Triangulation.set_mask",
+      "api_type": "method",
+      "similarity": 0.4580941446613089,
+      "evolution_path": [
+        "matplotlib.tri.triangulation.Triangulation.set_mask",
+        "matplotlib.tri._triangulation.Triangulation.set_mask"
+      ],
+      "local_scores": [
+        0.48717948717948717,
+        0.9402985074626866
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "fqn": "matplotlib.legend.Legend.draggable",
+      "path_score": 1.0,
+      "boundary": "DEPRECATED",
+      "vpre": "3.0.3",
+      "vpost": "3.1.0",
+      "resolved_fqn": "matplotlib.legend.Legend.draggable",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.text._AnnotationBase.draggable",
+          "similarity": 0.907407
+        },
+        {
+          "fqn": "matplotlib.legend.Legend.set_draggable",
+          "similarity": 0.696429
+        },
+        {
+          "fqn": "matplotlib.ticker.LogLocator.set_params",
+          "similarity": 0.530303
+        },
+        {
+          "fqn": "matplotlib.axis.Axis.update_units",
+          "similarity": 0.506494
+        },
+        {
+          "fqn": "matplotlib.animation.FileMovieWriter.setup",
+          "similarity": 0.5
+        },
+        {
+          "fqn": "matplotlib.animation.MovieWriter.setup",
+          "similarity": 0.491803
+        },
+        {
+          "fqn": "matplotlib.tri.triangulation.Triangulation.set_mask",
+          "similarity": 0.487179
+        },
+        {
+          "fqn": "matplotlib.collections.Collection.set_linewidth",
+          "similarity": 0.486111
+        },
+        {
+          "fqn": "matplotlib.text.Annotation.get_window_extent",
+          "similarity": 0.483516
+        },
+        {
+          "fqn": "matplotlib.axis.Axis.set_units",
+          "similarity": 0.478873
+        }
+      ],
+      "entered_final": [
+        "matplotlib.text._AnnotationBase.draggable",
+        "matplotlib.legend.Legend.set_draggable",
+        "matplotlib.ticker.LogLocator.set_params",
+        "matplotlib.axis.Axis.update_units",
+        "matplotlib.animation.FileMovieWriter.setup",
+        "matplotlib.animation.MovieWriter.setup",
+        "matplotlib.collections.Collection.set_linewidth",
+        "matplotlib.text.Annotation.get_window_extent",
+        "matplotlib.axis.Axis.set_units"
+      ],
+      "entered_iter": [
+        "matplotlib.tri.triangulation.Triangulation.set_mask"
+      ],
+      "pruned": [],
+      "prune_bound": null,
+      "dead_reason": null
+    },
+    {
+      "fqn": "matplotlib.tri.triangulation.Triangulation.set_mask",
+      "path_score": 0.487179,
+      "boundary": "DEPRECATED",
+      "vpre": "3.6.3",
+      "vpost": "3.7.0",
+      "resolved_fqn": "matplotlib.tri.triangulation.Triangulation.set_mask",
+      "resolved_kind": "direct",
+      "candidates": [
+        {
+          "fqn": "matplotlib.tri._triangulation.Triangulation.set_mask",
+          "similarity": 0.940299
+        },
+        {
+          "fqn": "matplotlib.patches.StepPatch.set_data",
+          "similarity": 0.522727
+        },
+        {
+          "fqn": "matplotlib.text.Annotation.draw",
+          "similarity": 0.494118
+        },
+        {
+          "fqn": "matplotlib.artist.Artist.remove",
+          "similarity": 0.493976
+        },
+        {
+          "fqn": "matplotlib.backend_tools.ToolSetCursor._set_cursor_cbk",
+          "similarity": 0.488095
+        },
+        {
+          "fqn": "matplotlib.text._AnnotationBase.draggable",
+          "similarity": 0.486842
+        },
+        {
+          "fqn": "matplotlib.axis.XAxis.set_default_intervals",
+          "similarity": 0.482353
+        },
+        {
+          "fqn": "matplotlib.axis.YAxis.set_default_intervals",
+          "similarity": 0.482353
+        },
+        {
+          "fqn": "matplotlib.backend_managers.ToolManager.set_figure",
+          "similarity": 0.479452
+        },
+        {
+          "fqn": "matplotlib.widgets.SpanSelector._set_active_handle",
+          "similarity": 0.471264
+        }
+      ],
+      "entered_final": [
+        "matplotlib.tri._triangulation.Triangulation.set_mask",
+        "matplotlib.patches.StepPatch.set_data",
+        "matplotlib.text.Annotation.draw",
+        "matplotlib.artist.Artist.remove",
+        "matplotlib.backend_tools.ToolSetCursor._set_cursor_cbk",
+        "matplotlib.text._AnnotationBase.draggable",
+        "matplotlib.axis.XAxis.set_default_intervals",
+        "matplotlib.axis.YAxis.set_default_intervals",
+        "matplotlib.backend_managers.ToolManager.set_figure",
+        "matplotlib.widgets.SpanSelector._set_active_handle"
+      ],
+      "entered_iter": [],
+      "pruned": [],
+      "prune_bound": 0.458094,
+      "dead_reason": null
+    }
+  ]
+}

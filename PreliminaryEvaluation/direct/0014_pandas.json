@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.20.0",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.frame.DataFrame.sortlevel",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.tests.apply.conftest.MockExecutionEngine.map",
+      "api_type": "method",
+      "similarity": 0.45454545454545453
+    },
+    {
+      "fqn": "pandas.core.strings.accessor.StringMethods.fullmatch",
+      "api_type": "method",
+      "similarity": 0.4423076923076923
+    },
+    {
+      "fqn": "pandas.tests.io.test_parquet.Base.check_error_on_write",
+      "api_type": "method",
+      "similarity": 0.41304347826086957
+    },
+    {
+      "fqn": "pandas.tests.tools.test_to_datetime.TestDaysInMonth.test_day_not_in_month_raise_value",
+      "api_type": "method",
+      "similarity": 0.41304347826086957
+    },
+    {
+      "fqn": "pandas.tests.test_nanops.TestnanopsDataFrame.test_nansem",
+      "api_type": "method",
+      "similarity": 0.4117647058823529
+    },
+    {
+      "fqn": "pandas.tests.io.json.test_pandas.TestPandasContainer.test_path",
+      "api_type": "method",
+      "similarity": 0.4090909090909091
+    },
+    {
+      "fqn": "pandas.tests.series.indexing.test_setitem.CoercionTest.expected",
+      "api_type": "method",
+      "similarity": 0.4090909090909091
+    },
+    {
+      "fqn": "pandas.core.indexing._iAtIndexer.__setitem__",
+      "api_type": "method",
+      "similarity": 0.40816326530612246
+    },
+    {
+      "fqn": "pandas.core.series.Series._set_name",
+      "api_type": "method",
+      "similarity": 0.40384615384615385
+    },
+    {
+      "fqn": "pandas.core.series.Series.add",
+      "api_type": "method",
+      "similarity": 0.4
+    }
+  ]
+}

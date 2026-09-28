@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.2.2",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.mlab.demean",
+    "api_type": "function",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.transforms.interval_contains",
+      "api_type": "function",
+      "similarity": 0.4583333333333333
+    },
+    {
+      "fqn": "matplotlib.style.__init__.update_nested_dict",
+      "api_type": "function",
+      "similarity": 0.4230769230769231
+    },
+    {
+      "fqn": "matplotlib.transforms.interval_contains_open",
+      "api_type": "function",
+      "similarity": 0.4074074074074074
+    },
+    {
+      "fqn": "matplotlib._cm._g13",
+      "api_type": "function",
+      "similarity": 0.391304347826087
+    },
+    {
+      "fqn": "matplotlib.animation._included_frames",
+      "api_type": "function",
+      "similarity": 0.38461538461538464
+    },
+    {
+      "fqn": "matplotlib.dviread._fontfile",
+      "api_type": "function",
+      "similarity": 0.38461538461538464
+    },
+    {
+      "fqn": "matplotlib._cm._g7",
+      "api_type": "function",
+      "similarity": 0.38095238095238093
+    },
+    {
+      "fqn": "matplotlib.__init__.sanitize_sequence",
+      "api_type": "function",
+      "similarity": 0.375
+    },
+    {
+      "fqn": "matplotlib.__init__.validate_backend",
+      "api_type": "function",
+      "similarity": 0.375
+    },
+    {
+      "fqn": "matplotlib._cm._g8",
+      "api_type": "function",
+      "similarity": 0.375
+    }
+  ]
+}

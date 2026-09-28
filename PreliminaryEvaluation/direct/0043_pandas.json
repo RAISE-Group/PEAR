@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "1.4.4",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.series.Series.iteritems",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.series.Series.items",
+      "api_type": "method",
+      "similarity": 0.45454545454545453
+    },
+    {
+      "fqn": "pandas.core.interchange.buffer.PandasBuffer.__dlpack__",
+      "api_type": "method",
+      "similarity": 0.36
+    },
+    {
+      "fqn": "pandas.core.groupby.ops.BaseGrouper.__iter__",
+      "api_type": "method",
+      "similarity": 0.3333333333333333
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame.items",
+      "api_type": "method",
+      "similarity": 0.3157894736842105
+    },
+    {
+      "fqn": "pandas.core.arrays.base.ExtensionArray._values_for_factorize",
+      "api_type": "method",
+      "similarity": 0.3055555555555556
+    },
+    {
+      "fqn": "pandas.io.formats.info.DataFrameInfo.dtypes",
+      "api_type": "method",
+      "similarity": 0.2962962962962963
+    },
+    {
+      "fqn": "pandas.io.formats.info._TableBuilderAbstract.dtypes",
+      "api_type": "method",
+      "similarity": 0.2962962962962963
+    },
+    {
+      "fqn": "pandas.util.version.__init__.Version.release",
+      "api_type": "method",
+      "similarity": 0.2962962962962963
+    },
+    {
+      "fqn": "pandas.io.pytables.Table.index_cols",
+      "api_type": "method",
+      "similarity": 0.29411764705882354
+    },
+    {
+      "fqn": "pandas.core.computation.engines.PythonEngine.evaluate",
+      "api_type": "method",
+      "similarity": 0.2916666666666667
+    }
+  ]
+}

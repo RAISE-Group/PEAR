@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.7.5",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.backends.backend_wxagg.FigureFrameWxAgg",
+    "api_type": "class",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.backends.backend_wx.SaveFigureWx",
+      "api_type": "class",
+      "similarity": 0.3541666666666667
+    },
+    {
+      "fqn": "matplotlib.backends._backend_gtk._FigureCanvasGTK",
+      "api_type": "class",
+      "similarity": 0.3333333333333333
+    },
+    {
+      "fqn": "matplotlib.backends.backend_nbagg.FigureCanvasNbAgg",
+      "api_type": "class",
+      "similarity": 0.3333333333333333
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg.FigureCanvasWebAgg",
+      "api_type": "class",
+      "similarity": 0.3333333333333333
+    },
+    {
+      "fqn": "matplotlib.backends.backend_wx.ConfigureSubplotsWx",
+      "api_type": "class",
+      "similarity": 0.3125
+    },
+    {
+      "fqn": "matplotlib.backends.backend_tkagg.FigureCanvasTkAgg",
+      "api_type": "class",
+      "similarity": 0.30434782608695654
+    },
+    {
+      "fqn": "matplotlib.backends.backend_template.FigureCanvasTemplate",
+      "api_type": "class",
+      "similarity": 0.2823529411764706
+    },
+    {
+      "fqn": "matplotlib.tests.test_skew.SkewXAxis",
+      "api_type": "class",
+      "similarity": 0.27941176470588236
+    },
+    {
+      "fqn": "matplotlib.backends.backend_webagg.WebAggApplication.MplJs",
+      "api_type": "class",
+      "similarity": 0.2777777777777778
+    },
+    {
+      "fqn": "matplotlib.backends._backend_tk.SaveFigureTk",
+      "api_type": "class",
+      "similarity": 0.27450980392156865
+    }
+  ]
+}

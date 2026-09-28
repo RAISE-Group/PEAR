@@ -1,0 +1,11 @@
+def test_strip_lstrip_rstrip_args(self):
+    values = Series(['xxABCxx', 'xx BNSD', 'LDFJH xx'])
+    rs = values.str.strip('x')
+    xp = Series(['ABC', ' BNSD', 'LDFJH '])
+    tm.assert_series_equal(rs, xp)
+    rs = values.str.lstrip('x')
+    xp = Series(['ABCxx', ' BNSD', 'LDFJH xx'])
+    tm.assert_series_equal(rs, xp)
+    rs = values.str.rstrip('x')
+    xp = Series(['xxABC', 'xx BNSD', 'LDFJH '])
+    tm.assert_series_equal(rs, xp)

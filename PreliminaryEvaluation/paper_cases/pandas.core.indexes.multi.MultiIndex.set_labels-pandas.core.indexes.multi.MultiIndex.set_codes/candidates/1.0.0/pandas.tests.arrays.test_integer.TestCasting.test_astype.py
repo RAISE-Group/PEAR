@@ -1,0 +1,32 @@
+def test_astype(self, all_data):
+    all_data = all_data[:10]
+    ints = all_data[~all_data.isna()]
+    mixed = all_data
+    dtype = Int8Dtype()
+    s = pd.Series(ints)
+    result = s.astype(all_data.dtype)
+    expected = pd.Series(ints)
+    tm.assert_series_equal(result, expected)
+    s = pd.Series(ints)
+    result = s.astype(dtype)
+    expected = pd.Series(ints, dtype=dtype)
+    tm.assert_series_equal(result, expected)
+    s = pd.Series(ints)
+    result = s.astype(all_data.dtype.numpy_dtype)
+    expected = pd.Series(ints._data.astype(all_data.dtype.numpy_dtype))
+    tm.assert_series_equal(result, expected)
+    s = pd.Series(mixed)
+    result = s.astype(all_data.dtype)
+    expected = pd.Series(mixed)
+    tm.assert_series_equal(result, expected)
+    s = pd.Series(mixed)
+    result = s.astype(dtype)
+    expected = pd.Series(mixed, dtype=dtype)
+    tm.assert_series_equal(result, expected)
+    s = pd.Series(mixed)
+    with pytest.raises(ValueError):
+        s.astype(all_data.dtype.numpy_dtype)
+    s = pd.Series(mixed)
+    result = s.astype('object')
+    expected = pd.Series(np.asarray(mixed))
+    tm.assert_series_equal(result, expected)

@@ -1,0 +1,12 @@
+@pytest.mark.parametrize('klass', [list, tuple, np.array])
+def test_where_array_like(self, klass):
+    df = DataFrame({'a': [1, 2, 3]})
+    cond = [[False], [True], [True]]
+    expected = DataFrame({'a': [np.nan, 2, 3]})
+    result = df.where(klass(cond))
+    tm.assert_frame_equal(result, expected)
+    df['b'] = 2
+    expected['b'] = [2, np.nan, 2]
+    cond = [[False, True], [True, False], [True, True]]
+    result = df.where(klass(cond))
+    tm.assert_frame_equal(result, expected)

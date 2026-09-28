@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "0.23.4",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.indexes.multi.MultiIndex.set_labels",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.indexes.base.Index._validate_names",
+      "api_type": "method",
+      "similarity": 0.5637583892617449
+    },
+    {
+      "fqn": "pandas.core.indexes.multi.MultiIndex._set_names",
+      "api_type": "method",
+      "similarity": 0.535483870967742
+    },
+    {
+      "fqn": "pandas.core.arrays.string_arrow.ArrowStringArray._maybe_convert_setitem_value",
+      "api_type": "method",
+      "similarity": 0.5068493150684932
+    },
+    {
+      "fqn": "pandas.io.pytables.Table.validate_data_columns",
+      "api_type": "method",
+      "similarity": 0.5068493150684932
+    },
+    {
+      "fqn": "pandas.core.arrays.string_.StringArray._maybe_convert_setitem_value",
+      "api_type": "method",
+      "similarity": 0.5067567567567568
+    },
+    {
+      "fqn": "pandas.core.indexes.multi.MultiIndex.to_frame",
+      "api_type": "method",
+      "similarity": 0.5064935064935064
+    },
+    {
+      "fqn": "pandas.core.indexes.multi.MultiIndex._raise_if_missing",
+      "api_type": "method",
+      "similarity": 0.4896551724137931
+    },
+    {
+      "fqn": "pandas.io.html._BeautifulSoupHtml5LibFrameParser._parse_tables",
+      "api_type": "method",
+      "similarity": 0.48344370860927155
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame.isetitem",
+      "api_type": "method",
+      "similarity": 0.48201438848920863
+    },
+    {
+      "fqn": "pandas.core.arrays.interval.IntervalArray._validate",
+      "api_type": "method",
+      "similarity": 0.4791666666666667
+    }
+  ]
+}

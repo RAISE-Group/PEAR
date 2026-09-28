@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "django",
+    "source_version": "1.10.8",
+    "target_version": "6.0.7",
+    "old_api_fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_indexes",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/django"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "django.contrib.gis.db.backends.postgis.introspection.PostGISIntrospection.get_geometry_type",
+      "api_type": "method",
+      "similarity": 0.5785714285714286
+    },
+    {
+      "fqn": "django.forms.widgets.MultipleHiddenInput.get_context",
+      "api_type": "method",
+      "similarity": 0.5625
+    },
+    {
+      "fqn": "django.db.backends.sqlite3.introspection.DatabaseIntrospection._get_column_collations",
+      "api_type": "method",
+      "similarity": 0.5608108108108109
+    },
+    {
+      "fqn": "django.template.utils.EngineHandler.templates",
+      "api_type": "method",
+      "similarity": 0.56
+    },
+    {
+      "fqn": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.get_prefetch_querysets",
+      "api_type": "method",
+      "similarity": 0.5533333333333333
+    },
+    {
+      "fqn": "django.contrib.gis.forms.widgets.BaseGeometryWidget.get_context",
+      "api_type": "method",
+      "similarity": 0.547945205479452
+    },
+    {
+      "fqn": "django.middleware.common.BrokenLinkEmailsMiddleware.process_response",
+      "api_type": "method",
+      "similarity": 0.5434782608695652
+    },
+    {
+      "fqn": "django.contrib.postgres.forms.array.SplitArrayWidget.get_context",
+      "api_type": "method",
+      "similarity": 0.5414012738853503
+    },
+    {
+      "fqn": "django.core.cache.backends.db.DatabaseCache._cull",
+      "api_type": "method",
+      "similarity": 0.5369127516778524
+    },
+    {
+      "fqn": "django.contrib.admin.widgets.ForeignKeyRawIdWidget.get_context",
+      "api_type": "method",
+      "similarity": 0.5333333333333333
+    }
+  ]
+}

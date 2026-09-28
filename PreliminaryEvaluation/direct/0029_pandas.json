@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "pandas",
+    "source_version": "1.1.5",
+    "target_version": "3.0.5",
+    "old_api_fqn": "pandas.core.frame.DataFrame.lookup",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/pandas"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "pandas.core.internals.blocks.Block.setitem",
+      "api_type": "method",
+      "similarity": 0.6091370558375635
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame._iset_not_inplace",
+      "api_type": "method",
+      "similarity": 0.6031746031746031
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame._setitem_array",
+      "api_type": "method",
+      "similarity": 0.6030150753768844
+    },
+    {
+      "fqn": "pandas.core.indexing._iLocIndexer._setitem_single_block",
+      "api_type": "method",
+      "similarity": 0.5958549222797928
+    },
+    {
+      "fqn": "pandas.core.indexes.interval.IntervalIndex.get_loc",
+      "api_type": "method",
+      "similarity": 0.5927835051546392
+    },
+    {
+      "fqn": "pandas.core.indexes.base.Index._cmp_method",
+      "api_type": "method",
+      "similarity": 0.5925925925925926
+    },
+    {
+      "fqn": "pandas.core.indexes.base.Index.__getitem__",
+      "api_type": "method",
+      "similarity": 0.5879120879120879
+    },
+    {
+      "fqn": "pandas.core.indexes.multi.MultiIndex.__getitem__",
+      "api_type": "method",
+      "similarity": 0.585635359116022
+    },
+    {
+      "fqn": "pandas.core.frame.DataFrame.__setitem__",
+      "api_type": "method",
+      "similarity": 0.5684210526315789
+    },
+    {
+      "fqn": "pandas.core.arrays.masked.BaseMaskedArray._cmp_method",
+      "api_type": "method",
+      "similarity": 0.5603864734299517
+    }
+  ]
+}

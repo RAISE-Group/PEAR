@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.2.2",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.offsetbox.DraggableBase.artist_picker",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.axes._base._AxesBase.contains",
+      "api_type": "method",
+      "similarity": 0.5238095238095238
+    },
+    {
+      "fqn": "matplotlib.legend.Legend.contains",
+      "api_type": "method",
+      "similarity": 0.5238095238095238
+    },
+    {
+      "fqn": "matplotlib.figure.Figure.draw_artist",
+      "api_type": "method",
+      "similarity": 0.48
+    },
+    {
+      "fqn": "matplotlib.cbook.GrouperView.joined",
+      "api_type": "method",
+      "similarity": 0.4782608695652174
+    },
+    {
+      "fqn": "matplotlib.widgets.RectangleSelector._contains",
+      "api_type": "method",
+      "similarity": 0.4583333333333333
+    },
+    {
+      "fqn": "matplotlib.widgets.SpanSelector._contains",
+      "api_type": "method",
+      "similarity": 0.4583333333333333
+    },
+    {
+      "fqn": "matplotlib._api.__init__.classproperty.__get__",
+      "api_type": "method",
+      "similarity": 0.45454545454545453
+    },
+    {
+      "fqn": "matplotlib.artist.Artist.set_picker",
+      "api_type": "method",
+      "similarity": 0.45454545454545453
+    },
+    {
+      "fqn": "matplotlib.tests.test_cbook.Test_callback_registry.disconnect",
+      "api_type": "method",
+      "similarity": 0.45454545454545453
+    },
+    {
+      "fqn": "matplotlib.transforms.TransformWrapper.__eq__",
+      "api_type": "method",
+      "similarity": 0.45454545454545453
+    }
+  ]
+}

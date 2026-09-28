@@ -1,0 +1,16 @@
+def test_rename_categories(self):
+    cat = Categorical(['a', 'b', 'c', 'a'])
+    res = cat.rename_categories([1, 2, 3])
+    tm.assert_numpy_array_equal(res.__array__(), np.array([1, 2, 3, 1], dtype=np.int64))
+    tm.assert_index_equal(res.categories, Index([1, 2, 3]))
+    exp_cat = np.array(['a', 'b', 'c', 'a'], dtype=np.object_)
+    tm.assert_numpy_array_equal(cat.__array__(), exp_cat)
+    exp_cat = Index(['a', 'b', 'c'])
+    tm.assert_index_equal(cat.categories, exp_cat)
+    result = cat.rename_categories(lambda x: x.upper())
+    expected = Categorical(['A', 'B', 'C', 'A'])
+    tm.assert_categorical_equal(result, expected)
+    res = cat.rename_categories([1, 2, 3], inplace=True)
+    assert res is None
+    tm.assert_numpy_array_equal(cat.__array__(), np.array([1, 2, 3, 1], dtype=np.int64))
+    tm.assert_index_equal(cat.categories, Index([1, 2, 3]))

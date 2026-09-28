@@ -1,0 +1,64 @@
+{
+  "task": {
+    "lib_name": "matplotlib",
+    "source_version": "3.5.3",
+    "target_version": "3.11.1",
+    "old_api_fqn": "matplotlib.ticker.LogLocator.base",
+    "api_type": "method",
+    "top_k": 10,
+    "lib_repo_path": "/home/he/PEAR/Libraries/matplotlib"
+  },
+  "status": "OK",
+  "candidates": [
+    {
+      "fqn": "matplotlib.ticker.LogFormatter.set_base",
+      "api_type": "method",
+      "similarity": 0.8235294117647058
+    },
+    {
+      "fqn": "matplotlib.backend_bases.GraphicsContextBase.set_linewidth",
+      "api_type": "method",
+      "similarity": 0.55
+    },
+    {
+      "fqn": "matplotlib.colorbar.Colorbar.formatter",
+      "api_type": "method",
+      "similarity": 0.47619047619047616
+    },
+    {
+      "fqn": "matplotlib.colorbar.Colorbar.locator",
+      "api_type": "method",
+      "similarity": 0.47619047619047616
+    },
+    {
+      "fqn": "matplotlib.colorbar.Colorbar.minorformatter",
+      "api_type": "method",
+      "similarity": 0.47619047619047616
+    },
+    {
+      "fqn": "matplotlib.colorbar.Colorbar.minorlocator",
+      "api_type": "method",
+      "similarity": 0.47619047619047616
+    },
+    {
+      "fqn": "matplotlib.dates.DateFormatter.set_tzinfo",
+      "api_type": "method",
+      "similarity": 0.47619047619047616
+    },
+    {
+      "fqn": "matplotlib.dates.DateLocator.set_tzinfo",
+      "api_type": "method",
+      "similarity": 0.47619047619047616
+    },
+    {
+      "fqn": "matplotlib.ticker.ScalarFormatter.set_scientific",
+      "api_type": "method",
+      "similarity": 0.47619047619047616
+    },
+    {
+      "fqn": "matplotlib.backends.backend_mixed.MixedModeRenderer.__getattr__",
+      "api_type": "method",
+      "similarity": 0.47368421052631576
+    }
+  ]
+}
